@@ -79,5 +79,11 @@ gulp.task('fav', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('textures', function () {
+    return gulp.src("src/img/textures/**/*")
+        .pipe(gulp.dest("dist/img/textures"))
+        .pipe(browserSync.stream());
+});
 
-gulp.task('default', gulp.parallel('server', 'styles', 'watch', 'pug', 'scripts', 'fonts', 'icons', 'images', 'fav'));
+
+gulp.task('default', gulp.parallel('server', 'styles', 'watch', 'pug', 'scripts', 'fonts', 'icons', 'images', 'fav', 'textures'));
