@@ -33,13 +33,15 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch("src/less/**/*.+(less)", gulp.parallel('styles'));
+    gulp.watch("src/**/*.+(less)", gulp.parallel('styles'));
     gulp.watch("src/*.pug").on("change", browserSync.reload);
     gulp.watch('src/**/*.pug', gulp.parallel('pug'))
     gulp.watch("src/script/**/*.js").on('change', gulp.parallel('scripts'));
-    gulp.watch("src/img/fonts/**/*").on('all', gulp.parallel('fonts'));
+    gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));
+    gulp.watch("src/img/**/*").on('all', gulp.parallel('images'));
     gulp.watch("src/img/icons/**/*").on('all', gulp.parallel('icons'));
-    gulp.watch("src/img/content/**/*").on('all', gulp.parallel('images'));
+    gulp.watch("src/img/fav/**/*").on('all', gulp.parallel('fav'));
+    gulp.watch("src/img/textures/**/*").on('all', gulp.parallel('textures'));
 });
 
 gulp.task('pug', function() {
