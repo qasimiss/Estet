@@ -5,14 +5,17 @@
     background: @green4A;
     padding: 36px 54px 36px 36px;
     align-items: center;
-}
-.b-button-tel__img {
-    width: 31px;
-    height: 31px;
-    margin-right: 37px;
-}
-.b-button-tel__descr {
-    color: @whiteFF;
-    font-size: 18px;
-    text-transform: uppercase;
+    &:hover {
+        background: lighten(@green4A,20%);
+    }
+    &__img {
+        width: 31px;
+        height: 31px;
+        margin-right: 37px;
+    }
+    &__descr {
+        color: @whiteFF;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
 }
