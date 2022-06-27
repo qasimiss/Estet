@@ -1,9 +1,40 @@
-section.b-card-img{
+.b-card-img{
+    display: flex;
+}
+.b-card-img, .container{
+    width: 100%;
+    margin: 0 auto;
+}
+.b-card-img--palitra{
     display: flex;
     width: 100%;
+    height: 250px;
+    position: relative;
+    padding: 25px 25px 29px 25px;
 }
-.b-card-img--big{
-    display: flex;
-    width:100%;
-
+.b-card-picture--palitra{
+    position: absolute;
+    display: block;
+    width: calc(100% - 25px);
+    height: calc(100% - 25px); 
+    z-index: -1;
+}
+.b-card-img--palitra .title{
+    display: inline-block;
+    position: static;
+    width: 145px;
+    font-size: 18px;
+    line-height: 26px;
+    color:#ffffff;
+}
+.b-card-img--palitra img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.b-card-icon--palitra{
+    width: 40px;
+    height:40px;
+    margin-left:auto;
+    margin-top: auto;
 }
