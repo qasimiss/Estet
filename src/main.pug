@@ -6,16 +6,10 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="description", content="")
         title Document
-        link(rel="preload" href="fonts/fonts.css")
+        link(rel="stylesheet" href="fonts/fonts.css")
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" media="only screen and (min-width: 375px)" href="css/mobile-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/table-style.css")
-        link(rel="stylesheet" media="only screen and (min-width: 1024px)"  href="css/desktop-style.css")
+        link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/desktop-style.css")
     body
-        include blocks/b-card-img/b-card-img.pug
-        include blocks/b-header/b-header.pug
-        include elements/b-button-tel/b-button-tel.pug
-        .b-container
-            +b-header
-            section.b-card-img
-                +b-card-img()
+        
