@@ -1,0 +1,50 @@
+.b-card-guarantee__box {
+    display: flex;
+}
+
+.b-card-guarantee__grad {
+    display: flex;
+    justify-content: center;
+
+    width: 155px;
+    height: 245px;
+
+    padding-top: 50px;
+
+    font-family: 'Lora';
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 192px;
+
+    color: @whiteFF;
+
+    background: linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
+    border-width: 15px;
+    clip-path: polygon(
+                0 0, 0 0, 100% 40px,
+                100% calc(100% - 20px), 100% 100%,
+                20px 100%, 0 100%, 0 0)
+}
+
+.b-card-guarantee__text {
+    align-self: flex-end;
+    margin-left: 32px;
+}
+
+.b-card-guarantee__title {
+    font-family: 'Lora';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: @green47;
+}
+
+.b-card-guarantee__subtitle {
+    font-family: 'OpenSans';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: @grey3C;
+}
