@@ -1,0 +1,14 @@
+.b-card-select {
+  display: flex;
+}
+.b-card-select,
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.b-card-select__title h2 {
+  width: 207px;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+}
