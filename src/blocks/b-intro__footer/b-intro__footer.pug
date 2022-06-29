@@ -3,6 +3,7 @@ include ../../elements/b-switcher-left-right/b-switcher-right.pug
 include ../../elements/b-button-tel/b-button-tel.pug
 mixin b-intro__footer()
     .b-intro__footer
-        +b-switcher-left
-        +b-switcher-right
+        .b-switcher__wrap
+            +b-switcher-left
+            +b-switcher-right
         +b-button-tel
