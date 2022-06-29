@@ -1,0 +1,11 @@
+include ../../elements/b-switcher-city/b-switcher-city
+include ../../elements/b-card-address__item/b-card-address__item
+
+mixin b-card-address()
+    .b-card-address
+        .b-card-address__title Магазины
+        +b-switcher-city
+        +b-card-address__item
+        .b-card-address__box
+            a.b-card-address__link(href="#" title="") Все салоны
+            
