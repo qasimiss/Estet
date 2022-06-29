@@ -1,11 +1,16 @@
 include ../../elements/b-switcher-city/b-switcher-city
 include ../../elements/b-card-address__item/b-card-address__item
+include ../../elements/b-link-and-switcher/b-link-and-switcher
 
 mixin b-card-address()
     .b-card-address
         .b-card-address__title Магазины
         +b-switcher-city
-        +b-card-address__item
-        .b-card-address__box
-            a.b-card-address__link(href="#" title="") Все салоны
-            
+        .b-card-address__inner
+            +b-card-address__item
+            +b-card-address__item
+            +b-card-address__item
+            +b-card-address__item
+            +b-card-address__item
+            +b-card-address__item
+        +b-link-and-switcher("Все салоны")
