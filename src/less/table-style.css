@@ -1,0 +1,44 @@
+.b-container {
+  padding: 0 84px 0 84px;
+}
+.b-container--no-padd-table {
+  padding: 0;
+}
+.b-container--no-padd-table {
+  padding: 0;
+}
+.b-header__wrapper {
+  height: 160px;
+}
+.b-header__logo {
+  width: 57px;
+  height: 57px;
+}
+.b-button-tel {
+  display: flex;
+  width: 348px;
+  height: 103px;
+  background: #00C34A;
+  padding: 36px 54px 36px 36px;
+  align-items: center;
+}
+.b-button-tel:hover {
+  background: #2aff7b;
+}
+.b-button-tel__img {
+  width: 31px;
+  height: 31px;
+  margin-right: 37px;
+}
+.b-button-tel__descr {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.b-button-help {
+  width: 247px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
