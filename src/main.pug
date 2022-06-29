@@ -14,6 +14,8 @@ html(lang="en")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)"  href="css/desktop-style.css")
     body
         include blocks/b-header/b-header.pug
+        include blocks/b-intro/b-intro.pug
+        include blocks/b-intro__footer/b-intro__footer.pug
         +b-header
 
 
@@ -26,3 +28,6 @@ html(lang="en")
 
 
         script(src="script/script.js")
+        .b-container
+            +b-intro
+            +b-intro__footer
