@@ -15,8 +15,8 @@ html(lang="en")
     body
         include blocks/b-header/b-header.pug
         include blocks/b-intro/b-intro.pug
-        include blocks/b-intro__footer/b-intro__footer.pug
-        +b-header
-        +b-intro
-        +b-intro__footer
+        include blocks/b-footer/b-footer.pug
+        +b-footer()
+
+
         script(src="script/script.js")
