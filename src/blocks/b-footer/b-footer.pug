@@ -1,0 +1,32 @@
+include ../../elements/b-button-help/b-button-help.pug
+mixin b-footer
+    footer.b-footer
+            .b-footer__mail
+                .b-container
+                    h2.b-title.b-title--footer Остались вопросы? Напишите нам.
+                    +b-button-help({
+                        description: 'Обратиться'
+                    })
+                    a.b-footer__button
+                        span.b-footer__button-descr Помощь в подборе
+                        img.b-footer__button-img(src="../../img/icons/longnext.svg", alt="help")
+            .b-footer__contact
+                ul.b-footer__social
+                    li.b-footer__item
+                        a.b-footer__link(href="javascript:void(0);")
+                            img.b-footer__img(src="../../img/icons/instagram.svg", alt="")
+                    li.b-footer__item
+                        a.b-footer__link(href="javascript:void(0);")
+                            img.b-footer__img(src="../../img/icons/viber.svg", alt="")
+                    li.b-footer__item
+                        a.b-footer__link(href="javascript:void(0);")
+                            img.b-footer__img(src="../../img/icons/youtube.svg", alt="")
+                .b-footer__callback Заказать звонок
+                a(href="tel:+78005513240").b-footer__number 8 800 551 32 40
+            .b-footer__info
+                .b-footer__logo
+                    img(src="../../img/icons/logo-white.svg", alt="logo")
+                .b-footer__description © 20201 Дверные технологии. Все права защищены. Чувашская республика, Цивильский район, пос. Молодежный, ул. Заводская 1Г
+                .b-footer__policy Политика конфиденциальности
+                .b-footer__kontora-logo
+                    img(src="../../img/icons/logo-kontora.svg", alt="")
