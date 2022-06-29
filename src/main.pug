@@ -15,6 +15,7 @@ html(lang="en")
     body
         include blocks/b-intro/b-intro.pug
         include blocks/b-intro__footer/b-intro__footer.pug
-        .b-container
-            +b-intro
-            +b-intro__footer
+        section.b-intro
+            .b-container
+                +b-intro
+                +b-intro__footer
