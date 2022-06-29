@@ -1,0 +1,39 @@
+include ../../elements/b-hamburger-main/b-hamburger-main.pug
+mixin b-header
+    header.b-header-main
+        .b-container.b-container--no-padd-desktop
+            .b-header-main__wrapper
+                .b-header-main__desktop
+                    a.b-header-main__desktop-language(href="javascript:void(0);")
+                        img(src="../../img/icons/languge.svg", alt="language")
+                    ul.b-header-main__desktop-nav-product
+                        li.b-header-main__desktop-nav-product-item
+                            a(href="javascript:void(0);").b-header-main__desktop-nav-product-link Каталог
+                        li.b-header-main__desktop-nav-product-item
+                            a(href="javascript:void(0);").b-header-main__desktop-nav-product-link Покупателям
+                        li.b-header-main__desktop-nav-product-item
+                            a(href="javascript:void(0);").b-header-main__desktop-nav-product-link Дизайнерам
+                    .b-header-main__desktop-logo
+                        img(src="img/icons/logo-white.svg", alt="logo")
+                    .b-header-main__desktop-wrapper
+                        ul.b-header-main__desktop__info
+                            li.b-header-main__desktop-info-item
+                                a(href="javascript:void(0);").b-header-main__desktop-info-product-link Компания
+                            li.b-header-main__desktop-info-item
+                                a(href="javascript:void(0);").b-header-main__desktop-info-product-link Где купить
+                        ul.b-header-main__desktop__choice
+                            li.b-header-main__desktop__choice-item
+                                a.b-header-main__desktop__choice-link(href="javascript:void(0);")
+                                    img.b-header-main__desktop__choice-img(src="../../img/icons/glass-white.svg", alt="search")
+                            li.b-header-main__desktop__choice-item
+                                a.b-header-main__desktop__choice-link(href="javascript:void(0);")
+                                    img.b-header-main__desktop__choice-img(src="../../img/icons/heart-white.svg", alt="heart")
+                            li.b-header-main__desktop__choice-item
+                                a.b-header-main__desktop__choice-link(href="javascript:void(0);")
+                                    img.b-header-main__desktop__choice-img(src="../../img/icons/basket-white.svg", alt="basket")
+                .b-header-main__search
+                    img(src="img/icons/glass-white.svg", alt="search")
+                .b-header-main__logo
+                    img(src="img/icons/logo-white.svg", alt="logo")
+                .b-header-main__hamburger
+            +b-hamburger-main

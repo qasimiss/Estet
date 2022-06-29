@@ -8,8 +8,25 @@ html(lang="en")
         title Document
         link(rel="stylesheet" href="fonts/fonts.css")
         link(rel="stylesheet" href="css/style.css")
-        link(rel="stylesheet" media="only screen and (min-width: 375px)" href="css/mobile-style.css")
+        link(rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/table-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/desktop-style.css")
     body
-        
+        include blocks/b-card-img/b-card-img.pug
+        include blocks/b-card-select/b-card-select.pug
+        include blocks/b-card-news/b-card-news.pug
+        +b-card-img
+        +b-card-select
+        +b-card-news
+    
+
+
+
+
+
+
+
+
+
+
+        script(src="script/script.js")
