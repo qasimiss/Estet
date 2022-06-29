@@ -1,0 +1,64 @@
+.b-header-main {
+    &__desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 90px 0 90px;
+        & a {
+            color: @whiteFF;
+            text-decoration: none;
+        }
+        & ul {
+        }
+        &-nav-product {
+            display: flex;
+            justify-content: space-between;
+            width: calc(50% - 57px / 2);
+            &-item {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        &-language {
+            width: 26px;
+            height: 26px;
+            margin-left: -120px;
+        }
+        &-logo {
+            width: 57px;
+            height: 57px;
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: calc(50% - 57px / 2);
+            margin-right: -30px;
+            align-items: center;
+        }
+        &__info {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+        }
+        &__choice {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            &-link {
+                display: flex;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 80px;
+    }
+    &__search {
+        display: none;
+    }
+    &__logo {
+        display: none;
+    }
+}
