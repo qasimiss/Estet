@@ -1,0 +1,13 @@
+.b-card-news {
+  display: flex;
+}
+.b-card-news .conteiner {
+  margin: 0 auto;
+  width: 100%;
+}
+.b-card-news__title {
+  width: 272px;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 600;
+}
