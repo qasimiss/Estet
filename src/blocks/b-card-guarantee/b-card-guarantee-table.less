@@ -1,0 +1,93 @@
+.b-card-guarantee-service {
+    display: flex;
+}
+
+.b-card-guarantee__box {
+    padding-top: 38px;
+    margin-right: 15px;
+
+    background: linear-gradient(@whiteF2, @whiteFF);
+}
+
+.b-card-guarantee__grad {
+    position: relative;
+
+    width: 167px;
+    height: 324px;
+
+    padding-top: 45px;
+    padding-right: 20px;
+
+    font-family: 'Lora';
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 192px;
+
+    color: @whiteFF;
+
+    background: linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
+    border-width: 15px;
+    clip-path: polygon(
+                0 0, 0 0, 100% 44px,
+                100% calc(100% - 20px), 100% 100%,
+                20px 100%, 0 100%, 0 0);
+}
+
+.b-card-guarantee__title-box {
+    position: absolute;
+    top: 274px;
+    left: 50px;
+
+    align-self: flex-end;
+    margin-left: 32px;
+}
+
+.b-card-guarantee__title {
+    display: none;
+    font-family: 'Lora';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: @green47;
+}
+
+.b-card-guarantee__subtitle {
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: @grey3C;
+}
+
+.b-card-guarantee__content {
+    margin: 27px 15px 0 83px;
+
+    text-align: start;
+}
+
+.b-card-guarantee__text {
+    margin-bottom: 41px;
+
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 1.1px;
+
+    color: @grey3C;
+}
+
+.b-card-guarantee__link {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 38px;
+
+    color: @green47;
+}
+
+.b-card-guarantee__link:hover {
+    color: lighten(@green47, 20%);
+}
