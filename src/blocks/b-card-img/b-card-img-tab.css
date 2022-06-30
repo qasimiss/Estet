@@ -1,0 +1,69 @@
+.b-card-img--palitra {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 362px;
+  position: relative;
+  padding: 0 28px 29px 0;
+  margin-bottom: 43px;
+  text-decoration: none;
+}
+.b-card-icon {
+  display: none;
+}
+.b-title--palitra {
+  width: 147px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: auto;
+  margin-top: 43px;
+}
+.b-card-img--palitra img {
+  width: 100%;
+  object-fit: cover;
+}
+.b-card-img--skorob {
+  display: flex;
+  width: 50%;
+  height: 362px;
+  text-decoration: none;
+  margin-left: auto;
+}
+.b-card-img--skorob img {
+  object-fit: cover;
+  width: 100%;
+}
+.b-title--skorob {
+  width: 147px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 126px;
+  margin-top: 20px;
+}
+.b-card-img--reiki {
+  display: flex;
+  width: 50%;
+  height: 362px;
+  text-decoration: none;
+  margin-right: auto;
+}
+.b-card-img--reiki img {
+  object-fit: cover;
+  width: 100%;
+}
+.b-title--reiki {
+  width: 136px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 29px;
+  margin-bottom: 31px;
+  text-align: left;
+}
