@@ -1,32 +1,71 @@
 include ../../elements/b-button-help/b-button-help.pug
+include ../../elements/b-footer__nav-products-item/b-footer__nav-products-item.pug
 mixin b-footer
     footer.b-footer
+            nav.b-footer__nav
+                .b-container.b-container--no-padd-table.b-container--no-padd-desktop
+                    ul.b-footer__nav-list
+                        li.b-footer__nav-wrapper
+                            a(href="javascript:void(0);").b-title.b-title--footer-nav Продукция
+                            +b-footer__nav-products-item([
+                                'Межкомнатные двери', 'Входные двери', 'Скрытые двери', 'Межкомнатные перегородки', 'Декоративные рейки', 'Стеновые панели', 'Раздвижные двери', 'Плинтусы', 'Напольные покрытия', 'Мебель',
+                            ])
+                        li.b-footer__nav-wrapper
+                            a(href="javascript:void(0);").b-title.b-title--footer-nav Декор и аксессуары
+                            +b-footer__nav-products-item([
+                                'Декоративное оформление', 'Фурнитура',
+                            ])
+                        li.b-footer__nav-wrapper
+                            a(href="javascript:void(0);").b-title.b-title--footer-nav Покупателям
+                            +b-footer__nav-products-item([
+                                'Полезно', 'Выездной консультант', 'Акции и промокоды', 'Оплата и гарантия', 'Рассрочка и кредит', 'Доставка и установка', 'Советы и рекомендации', 'Дизайн-проекты',
+                            ])
+                        li.b-footer__nav-wrapper
+                            a(href="javascript:void(0);").b-title.b-title--footer-nav Информация
+                            +b-footer__nav-products-item([
+                                'Покрытия', 'Стекла', 'Патина',
+                            ])
+                        li.b-footer__nav-wrapper
+                            a(href="javascript:void(0);").b-title.b-title--footer-nav Где купить
+                        li.b-footer__nav-wrapper
+                            a(href="javascript:void(0);").b-title.b-title--footer-nav Дизайнерам
+                        li.b-footer__nav-wrapper
+                            a(href="javascript:void(0);").b-title.b-title--footer-nav Компания
+                            +b-footer__nav-products-item([
+                                'О нас', 'Производство', 'Новости', 'Сертификаты', 'Отзывы', 'Вакансии', 'Дилерам'
+                            ])
             .b-footer__mail
-                .b-container
-                    h2.b-title.b-title--footer Остались вопросы? Напишите нам.
-                    +b-button-help({
-                        description: 'Обратиться'
-                    })
-                    a.b-footer__button
-                        span.b-footer__button-descr Помощь в подборе
-                        img.b-footer__button-img(src="../../img/icons/longnext.svg", alt="help")
+                .b-container.b-container--no-padd-desktop
+                    .b-footer__mail-wrapper
+                        h2.b-title.b-title--footer Остались вопросы? Напишите нам.
+                        +b-button-help({
+                            description: 'Обратиться'
+                        })
+                        a.b-footer__button
+                            span.b-footer__button-descr Помощь в подборе
+                            img.b-footer__button-img(src="../../img/icons/longnext.svg", alt="help")
             .b-footer__contact
-                ul.b-footer__social
-                    li.b-footer__item
-                        a.b-footer__link(href="javascript:void(0);")
-                            img.b-footer__img(src="../../img/icons/instagram.svg", alt="")
-                    li.b-footer__item
-                        a.b-footer__link(href="javascript:void(0);")
-                            img.b-footer__img(src="../../img/icons/viber.svg", alt="")
-                    li.b-footer__item
-                        a.b-footer__link(href="javascript:void(0);")
-                            img.b-footer__img(src="../../img/icons/youtube.svg", alt="")
-                .b-footer__callback Заказать звонок
-                a(href="tel:+78005513240").b-footer__number 8 800 551 32 40
+                .b-container.b-container--no-padd-desktop
+                    ul.b-footer__social
+                        li.b-footer__item
+                            a.b-footer__link(href="javascript:void(0);")
+                                img.b-footer__img(src="../../img/icons/instagram.svg", alt="")
+                        li.b-footer__item
+                            a.b-footer__link(href="javascript:void(0);")
+                                img.b-footer__img(src="../../img/icons/viber.svg", alt="")
+                        li.b-footer__item
+                            a.b-footer__link(href="javascript:void(0);")
+                                img.b-footer__img(src="../../img/icons/youtube.svg", alt="")
+                    a(href="javascript:void(0);").b-footer__callback Заказать звонок
+                    a(href="tel:+78005513240").b-footer__number 8 800 551 32 40
             .b-footer__info
-                .b-footer__logo
-                    img(src="../../img/icons/logo-white.svg", alt="logo")
-                .b-footer__description © 20201 Дверные технологии. Все права защищены. Чувашская республика, Цивильский район, пос. Молодежный, ул. Заводская 1Г
-                .b-footer__policy Политика конфиденциальности
-                .b-footer__kontora-logo
-                    img(src="../../img/icons/logo-kontora.svg", alt="")
+                .b-container.b-container--no-padd-desktop
+                        .b-footer__logo
+                            img.b-footer__logo-img(src="../../img/icons/logo-grey.svg", alt="logo")
+                        .b-footer__info-wrapper
+                            .b-footer__description
+                                p © 20201 Дверные технологии. Все права защищены.
+                                p Чувашская республика, Цивильский район, пос. Молодежный, ул. Заводская 1Г
+                            a(href="javascript:void(0);").b-footer__policy Политика конфиденциальности
+                            .b-footer__kontora-logo
+                                img(src="../../img/icons/logo-kontora.svg", alt="")
