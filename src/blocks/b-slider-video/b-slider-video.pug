@@ -1,0 +1,24 @@
+include ../../elements/b-button-white-green/b-button-white--left
+include ../../elements/b-button-white-green/b-button-green--right
+
+mixin b-slider-video()
+    .b-slider-video
+        picture.b-slider-video__picture
+            source(type="image/webp" srcset="../../img/content/mobile/10-slider/1/16-1x.webp 1x, ../../img/content/mobile/10-slider/1/16-2x.webp 2x")
+            source(type="image/jpeg" srcset="../../img/content/mobile/10-slider/1/16-1x.jpg 1x, ../../img/content/mobile/10-slider/1/16-2x.jpg 2x")
+            img.b-slider-video__img(src="../../img/content/mobile/10-slider/1/16-1x.jpg", width="375", height="211" alt="Дверь с красным и синим")
+        picture.b-slider-video__picture
+            source(type="image/webp" srcset="../../img/content/mobile/10-slider/1/16-1x.webp 1x, ../../img/content/mobile/10-slider/1/16-2x.webp 2x")
+            source(type="image/jpeg" srcset="../../img/content/mobile/10-slider/1/16-1x.jpg 1x, ../../img/content/mobile/10-slider/1/16-2x.jpg 2x")
+            img.b-slider-video__img(src="../../img/content/mobile/10-slider/1/16-1x.jpg", width="375", height="211" alt="Дверь с красным и синим")
+        picture.b-slider-video__picture
+            source(type="image/webp" srcset="../../img/content/mobile/10-slider/1/16-1x.webp 1x, ../../img/content/mobile/10-slider/1/16-2x.webp 2x")
+            source(type="image/jpeg" srcset="../../img/content/mobile/10-slider/1/16-1x.jpg 1x, ../../img/content/mobile/10-slider/1/16-2x.jpg 2x")
+            img.b-slider-video__img(src="../../img/content/mobile/10-slider/1/16-1x.jpg", width="375", height="211" alt="Дверь с красным и синим")
+        picture.b-slider-video__picture
+            source(type="image/webp" srcset="../../img/content/mobile/10-slider/1/16-1x.webp 1x, ../../img/content/mobile/10-slider/1/16-2x.webp 2x")
+            source(type="image/jpeg" srcset="../../img/content/mobile/10-slider/1/16-1x.jpg 1x, ../../img/content/mobile/10-slider/1/16-2x.jpg 2x")
+            img.b-slider-video__img(src="../../img/content/mobile/10-slider/1/16-1x.jpg", width="375", height="211" alt="Дверь с красным и синим")
+    .b-slider-video__button
+        +b-button-white--left
+        +b-button-green--right
