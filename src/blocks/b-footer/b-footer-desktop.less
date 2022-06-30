@@ -1,0 +1,55 @@
+.b-footer {
+    display: flex;
+    flex-wrap: wrap;
+    &__mail {
+        padding: 88px 200px 0 74px;
+        width: 33%;
+        order: 2;
+    }
+    &__contact {
+        padding: 58px 78px 64px 78px;
+        order: 4;
+        width: 33%;
+        & .b-container {
+            align-items: normal;
+            flex-direction: column;
+        }
+    }
+    &__social {
+        order: 1;
+        margin-bottom: 7px;
+    }
+    &__callback {
+        display: block;
+        order: 2;
+        margin-bottom: 13px;
+    }
+    &__number {
+        order: 3;
+    }
+    &__info {
+        order: 3;
+        width: 67%;
+    }
+    &__button {
+        margin-left: -74px;
+        margin-right: -200px;
+        width: calc(100% + 274px);
+        height: 158px;
+    }
+    &__info {
+        padding: 125px 72px 69px 200px;
+        &-wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: calc(100% - 85px);
+        }
+    }
+    &__description {
+        width: 100%;
+    }
+    &__policy {
+        margin-bottom: 0;
+    }
+}
