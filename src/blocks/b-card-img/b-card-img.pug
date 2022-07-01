@@ -1,66 +1,94 @@
 mixin b-card-img()
     .b-card-img.b-card-img__section
         .b-container.b-container--no-padd-mobile
-            a(href="javascript: void(0);", title="Go to directory").b-card-img--palitra
-                picture.b-card-picture--palitra
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/1/2-1x.webp 1x, ../img/content/mobile/2-door-types/1/2-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/1/2-1x.jpg 1x, ../img/content/mobile/2-door-types/1/2-2x.jpg 2x") 
-                    img(src="../img/content/mobile/2-door-types/1/2-1x.jpg")
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--palitra
+                picture.b-card-picture.b-card-picture--palitra
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/1/2-1x.webp 1x, ../img/content/mobile/2-door-types/1/2-2x.webp 2x" media="max-width: 767px") 
+                    source(type="image/jpg" srcset="../img/content/mobile/2-door-types/1/2-1x.jpg 1x, ../img/content/mobile/2-door-types/1/2-2x.jpg 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/tablet/2-door-types/1/1-1x.webp 1x, ../img/content/tablet/2-door-types/1/1-2x.webp 2x" media="max-width: 1023px") 
+                    source(type="image/jpg" srcset="../img/content/tablet/2-door-types/1/1-1x.jpg 1x, ../img/content/tablet/2-door-types/1/1-2x.jpg 2x" media="max-width: 1023px")
+                    source(type="image/webp" srcset="../img/content/desktop/2-door-types/1/1-1x.webp 1x, ../img/content/desktop/2-door-types/1/1-2x.webp 2x")
+                    source(type="image/jpg" srcset="../img/content/desktop/2-door-types/1/1-1x.jpg 1x, ../img/content/desktop/2-door-types/1/1-2x.jpg 2x")
+                    img(src="../img/content/desktop/2-door-types/1/1-1x.jpg" alt="Межкомнатные двери")
                 .b-title.b-title--palitra Межкомнатные двери
-                .b-card-icon--palitra
+                .b-card-icon.b-card-icon--palitra
                     img(src="../img/icons/go-to.svg", alt="go to")
-            a(href="javascript: void(0);", title="Go to directory").b-card-img--skorob
-                picture.b-card-picture--skorob 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/2/3-1x.webp 1x, ../img/content/mobile/2-door-types/2/3-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/2/3-1x.jpg 1x, ../img/content/mobile/2-door-types/2/3-2x.jpg 2x") 
-                    img(src="../img/content/mobile/2-door-types/2/3-1x.jpg")       
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--skorob
+                picture.b-card-picture.b-card-picture--skorob 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/2/3-1x.webp 1x, ../img/content/mobile/2-door-types/2/3-2x.webp 2x" media="max-width: 767px") 
+                    source(type="image/jpg" srcset="../img/content/mobile/2-door-types/2/3-1x.jpg 1x, ../img/content/mobile/2-door-types/2/3-2x.jpg 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/tablet/2-door-types/2/2-1x.webp 1x, ../img/content/tablet/2-door-types/2/2-2x.webp 2x" media="max-width: 1023px") 
+                    source(type="image/jpg" srcset="../img/content/tablet/2-door-types/2/2-1x.jpg 1x, ../img/content/tablet/2-door-types/2/2-2x.jpg 2x" media="max-width: 1023px")
+                    source(type="image/webp" srcset="../img/content/desktop/2-door-types/2/1-1x.webp 1x, ../img/content/desktop/2-door-types/2/1-2x.webp 2x")
+                    source(type="image/jpg" srcset="../img/content/desktop/2-door-types/2/1-1x.jpg 1x, ../img/content/desktop/2-door-types/2/1-2x.jpg 2x")   
+                    img(src="../img/content/desktop/2-door-types/2/1-1x.jpg" alt="Скрытые двери") 
                 .b-title.b-title--skorob Скрытые двери
-                .b-card-icon--skorob
+                .b-card-icon.b-card-icon--skorob
                     img(src="../img/icons/go-to.svg", alt="go to")   
-            a(href="javascript: void(0);", title="Go to directory").b-card-img--reiki
-                picture.b-card-picture--reiki 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/3/4-1x.webp 1x, ../img/content/mobile/2-door-types/3/4-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/3/4-1x.jpg 1x, ../img/content/mobile/2-door-types/3/4-2x.jpg 2x") 
-                    img(src="../img/content/mobile/2-door-types/3/4-1x.jpg")       
-                .b-title.b-title--reiki Декоративные двери
-                .b-card-icon--reiki
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--reiki
+                picture.b-card-picture.b-card-picture--reiki 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/3/4-1x.webp 1x, ../img/content/mobile/2-door-types/3/4-2x.webp 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/3/4-1x.jpg 1x, ../img/content/mobile/2-door-types/3/4-2x.jpg 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/tablet/2-door-types/3/3-1x.webp 1x, ../img/content/tablet/2-door-types/3/3-2x.webp 2x" media="max-width: 1023px") 
+                    source(type="image/jpg" srcset="../img/content/tablet/2-door-types/3/3-1x.jpg 1x, ../img/content/tablet/2-door-types/3/3-2x.jpg 2x" media="max-width: 1023px")
+                    source(type="image/webp" srcset="../img/content/desktop/2-door-types/3/1-1x.webp 1x, ../img/content/desktop/2-door-types/3/1-2x.webp 2x")
+                    source(type="image/jpg" srcset="../img/content/desktop/2-door-types/3/1-1x.jpg 1x, ../img/content/desktop/2-door-types/3/1-2x.jpg 2x")   
+                    img(src="../img/content/desktop/2-door-types/3/1-1x.jpg" alt="Декоративные рейки")       
+                .b-title.b-title--reiki Декоративные рейки
+                .b-card-icon.b-card-icon--reiki
                     img(src="../img/icons/go-to.svg", alt="go to")         
-            .b-card-descr--reiki В компании ESTET вы можете купить качественные межкомнатные двери. Богатый выбор является гарантией того, что вы обязательно найдете модель, оптимально соответствующую вашим потребностям, пожеланиям и финансовым возможностям.        
-            a(href="javascript: void(0);", title="Go to directory").b-card-block--sliding
+            .b-card-descr--reiki В компании ESTET вы можете купить качественные межкомнатные двери. Богатый выбор   является гарантией того, что вы обязательно найдете модель, оптимально соответствующую вашим           потребностям, пожеланиям и финансовым возможностям.        
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--sliding
                 .b-title.b-title--sliding Раздвижные двери
-                .b-card-icon--sliding
+                .b-card-icon.b-card-icon--sliding
                     img(src="../img/icons/go-to.svg", alt="go to")    
-            a(href="javascript: void(0);", title="Go to directory").b-card-img--holz
-                picture.b-card-picture--holz
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/5/6-1x.webp 1x, ../img/content/mobile/2-door-types/5/6-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/5/6-1x.jpg 1x, ../img/content/mobile/2-door-types/5/6-2x.jpg 2x") 
-                    img(src="../img/content/mobile/2-door-types/5/6-1x.jpg")
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--holz
+                picture.b-card-picture.b-card-picture--holz
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/5/6-1x.webp 1x, ../img/content/mobile/2-door-types/5/6-2x.webp 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/5/6-1x.jpg 1x, ../img/content/mobile/2-door-types/5/6-2x.jpg 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/tablet/2-door-types/5/5-1x.webp 1x, ../img/content/tablet/2-door-types/5/5-2x.webp 2x" media="max-width: 1023px") 
+                    source(type="image/jpg" srcset="../img/content/tablet/2-door-types/5/5-1x.jpg 1x, ../img/content/tablet/2-door-types/5/5-2x.jpg 2x" media="max-width: 1023px")
+                    source(type="image/webp" srcset="../img/content/desktop/2-door-types/5/1-1x.webp 1x, ../img/content/desktop/2-door-types/5/1-2x.webp 2x")
+                    source(type="image/jpg" srcset="../img/content/desktop/2-door-types/5/1-1x.jpg 1x, ../img/content/desktop/2-door-types/5/1-2x.jpg 2x")   
+                    img(src="../img/content/desktop/2-door-types/5/1-1x.jpg" alt="Входные двери")    
                 .b-title.b-title--holz Входные двери
-                .b-card-icon--holz
+                .b-card-icon.b-card-icon--holz
                     img(src="../img/icons/go-to.svg", alt="go to")  
-            .b-card-descr--holz Мы украшаем жизнь покупателей своей качественной продукцией, даря тепло и уют в их дома, создаем все условия для самореализации сотрудников и успеха партнеров.
-            a(href="javascript: void(0);", title="Go to directory").b-card-img--verso
-                picture.b-card-picture--verso
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/6/7-1x.webp 1x, ../img/content/mobile/2-door-types/6/7-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/6/7-1x.jpg 1x, ../img/content/mobile/2-door-types/6/7-2x.jpg 2x") 
-                    img(src="../img/content/mobile/2-door-types/5/6-1x.jpg")
-                .b-card-icon--verso
+            .b-card-descr.b-card-descr--holz Мы украшаем жизнь покупателей своей качественной продукцией, даря тепло и уют в их дома, создаем все условия для самореализации сотрудников и успеха партнеров.
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--verso
+                picture.b-card-picture.b-card-picture--verso
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/6/7-1x.webp 1x, ../img/content/mobile/2-door-types/6/7-2x.webp 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/6/7-1x.jpg 1x, ../img/content/mobile/2-door-types/6/7-2x.jpg 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/tablet/2-door-types/6/6-1x.webp 1x, ../img/content/tablet/2-door-types/5/5-2x.webp 2x" media="max-width: 1023px") 
+                    source(type="image/jpg" srcset="../img/content/tablet/2-door-types/6/6-1x.jpg 1x, ../img/content/tablet/2-door-types/6/6-2x.jpg 2x" media="max-width: 1023px")
+                    source(type="image/webp" srcset="../img/content/desktop/2-door-types/6/1-1x.webp 1x, ../img/content/desktop/2-door-types/6/1-2x.webp 2x")
+                    source(type="image/jpg" srcset="../img/content/desktop/2-door-types/6/1-1x.jpg 1x, ../img/content/desktop/2-door-types/6/1-2x.jpg 2x")   
+                    img(src="../img/content/desktop/2-door-types/6/1-1x.jpg" alt="Межкомнатные перегородки")      
+                .b-card-descr.b-card-icon.b-card-icon--verso
                     img(src="../img/icons/go-to.svg", alt="go to")     
                 .b-title.b-title--verso Межкомнатные перегородки 
-            a(href="javascript: void(0);", title="Go to directory").b-card-img--corso
-                picture.b-card-picture--corso 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/7/8-1x.webp 1x, ../img/content/mobile/2-door-types/7/8-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/7/8-1x.jpg 1x, ../img/content/mobile/2-door-types/7/8-2x.jpg 2x") 
-                    img(src="../img/content/mobile/2-door-types/7/8-1x.jpg")       
-                .b-card-icon--corso
-                    img(src="../img/icons/go-to.svg", alt="go to")   
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--corso
+                picture.b-card-picture.b-card-picture--corso 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/7/8-1x.webp 1x, ../img/content/mobile/2-door-types/7/8-2x.webp 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/7/8-1x.jpg 1x, ../img/content/mobile/2-door-types/7/8-2x.jpg 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/tablet/2-door-types/7/7-1x.webp 1x, ../img/content/tablet/2-door-types/7/7-2x.webp 2x" media="max-width: 1023px") 
+                    source(type="image/jpg" srcset="../img/content/tablet/2-door-types/7/7-1x.jpg 1x, ../img/content/tablet/2-door-types/7/7-2x.jpg 2x" media="max-width: 1023px")
+                    source(type="image/webp" srcset="../img/content/desktop/2-door-types/7/1-1x.webp 1x, ../img/content/desktop/2-door-types/7/1-2x.webp 2x")
+                    source(type="image/jpg" srcset="../img/content/desktop/2-door-types/7/1-1x.jpg 1x, ../img/content/desktop/2-door-types/7/1-2x.jpg 2x")   
+                    img(src="../img/content/desktop/2-door-types/7/1-1x.jpg" alt="Стеновые панели")            
+                .b-card-icon.b-card-icon--corso
+                        img(src="../img/icons/go-to.svg", alt="go to")   
                 .b-title.b-title--corso Стеновые панели
-            a(href="javascript: void(0);", title="Go to directory").b-card-img--janelle
-                picture.b-card-picture--janelle 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/8/9-1x.webp 1x, ../img/content/mobile/2-door-types/8/9-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/7/8-1x.jpg 1x, ../img/content/mobile/2-door-types/8/9-2x.jpg 2x") 
-                    img(src="../img/content/mobile/2-door-types/8/9-1x.jpg")       
-                .b-card-icon--janelle
+            a(href="javascript: void(0);", title="Go to directory").b-card-img.b-card-img--janelle
+                picture.b-card-picture.b-card-picture--janelle 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/8/9-1x.webp 1x, ../img/content/mobile/2-door-types/8/9-2x.webp 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/mobile/2-door-types/8/9-1x.jpg 1x, ../img/content/mobile/2-door-types/8/9-2x.jpg 2x" media="max-width: 767px") 
+                    source(type="image/webp" srcset="../img/content/tablet/2-door-types/8/8-1x.webp 1x, ../img/content/tablet/2-door-types/8/8-2x.webp 2x" media="max-width: 1023px") 
+                    source(type="image/jpg" srcset="../img/content/tablet/2-door-types/8/8-1x.jpg 1x, ../img/content/tablet/2-door-types/8/8-2x.jpg 2x" media="max-width: 1023px")
+                    source(type="image/webp" srcset="../img/content/desktop/2-door-types/8/1-1x.webp 1x, ../img/content/desktop/2-door-types/8/1-2x.webp 2x")
+                    source(type="image/jpg" srcset="../img/content/desktop/2-door-types/8/1-1x.jpg 1x, ../img/content/desktop/2-door-types/8/1-2x.jpg 2x")   
+                    img(src="../img/content/desktop/2-door-types/8/1-1x.jpg" alt="Плинтусы")           
+                .b-card-icon.b-card-icon--janelle
                     img(src="../img/icons/go-to.svg", alt="go to")
                 .b-title.b-title--janelle Плинтусы             
 
