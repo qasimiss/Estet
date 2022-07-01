@@ -1,0 +1,17 @@
+include ../../elements/b-button-white-green/b-button-white--left.pug
+include ../../elements/b-button-white-green/b-button-green--right.pug
+mixin b-technology()
+    section.b-technology
+        .b-container
+            h2.b-title.b-title--technology ESTET
+            p.b-subtitle.b-subtitle--technology Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
+            .b-technology__wrap
+                +b-button-white--left
+                +b-button-green--right
+            .b-technology__sliders
+                picture.b-picture.b-picture--technology
+                    source(type="image/webp" srcset="../img/content/mobile/7-technology/1/14-1x.webp 1x, ../img/content/mobile/7-technology/1/14-2x.webp 2x" media="(min-width: 320px)") 
+                    source(type="image/jpeg" srcset="../img/content/mobile/7-technology/1/14-1x.jpg 1x, ../img/content/mobile/7-technology/1/14-2x.jpg 2x" media="(min-width: 320px)")
+                    img(src="../img/content/desctop/7-technology/1/14-1x.jpg" width="1212", height="511")
+                strong.b-technology__caption Современные интерьерные решения
+                p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
