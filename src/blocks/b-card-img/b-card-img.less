@@ -1,9 +1,14 @@
-.b-card-img{
+.b-card-img__section{
     display: flex;
 }
-.b-card-img, .container{
+.b-title{
+    overflow: hidden;
+}
+.b-card-img, .b-container{
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .b-card-img--palitra{
     display: flex;
@@ -27,6 +32,7 @@
     width: 145px;
     font-size: 18px;
     line-height: 26px;
+    font-weight: 600;
     color:#ffffff;
     margin-left: auto;
     margin-top: 21px;
@@ -142,7 +148,7 @@
     margin-right: 25px;
     margin-bottom: 110px;
 }
-.b-card-block--sliding{
+.b-card-img--sliding{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,7 +160,7 @@
     padding-top: 30px;
     margin-bottom: 26px;
 }
-.b-card-block--sliding::before{
+.b-card-img--sliding::before{
     content:"";
     position: absolute;
     background-image:url(../../img/content/mobile/2-door-types/4/1.svg);
@@ -363,5 +369,4 @@
     margin-bottom: auto;
     margin-left: 70px;
     margin-top: 49px;
-
 }
