@@ -16,22 +16,22 @@ html(lang="en")
         include blocks/b-intro/b-intro.pug
         include blocks/b-card-img/b-card-img.pug
         include blocks/b-card-select/b-card-select.pug
-        //- include blocks/b-card-advertising/b-card-advertising.pug
+        include blocks/b-advertising/b-advertising-main.pug
         include blocks/b-card-guarantee/b-card-guarantee.pug
         include blocks/b-card-service/b-card-service.pug
         include blocks/b-card-video/b-card-video.pug
         include blocks/b-technology/b-technology.pug
         include blocks/b-card-news/b-card-news.pug
-        include blocks/b-card-address/b-card-address.pug
+        include blocks/b-card-address/b-card-address--buy.pug
         include blocks/b-footer/b-footer.pug
         +b-header
         +b-intro
         +b-card-img
         +b-card-select
-        //- +b-card-advertising
+        +b-advertising
         +b-card-guarantee
         +b-card-service
-        +b-card-video
+        +b-card-address--buy("Магазины")
         +b-technology
         +b-card-news
         +b-card-address
