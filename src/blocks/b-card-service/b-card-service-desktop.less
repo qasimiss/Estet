@@ -1,8 +1,13 @@
 .b-card-service__picture {
     display: block;
     position: relative;
-    width: 100%;
-    height: 255px;
+    width: 97%;
+    height: 561px;
+
+    margin-top: 110px;
+    margin-left: 19px;
+
+    object-fit: cover;
 }
 
 .b-card-service__picture::after {
@@ -27,16 +32,18 @@
 
 .b-card-service__content {
     position: relative;
-    margin: -30px 55px 90px 25px;
+    margin-left: 69px;
+    margin-top: -148px;
+    margin-right: 60px;
 
     z-index: 1;
 }
 
 .b-card-service__title {
-    margin-bottom: 9px;
+    margin-bottom: 30px;
 
     font-family: 'Open Sans';
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 57px;
 
@@ -44,11 +51,12 @@
 }
 
 .b-card-service__text {
-    margin-bottom: 37px;
+    margin-bottom: 59px;
+    margin-left: 2px;
 
     font-family: 'Open Sans';
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 38px;
 
     color: @grey3C;
 }
@@ -57,6 +65,8 @@
     display: block;
     margin: 0;
 
+    width: 250px;
+
     border: 1px solid @green47;
 
     transition: .1s;
@@ -64,4 +74,10 @@
 
 .b-button-rect:hover {
     background-color: lighten(@green47,20%);
+}
+
+@media (max-width: 1110px) {
+    .b-card-service__content {
+        width: 60%;
+    }
 }
