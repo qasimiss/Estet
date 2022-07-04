@@ -2,16 +2,35 @@ include ../../elements/b-button-white-green/b-button-white--left.pug
 include ../../elements/b-button-white-green/b-button-green--right.pug
 mixin b-technology()
     section.b-technology
-        .b-container
-            h2.b-title.b-title--technology ESTET
-            p.b-subtitle.b-subtitle--technology Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
+        .b-container.b-container--no-pad-left-techn.b-container--no-padd-table
+            .b-technology__container
+                h2.b-title.b-title--technology ESTET
+                p.b-subtitle.b-subtitle--technology Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
             .b-technology__wrap
                 +b-button-white--left
                 +b-button-green--right
-            .b-technology__sliders
-                picture.b-picture.b-picture--technology
-                    source(type="image/webp" srcset="../img/content/mobile/7-technology/1/14-1x.webp 1x, ../img/content/mobile/7-technology/1/14-2x.webp 2x" media="(min-width: 320px)") 
-                    source(type="image/jpeg" srcset="../img/content/mobile/7-technology/1/14-1x.jpg 1x, ../img/content/mobile/7-technology/1/14-2x.jpg 2x" media="(min-width: 320px)")
-                    img(src="../img/content/desctop/7-technology/1/14-1x.jpg" width="1212", height="511")
-                strong.b-technology__caption Современные интерьерные решения
-                p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
+            picture.b-picture.b-picture--technology
+                source(type="image/webp" srcset="../img/content/mobile/7-technology/1/14-1x.webp 1x, ../img/content/mobile/7-technology/1/14-2x.webp 2x" media="(max-width: 767px)") 
+                source(type="image/jpeg" srcset="../img/content/mobile/7-technology/1/14-1x.jpg 1x, ../img/content/mobile/7-technology/1/14-2x.jpg 2x" media="(max-width: 767px)")
+                source(type="image/webp" srcset="../img/content/tablet/7-technology/1/1-1x.webp 1x, ../img/content/tablet/7-technology/1/1-2x.webp 2x" media="(max-width: 1023px)") 
+                source(type="image/jpeg" srcset="../img/content/tablet/7-technology/1/1-1x.jpg 1x, ../img/content/tablet/7-technology/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                img(src="../img/content/desctop/7-technology/1/14-1x.jpg")
+            picture.b-picture.b-picture--mirror
+                source(type="image/webp" srcset="../img/content/tablet/7-technology/5/1-1x.webp 1x, ../img/content/tablet/7-technology/5/1-2x.webp 2x" media="(max-width: 1023px)") 
+                source(type="image/jpeg" srcset="../img/content/tablet/7-technology/5/1-1x.jpg 1x, ../img/content/tablet/7-technology/5/1-2x.jpg 2x" media="(max-width: 1023px)")
+                img(src="../img/content/desctop/7-technology/5/1-1x.jpg")
+            strong.b-technology__caption Современные интерьерные решения
+            p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
+            .b-technology__wrapper
+                h2.b-title.b-title--technology.b-title--company Компания
+                p.b-subtitle.b-subtitle--technology Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.
+            picture.b-picture.b-picture--lamp
+                source(type="image/webp" srcset="../img/content/tablet/7-technology/4/1-1x.webp 1x, ../img/content/tablet/7-technology/4/1-2x.webp 2x" media="(max-width: 1023px)") 
+                source(type="image/jpeg" srcset="../img/content/tablet/7-technology/4/1-1x.jpg 1x, ../img/content/tablet/7-technology/4/1-2x.jpg 2x" media="(max-width: 1023px)")
+                img(src="../img/content/desctop/7-technology/4/1-1x.jpg")
+            picture.b-picture.b-picture--vase
+                source(type="image/webp" srcset="../img/content/tablet/7-technology/2/1-1x.webp 1x, ../img/content/tablet/7-technology/2/1-2x.webp 2x" media="(max-width: 1023px)") 
+                source(type="image/jpeg" srcset="../img/content/tablet/7-technology/2/1-1x.jpg 1x, ../img/content/tablet/7-technology/2/1-2x.jpg 2x" media="(max-width: 1023px)")
+                img(src="../img/content/desctop/7-technology/2/1-1x.jpg")
+            .b-logo-green
+                 img(src="../img/icons/logo-white.svg" alt="")

@@ -3,6 +3,15 @@
         margin-bottom: 100px;
     }
     
+    .b-container--no-pad-left-techn {
+        display: flex;
+    }
+
+    .b-title--technology {
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+
     .b-subtitle--technology {
         font-size: 14px;
         line-height: 25px;
@@ -12,23 +21,23 @@
 
     .b-technology__wrap {
         display: flex;
-        justify-content: flex-end;
-    }
-
-    .b-technology__sliders {
-        padding: 0;
+        margin-left: auto;
     }
 
     .b-picture--technology {
         height:242px;
         width: 100%;
-        margin-bottom: 22px;
+        padding: 0;
     }
 
     .b-picture--technology img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .b-picture--mirror {
+        display: none;
     }
 
     .b-technology__caption {
@@ -38,6 +47,7 @@
         color: @grey3C;
         font-weight: 400;
         margin-bottom: 20px;
+        margin-top: 22px;
     }
 
     .b-technology__subcaption {
@@ -45,3 +55,7 @@
         line-height: 25px;
         color: @grey3C;
     } 
+
+    .b-picture--lamp,.b-picture--vase,.b-technology__wrapper,.b-logo-green {
+        display: none;
+    }
