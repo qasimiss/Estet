@@ -14,7 +14,11 @@ html(lang="en")
     body
         include blocks/b-card-doors/b-card-doors.pug
         include blocks/b-card-address/b-card-address--buy.pug
+        include elements/b-button-order-size/b-button-order-size.pug
+        include blocks/b-card-address/b-card-address--buy.pug
         .b-container--max-width
             +b-card-doors()
             +b-card-address--buy("Купить в вашем городе")
+            +b-button-order-size
+            +b-card-address--buy("Купить в вашем городе")]
 
