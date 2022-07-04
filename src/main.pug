@@ -24,18 +24,19 @@ html(lang="en")
         include blocks/b-card-news/b-card-news.pug
         include blocks/b-card-address/b-card-address--buy.pug
         include blocks/b-footer/b-footer.pug
-        +b-header
-        +b-intro
-        +b-card-img
-        +b-card-select
-        +b-advertising
-        .b-card-guarantee-service
-            +b-card-guarantee
-            +b-card-service
-        +b-card-video
-        +b-technology
-        +b-card-news
-        +b-card-address--buy("Магазины")
-        +b-footer
+        .b-container--max-width
+            +b-header
+            +b-intro
+            +b-card-img
+            +b-card-select
+            +b-advertising
+            .b-card-guarantee-service
+                +b-card-guarantee
+                +b-card-service
+            +b-card-video
+            +b-technology
+            +b-card-news
+            +b-card-address--buy("Магазины")
+            +b-footer
         script(src="script/script.js")
 
