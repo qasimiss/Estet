@@ -12,5 +12,9 @@ html(lang="en")
         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/collection-tablet-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/collection-desktop-style.css")
     body
+        include elements/b-button-order-size/b-button-order-size.pug
         include blocks/b-card-address/b-card-address--buy.pug
-        +b-card-address--buy("Купить в вашем городе")
+        .b-container--max-width
+            +b-button-order-size
+            +b-card-address--buy("Купить в вашем городе")
+            +b-card-address--buy("Купить в вашем городе")
