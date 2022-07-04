@@ -1,45 +1,3 @@
-<<<<<<< HEAD
-//- doctype html
-//- html(lang="en")
-//-     head
-//-         meta(charset="UTF-8")
-//-         meta(http-equiv="X-UA-Compatible", content="IE=edge")
-//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-//-         meta(name="description", content="")
-//-         title Document
-//-         link(rel="stylesheet" href="fonts/fonts.css")
-//-         link(rel="stylesheet" href="css/style.css")
-//-         link(rel="stylesheet" media="only screen and (min-width: 320px)" href="css/main-mobile-style.css")
-//-         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/main-tablet-style.css")
-//-         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/main-desktop-style.css")
-//-     body
-//-         include blocks/b-header/b-header.pug
-//-         include blocks/b-intro/b-intro.pug
-//-         include blocks/b-card-img/b-card-img.pug
-//-         include blocks/b-card-select/b-card-select.pug
-//-         include blocks/b-advertising/b-advertising-main.pug
-//-         include blocks/b-card-guarantee/b-card-guarantee.pug
-//-         include blocks/b-card-service/b-card-service.pug
-//-         include blocks/b-card-video/b-card-video.pug
-//-         include blocks/b-technology/b-technology.pug
-//-         include blocks/b-card-news/b-card-news.pug
-//-         include blocks/b-card-address/b-card-address--buy.pug
-//-         include blocks/b-footer/b-footer.pug
-//-         +b-header
-//-         +b-intro
-//-         +b-card-img
-//-         +b-card-select
-//-         +b-advertising
-//-         .b-card-guarantee-service
-//-             +b-card-guarantee
-//-             +b-card-service
-//-         +b-card-video
-//-         +b-technology
-//-         +b-card-news
-//-         +b-card-address--buy("Магазины")
-//-         +b-footer
-//-         script(src="script/script.js")
-=======
 doctype html
 html(lang="en")
     head
@@ -66,19 +24,19 @@ html(lang="en")
         include blocks/b-card-news/b-card-news.pug
         include blocks/b-card-address/b-card-address.pug
         include blocks/b-footer/b-footer.pug
-        +b-header
-        +b-intro
-        +b-card-img
-        +b-card-select
-        +b-advertising
-        .b-card-guarantee-service
-            +b-card-guarantee
-            +b-card-service
-        +b-card-video
-        +b-technology
-        +b-card-news
-        +b-card-address("Магазины")
-        +b-footer
+        .b-container--max-width
+            +b-header
+            +b-intro
+            +b-card-img
+            +b-card-select
+            +b-advertising
+            .b-card-guarantee-service
+                +b-card-guarantee
+                +b-card-service
+            +b-card-video
+            +b-technology
+            +b-card-news
+            +b-card-address--buy("Магазины")
+            +b-footer
         script(src="script/script.js")
->>>>>>> 9b91b7740da715867572db76985920171597bd79
 
