@@ -5,16 +5,18 @@
     width: 100%;
     z-index: 10;
     &__desktop {
-        display: none;
+        &-language, &-nav-product, &-wrapper {
+            display: none;
+        }
     }
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 76px;
         width: 100%;
+        padding: 18px 0 0;
     }
-    &__logo {
+    &__desktop-logo {
         height: 40px;
         width: 40px;
         & img {
