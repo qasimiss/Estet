@@ -13,5 +13,8 @@ html(lang="en")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/doors-desktop-style.css")
     body
         include blocks/b-card-doors/b-card-doors.pug
+        include blocks/b-card-address/b-card-address--buy.pug
         .b-container--max-width
             +b-card-doors()
+            +b-card-address--buy("Купить в вашем городе")
+

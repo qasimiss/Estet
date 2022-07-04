@@ -12,5 +12,6 @@ html(lang="en")
         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/collection-tablet-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/collection-desktop-style.css")
     body
+        include blocks/b-card-address/b-card-address--buy.pug
         .b-container--max-width
-
+            +b-card-address--buy("Купить в вашем городе")

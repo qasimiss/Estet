@@ -5,6 +5,7 @@ include ../../elements/b-button-show-map/b-button-show-map
 
 mixin b-card-address--buy(title)
     .b-card-address
+        +b-button-show-map
         .b-card-address__title.b-card-address__title-show-map= title
         +b-switcher-city
         .b-card-address__inner
@@ -16,4 +17,5 @@ mixin b-card-address--buy(title)
             +b-card-address__item
             +b-card-address__item
             +b-card-address__item
-        +b-link-and-switcher("Все салоны")
+        .b-link-and-switcher__container
+            +b-link-and-switcher("Все салоны")
