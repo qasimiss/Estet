@@ -6,19 +6,38 @@ mixin b-card-news()
             .b-card-news.b-card-news__button 
                 .b-card-news.b-card-news--news.active Новости
                 .b-card-news.b-card-news--tips Советы
+                a(href="javascript: void(0);", title="Go to Exhibitions").b-card-news.b-card-news--elegant
+                    picture.b-card-picture.b-card-picture--elegant   
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/3/1-1x.webp 1x, ../img/content/tablet/2-door-types/2/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/3/1-1x.jpg 1x, ../img/content/tablet/2-door-types/2/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        img(src="../img/content/mobile/8-news/3/1-1x.jpg" alt="Exhibitions")
+                    .b-title.b-title__item--elegant Новости и СМИ о нас
+                    .b-card-news.b-card-news__description-elegant Новые продукты ‒ коллекция покрытий Boonlayer Ultratex и Boonlayer Original
+                    .b-card-news.b-card-news--date 
+                        time(datetime="2021-01-25") 25  января 2021 г.
             .b-card-news.b-card-news--news
                 a(href="javascript: void(0);", title="Go to Exhibitions").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/1/15-1x.jpg" alt="Exhibitions")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/1/1-1x.webp 1x, ../img/content/tablet/8-news/1/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/1/1-1x.jpg 1x, ../img/content/tablet/8-news/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/1/1-1x.webp 1x, ../img/content/desktop/8-news/1/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/1/1-1x.jpg 1x, ../img/content/desktop/8-news/1/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/1/1-1x.jpg" alt="Exhibitions")
                     .b-title.b-title__item Выставки
                     .b-card-news.b-card-news__description ESTET на Международной строительно-интерьерной выставке Batimat 2020
                     .b-card-news.b-card-news--date 
                         time(datetime="2021-01-25") 25  января 2021 г.
                 a(href="javascript: void(0);", title="Go to news").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/2/1-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/2/1-1x.jpg" alt="news")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/2/1-1x.webp 1x, ../img/content/tablet/8-news/2/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/2/1-1x.jpg 1x, ../img/content/tablet/8-news/2/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/2/1-1x.webp 1x, ../img/content/desktop/8-news/2/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/2/1-1x.jpg 1x, ../img/content/desktop/8-news/2/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/2/1-1x.jpg" alt="News")
                     .b-title.b-title__item Новости и СМИ о нас
                     .b-card-news.b-card-news__description Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание
                     .b-card-news.b-card-news--date
@@ -30,34 +49,54 @@ mixin b-card-news()
                     .b-card-news.b-card-news--date  
                         time(datetime="2021-01-25") 25  января 2021 г.
                 a(href="javascript: void(0);", title="Go to Exhibitions").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/1/15-1x.jpg" alt="Exhibitions")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/1/1-1x.webp 1x, ../img/content/tablet/8-news/1/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/1/1-1x.jpg 1x, ../img/content/tablet/8-news/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/1/1-1x.webp 1x, ../img/content/desktop/8-news/1/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/1/1-1x.jpg 1x, ../img/content/desktop/8-news/1/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/1/1-1x.jpg" alt="Exhibitions")
                     .b-title.b-title__item Выставки
-                    .b-card-news.b-card-news__description ESTET на Международной строительно-интерьерной выставке Batimat 2020
+                    .b-card-news.b-card-news__description ESTET на Международной строительно-интерьерной выставке   Batimat 2020
                     .b-card-news.b-card-news--date 
                         time(datetime="2021-01-25") 25  января 2021 г.
                 a(href="javascript: void(0);", title="Go to news").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/2/1-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/2/1-1x.jpg" alt="news")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/2/1-1x.webp 1x, ../img/content/tablet/8-news/2/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/2/1-1x.jpg 1x, ../img/content/tablet/8-news/2/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/2/1-1x.webp 1x, ../img/content/desktop/8-news/2/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/2/1-1x.jpg 1x, ../img/content/desktop/8-news/2/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/2/1-1x.jpg" alt="News")
                     .b-title.b-title__item Новости и СМИ о нас
                     .b-card-news.b-card-news__description Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание
                     .b-card-news.b-card-news--date 
                         time(datetime="2021-01-25") 25  января 2021 г.
             .b-block-news.b-block-news--tips
                 a(href="javascript: void(0);", title="Go to Exhibitions").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/1/15-1x.jpg" alt="Exhibitions")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/1/1-1x.webp 1x, ../img/content/tablet/8-news/1/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/1/1-1x.jpg 1x, ../img/content/tablet/8-news/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/1/1-1x.webp 1x, ../img/content/desktop/8-news/1/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/1/1-1x.jpg 1x, ../img/content/desktop/8-news/1/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/1/1-1x.jpg" alt="Exhibitions")
                     .b-title.b-title__item Выставки
                     .b-card-news.b-card-news__description ESTET на Международной строительно-интерьерной выставке Batimat 2020
                     .b-card-news.b-card-news--date 
                         time(datetime="2021-01-25") 25  января 2021 г. 
                 a(href="javascript: void(0);", title="Go to news").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/2/1-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/2/1-1x.jpg" alt="news")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/2/1-1x.webp 1x, ../img/content/tablet/8-news/2/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/2/1-1x.jpg 1x, ../img/content/tablet/8-news/2/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/2/1-1x.webp 1x, ../img/content/desktop/8-news/2/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/2/1-1x.jpg 1x, ../img/content/desktop/8-news/2/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/2/1-1x.jpg" alt="News")
                     .b-title.b-title__item Новости и СМИ о нас
                     .b-card-news.b-card-news__description Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание
                     .b-card-news.b-card-news--date  
@@ -69,17 +108,27 @@ mixin b-card-news()
                     .b-card-news.b-card-news--date
                         time(datetime="2021-01-25") 25  января 2021 г.
                 a(href="javascript: void(0);", title="Go to Exhibitions").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/1/15-1x.jpg" alt="Exhibitions")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.webp 1x, ../img/content/mobile/8-news/1/15-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/1/15-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/1/1-1x.webp 1x, ../img/content/tablet/8-news/1/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/1/1-1x.jpg 1x, ../img/content/tablet/8-news/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/1/1-1x.webp 1x, ../img/content/desktop/8-news/1/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/1/1-1x.jpg 1x, ../img/content/desktop/8-news/1/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/1/1-1x.jpg" alt="Exhibitions")
                     .b-title.b-title__item Выставки
                     .b-card-news.b-card-news__description ESTET на Международной строительно-интерьерной выставке Batimat 2020
                     .b-card-news.b-card-news--date
                         time(datetime="2021-01-25") 25  января 2021 г.
                 a(href="javascript: void(0);", title="Go to news").b-card-news.b-card-news__item
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x") 
-                    source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/2/1-2x.jpg 2x") 
-                    img(src="../img/content/mobile/8-news/2/1-1x.jpg" alt="news")
+                    picture.b-card-picture.b-card-picture__item 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.webp 1x, ../img/content/mobile/8-news/2/1-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/mobile/8-news/2/1-1x.jpg 1x, ../img/content/mobile/8-news/1/15-2x.jpg 2x" media="(max-width: 767px)") 
+                        source(type="image/webp" srcset="../img/content/tablet/8-news/2/1-1x.webp 1x, ../img/content/tablet/8-news/2/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpg" srcset="../img/content/tablet/8-news/2/1-1x.jpg 1x, ../img/content/tablet/8-news/2/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="../img/content/desktop/8-news/2/1-1x.webp 1x, ../img/content/desktop/8-news/2/1-2x.webp 2x")
+                        source(type="image/jpg" srcset="../img/content/desktop/8-news/2/1-1x.jpg 1x, ../img/content/desktop/8-news/2/1-2x.jpg 2x")   
+                        img(src="../img/content/desktop/8-news/2/1-1x.jpg" alt="News")
                     .b-title.b-title__item Новости и СМИ о нас
                     .b-card-news.b-card-news__description Жалюзные межкомнатные двери AIR поражают стилем и притягивают внимание
                     .b-card-news.b-card-news--date
