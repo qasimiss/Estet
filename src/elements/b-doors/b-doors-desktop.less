@@ -1,0 +1,27 @@
+.b-doors {
+    width: 25%;
+    padding: 14px 53px 24px 16px;
+    background-color: transparent;
+    &:nth-child(4n+2), &:nth-child(4n+3) {
+        background-color: transparent;
+    }
+    &:nth-child(8n+1),
+    &:nth-child(8n+3),
+    &:nth-child(8n),
+    &:nth-child(8n+6) {
+        background-color: @whiteF7;
+    }
+
+    &__mark {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 3.18182px;
+        &-top {
+            margin-bottom: 13px;
+        }
+    }
+    &__img-background {
+        padding-left: 44px;
+        margin-bottom: 17px;
+    }
+}
