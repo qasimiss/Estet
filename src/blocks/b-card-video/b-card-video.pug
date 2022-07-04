@@ -1,23 +1,34 @@
 include ../../elements/b-card-video__item/b-card-video__item.pug
 include ../../elements/b-button-white-green/b-button-white--up.pug
 include ../../elements/b-button-white-green/b-button-green--down.pug
+include ../../elements/b-card-video-youtube/b-card-video-youtube.pug
 
 mixin b-card-video()
-    .b-card-video__title Видео обзор
-    picture.b-card-video__picture
-        source(type="image/webp" srcset="../../img/content/mobile/6-review/1/13-1x.webp 1x, ../../img/content/mobile/6-review/1/13-2x.webp 2x")
-        source(type="image/jpeg" srcset="../../img/content/mobile/6-review/1/13-1x.jpg 1x, ../../img/content/mobile/6-review/1/13-2x.jpg 2x")
-        img.b-card-video__img(src="../../img/content/mobile/6-review/1/13-1x.jpg", alt="woman talking about doors")
-    .b-card-video__box
-        .b-card-video__inner
-            +b-card-video__item ("Современный ремонт квартиры-студии!")
-            +b-card-video__item ("ESTET воплощает мечты")
-            +b-card-video__item ("Двери ESTET. Жизнь фабрики.")
-            +b-card-video__item ("Современный ремонт квартиры-студии!")
-            +b-card-video__item ("Современный ремонт квартиры-студии!")
-            +b-card-video__item ("ESTET воплощает мечты")
-            +b-card-video__item ("Двери ESTET. Жизнь фабрики.")
-            +b-card-video__item ("Современный ремонт квартиры-студии!")
-        .b-card-video__box-switcher
-            +b-button-white--up
-            +b-button-green--down
+    .b-card-video
+        .b-card-video__title Видео обзор
+        .b-card-video__grey
+        .b-card-video__container
+            picture.b-card-video__picture
+                source(type="image/webp" srcset="../../img/content/mobile/6-review/1/13-1x.webp 1x, ../../img/content/mobile/6-review/1/13-2x.webp 2x" media="max-width: 767px")
+                source(type="image/jpeg" srcset="../../img/content/mobile/6-review/1/13-1x.jpg 1x, ../../img/content/mobile/6-review/1/13-2x.jpg 2x" media="max-width: 767px")
+                source(type="image/webp" srcset="../../img/content/tablet/6-review/1/1-1x.webp 1x, ../../img/content/tablet/6-review/1/1-2x.webp 2x" media="max-width: 1023px")
+                source(type="image/jpeg" srcset="../../img/content/tablet/6-review/1/1-1x.jpg 1x, ../../img/content/tablet/6-review/1/1-2x.jpg 2x" media="max-width: 1023px")
+                source(type="image/webp" srcset="../../img/content/desktop/6-review/1/1-1x.webp 1x, ../../img/content/desktop/6-review/1/1-2x.webp 2x")
+                source(type="image/jpeg" srcset="../../img/content/desktop/6-review/1/1-1x.jpg 1x, ../../img/content/desktop/6-review/1/1-2x.jpg 2x")
+                img.b-card-video__img(src="../../img/content/desktop/6-review/1/1-1x.jpg", alt="woman talking about doors")
+            .b-card-video__box
+                .b-card-video__inner
+                    +b-card-video__item ("Современный ремонт квартиры-студии!")
+                    +b-card-video__item ("ESTET воплощает мечты")
+                    +b-card-video__item ("Двери ESTET. Жизнь фабрики.")
+                    +b-card-video__item ("Современный ремонт квартиры-студии!")
+                    +b-card-video__item ("Современный ремонт квартиры-студии!")
+                    +b-card-video__item ("ESTET воплощает мечты")
+                    +b-card-video__item ("Двери ESTET. Жизнь фабрики.")
+                    +b-card-video__item ("Современный ремонт квартиры-студии!")
+                .b-card-video__box-switcher
+                    .b-card-video__box-switcher-position
+                        +b-button-white--up
+                        +b-button-green--down
+                        +b-button-white--up
+            +b-card-video-youtube
