@@ -4,26 +4,35 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 0 90px 0 90px;
+        padding: 0 90px 0 135px;
         & a {
             color: @whiteFF;
             text-decoration: none;
         }
-        & ul {
-        }
         &-nav-product {
             display: flex;
             justify-content: space-between;
-            width: calc(50% - 57px / 2);
+            width: calc(50% - 110px);
+            padding-right: 80px;
             &-item {
                 font-size: 16px;
                 line-height: 19px;
             }
+            &-link {
+                border: none;
+                background-color: transparent;
+                color: @whiteFF;
+                font-size: 16px;
+                line-height: 19px;
+                padding-right: 11px;
+                text-decoration: none;
+            }
         }
         &-language {
-            width: 26px;
+            display: block;
+            margin-right: auto;
+            width: 29px;
             height: 26px;
-            margin-left: -120px;
         }
         &-logo {
             width: 57px;
@@ -32,19 +41,42 @@
         &-wrapper {
             display: flex;
             justify-content: space-between;
-            width: calc(50% - 57px / 2);
-            margin-right: -30px;
             align-items: center;
+            width: calc(50% - 110px);
+            padding-left: 25px;
         }
-        &__info {
+        &-info {
             display: flex;
             justify-content: space-around;
             width: 90%;
+            align-items: center;
+            &-product-link {
+                text-decoration: none;
+                color: @whiteFF;
+            }
         }
         &__choice {
             display: flex;
             justify-content: space-around;
             width: 50%;
+            &-item {
+                &--counter {
+                    position: relative;
+                    &::after {
+                        content: "100";
+                        position: absolute;
+                        left: 100%;
+                        bottom: 100%;
+                        padding: 0 5px;
+                        height: 16px;
+                        background-color: @green47;
+                        border-radius: 8px;
+                        font-size: 10px;
+                        line-height: 16px;
+                        color: @whiteFF;
+                    }
+                }
+            }
             &-link {
                 display: flex;
             }
@@ -52,13 +84,13 @@
     }
     &__wrapper {
         display: flex;
-        justify-content: space-between;
-        padding: 0 80px;
+        justify-content: center;
+        padding: 52px 80px 0;
     }
     &__search {
         display: none;
     }
-    &__logo {
-        display: none;
+    &__hamburger {
+        margin-left: auto;
     }
 }
