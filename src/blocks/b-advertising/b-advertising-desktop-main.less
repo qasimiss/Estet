@@ -1,14 +1,58 @@
 .b-card-advertising {
-    padding-top: 50px;
-    margin-left: -25px;
-    width: 1222px;
+    padding-top: 57px;
+    width: 100%px;
 }
 .b-picture--aside {
     margin-bottom: 15px;
-    height: 511px;
-    width: 1212px;
 }
 .b-picture--aside img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
+}
+
+.b-card-advertising__wrap {
+    right: 40%;
+    top: 15%;
+}
+
+.b-card-advertising__post {
+    position: absolute;
+    right: -115%;
+    top: 40%;
+    &--margin {
+        top: 20%;
+        right: -80%;
+    }
+    &--border {
+        padding-bottom: 7px;
+        border-bottom: 1px solid @whiteFF;
+    }
+}
+
+.b-card-advertising__title,.b-card-advertising__wrapper {
+    padding-left: 0;
+    padding-right: 55%;
+}
+
+.b-card-advertising__title {
+    padding-right: 5%;
+}
+
+.b-card-advertising__wrapper {
+    position: relative;
+}
+
+.b-card-advertising__stock {
+    position: absolute;
+    right: 0;
+    top: -130%;
+    color: @grey99;
+}
+
+.b-card-advertising .b-button-white--left {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%,0%);
 }
