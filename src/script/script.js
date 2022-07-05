@@ -5,3 +5,7 @@ const hamburger = document.querySelector(".b-header-main__hamburger"),
         hamburger.classList.toggle("active")
         navContainer.classList.toggle("active")
     }
+
+$(document).ready(function() {
+    $('.b-slider-video__picture').slick();
+})

@@ -15,6 +15,13 @@ html(lang="en")
         include blocks/b-intro-second/b-intro-second.pug
         include elements/b-button-order-size/b-button-order-size.pug
         include blocks/b-card-address/b-card-address--buy.pug
+        include blocks/b-slider-video/b-slider-video.pug
         .b-container--max-width
-        +b-intro-second
-            +b-card-address--buy("Купить в вашем городе")
+            //- +b-intro-second
+            //-     +b-card-address--buy("Купить в вашем городе")
+            +b-slider-video
+
+
+        script(src="script/jquery-3.6.0.min.js")
+        script(src="script/slick.min.js")
+        script(src="script/script.js")
