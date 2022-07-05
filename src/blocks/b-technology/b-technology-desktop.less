@@ -30,6 +30,7 @@
     grid-row-end: 2;
     height: 100%;
     width: 100%;
+    padding: 62px 112px 77px 67px;
 }
 
 .b-technology__wrapper {
@@ -42,6 +43,11 @@
     z-index: 2;
     background-color: @whiteFF;
     overflow: hidden;
+    padding: 58px 35px 58px 38px;
+}
+
+.b-title--company {
+    padding-top: 0;
 }
 
 .b-picture--lamp {
@@ -91,7 +97,11 @@
 
 .b-subtitle--technology {
     margin: 0;
+    font-size: 14px;
 }
+    &--padding {
+        padding: 0 112px 77px 0;
+    }
 
 .b-technology-logo--white {
     display: block;
@@ -163,4 +173,19 @@ color: @whiteFF;
     width: 50%;
     height: 50%;
     transform: translate(-50%,-50%);
+}
+
+@media (max-width: 1350px) {
+    .b-subtitle--technology{
+        font-size: 12px;
+}
+    .b-title--technology{
+        font-size: 24px;
+    }
+    .b-technology__wrapper {
+        padding: 5px 20px 0px 20px;
+    }
+    .b-technology__container {
+        padding: 30px 30px 0 30px;
+    }
 }
