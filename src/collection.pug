@@ -11,10 +11,19 @@ html(lang="en")
         link(rel="stylesheet" media="only screen and (min-width: 320px)" href="css/collection-mobile-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/collection-tablet-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/collection-desktop-style.css")
+        link(rel="stylesheet" href="css/slick.css")
+    
     body
         include blocks/b-intro-second/b-intro-second.pug
         include elements/b-button-order-size/b-button-order-size.pug
         include blocks/b-card-address/b-card-address--buy.pug
+        include blocks/b-slider-video/b-slider-video.pug
         .b-container--max-width
-        +b-intro-second
-            +b-card-address--buy("Купить в вашем городе")
+            //- +b-intro-second
+            //-     +b-card-address--buy("Купить в вашем городе")
+            +b-slider-video
+
+
+        script(src="script/jquery-3.6.0.min.js")
+        script(src="script/slick.min.js")
+        script(src="script/script.js")
