@@ -17,7 +17,11 @@
             &-item {
                 font-size: 16px;
                 line-height: 19px;
-            }
+                transition: transform 0.2s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                }
             &-link {
                 border: none;
                 background-color: transparent;
@@ -26,6 +30,7 @@
                 line-height: 19px;
                 padding-right: 11px;
                 text-decoration: none;
+                cursor: pointer;
             }
         }
         &-language {
@@ -33,6 +38,10 @@
             margin-right: auto;
             width: 29px;
             height: 26px;
+            transition: transform 0.2s;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         &-logo {
             width: 57px;
@@ -50,6 +59,13 @@
             justify-content: space-around;
             width: 90%;
             align-items: center;
+            &-item {
+                transition: transform 0.2s;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
             &-product-link {
                 text-decoration: none;
                 color: @whiteFF;
