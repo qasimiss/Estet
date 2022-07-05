@@ -1,4 +1,5 @@
 .b-card-address {
+    position: relative;
     justify-content: flex-start;
     padding-left: 200px;
     padding-bottom: 50px;
@@ -9,12 +10,54 @@
 }
 
 .b-button-show-map {
-    margin-left: auto;
-    margin-bottom: 23px;
+    display: none;
+}
+
+.b-card-address__img {
+    width: 1400px;
+}
+
+.b-card-address__picture {
+    margin-left: -200px;
+}
+
+.b-map-marker {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @whiteFF;
+}
+
+.b-map-marker__1 {
+    top: 246px;
+    left: 618px;
+}
+
+.b-map-marker__2 {
+    top: 285px;
+    left: 1068px;
+}
+
+.b-map-marker__3 {
+    top: 394px;
+    left: 830px;
+}
+
+.b-map-marker__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 23px;
+    height: 23px;
+
+    transform: translate(-50%, -50%);
 }
 
 .b-card-address__title {
     margin-bottom: 20px;
+    margin-right: 62px;
     padding-top: 62px;
 
     font-family: 'Open Sans';
