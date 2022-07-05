@@ -3,9 +3,9 @@ mixin b-header
     header.b-header-main
         .b-container.b-container--no-padd-desktop
             .b-header-main__wrapper
-                a.b-header-main__search
+                a.b-header-main__search(href="javascript:void(0);" title="search")
                     img(src="img/icons/glass-white.svg", alt="search")
-                a.b-header-main__desktop-language(href="javascript:void(0);")
+                a.b-header-main__desktop-language(href="javascript:void(0);" title="language")
                     img(src="../../img/icons/languge.svg", alt="language")
                 ul.b-header-main__desktop-nav-product
                     li.b-header-main__desktop-nav-product-item
@@ -19,7 +19,7 @@ mixin b-header
                                 option(value="Покупателям") Покупателям
                                 option(value="Покупателям") Покупателям
                     li.b-header-main__desktop-nav-product-item
-                        a(href="javascript:void(0);").b-header-main__desktop-nav-product-link Дизайнерам
+                        a.b-header-main__desktop-nav-product-link(href="javascript:void(0);" title="Дизайнерам") Дизайнерам
                 .b-header-main__desktop-logo
                     img(src="img/icons/logo-white.svg", alt="logo")
                 .b-header-main__desktop-wrapper
@@ -30,16 +30,16 @@ mixin b-header
                                 option(value="") Компания
                                 option(value="") Компания
                         li.b-header-main__desktop-info-item
-                            a(href="javascript:void(0);").b-header-main__desktop-info-product-link Где купить
+                            a(href="javascript:void(0);" title="Где купить").b-header-main__desktop-info-product-link Где купить
                     ul.b-header-main__desktop__choice
                         li.b-header-main__desktop__choice-item
-                            a.b-header-main__desktop__choice-link(href="javascript:void(0);")
+                            a.b-header-main__desktop__choice-link(href="javascript:void(0);" title="search")
                                 img.b-header-main__desktop__choice-img(src="../../img/icons/glass-white.svg", alt="search")
                         li.b-header-main__desktop__choice-item.b-header-main__desktop__choice-item--counter
-                            a.b-header-main__desktop__choice-link(href="javascript:void(0);")
+                            a.b-header-main__desktop__choice-link(href="javascript:void(0);" title="heart")
                                 img.b-header-main__desktop__choice-img(src="../../img/icons/heart-white.svg", alt="heart")
                         li.b-header-main__desktop__choice-item.b-header-main__desktop__choice-item--counter
-                            a.b-header-main__desktop__choice-link(href="javascript:void(0);")
+                            a.b-header-main__desktop__choice-link(href="javascript:void(0);" title="basket")
                                 img.b-header-main__desktop__choice-img(src="../../img/icons/basket-white.svg", alt="basket")
                 .b-header-main__hamburger
                     span.b-header-main__hamburger-line

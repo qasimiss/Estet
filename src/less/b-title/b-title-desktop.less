@@ -17,3 +17,33 @@
     }
 }
 
+    &--aside {
+        position: relative;
+        font-size: 18px;
+        line-height: 48px;
+        border-bottom: 1px solid @whiteEO;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform:rotate(45deg) translateY(-50%);
+            width: 6px;
+            height: 6px;
+            border: 1px solid @green47;
+            border-top: none;
+            border-left: none;
+        }
+        &:hover {
+            background-color: @green47;
+            color: @whiteFF;
+        }
+        &.active&::after{
+            transform:rotate(225deg) translateY(-50%);
+        }
+        &:hover&::after{
+            border-color: @whiteFF;
+        }
+    }
