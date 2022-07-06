@@ -26,21 +26,6 @@
         color: @grey3C;
     }
 
-    &__inner {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: start;
-
-        height: 660px;
-        width: 100%;
-
-        margin-top: 8px;
-        margin-bottom: 37px;
-
-        background-color: @whiteFF;
-        flex-direction: column;
-    }
-
     &__item {
         margin: 0;
         padding: 37px 0 0px 39px;
@@ -82,5 +67,21 @@
         width: 100%;
 
         margin-right: 84px;
+    }
+}
+
+.slick {
+    &-track {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: start;
+
+        height: 660px;
+
+        margin-top: 8px;
+        margin-bottom: 37px;
+
+        background-color: @whiteFF;
+        flex-direction: column;
     }
 }

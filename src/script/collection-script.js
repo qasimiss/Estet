@@ -10,5 +10,10 @@ $(document).ready(function() {
     $('.b-slider-video').slick({
         arrows: true,
         dots: true,
+        autoplay: true,
+        easing: "ease-in-out",
+        speed: 1000,
+        swipe: false,
+        waitForAnimate: false,
     });
 })
