@@ -10,18 +10,19 @@
     border-bottom: .5px solid fade(@whiteFF, 50%);
 
     background-color: @green47;
-}
 
-.b-card-video__item:hover {
-    border-bottom-color: fade(@whiteFF, 100%);
-}
 
-.b-card-video__item:hover .b-card-video__text{
-    color: fade(@whiteFF, 100%);
-}
+    &:hover {
+        border-bottom-color: fade(@whiteFF, 100%);
+    }
 
-.b-card-video__item:hover .b-card-video__icon {
-    opacity: 1;
+    &:hover .b-card-video__text{
+        color: fade(@whiteFF, 100%);
+    }
+
+    &:hover .b-card-video__icon {
+        opacity: 1;
+    }
 }
 
 .b-card-video__icon {
