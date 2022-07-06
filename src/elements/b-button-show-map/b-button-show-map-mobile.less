@@ -13,17 +13,20 @@
     background-color: @green47;
 
     transition: background-color .1s linear;
+
+    &:hover {
+        background-color: lighten(@green47, 20%);
+    }
+
+    &__img {
+        position: absolute;
+        top: 25%;
+        left: 8%;
+
+        width: 23px;
+        height: 30px;
+    }
 }
 
-.b-button-show-map:hover {
-    background-color: lighten(@green47, 20%);
-}
 
-.b-button-show-map__img {
-    position: absolute;
-    top: 25%;
-    left: 8%;
 
-    width: 23px;
-    height: 30px;
-}

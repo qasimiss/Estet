@@ -4,7 +4,6 @@
 
     margin-left: 25px;
 
-    font-family: 'Open Sans';
     font-size: 12px;
     font-weight: 400;
     line-height: 21px;
@@ -12,30 +11,25 @@
     color: @grey3C;
 
     transition: color .1s linear;
-}
 
-.b-card-video-youtube:hover {
-    color: @green47;
-}
+    &:hover {
+        color: @green47;
+    }
 
-.b-card-video-youtube__img {
-    display: block;
+    &__img {
+        width: 20px;
+        height: 18px;
 
-    width: 20px;
-    height: 18px;
+        padding-top: 2px;
+    }
 
-    padding-top: 2px;
-}
+    &__text {
+        width: 80%;
+        padding-left: 19px;
+    }
 
-.b-card-video-youtube__text {
-    width: 80%;
-    padding-left: 19px;
-}
-
-.b-card-video-youtube__text--bold {
-    font-family: 'Open Sans';
-    font-weight: 700;
-    text-decoration: underline;
-
-    color: @grey3C;
+    &__text--bold {
+        font-weight: 700;
+        text-decoration: underline;
+    }
 }
