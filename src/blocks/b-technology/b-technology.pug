@@ -18,13 +18,14 @@ mixin b-technology()
                     source(type="image/webp" srcset="img/content/desktop/7-technology/1/1-1x.webp 1x, img/content/desktop/7-technology/1/1-2x.webp 2x") 
                     source(type="image/jpeg" srcset="img/content/desktop/7-technology/1/1-1x.jpg 1x, img/content/desktop/7-technology/1/1-2x.jpg 2x")
                     img(src="img/content/desktop/7-technology/1/1-1x.jpg")
-            picture.b-picture.b-picture--mirror
-                source(type="image/webp" srcset="img/content/tablet/7-technology/5/1-1x.webp 1x, img/content/tablet/7-technology/5/1-2x.webp 2x" media="(min-width: 768px)") 
-                source(type="image/jpeg" srcset="img/content/tablet/7-technology/5/1-1x.jpg 1x, img/content/tablet/7-technology/5/1-2x.jpg 2x" media="(min-width: 768px)")
-                img(src="img/content/tablet/7-technology/5/1-1x.jpg")
-            strong.b-technology__caption Современные интерьерные решения
-            p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
-            .b-technology__wrapper
+            .b-technology-wrapper.b-technology-wrapper--mirror
+                picture.b-picture.b-picture--mirror
+                    source(type="image/webp" srcset="img/content/tablet/7-technology/5/1-1x.webp 1x, img/content/tablet/7-technology/5/1-2x.webp 2x" media="(min-width: 768px)") 
+                    source(type="image/jpeg" srcset="img/content/tablet/7-technology/5/1-1x.jpg 1x, img/content/tablet/7-technology/5/1-2x.jpg 2x" media="(min-width: 768px)")
+                    img(src="img/content/tablet/7-technology/5/1-1x.jpg")
+                strong.b-technology__caption Современные интерьерные решения
+                p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
+            .b-technology-wrapper.b-technology-wrapper--techn
                 a(class="b-technology-link-hover b-technology-link-hover--tech" href="javascript:void(0);")
                     img(class="b-oval-white" src="img/icons/oval-white.svg", alt="") 
                     img(class="b-oval-green" src="img/icons/oval-green.svg", alt="")
@@ -37,7 +38,7 @@ mixin b-technology()
                 .b-technology__post
                     h2.b-title.b-title--technology.b-title--company Компания
                     p.b-subtitle.b-subtitle--technology Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.
-            .b-wrap-lamp
+            .b-technology-wrapper.b-technology-wrapper--lamp
                 a(class="b-technology-link-hover b-technology-link-hover--lamp" href="javascript:void(0);")
                     img(class="b-oval-white" src="img/icons/oval-white.svg", alt="") 
                 picture.b-picture.b-picture--lamp
