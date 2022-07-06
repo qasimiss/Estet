@@ -1,30 +1,36 @@
 .b-card-select{
-    display: block;
+    display: flex;
     padding: 0 0 87px 100px;
     position: relative;
+    justify-content: space-between;
+    &__title {
+        margin: 0;
+        min-width: 334px;
+        width: 334px;
+        margin-bottom: 89px;
+        font-size: 48px;
+        line-height: 57px;
+    }
+    &__descr{
+        margin-left: 0;
+        min-width: 270px;
+        width: 270px;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+        margin-bottom: 331px;;
+    }
+    &-wrap {
+        max-width:375px;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        position: static;
+        align-self: flex-end;
+        margin-left: -25px;
+    }
 }
-.b-card-select__title h2 {
-    margin: 0;
-    min-width: 580px;
-    margin-bottom: 75px;
-    font-size: 48px;
-    line-height: 57px;
-}
-.b-card-select__descr{
-    margin-left: 0;
-    max-width: 270px;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    margin-bottom: 331px;;
-}
-.b-card-select-wrap {
-    display: inline-block;
-    height: 522px;
-    position: absolute;
-    right:0;
-    top:215px;
-}
+
 .b-card-select > .container > .b-button-rect {
     margin-bottom: 0;
     margin-left: 0;
