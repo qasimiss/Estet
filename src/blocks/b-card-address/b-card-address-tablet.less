@@ -8,6 +8,54 @@
     padding-bottom: 83px;
 
     background-color: @whiteF9;
+
+    &__picture {
+        display: none;
+    }
+
+    &__title {
+        width: 400px;
+
+        margin-bottom: 27px;
+        padding-top: 46px;
+
+        font-family: 'Open Sans';
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -.8px;
+        color: @grey3C;
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: start;
+
+        height: 660px;
+        width: 100%;
+
+        margin-top: 8px;
+        margin-bottom: 37px;
+
+        background-color: @whiteFF;
+        flex-direction: column;
+    }
+
+    &__item {
+        margin: 0;
+        padding: 37px 0 0px 39px;
+        box-sizing: content-box;
+
+        background-color: @whiteFF;
+
+        &:nth-child(n+5) {
+            padding-left: 70px;
+        }
+
+        &:last-child {
+            padding: 37px 0 0px 70px;
+        }
+    }
 }
 
 .b-button-show-map {
@@ -16,21 +64,8 @@
     right: 0;
 }
 
-.b-card-address__picture, .b-map-marker {
+.b-map-marker {
     display: none;
-}
-
-.b-card-address__title {
-width: 400px;
-
-    margin-bottom: 27px;
-    padding-top: 46px;
-
-    font-family: 'Open Sans';
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: -.8px;
-    color: @grey3C;
 }
 
 .b-switcher-city {
@@ -38,45 +73,14 @@ width: 400px;
     padding-right: 60px;
 }
 
-.b-card-address__inner {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: start;
-
-    height: 660px;
-    width: 100%;
-
-    margin-top: 8px;
-    margin-bottom: 37px;
-
-    background-color: @whiteFF;
-    flex-direction: column;
-}
-
-.b-card-address__item {
-    margin: 0;
-    padding: 37px 0 0px 39px;
-    box-sizing: content-box;
-
-    background-color: @whiteFF;
-}
-
-.b-card-address__item:nth-child(n+5) {
-    padding-left: 70px;
-}
-
-.b-card-address__item:last-child {
-    padding: 37px 0 0px 70px;
-}
-
-.b-link-and-switcher__container {
-    width: 100%;
-
-    margin-right: 84px;
-}
-
 .b-link-and-switcher {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    &__container {
+        width: 100%;
+
+        margin-right: 84px;
+    }
 }
