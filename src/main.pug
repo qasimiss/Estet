@@ -6,6 +6,9 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="description", content="")
         title Document
+        link(rel="preload" href="fonts/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin)
+        link(rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin)
+        link(rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin)
         link(rel="stylesheet" href="fonts/fonts.css")
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" media="only screen and (min-width: 320px)" href="css/main-mobile-style.css")
@@ -24,11 +27,10 @@ html(lang="en")
         include blocks/b-card-news/b-card-news.pug
         include blocks/b-card-address/b-card-address.pug
         include blocks/b-footer/b-footer.pug
-        
-        +b-header
-        +b-intro
         .b-container--max-width
-            +b-card-img
+            +b-header
+            +b-intro
+            +b-card__img
             +b-card-select
             +b-advertising
             section.b-card-guarantee-service

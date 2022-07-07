@@ -1,0 +1,116 @@
+.b-card-news{
+    & .b-container{
+        margin: 0 auto;
+        width: 100%;
+        padding-right: 0;
+    }
+    &__header{
+        width: 170px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 600;
+        color:@grey3C;
+    }
+    &__nav{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 41px;
+    }
+    &__button{
+        &-active{
+            width:85px;
+            height: 25px;
+            text-align: left;
+            border-bottom: 1px solid @greyCD;
+            &:active{
+                color:@green47;
+                border-color:@green47;
+            }
+        }
+        &-tips{
+            width:84px ;
+            padding-left: 22px;
+            border-bottom: 1px solid @greyCD;
+        }
+        &-switcher{
+            width: 325px;
+            margin-bottom: 67px;
+        }
+    }
+    &__elegant {
+        display: none;
+    }
+    &__news{
+        overflow:hidden;
+        width: 100%;
+        position: relative;
+        &::before{
+            content:"";
+            position: absolute;
+            width: 200px;
+            height:700px;
+            background: linear-gradient(to left, white 5%, transparent 100%);
+            top:0;
+            right: 0;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        width: 100%;
+    }
+    &__item{
+        display: block;
+        margin-right: 36px;
+        margin-bottom: 28px;
+        text-decoration: none;
+        width: 100%;
+        &:nth-child(6){
+            display: none;
+        }
+        & img{
+            margin-bottom: 17px;
+            object-fit:cover;
+            width: 100%;
+        }
+        &-video{
+            text-decoration: none;
+            & img{
+                margin-bottom: 50px;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    &__picture {
+        display: block;
+        width: 100%;
+    }
+    &__description{
+        width: 258px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 23px;
+        color:@grey3C;
+        margin-bottom: 24px;
+        &-six{
+            width: 258px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 23px;
+            color:@grey3C;
+            margin-bottom: 47px;
+        }
+    }
+    &__date{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color:@grey99;
+    }
+    &__tips{
+       display:none;
+    }
+}   
+
+
