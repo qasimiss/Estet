@@ -1,0 +1,13 @@
+include b-button-collection__button.pug
+mixin b-button-collection
+    nav.b-button-collection__navigation
+        +b-button-collection__button({
+            descr: "Коллекции",
+            class: ""
+        })
+        +b-button-collection__button({
+            descr: "Все двери",
+            class: "active"
+        })
+        .b-button-collection__filter
+            img(src="img/icons/filter.svg", alt="filter")

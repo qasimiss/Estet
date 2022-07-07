@@ -6,10 +6,36 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="description", content="")
         title Document
+        link(rel="preload" href="fonts/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin)
+        link(rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin)
+        link(rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin)
         link(rel="stylesheet" href="fonts/fonts.css")
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" media="only screen and (min-width: 320px)" href="css/collection-mobile-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/collection-tablet-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/collection-desktop-style.css")
-    body
+        link(rel="stylesheet" href="css/slick.css")
 
+    body
+        include elements/b-button-order-size/b-button-order-size.pug
+        include blocks/b-intro-second/b-intro-second.pug
+        include blocks/b-price/b-price.pug
+        include blocks/b-card-address/b-card-address--buy.pug
+        include blocks/b-slider-video/b-slider-video.pug
+        include blocks/b-card-modern/b-card-modern.pug
+        include blocks/b-card-address/b-card-address.pug
+        .b-container--max-width
+            +b-intro-second
+                +b-card-address--buy("Купить в вашем городе")
+            +b-price
+            +b-slider-video
+            +b-card-modern
+            +b-card-address--buy("Купить в вашем городе")
+
+
+
+
+
+        script(src="script/jquery-3.6.0.min.js")
+        script(src="script/slick.min.js")
+        script(src="script/collection-script.js")

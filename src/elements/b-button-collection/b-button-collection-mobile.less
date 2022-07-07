@@ -1,0 +1,28 @@
+.b-button-collection {
+    &__navigation {
+        display: flex;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+    &__button {
+        background-color: @whiteF9;
+        border: none;
+        font-size: 14px;
+        line-height: 35px;
+        height: 40px;
+        width: 102px;
+        color: @grey3C;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: @green47;
+        }
+        &.active {
+            background-color: @green47;
+            color: @whiteFF;
+        }
+    }
+    &__filter {
+        display: none;
+    }
+}

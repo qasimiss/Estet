@@ -1,16 +1,16 @@
-include ../b-intro__footer/b-intro__footer.pug
+include ../../elements/b-intro__footer/b-intro__footer.pug
 
 mixin b-intro()
     .b-intro
         picture(class="b-intro-image-wrap")
-            source(class="b-intro-image" type="image/webp" srcset="../../img/content/mobile/1-intro/1/1-1x.webp 1x, ../../img/content/mobile/1-intro/1/1-2x.webp 2x," media="(max-width: 767px)")
-            source(class="b-intro-image" type="image/jpeg" srcset="../../img/content/mobile/1-intro/1/1-1x.jpg 1x, ../../img/content/mobile/1-intro/1/1-2x.jpg 2x" media="(max-width: 767px)")
-            source(class="b-intro-image" type="image/webp" srcset="../../img/content/tablet/1-intro/1/1-1x.webp 1x, ../../img/content/tablet/1-intro/1/1-2x.webp 2x," media="(max-width: 1023px)")
-            source(class="b-intro-image" type="image/jpeg" srcset="../../img/content/tablet/1-intro/1/1-2x.jpg 1x, ../../img/content/tablet/1-intro/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-            source(class="b-intro-image" type="image/webp" srcset="../../img/content/desktop/1-intro/1/1-1x.webp 1x, ../../img/content/desktop/1-intro/1/1-2x.webp 2x,")
-            source(class="b-intro-image" type="image/jpeg" srcset="../../img/content/desktop/1-intro/1/1-2x.jpg 1x, ../../img/content/desktop/1-intro/1/1-2x.jpg 2x")
-            img(class="b-intro-image" alt="intro-door" src="../../img/content/mobile/1-intro/1/1-1x.jpg")
+            source(class="b-intro-image" type="image/webp" srcset="img/content/mobile/1-intro/1/1-1x.webp 1x, img/content/mobile/1-intro/1/1-2x.webp 2x," media="(max-width: 767px)")
+            source(class="b-intro-image" type="image/jpeg" srcset="img/content/mobile/1-intro/1/1-1x.jpg 1x, img/content/mobile/1-intro/1/1-2x.jpg 2x" media="(max-width: 767px)")
+            source(class="b-intro-image" type="image/webp" srcset="img/content/tablet/1-intro/1/1-1x.webp 1x, img/content/tablet/1-intro/1/1-2x.webp 2x," media="(max-width: 1023px)")
+            source(class="b-intro-image" type="image/jpeg" srcset="img/content/tablet/1-intro/1/1-2x.jpg 1x, img/content/tablet/1-intro/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+            source(class="b-intro-image" type="image/webp" srcset="img/content/desktop/1-intro/1/1-1x.webp 1x, img/content/desktop/1-intro/1/1-2x.webp 2x,")
+            source(class="b-intro-image" type="image/jpeg" srcset="img/content/desktop/1-intro/1/1-2x.jpg 1x, img/content/desktop/1-intro/1/1-2x.jpg 2x")
+            img(class="b-intro-image" alt="intro-door" src="img/content/mobile/1-intro/1/1-1x.jpg")
         .b-container.b-container--no-padd-desktop
-            h1(class="b-title b-title-intro") Stylish doors
-            div(class="b-subtitle b-subtitle-intro") сделанные по новейшим разработкам из проверенных материалов
+            h1(class="b-title b-title--intro") Stylish doors
+            div(class="b-subtitle b-subtitle--intro") сделанные по новейшим разработкам из проверенных материалов
         +b-intro__footer

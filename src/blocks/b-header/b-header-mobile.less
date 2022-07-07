@@ -3,17 +3,20 @@
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 10px;
+    z-index: 10;
     &__desktop {
-        display: none;
+        &-language, &-nav-product, &-wrapper {
+            display: none;
+        }
     }
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 76px;
+        width: 100%;
+        padding: 18px 0 0;
     }
-    &__logo {
+    &__desktop-logo {
         height: 40px;
         width: 40px;
         & img {
@@ -22,43 +25,38 @@
         }
     }
     &__hamburger {
-        display: block;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
         position: relative;
-        background-color: @whiteFF;
         width: 29px;
-        height: 2px;
+        height: 20px;
         z-index: 5;
-        &::after {
-            content: "";
-            position: absolute;
-            background-color: @whiteFF;
-            top: -7px;
-            left: 0;
+        cursor: pointer;
+        &-line {
+            position: relative;
+            display: block;
             width: 29px;
             height: 2px;
-            transition: transform, 0.2s;
-        }
-        &::before {
-            content: "";
-            position: absolute;
             background-color: @whiteFF;
-            top: 7px;
-            left: 0;
-            width: 20px;
-            height: 2px;
             transition: transform, 0.2s;
+            &:last-child {
+                width: 20px;
+            }
         }
-        &.active {
+        &.active &-line:nth-child(2){
             background-color: transparent;
-            &::after {
-                transform: rotate(45deg);
-                top: 0;
-            }
-            &::before {
-                width: 29px;
-                transform: rotate(-45deg);
-                top: 0;
-            }
+        }
+        &.active &-line:first-child{
+            position: absolute;
+            transform: translateY(-50%) rotate(45deg);
+            top: 50%;
+        }
+        &.active &-line:last-child {
+            position: absolute;
+            width: 29px;
+            transform: translateY(-50%) rotate(-45deg);
+            top: 50%;
         }
     }
     & li a {

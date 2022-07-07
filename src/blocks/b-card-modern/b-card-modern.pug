@@ -1,35 +1,95 @@
 include ../../elements/b-link-and-switcher/b-link-and-switcher.pug
+include b-modern.pug
 mixin b-card-modern
-    .b-card-modern.b-card-modern__section   
-        .b-container.b-conteiner--modern 
+    .b-card-modern.b-card-modern__section
+        .b-container.b-conteiner--modern
             H2.b-title.b-title--modern  Современные технологии Lamell Tech ®
             .b-card-modern.b-card-modern__description--main.b-card-modern__description Инновационная технология изготовления бруса, применяемого в конструкции дверного полотна фабрикой ESTET. Брус изготавливается из отдельных реек, благодаря применению специальных смол, обеспечивается соединение реек на молекулярном уровне.
-            +b-link-and-switcher("Все технологи") 
-            a(href="javascript: void(0);", title="View options").b-card-modern.b-card-modern__item
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/1/17-1x.webp 1x, ../img/content/mobile/11-materials/1/17-2x.webp 2x") 
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/1/17-1x.jpg 1x, ../img/content/mobile/11-materials/1/17-2x.jpg 2x") 
-                img(src="../img/content/mobile/11-materials/1/17-1x.jpg" alt="materials")
-                .b-title.b-title__item--modern Termofix
-                .b-card-modern.b-card-modern__description Технология обеспечивает высокие изолирующие свойства за счет жесткой фиксации минерального утеплителя в полотне.
-            a(href="javascript: void(0);", title="View options").b-card-modern.b-card-modern__item--long.b-card-modern__item
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/2/1-1x.webp 1x, ../img/content/mobile/11-materials/2/1-2x.webp 2x") 
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/2/1-1x.jpg 1x, ../img/content/mobile/11-materials/2/1-2x.jpg 2x") 
-                img(src="../img/content/mobile/11-materials/2/1-1x.jpg" alt="materials")
-                .b-title.b-title__item--modern iSecurity
-                .b-card-modern.b-card-modern__description Комплексная система защиты дверного блока от взлома разрушающими и вандальными методами
-            a(href="javascript: void(0);", title="View options").b-card-modern.b-card-modern__item
-                img(src="../img/content/mobile/11-materials/3/1.svg" alt="materials")
-                .b-title.b-title__item--modern Q-system
-                .b-card-modern.b-card-modern__description Технология дополнительной звукоизоляции, способная обеспечить максимально необходимый уровень комфорта
-            a(href="javascript: void(0);", title="View options").b-card-modern.b-card-modern__item--long.b-card-modern__item
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/4/1-1x.webp 1x, ../img/content/mobile/11-materials/4/1-2x.webp 2x") 
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/4/1-1x.jpg 1x, ../img/content/mobile/11-materials/4/1-2x.jpg 2x") 
-                img(src="../img/content/mobile/11-materials/4/1-1x.jpg" alt="materials")
-                .b-title.b-title__item--modern ProfileSet
-                .b-card-modern.b-card-modern__description Технология обеспечивает высокую прочность конструкции.
-            a(href="javascript: void(0);", title="View options").b-card-modern.b-card-modern__item
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/5/1-1x.webp 1x, ../img/content/mobile/11-materials/5/1-2x.webp 2x") 
-                source(type="image/webp" srcset="../img/content/mobile/11-materials/5/1-1x.jpg 1x, ../img/content/mobile/11-materials/5/1-2x.jpg 2x") 
-                img(src="../img/content/mobile/11-materials/5/1-1x.jpg" alt="materials")
-                .b-title.b-title__item--modern SQDR
-                .b-card-modern.b-card-modern__description Технология обеспечивает высокие изолирующие свойства за счет жесткой фиксации минерального утеплителя в полотне.
+            +b-link-and-switcher("Все технологии")
+            +b-modern([
+                {
+                    modification: "",
+                    imgWebpMediaMax767X1: "img/content/mobile/11-materials/1/17-1x.webp",
+                    imgWebpMediaMax767X2: "img/content/mobile/11-materials/1/17-2x.webp",
+                    imgJpgMediaMax767X1: "img/content/mobile/11-materials/1/17-1x.jpg",
+                    imgJpgMediaMax767X2: "img/content/mobile/11-materials/1/17-2x.jpg",
+                    imgWebpMediaMax1023X1: "",
+                    imgWebpMediaMax1023X2: "",
+                    imgJpgMediaMax1023X1: "",
+                    imgJpgMediaMax1023X2: "",
+                    imgWebpMediaMaxDeskX1: "",
+                    imgWebpMediaMaxDeskX2: "",
+                    imgjpgMediaMaxDeskX1: "",
+                    imgjpgMediaMaxDeskX2: "",
+                    title: "Termofix",
+                    descr: "Технология обеспечивает высокие изолирующие свойства за счет жесткой фиксации минерального утеплителя в полотне."
+                },
+                {
+                    modification: "b-card-modern__item--long",
+                    imgWebpMediaMax767X1: "img/content/mobile/11-materials/2/1-1x.webp",
+                    imgWebpMediaMax767X2: "img/content/mobile/11-materials/2/1-2x.webp",
+                    imgJpgMediaMax767X1: "img/content/mobile/11-materials/2/1-1x.jpg",
+                    imgJpgMediaMax767X2: "img/content/mobile/11-materials/2/1-2x.jpg",
+                    imgWebpMediaMax1023X1: "",
+                    imgWebpMediaMax1023X2: "",
+                    imgJpgMediaMax1023X1: "",
+                    imgJpgMediaMax1023X2: "",
+                    imgWebpMediaMaxDeskX1: "",
+                    imgWebpMediaMaxDeskX2: "",
+                    imgjpgMediaMaxDeskX1: "",
+                    imgjpgMediaMaxDeskX2: "",
+                    title: "iSecurity",
+                    descr: "Комплексная система защиты дверного блока от взлома разрушающими и вандальными методами"
+                },
+                {
+                    modification: "",
+                    imgWebpMediaMax767X1: "img/content/mobile/11-materials/4/1-1x.webp",
+                    imgWebpMediaMax767X2: "img/content/mobile/11-materials/4/1-2x.webp",
+                    imgJpgMediaMax767X1: "img/content/mobile/11-materials/4/1-1x.jpg",
+                    imgJpgMediaMax767X2: "img/content/mobile/11-materials/4/1-2x.jpg",
+                    imgWebpMediaMax1023X1: "",
+                    imgWebpMediaMax1023X2: "",
+                    imgJpgMediaMax1023X1: "",
+                    imgJpgMediaMax1023X2: "",
+                    imgWebpMediaMaxDeskX1: "",
+                    imgWebpMediaMaxDeskX2: "",
+                    imgjpgMediaMaxDeskX1: "",
+                    imgjpgMediaMaxDeskX2: "",
+                    title: "Q-system",
+                    descr: "Технология дополнительной звукоизоляции, способная обеспечить максимально необходимый уровень комфорта"
+                },
+                {
+                    modification: "b-card-modern__item--long",
+                    imgWebpMediaMax767X1: "img/content/mobile/11-materials/3/1.svg",
+                    imgWebpMediaMax767X2: "img/content/mobile/11-materials/3/1.svg",
+                    imgJpgMediaMax767X1: "img/content/mobile/11-materials/3/1.svg",
+                    imgJpgMediaMax767X2: "img/content/mobile/11-materials/3/1.svg",
+                    imgWebpMediaMax1023X1: "img/content/mobile/11-materials/3/1.svg",
+                    imgWebpMediaMax1023X2: "img/content/mobile/11-materials/3/1.svg",
+                    imgJpgMediaMax1023X1: "img/content/mobile/11-materials/3/1.svg",
+                    imgJpgMediaMax1023X2: "img/content/mobile/11-materials/3/1.svg",
+                    imgWebpMediaMaxDeskX1: "img/content/mobile/11-materials/3/1.svg",
+                    imgWebpMediaMaxDeskX2: "img/content/mobile/11-materials/3/1.svg",
+                    imgjpgMediaMaxDeskX1: "img/content/mobile/11-materials/3/1.svg",
+                    imgjpgMediaMaxDeskX2: "img/content/mobile/11-materials/3/1.svg",
+                    title: "ProfileSet",
+                    descr: "Технология обеспечивает высокую прочность конструкции."
+                },
+                {
+                    modification: "",
+                    imgWebpMediaMax767X1: "img/content/mobile/11-materials/5/1-1x.webp",
+                    imgWebpMediaMax767X2: "img/content/mobile/11-materials/5/1-2x.webp",
+                    imgJpgMediaMax767X1: "img/content/mobile/11-materials/5/1-1x.jpg",
+                    imgJpgMediaMax767X2: "img/content/mobile/11-materials/5/1-2x.jpg",
+                    imgWebpMediaMax1023X1: "",
+                    imgWebpMediaMax1023X2: "",
+                    imgJpgMediaMax1023X1: "",
+                    imgJpgMediaMax1023X2: "",
+                    imgWebpMediaMaxDeskX1: "",
+                    imgWebpMediaMaxDeskX2: "",
+                    imgjpgMediaMaxDeskX1: "",
+                    imgjpgMediaMaxDeskX2: "",
+                    title: "SQDR",
+                    descr: "Технология обеспечивает высокие изолирующие свойства за счет жесткой фиксации минерального утеплителя в полотне."
+                },
+            ])

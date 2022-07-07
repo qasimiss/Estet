@@ -1,0 +1,115 @@
+.b-card-address {
+    position: relative;
+    justify-content: flex-start;
+    padding-left: 200px;
+    padding-bottom: 50px;
+
+    background-color: @whiteF9;
+
+    overflow: hidden;
+
+    &__img {
+        width: 1400px;
+    }
+
+    &__picture {
+        margin-left: -200px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        margin-right: 62px;
+        padding-top: 62px;
+
+        font-family: 'Open Sans';
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -1.1px;
+        color: @grey3C;
+    }
+
+    &__inner {
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+        height: 0;
+        min-height: 206px;
+
+        margin-left: 0;
+        margin-bottom: 28px;
+    }
+
+    &__item {
+        flex-shrink: 0;
+
+        padding: 48px 0 0 70px;
+        box-sizing: content-box;
+
+        background-color: @whiteFF;
+
+        &:first-child {
+            padding-left: 39px;
+        }
+
+        &:last-child {
+            padding: 49px 37px 38px 43px;
+        }
+    }
+}
+
+.b-button-show-map {
+    display: none;
+}
+
+.b-map-marker {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @whiteFF;
+
+    &__1 {
+        top: 246px;
+        left: 618px;
+    }
+
+    &__2 {
+        top: 285px;
+        left: 1068px;
+    }
+
+    &__3 {
+        top: 394px;
+        left: 830px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 23px;
+        height: 23px;
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+.b-switcher-city {
+    margin-bottom: 28px;
+    margin-left: 135px;
+    padding-top: 77px;
+
+}
+
+.b-link-and-switcher {
+    justify-content: end;
+
+    &__container {
+        margin-right: 200px;
+    }
+
+    &__box {
+        margin-left: 68px;
+    }
+}

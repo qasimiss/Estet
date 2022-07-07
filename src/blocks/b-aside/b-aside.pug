@@ -1,0 +1,47 @@
+mixin b-aside
+    .b-aside
+        .b-aside__header
+            a(href="").b-aside__logo
+                img.b-aside__logo-img(src="img/icons/logo-white.svg", alt="logo")
+            .b-aside__header-wrapper
+                a.b-aside__btn(href="javascript:void(0);")
+                    img.b-aside__btn-img(src="img/icons/shape.svg", alt="shape")
+                a.b-aside__search(href="javascript:void(0);")
+                    img.b-aside__search-img(src="img/icons/glass-black.svg", alt="search")
+                a.b-aside__number-link(href="tel:+78005513240") 8 800 551 32 40
+        nav.b-aside__wrapper-btn
+            button.b-aside__collection Коллекции
+            button.b-aside__collection.active Все двери
+        nav.b-aside__filter
+            h2.b-title.b-title--aside.active КОЛЛЕКЦИИ
+            ul.b-aside__list
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  bliss
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  urban
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  perfect
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  sonata
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  novella
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  mio
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  ways
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  royal
+                li.b-aside__item
+                    a.b-aside__link(href="javascript:void(0);")  perfect volume
+            h2.b-title.b-title--aside СТИЛЬ
+            ul.b-aside__list
+            h2.b-title.b-title--aside ЦВЕТА
+            ul.b-aside__list
+            h2.b-title.b-title--aside ОТДЕЛКА
+            ul.b-aside__list
+            h2.b-title.b-title--aside ЦЕНА
+            ul.b-aside__list
+            button.b-aside__reset Сбросить все
+            .b-aside__stock
+                input.b-aside__checkbox(type="checkbox" id="stock" name="stock")
+                label.b-aside__checkbox-label(for="stock") Только по акции

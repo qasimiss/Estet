@@ -1,0 +1,30 @@
+.b-switcher-city {
+
+    &--white {
+        display: flex;
+    }
+
+    &__icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    &__inner--white {
+        padding-left: 13px;
+        padding-right: 5px;
+        margin-top: -3px;
+
+        font-size: 14px;
+        color: @whiteFF;
+
+        border: none;
+
+        background-color: inherit;
+
+        transition: color .1s linear;
+    }
+
+    &__inner--white:hover {
+        color: lighten(@green47, 20%);
+    }
+}
