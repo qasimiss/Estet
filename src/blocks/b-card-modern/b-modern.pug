@@ -1,0 +1,13 @@
+mixin b-modern(name)
+    each item in name
+        a.b-card-modern.b-card-modern__item(href="javascript: void(0);", title="View options", class= item.modification)
+            picture
+                source(type="image/webp" srcset= item.imgWebpMediaMax767X1+' 1x,'+item.imgWebpMediaMax767X2+' 2x' media="(max-width: 767px)")
+                source(type="image/jpg" srcset= item.imgJpgMediaMax767X1+' 1x,'+item.imgJpgMediaMax767X2+' 2x' media="(max-width: 767px)")
+                source(type="image/webp" srcset= item.imgWebpMediaMax1023X1+' 1x,'+item.imgWebpMediaMax1023X2+' 2x' media="(max-width: 1023px)")
+                source(type="image/jpg" srcset= item.imgJpgMediaMax1023X1+' 1x,'+item.imgJpgMediaMax1023X2+' 2x' media="(max-width:1023px)")
+                source(type="image/webp" srcset= item.imgWebpMediaMaxDeskX1+' 1x,'+item.imgWebpMediaMaxDeskX2+' 2x')
+                source(type="image/jpg" srcset= item.imgjpgMediaMaxDeskX1+' 1x,'+item.imgjpgMediaMaxDeskX2+' 2x')
+                img.b-doors__img(src= item.imgjpgMediaMaxDeskX1 alt="doors")
+            .b-title.b-title__item--modern !{item.title}
+            .b-card-modern.b-card-modern__description !{item.descr}

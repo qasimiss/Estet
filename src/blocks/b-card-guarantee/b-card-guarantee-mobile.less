@@ -1,24 +1,18 @@
 .b-card-guarantee {
-    &-service {
-        display: flex;
-        position: relative;
-    }
-
     &__box {
-        padding-top: 38px;
-        margin-right: 12px;
+        display: flex;
 
-        background: linear-gradient(@whiteF2, @whiteFF);
+        padding-top: 100px;
+
+        background-color: @whiteFF;
     }
 
     &__grad {
-        position: relative;
+        width: 155px;
+        height: 245px;
 
-        width: 167px;
-        height: 324px;
-
-        padding-top: 45px;
-        padding-left: 33px;
+        padding-top: 52px;
+        padding-left: 28px;
 
         font-family: 'Lora';
         font-size: 150px;
@@ -30,22 +24,20 @@
         background: linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
         border-width: 15px;
         clip-path: polygon(
-                    0 0, 0 0, 100% 44px,
+                    0 0, 0 0, 100% 40px,
                     100% calc(100% - 20px), 100% 100%,
                     20px 100%, 0 100%, 0 0);
     }
 
     &__title-box {
-        position: absolute;
-        top: 274px;
-        left: 50px;
-
         align-self: flex-end;
         margin-left: 32px;
+        margin-bottom: 3px;
     }
 
     &__title {
-        display: none;
+        margin-bottom: 3px;
+
         font-family: 'Lora';
         font-size: 60px;
         font-weight: 700;
@@ -55,8 +47,10 @@
     }
 
     &__subtitle {
+        margin-bottom: -2px;
+
         font-family: 'Open Sans';
-        font-size: 48px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 1;
 
@@ -64,27 +58,27 @@
     }
 
     &__content {
-        margin: 27px 15px 0 82px;
+        margin: 51px 26px 56px 25px;
 
-        text-align: start;
+        text-align: end;
     }
 
     &__text {
-        margin-bottom: 41px;
+        margin-bottom: 28px;
 
         font-family: 'Open Sans';
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 38px;
+        line-height: 25px;
 
         color: @grey3C;
     }
 
     &__link {
         font-family: 'Open Sans';
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
-        line-height: 38px;
+        line-height: 25px;
 
         color: @green47;
 

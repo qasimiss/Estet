@@ -3,13 +3,8 @@
     &__picture {
         display: block;
         position: relative;
-        width: calc(100% - 19px);
-        height: 561px;
-
-        margin-top: 110px;
-        margin-left: 19px;
-
-        object-fit: cover;
+        width: 100%;
+        height: 255px;
 
         &::after {
             content: "";
@@ -34,18 +29,16 @@
 
     &__content {
         position: relative;
-        margin-left: 69px;
-        margin-top: -148px;
-        margin-right: 60px;
+        margin: -30px 55px 90px 25px;
 
         z-index: 1;
     }
 
     &__title {
-        margin-bottom: 30px;
+        margin-bottom: 9px;
 
         font-family: 'Open Sans';
-        font-size: 60px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 57px;
 
@@ -53,12 +46,11 @@
     }
 
     &__text {
-        margin-bottom: 59px;
-        margin-left: 2px;
+        margin-bottom: 37px;
 
         font-family: 'Open Sans';
-        font-size: 16px;
-        line-height: 38px;
+        font-size: 14px;
+        line-height: 25px;
 
         color: @grey3C;
     }
@@ -66,9 +58,6 @@
 
 .b-button-rect {
     display: block;
-    margin: 0;
-
-    width: 250px;
 
     border: 1px solid @green47;
 
