@@ -15,6 +15,7 @@
         height: 73%;
         margin-bottom: 0;
         width: 40%;
+        position: relative;
     }
     &__container {
         height: 36.5%;
@@ -109,17 +110,21 @@
         bottom: 25%;
         right: 20%;
     }
+    &--grass {
+        top: 20%;
+        left: 10%;
+    }
 }
 
 .b-technology-link-hover--tech:hover ~ .b-picture--techn {
     transform: translateX(-100%);
     display: block;
-    z-index: 1000;
 }
 
 .b-technology-link-hover--tech:hover ~ .b-technology__post{
     background-color: @green47;
     color: white;
+    transform: translateY(-100%);
 }
 
 .b-content-vase {
@@ -202,6 +207,30 @@
     width: 50%;
     height: 50%;
     transform: translate(-50%,-50%);
+}
+
+.b-technology-post--grass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    background-color: @green47;
+    width: 50%;
+    height: 100%;
+    color: @whiteFF;
+    transition: transform 0.9s ease-in-out,opacity 0.3s ease-in-out;
+    transform: translateX(0);
+    opacity: 0;
+}
+
+.b-technology__caption,.b-technology__subcaption {
+    color: inherit;
+}
+
+.b-technology-link-hover--grass:hover ~ .b-technology-post--grass {
+    transform: translateX(100%);
+    opacity: 1;
+    display: block;
 }
 
 @media (max-width: 1350px) {
