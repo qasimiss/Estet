@@ -1,12 +1,58 @@
 .b-container--technology {
-    display: grid;
-    grid-template-columns: 15% 25% 20% 20% 20%;
-    grid-template-rows: 36% 36% 27%;
+    height: 100vh;
+    position: relative;
     overflow: hidden;
 }
 
 .b-technology {
     width: 100%;
+    &__wrap-grass {
+        z-index: 150;
+        height: 73vh;
+        margin-bottom: 0;
+        width: 40%;
+    }
+    &__container {
+        height: 36vh;
+        width: 40%;
+        order: 2;
+        padding: 62px 112px 77px 67px;
+    }
+    &__post {
+        width: 100%;
+        padding: 58px 35px 58px 38px;
+        transition: background-color 0.4s ease-in-out,color  0.5s ease-in-out;
+        height: 100%;
+    }
+}
+.b-technology-wrapper {
+    // width: 100%;
+    &--techn {
+        width: 20%;
+        display: block;
+        height: 37vh;
+        order: 3;
+        z-index: 200;
+        background-color: @whiteFF;
+        transition: background-color 0.4s ease-in-out;
+        position: absolute;
+        top: 36vh;
+        left: 40%;
+        padding-left: 0;
+    }
+    &--lamp {
+        width: 40%;
+        z-index: 0;
+        order: 5;
+        transform: translate(0px, -34vh);
+        margin-bottom: 0;
+        height: 64vh;
+    }
+    &--mirror {
+        width: 20%;
+        height: 36vh;
+    }
+    
 }
 
 .b-picture {
@@ -21,24 +67,15 @@
         margin-bottom: 0;
     }
     &--mirror {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
         width: 100%;
         height: 100%;
     }
     &--techn {
         display: none;
-        width: 66%;
-        height: 332px;
-        position: absolute;
-        top: 0;
-        left: 0;
+        width: 655px;
         z-index: 600;
-        // overflow: hidden;
-        transform: translateX(-100%);
-        transition: transform 0.5s ease-in-out;
+        transform: translateX(0%);
+        transition: transform 0.9s ease-in-out;
     }
     &--vase {
         z-index: 1;
@@ -48,123 +85,9 @@
     }
     &--lamp {
         transition: transform 0.9s ease-in-out;
-        height: calc(100% - (15px));
+        height: 573px;
         overflow: hidden;
     }
-}
-
-.b-technology__wrap-grass {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    z-index: 150;
-    margin-bottom: 0;
-}
-
-.b-technology__container {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    height: 174px;
-    width: 100%;
-    padding: 62px 112px 77px 67px;
-}
-
-.b-technology__wrapper {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    width: 100%;
-    height: 100%;
-    z-index: 120;
-    background-color: @whiteFF;
-    // overflow: hidden;
-    transition: background-color 0.4s ease-in-out;
-    position: relative;
-    padding-left: 0;
-}
-
-.b-technology__post {
-    width: 33%;
-    padding: 58px 35px 58px 38px;
-    transition: background-color 0.4s ease-in-out,color  0.5s ease-in-out;
-    height: 100%;
-    margin-left: auto;
-}
-
-.b-technology-link-hover--tech:hover ~ .b-picture--techn {
-    transform: translateX(0%);
-    display: block;
-    z-index: 1000;
-}
-
-
-.b-technology-link-hover--tech:hover ~ .b-technology__post{
-    background-color: @green47;
-    color: white;
-}
-
-.b-technology-link-hover--tech:hover .b-picture--techn {
-    display: block;
-    transform: translateX(-10%);
-    z-index: 1900;
-}
-
-.b-title--company {
-    padding-top: 0;
-}
-
-.b-content-vase {
-    display: none;
-}
-
-.b-wrap-lamp {
-    width: 100%;
-    height: 600px; 
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    z-index: 0;
-    position: relative;
-    margin-bottom: 0;
-}
-
-.b-logo-wrap {
-    width: 100%;
-    height: 100%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    position: relative;
-}
-
-.b-wrap-vase {
-    width: 100%;
-    height: 100%;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    z-index: 0;
-    position: relative;
-}
-
-.b-subtitle--technology {
-    margin: 0;
-    font-size: 14px;
-    color: inherit;
-}
-    &--padding {
-        padding: 0 112px 77px 0;
-    }
-
-.b-technology-logo--white {
-    display: block;
 }
 
 .b-technology-link-hover {
@@ -187,14 +110,57 @@
     }
 }
 
+.b-technology-link-hover--tech:hover ~ .b-picture--techn {
+    transform: translateX(-100%);
+    display: block;
+    z-index: 1000;
+}
+
+.b-technology-link-hover--tech:hover ~ .b-technology__post{
+    background-color: @green47;
+    color: white;
+}
+
+.b-content-vase {
+    display: none;
+}
+
+.b-logo-wrap {
+    width: 15%;
+    height: 28vh;
+    position: relative;
+    order: 3;
+}
+
+.b-wrap-vase {
+    width: 45%;
+    height: 27vh;
+    z-index: 0;
+    order: 4;
+    position: relative;
+}
+
+.b-subtitle--technology {
+    margin: 0;
+    font-size: 14px;
+    color: inherit;
+}
+    &--padding {
+        padding: 0 112px 77px 0;
+    }
+
+.b-technology-logo--white {
+    display: block;
+}
+
 .b-hover-quality {
     background-color: @green47;
     width: 100%;
-    height: 45.5%;
+    height: 27vh;
     padding: 45px 39px 45px 52px;
     z-index: -1;
     position: absolute;
-    bottom: 0;
+    bottom: 3vh;
     left: 0;
     opacity: 0;
     transform: translateY(100%);
@@ -209,7 +175,7 @@
 
 .b-technology-link-hover:hover ~ .b-hover-quality {
     transform: translateY(0%);
-    z-index: 20;
+    z-index: 1000;
     opacity: 1;
     display: block;
 }
@@ -223,6 +189,7 @@
 }
 
 .b-oval-white {
+    display: block;
     position: relative;
     box-shadow: 0 0 10px 10px @whiteFF;
 }
@@ -243,7 +210,7 @@
     .b-title--technology{
         font-size: 24px;
     }
-    .b-technology__wrapper {
+    .b-technology__post {
         padding: 5px 20px 0px 20px;
     }
     .b-technology__container {

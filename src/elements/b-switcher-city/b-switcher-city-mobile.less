@@ -1,29 +1,27 @@
 .b-switcher-city {
     display: flex;
-    align-items: center;
-}
 
-.b-switcher-city__icon {
-    width: 26px;
-    height: 26px;
-}
+    &__icon {
+        width: 26px;
+        height: 26px;
+    }
 
-.b-switcher-city__inner {
-    padding-left: 13px;
-    padding-right: 5px;
-    margin-top: -3px;
+    &__inner {
+        padding-left: 13px;
+        padding-right: 5px;
+        margin-top: -3px;
 
-    font-family: 'Open Sans';
-    font-size: 14px;
-    color: @green47;
+        font-size: 14px;
+        color: @green47;
 
-    border: none;
+        border: none;
 
-    background-color: inherit;
+        background-color: inherit;
 
-    transition: color .1s linear;
-}
+        transition: color .1s linear;
+    }
 
-.b-switcher-city__inner:hover {
-    color: lighten(@green47, 20%);
+    &__inner:hover {
+        color: lighten(@green47, 20%);
+    }
 }
