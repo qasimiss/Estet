@@ -1,20 +1,24 @@
 .b-container--technology {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
 
 .b-technology {
-    width: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    max-width: 1600px;
+    max-height: 900px;
     &__wrap-grass {
         z-index: 150;
-        height: 73vh;
+        height: 73%;
         margin-bottom: 0;
         width: 40%;
         position: relative;
     }
     &__container {
-        height: 36vh;
+        height: 36.5%;
         width: 40%;
         order: 2;
         padding: 62px 112px 77px 67px;
@@ -27,17 +31,16 @@
     }
 }
 .b-technology-wrapper {
-    // width: 100%;
     &--techn {
         width: 20%;
         display: block;
-        height: 37vh;
+        height: 36.5%;
         order: 3;
         z-index: 200;
         background-color: @whiteFF;
         transition: background-color 0.4s ease-in-out;
         position: absolute;
-        top: 36vh;
+        top: 36.5%;
         left: 40%;
         padding-left: 0;
     }
@@ -45,15 +48,14 @@
         width: 40%;
         z-index: 0;
         order: 5;
-        transform: translate(0px, -34vh);
+        transform: translate(0px, -57.5%);
         margin-bottom: 0;
-        height: 64vh;
+        height: 63.5%;
     }
     &--mirror {
         width: 20%;
-        height: 36vh;
+        height: 36.5%;
     }
-
 }
 
 .b-picture {
@@ -86,7 +88,6 @@
     }
     &--lamp {
         transition: transform 0.9s ease-in-out;
-        height: 573px;
         overflow: hidden;
     }
 }
@@ -132,14 +133,14 @@
 
 .b-logo-wrap {
     width: 15%;
-    height: 28vh;
+    height: 27%;
     position: relative;
     order: 3;
 }
 
 .b-wrap-vase {
     width: 45%;
-    height: 27vh;
+    height: 27%;
     z-index: 0;
     order: 4;
     position: relative;
@@ -161,11 +162,11 @@
 .b-hover-quality {
     background-color: @green47;
     width: 100%;
-    height: 27vh;
+    height: 42.5%;
     padding: 45px 39px 45px 52px;
     z-index: -1;
     position: absolute;
-    bottom: 3vh;
+    bottom: 0;
     left: 0;
     opacity: 0;
     transform: translateY(100%);
@@ -180,13 +181,13 @@
 
 .b-technology-link-hover:hover ~ .b-hover-quality {
     transform: translateY(0%);
-    z-index: 1000;
+    z-index: 1;
     opacity: 1;
     display: block;
 }
 
 .b-technology-link-hover:hover ~ .b-picture--lamp {
-    transform: translateY(-49%);
+    transform: translateY(-53%);
     z-index: 22;
     opacity: 1;
     display: block;
