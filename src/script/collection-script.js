@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".b-header-main__hamburger"),
+const hamburger = document.querySelector(".b-header-doors__hamburger"),
       navContainer = document.querySelector(".b-hamburger-main");
 
 $(hamburger).on('click', function() {

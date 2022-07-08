@@ -5,9 +5,13 @@ include ../../elements/b-link-and-switcher/b-link-and-switcher
 mixin b-card-address(title)
     section.b-card-address
         .b-card-address__title-box
-            .b-card-address__title= title
+            h2.b-title--card-address= title
             .b-switcher-city__position
-                +b-switcher-city
+                +b-switcher-city({
+                    modificationElements: "",
+                    modificationSelect: "",
+                    imgGeo: "img/icons/geo-green.svg"
+                })
         .b-card-address__inner
             +b-card-address__item
             +b-card-address__item
