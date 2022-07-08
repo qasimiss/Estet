@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".b-header-main__hamburger"),
-      navContainer = document.querySelector(".b-hamburger-main");
+      navContainer = document.querySelector(".b-hamburger");
 
 $(hamburger).on('click', function() {
     hamburger.classList.toggle("active")

@@ -1,4 +1,4 @@
-.b-hamburger-main {
+.b-hamburger {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     width: 385px;
     height: 100vh;
     background-color: @green47;
-    overflow: auto;
+    overflow-y: auto;
     z-index: 50;
     &::-webkit-scrollbar-track {
         border: 1px solid #000;
@@ -26,7 +26,7 @@
     &.active {
         left: 0;
     }
-    &__nav-search {
+    &__header {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -39,7 +39,7 @@
             height: 75px;
         }
     }
-    &__geo {
+    &__header-item--geo {
         fill: @whiteFF;
     }
     &__button {
@@ -75,6 +75,7 @@
         border: 1px solid @whiteFF;
         border-left: none;
         border-right: none;
+        height: 69px;
         &-link {
             position: relative;
             display: flex;
@@ -109,7 +110,7 @@
             }
         }
     }
-    &__nav-menu {
+    &__menu {
         min-height: 600px;
         width: 100%;
         padding: 64px 25px 64px 60px;
@@ -148,11 +149,12 @@
                 margin-right: -25px;
                 width: 315px;
                 height: 112px;
+                overflow: hidden;
             }
-            &-designers {
+            &-item--designers {
                 background-image: url(../img/content/mobile/0-header/plaster.png);
             }
-            &-address {
+            &-item--address {
                 background-color: @whiteFF;
             }
             &-link {
