@@ -16,6 +16,7 @@ html(lang="en")
         link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/doors-desktop-style.css")
     body
         include elements/b-button-order-size/b-button-order-size.pug
+        include blocks/b-header-doors/b-header-doors.pug
         include blocks/b-intro-second/b-intro-second.pug
         include blocks/b-card-doors/b-card-doors.pug
         include blocks/b-card-address/b-card-address--buy.pug
@@ -25,6 +26,7 @@ html(lang="en")
         include blocks/b-card-modern/b-card-modern.pug
         include blocks/b-card-address/b-card-address.pug
         .b-container--max-width
+            +b-header-doors
             +b-aside
             +b-intro-second
                 +b-card-address--buy("Купить в вашем городе")

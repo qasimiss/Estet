@@ -18,6 +18,7 @@ html(lang="en")
 
     body
         include elements/b-button-order-size/b-button-order-size.pug
+        include blocks/b-header-doors/b-header-doors.pug
         include blocks/b-intro-second/b-intro-second.pug
         include blocks/b-price/b-price.pug
         include blocks/b-card-address/b-card-address--buy.pug
@@ -25,6 +26,7 @@ html(lang="en")
         include blocks/b-card-modern/b-card-modern.pug
         include blocks/b-card-address/b-card-address.pug
         .b-container--max-width
+            +b-header-doors
             +b-intro-second
                 +b-card-address--buy("Купить в вашем городе")
             +b-price
