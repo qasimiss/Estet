@@ -1,8 +1,11 @@
 include b-mixin-catalog/b-sonata.pug
 include b-mixin-catalog/b-renaissance.pug
+include ../../elements/b-button-collection/b-button-collection.pug
 mixin b-price 
-    section.b-price
-        .b-price__wrap
+    section.b-price.b-container
+        .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
+        +b-button-collection()
+        .b-price__wrap.b-price__wrap--one
             +sonata({
             margin_padding_sonata: 'b-sonata-padding-top-card'
             })
@@ -33,7 +36,7 @@ mixin b-price
             padding_renaissance_text: 'b-renaissance-not-padding-top-text',
             background_color_renaissance_no_white: 'b_background_color_renaissance_no_white b_padding_top_renaissance'
             })
-        .b-price__wrap-option 
+        .b-price__wrap-option
             .b-price__wrap-option__number 25
             .b-price__wrap-option__post коллекций и&nbsp;более 300 опций
         +sonata({
@@ -51,8 +54,8 @@ mixin b-price
             source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.webp 1x, img/content/mobile/9-price/4/12-2x.webp 2x") 
             source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.jpg 1x, img/content/mobile/9-price/4/12-2x.jpg 2x") 
             img(src="img/content/desktop/9-price/4/1-1x.jpg" width="375" height="531")
-            .b-price__modern__number 5
-            .b-price__modern__post лет гарантии на&nbsp;любую продукцию ESTET
+            .b-price__modern-number 5
+            .b-price__modern-post лет гарантии на&nbsp;любую продукцию ESTET
         +renaissance({
             padding_renaissance_text: 'b-renaissance-not-padding-top-text'
         })
@@ -61,4 +64,3 @@ mixin b-price
             margin_padding_sonata: 'b_background_color_renaissance_no_white padding_bottom_sonata'
         })
 
-        

@@ -16,10 +16,15 @@
         transition: background-color 0.3s;
         &:hover {
             background-color: @green47;
+            color: @whiteFF;
         }
         &.active {
             background-color: @green47;
             color: @whiteFF;
+            &:hover {
+                background-color: @whiteFF;
+                color: @grey3C;
+            }
         }
     }
     &__filter {

@@ -1,80 +1,25 @@
 .b-card-service {
 
     &__picture {
-        display: block;
-        position: relative;
         width: calc(100% - 19px);
         height: 561px;
 
         margin-top: 110px;
         margin-left: 19px;
-
-        object-fit: cover;
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            height: 100%;
-
-            background: linear-gradient(0deg, @whiteFF 1%, transparent);
-
-            z-index: 1;
-        }
-    }
-
-    &__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     &__content {
-        position: relative;
         margin-left: 69px;
         margin-top: -148px;
         margin-right: 60px;
-
-        z-index: 1;
-    }
-
-    &__title {
-        margin-bottom: 30px;
-
-        font-family: 'Open Sans';
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 57px;
-
-        color: @grey3C;
     }
 
     &__text {
         margin-bottom: 59px;
         margin-left: 2px;
-
-        font-family: 'Open Sans';
-        font-size: 16px;
-        line-height: 38px;
-
-        color: @grey3C;
     }
 }
 
 .b-button-rect {
-    display: block;
-    margin: 0;
-
-    width: 250px;
-
-    border: 1px solid @green47;
-
-    transition: .1s;
-
-    &:hover {
-        background-color: lighten(@green47,20%);
-    }
+      width: 250px;
 }

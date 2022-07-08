@@ -1,26 +1,16 @@
 .b-card-video {
     margin-bottom: 85px;
 
-    &__title {
-        padding-left: 25px;
-        margin-bottom: 26px;
-
-        font-family: 'Open Sans';
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 35px;
-        letter-spacing: 1px;
-        word-spacing: -2px;
-
-        color: @grey3C;
-    }
-
     &__picture {
         width: 100%;
+        z-index: 2;
     }
 
     &__img {
         width: 100%;
+        height: 100%;
+
+        object-fit: cover;
     }
 
     &__box {
@@ -33,7 +23,6 @@
         height: 348px;
 
         overflow: hidden;
-        text-overflow: clip;
     }
 
     &__inner {
