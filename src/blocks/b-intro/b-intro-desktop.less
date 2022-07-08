@@ -21,3 +21,35 @@ h1 {
 .b-button-tel {
     margin-top: 47px;
 }
+.b-intro__inner {
+    padding: 0;
+	position: relative;
+    height: 100%;
+}
+.b-intro__inner > .slick-list {
+    height: 100%;
+    padding: 0;
+}
+.b-intro__inner .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	font-size: 0;
+	width: 100px;
+    height: 30px;
+    border:0;
+}
+.b-intro__inner .slick-arrow:hover {
+    cursor: pointer;
+}
+.b-intro__inner .slick-arrow.slick-prev {
+	background: url("../img/icons/right-white.svg") 0 0 / 100% no-repeat;
+	left: 0;
+}
+.b-intro__inner .slick-arrow.slick-next {
+	background: url("../img/icons/right-white.svg") 0 0 / 100% no-repeat;
+	right: 0;
+}
+.b-intro__item {
+    text-align: center;
+}

@@ -35,6 +35,18 @@ $(document).ready(function() {
             },
         ]
     });
+    
+$(document).ready(function(){
+    $(".b-intro__inner").slick({
+        arrows: true,
+        easing: "ease-in-out",
+        slidesToShows: 1,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        centerMode: true,
+    });
+});
     // $('.b-card-advertising__inner').slick({
     //     prevArrow: $('.b-button-white--left'),
     //     nextArrow: $('.b-button-green--right'),
