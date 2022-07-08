@@ -3,16 +3,18 @@ include ../../elements/b-button-white-green/b-button-green--right.pug
 mixin b-technology()
     section.b-technology
         .b-container.b-container--technology.b-container--no-padd-table.b-container--no-padd-desktop
+            a(id="technology__link-hover--grass" href="javascript:void(0);")
+                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
+                    img(class="b-oval-green" src="img/icons/oval-green.svg", alt="")
+            a(id="technology__link-hover--vase" href="javascript:void(0);")
+                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
             .b-technology__container
-                h2.b-title.b-title--technology ESTET
+                h2.b-title.b-title--technoltogy ESTET
                 p.b-subtitle.b-subtitle--technology.b-subtitle--padding Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
             .b-technology__wrap
                 +b-button-white--left
                 +b-button-green--right
             .b-technology__wrap-grass
-                a(class="b-technology__link-hover b-technology__link-hover--grass" href="javascript:void(0);")
-                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="") 
-                    img(class="b-oval-green" src="img/icons/oval-green.svg", alt="")
                 picture.b-picture.b-picture--technology
                     source(type="image/webp" srcset="img/content/mobile/7-technology/1/14-1x.webp 1x, img/content/mobile/7-technology/1/14-2x.webp 2x" media="(max-width: 767px)") 
                     source(type="image/jpeg" srcset="img/content/mobile/7-technology/1/14-1x.jpg 1x, img/content/mobile/7-technology/1/14-2x.jpg 2x" media="(max-width: 767px)")
@@ -56,8 +58,8 @@ mixin b-technology()
                     div.b-title.b-title--quality Высокое качество
                     span.b-technology__info Все наши двери проходят строжайший контроль качества на&nbsp;всех этапах производства. Следить за&nbsp;качеством, мы&nbsp;считаем, важнейшая задача производителя.
             .b-technology__wrapper.b-technology__wrapper--vase
-                a(class="b-technology__link-hover b-technology__link-hover--vase" href="javascript:void(0);")
-                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
+                //- a(class="b-technology__link-hover b-technology__link-hover--vase" href="javascript:void(0);")
+                //-     img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
                 picture.b-picture.b-picture--vase
                     source(type="image/webp" srcset="img/content/mobile/7-technology/2/1-1x.webp 1x, img/content/mobile/7-technology/2/1-2x.webp 2x" media="(max-width: 767px)") 
                     source(type="image/jpeg" srcset="img/content/mobile/7-technology/2/1-1x.jpg 1x, img/content/mobile/7-technology/2/1-2x.jpg 2x" media="(max-width: 767px)")
