@@ -16,10 +16,15 @@ mixin b-card-address--buy(title)
             img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
         .b-map-marker.b-map-marker__3
             img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
+        .b-card-address__title.b-card-address__title-show-map= title
         .b-card-address__title-box
             h2.b-title--card-address--buy= title
             .b-switcher-city__position
-                +b-switcher-city
+                +b-switcher-city({
+                    modificationElements: "",
+                    modificationSelect: "",
+                    imgGeo: "img/icons/geo-green.svg"
+                })
         .b-card-address__inner
             +b-card-address__item
             +b-card-address__item
