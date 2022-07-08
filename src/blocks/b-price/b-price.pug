@@ -1,7 +1,10 @@
 include b-mixin-catalog/b-sonata.pug
 include b-mixin-catalog/b-renaissance.pug
+include ../../elements/b-button-collection/b-button-collection.pug
 mixin b-price 
     section.b-price
+        .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
+        +b-button-collection()
         .b-price__wrap
             +sonata({
             margin_padding_sonata: 'b-sonata-padding-top-card'

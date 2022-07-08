@@ -1,9 +1,44 @@
 .b-price {
     width: 100%;
+    padding-top: 70px;
+    // ПАДИНГ ПОТОМ НУЖНО УДАЛИТЬ
+    &__21collection {
+        padding-left: 25px;
+    }
+    & .b-button-collection__navigation {
+        margin-bottom: 50px;
+    }
+    &__21collection {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 35px;
+        letter-spacing: 5px;
+        color: @grey3C;
+    }
+    & .b-button-collection__button {
+        background-color: @green47;
+        color: @whiteFF;
+        &:hover {
+            background-color: @whiteFF;
+            color: @green47;
+        }
+        &.active {
+            background-color: @whiteFF;
+            color: @green47;
+            &:hover {
+                background-color: @green47;
+                color: @whiteFF;
+            }
+        }
+    }
 }
 
 .b-card-icon--palitra {
     margin: 0;
+    transition: transform 0.4s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .b-mixin-price {
