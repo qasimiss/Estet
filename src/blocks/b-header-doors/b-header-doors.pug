@@ -1,0 +1,36 @@
+include ../../elements/b-hamburger-main/b-hamburger-main.pug
+include ../../elements/b-switcher-city/b-switcher-city.pug
+mixin b-header-doors
+    header.b-header-doors(style="background:grey")
+        .b-container.b-container--no-padd-table.b-container--no-padd-desktop
+            .b-header-doors__wrapper
+                ul.b-header-doors__search
+                    li.b-header-doors__search-item
+                        a.b-header-doors__search-link(href="javascript:void(0);" title="search")
+                            img(src="img/icons/glass-white.svg", alt="search")
+                    li.b-header-doors__search-item.b-header-doors__search-item--shape
+                        a.b-header-doors__search-link(href="javascript:void(0);" title="Shape")
+                            img(src="img/icons/Shape.svg", alt="Shape")
+                .b-header-doors__logo
+                    img(src="img/icons/logo-white.svg", alt="logo")
+                ul.b-header-doors__choice
+                    li.b-header-doors__choice-item.b-header-doors__choice-item--heart
+                        a.b-header-doors__choice--link(href="javascript:void(0);" title="heart")
+                            img(src="img/icons/heart-white.svg", alt="heart")
+                    li.b-header-doors__choice-item.b-header-doors__choice-item--basket
+                        a.b-header-doors__choice--link(href="javascript:void(0);" title="basket")
+                            img(src="img/icons/basket-white.svg", alt="basket")
+                    li.b-header-doors__choice-item.b-header-doors__choice-item--language
+                        a.b-header-doors__choice--link(href="javascript:void(0);" title="language")
+                            img(src="img/icons/languge.svg", alt="language")
+                +b-switcher-city({
+                    modificationElements: "b-switcher-city--header",
+                    modificationSelect: "b-switcher-city__inner--white",
+                    imgGeo: "img/icons/geo.svg"
+                })
+                .b-header-doors__hamburger
+                    .b-header-doors__hamburger-wrapper
+                        span.b-header-doors__hamburger-line
+                        span.b-header-doors__hamburger-line
+                        span.b-header-doors__hamburger-line
+            +b-hamburger-main
