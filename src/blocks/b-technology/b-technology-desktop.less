@@ -16,6 +16,7 @@
         margin-bottom: 0;
         width: 40%;
         position: relative;
+        transition: transform 0.9s ease-in-out;
     }
     &__container {
         height: 36.5%;
@@ -57,12 +58,21 @@
             width: 50%;
             height: 100%;
             color: @whiteFF;
-            transition: transform 0.9s ease-in-out,opacity 0.3s ease-in-out;
-            transform: translateX(0);
+            // transition: transform 0.9s ease-in-out,opacity 0.3s ease-in-out;
+            transition: all .5s ease-in-out;
+            transform: translateX(0%);
             opacity: 0;
         }
         &--vase {
-            display: none;
+            position: absolute;
+            top: 0;
+            // transition: transform 0.7s ;
+            transition: all 0.5s ease-in-out;
+            left: 0;
+            display: block;
+            background-color: @green47;
+            color: @whiteFF;
+            height: 42%;
         }
     }
     &__wrapper {
@@ -147,7 +157,8 @@
         width: 655px;
         z-index: 600;
         transform: translateX(0%);
-        transition: transform 0.9s ease-in-out;
+        // transition: transform 0.9s ease-in-out;
+        transition: all 0.5s ease;
     }
     &--vase {
         z-index: 1;
@@ -166,14 +177,17 @@
     height: 27%;
     position: relative;
     order: 3;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .b-technology__wrapper--vase {
     width: 45%;
-    height: 27%;
+    height: 63.5%;
     z-index: 0;
     order: 4;
     position: relative;
+    transform: translateY(-57.5%);
+    transition: z-index 0.5 ease-in-out;
 }
 
 .b-subtitle--technology {
@@ -219,32 +233,12 @@
     transform: translate(-50%,-50%);
 }
 
-// .b-technology__post--grass {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     opacity: 0;
-//     background-color: @green47;
-//     width: 50%;
-//     height: 100%;
-//     color: @whiteFF;
-//     transition: transform 0.9s ease-in-out,opacity 0.3s ease-in-out;
-//     transform: translateX(0);
-//     opacity: 0;
-// }
-
 .b-technology__caption,.b-technology__subcaption {
     color: inherit;
 }
 
-.b-technology__link-hover--grass:hover ~ .b-technology__post--grass {
-    transform: translateX(100%);
-    opacity: 1;
-    display: block;
-}
-
 @media (max-width: 1350px) {
-    .b-subtitle--technology{
+    .b-subtitle--technology {
         font-size: 12px;
 }
     .b-title--technology{
@@ -257,6 +251,76 @@
         padding: 30px 30px 0 30px;
     }
 }
+
+#technology__link-hover--grass {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: block;
+    width: 25px;
+    height: 25px;
+    z-index: 600;
+}
+
+#technology__link-hover--grass:hover ~ .b-technology__wrap-grass {
+    z-index: 500;
+}
+
+#technology__link-hover--grass:hover ~ .b-technology__wrap-grass .b-technology__post--grass {
+    transform: translateX(100%);
+    opacity: 1;
+    display: block;
+}
+
+#technology__link-hover--vase {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    z-index: 310;
+}
+
+#technology__link-hover--vase:focus {
+    opacity: 0;
+}
+
+#technology__link-hover--vase:hover ~ .b-technology__wrapper--vase {
+    z-index: 251;
+}
+
+#technology__link-hover--vase:focus ~ .b-technology__wrapper--vase,
+#technology__link-hover--vase:active ~ .b-technology__wrapper--vase {
+    display: block;
+    z-index: 250;
+}
+
+#technology__link-hover--vase:hover ~ .b-technology__wrapper--vase .b-technology__post--vase {
+    transform: translateY(138%);
+    z-index: 2500;
+}
+
+#technology__link-hover--vase:focus ~ .b-technology__wrapper--vase .b-technology__post--vase,
+#technology__link-hover--vase:active ~ .b-technology__wrapper--vase .b-technology__post--vase{
+    display: block;
+    z-index: 3000;
+    transform: translateY(137%);
+}
+
+#technology__link-hover--vase:focus ~ .b-logo-wrap,
+#technology__link-hover--vase:hover ~ .b-logo-wrap
+,#technology__link-hover--vase:active ~ .b-logo-wrap {
+    background-color: @whiteFF;
+}
+
+#technology__link-hover--vase:focus ~ .b-logo-wrap .b-logo-green,
+#technology__link-hover--vase:hover ~ .b-logo-wrap .b-logo-green,
+#technology__link-hover--vase:active ~ .b-logo-wrap .b-logo-green {
+    display: block;
+}
+
+
+
+
+
 
 @media (max-width: 1218px) {
     .b-picture--lamp {
