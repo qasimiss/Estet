@@ -1,5 +1,5 @@
-include ../../elements/b-button-white-green/b-button-white--left.pug
-include ../../elements/b-button-white-green/b-button-green--right.pug
+include ../../elements/b-button-square/b-button-square.pug
+
 mixin b-technology()
     section.b-technology
         .b-container.b-container--technology.b-container--no-padd-table.b-container--no-padd-desktop
@@ -9,11 +9,17 @@ mixin b-technology()
             a(id="technology__link-hover--vase" href="javascript:void(0);")
                     img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
             .b-technology__container
-                h2.b-title.b-title--technoltogy ESTET
+                h2.b-title.b-title--technology ESTET
                 p.b-subtitle.b-subtitle--technology.b-subtitle--padding Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
             .b-technology__wrap
-                +b-button-white--left
-                +b-button-green--right
+                +b-button-square({
+                    modificationColor: "white",
+                    modificationArrow: "left",
+                        })
+                +b-button-square({
+                    modificationColor: "green",
+                    modificationArrow: "right",
+                        })
             .b-technology__wrap-grass
                 picture.b-picture.b-picture--technology
                     source(type="image/webp" srcset="img/content/mobile/7-technology/1/14-1x.webp 1x, img/content/mobile/7-technology/1/14-2x.webp 2x" media="(max-width: 767px)") 

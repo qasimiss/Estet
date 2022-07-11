@@ -1,15 +1,32 @@
 
     .b-technology {
         margin-bottom: 100px;
+        &__wrap {
+            display: flex;
+            margin-left: auto;
+        }
+        &__caption {
+            font-size: 24px;
+            line-height: 28.13px;
+            color: @grey3C;
+            font-weight: 400;
+            margin-bottom: 20px;
+            display: inline-block;
+            margin-top: 22px;
+        }
+        &__wrap-grass {
+            width: 100%;
+        }
+        &__subcaption {
+            font-size: 14px;
+            line-height: 25px;
+            color: @grey3C;
+        }
     }
 
     .b-container--technology {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .b-technology__container {
-        display: none;
     }
 
     .b-subtitle--technology {
@@ -19,45 +36,13 @@
         margin-bottom: 65px;
     }
 
-    .b-technology__wrap {
-        display: flex;
-        margin-left: auto;
-    }
-
-    .b-technology__wrap-grass {
-        // height:242px;
-        width: 100%;
-    }
-
     .b-picture--technology {
         width: 100%;
         padding: 0;
-    }
-
-    .b-picture--technology img {
-        width: 100%;
-        // height: 100%;
-        object-fit: cover;
-    }
-
-    .b-picture--mirror {
-        display: none;
-    }
-
-    .b-technology__caption {
-        font-size: 24px;
-        line-height: 28.13px;
-        color: @grey3C;
-        font-weight: 400;
-        margin-bottom: 20px;
-        display: inline-block;
-        margin-top: 22px;
-    }
-
-    .b-technology__subcaption {
-        font-size: 14px;
-        line-height: 25px;
-        color: @grey3C;
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .b-picture--lamp,
@@ -68,10 +53,8 @@
     .b-wrap-vase__link,
     .b-picture--techn,
     .b-technology__post--vase,
-    .b-technology__wrapper--techn {
-        display: none;
-    }
-
+    .b-technology__wrapper--techn,
+    .b-picture--mirror,
     #technology__link-hover--grass,
     .b-technology-logo {
         display: none;
