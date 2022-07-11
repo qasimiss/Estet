@@ -1,6 +1,7 @@
 .b-header-doors {
     position: absolute;
     width: 100%;
+    z-index: 3;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -89,13 +90,15 @@
         }
         &.active &-line:first-child{
             position: absolute;
-            transform: translateY(-50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+            left: 50%;
             top: 50%;
         }
         &.active &-line:last-child {
             position: absolute;
             width: 29px;
-            transform: translateY(-50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
+            left: 50%;
             top: 50%;
         }
     }

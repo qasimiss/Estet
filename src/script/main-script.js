@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".b-header-main__hamburger"),
-      navContainer = document.querySelector(".b-hamburger-main");
+      navContainer = document.querySelector(".b-hamburger");
 
 $(hamburger).on('click', function() {
     hamburger.classList.toggle("active")
@@ -35,12 +35,27 @@ $(document).ready(function() {
             },
         ]
     });
-    // $('.b-card-advertising__inner').slick({
-    //     prevArrow: $('.b-button-white--left'),
-    //     nextArrow: $('.b-button-green--right'),
-    //     arrows: true,
-    //     easing: "ease-in-out",
-    //     speed: 1000,
-    //     swipe: false,
-    // });
+    $('.b-picture--aside').slick({
+        prevArrow: $('.b-button-square--white'),
+        nextArrow: $('.b-button-square--green'),
+        arrows: true,
+        easing: "ease-in-out",
+        speed: 1000,
+        swipe: false,
+        waitForAnimate: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    prevArrow: "false",
+                }
+            },
+            {
+                breakpoint: 1023,
+                settings: {
+                    prevArrow: $('.b-button-square--white'),
+                }
+            },
+        ]
+    });
 })

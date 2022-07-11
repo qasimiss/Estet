@@ -1,54 +1,54 @@
 mixin b-hamburger-main()
-    .b-hamburger-main
-        ul.b-hamburger-main__nav-search
-            li.b-hamburger-main__search
-                a.b-hamburger-main__nav-search-link(href="javascript:void(0);" title="search")
+    .b-hamburger
+        ul.b-hamburger__header
+            li.b-hamburger__header-item.b-hamburger__header-item--search
+                a.b-hamburger__header-link(href="javascript:void(0);" title="search")
                     img(src="img/icons/glass-white.svg", alt="search")
-            li.b-hamburger-main__language
-                a.b-hamburger-main__nav-search-link(href="javascript:void(0);" title="languge")
+            li.b-hamburger__header-item.b-hamburger__header-item--language
+                a.b-hamburger__header-link(href="javascript:void(0);" title="languge")
                     img(src="img/icons/languge.svg", alt="languge")
-            li.b-hamburger-main__geo
-                a.b-hamburger-main__nav-search-link(href="javascript:void(0);" title="geo")
+            li.b-hamburger__header-item.b-hamburger__header-item--geo
+                a.b-hamburger__header-link(href="javascript:void(0);" title="geo")
                     img(src="img/icons/geo.svg", alt="geo")
-        a.b-hamburger-main__button(href="javascript:void(0);" title="Обратный звонок")
-            img.b-hamburger-main__button-img(src="img/icons/shape.svg", alt="phone")
-            div.b-hamburger-main__button-descr Обратный звонок
-        .b-hamburger-main__choice
-            a.b-hamburger-main__choice-link(href="javascript:void(0);" title="heart")
-                img.b-hamburger__main-choice-img(src="img/icons/heart-white.svg", alt="heart")
-            a.b-hamburger-main__choice-link(href="javascript:void(0);" title="basket")
-                img.b-hamburger-main__choice-img(src="img/icons/basket-white.svg", alt="basket")
-        .b-hamburger-main__nav-menu
-            ul.b-hamburger-main__nav-menu-product
-                li.b-hamburger-main__nav-menu-product-item
-                    a(href="javascript:void(0);" title="Каталог").b-hamburger-main__nav-menu-product-link Каталог
-                li.b-hamburger-main__nav-menu-product-item
-                    a(href="javascript:void(0);" title="Коллекции").b-hamburger-main__nav-menu-product-link Коллекции
-                li.b-hamburger-main__nav-menu-product-item
-                    a(href="javascript:void(0);" title="Покупателям").b-hamburger-main__nav-menu-product-link Покупателям
-                li.b-hamburger-main__nav-menu-product-item
-                    a(href="javascript:void(0);" title="Компания").b-hamburger-main__nav-menu-product-link Компания
-            ul.b-hamburger-main__nav-menu-info
-                li.b-hamburger-main__nav-menu-info-designers
-                    a.b-hamburger-main__nav-menu-info-link(href="javascript:void(0);" title="Дизайнерам") Дизайнерам
-                li.b-hamburger-main__nav-menu-info-address
-                    a.b-hamburger-main__nav-menu-info-link(href="javascript:void(0);" title="ГДЕ КУПИТЬ") ГДЕ КУПИТЬ
-                        img.b-hamburger-main__nav-menu-info-arrow(src="img/icons/line.svg", alt="arrow")
-        .b-hamburger-main__footer
-            a.b-hamburger-main__footer-number(href="tel:+78005513240" title="8 800 551 32 40") 8 800 551 32 40
-            ul.b-hamburger-main__footer-social
-                li.b-hamburger-main__footer-social-item
-                    a.b-hamburger-main__footer-social-link(href="javascript:void(0);" title="heart")
+        a.b-hamburger__button(href="javascript:void(0);" title="Обратный звонок")
+            img.b-hamburger__button-img(src="img/icons/shape.svg", alt="phone")
+            div.b-hamburger__button-descr Обратный звонок
+        .b-hamburger__choice
+            a.b-hamburger__choice-link(href="javascript:void(0);" title="heart")
+                img.b-hamburger__choice-img(src="img/icons/heart-white.svg", alt="heart")
+            a.b-hamburger__choice-link(href="javascript:void(0);" title="basket")
+                img.b-hamburger__choice-img(src="img/icons/basket-white.svg", alt="basket")
+        .b-hamburger__menu
+            ul.b-hamburger__menu-product
+                li.b-hamburger__menu-product-item
+                    a(href="javascript:void(0);" title="Каталог").b-hamburger__menu-product-link Каталог
+                li.b-hamburger__menu-product-item
+                    a(href="javascript:void(0);" title="Коллекции").b-hamburger__menu-product-link Коллекции
+                li.b-hamburger__menu-product-item
+                    a(href="javascript:void(0);" title="Покупателям").b-hamburger__menu-product-link Покупателям
+                li.b-hamburger__menu-product-item
+                    a(href="javascript:void(0);" title="Компания").b-hamburger__menu-product-link Компания
+            ul.b-hamburger__menu-info
+                li.b-hamburger__menu-info--item.b-hamburger__menu-info-item--designers
+                    a.b-hamburger__menu-info-link(href="javascript:void(0);" title="Дизайнерам") Дизайнерам
+                li.b-hamburger__menu-info--item.b-hamburger__menu-info-item--address
+                    a.b-hamburger__menu-info-link(href="javascript:void(0);" title="ГДЕ КУПИТЬ") ГДЕ КУПИТЬ
+                        img.b-hamburger__menu-info-arrow(src="img/icons/line.svg", alt="arrow")
+        .b-hamburger__footer
+            a.b-hamburger__footer-number(href="tel:+78005513240" title="8 800 551 32 40") 8 800 551 32 40
+            ul.b-hamburger__footer-social
+                li.b-hamburger__footer-social-item
+                    a.b-hamburger__footer-social-link(href="javascript:void(0);" title="heart")
                         img(src="img/icons/heart-mobile.svg", alt="")
-                li.b-hamburger-main__footer-social-item
-                    a.b-hamburger-main__footer-social-link(href="javascript:void(0);" title="telegram")
+                li.b-hamburger__footer-social-item
+                    a.b-hamburger__footer-social-link(href="javascript:void(0);" title="telegram")
                         img(src="img/icons/telegram-mobile.svg", alt="")
-                li.b-hamburger-main__footer-social-item
-                    a.b-hamburger-main__footer-social-link(href="javascript:void(0);" title="vk")
+                li.b-hamburger__footer-social-item
+                    a.b-hamburger__footer-social-link(href="javascript:void(0);" title="vk")
                         img(src="img/icons/vk-mobile.svg", alt="")
-                li.b-hamburger-main__footer-social-item
-                    a.b-hamburger-main__footer-social-link(href="javascript:void(0);" title="facebook")
+                li.b-hamburger__footer-social-item
+                    a.b-hamburger__footer-social-link(href="javascript:void(0);" title="facebook")
                         img(src="img/icons/facebook-mobile.svg", alt="")
-                li.b-hamburger-main__footer-social-item
-                    a.b-hamburger-main__footer-social-link(href="javascript:void(0);" title="instagram")
+                li.b-hamburger__footer-social-item
+                    a.b-hamburger__footer-social-link(href="javascript:void(0);" title="instagram")
                         img(src="img/icons/instagram-mobile.svg", alt="")
