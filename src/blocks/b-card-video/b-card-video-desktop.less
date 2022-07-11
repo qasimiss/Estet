@@ -51,6 +51,8 @@
         position: absolute;
         top: 154px;
         right: 0;
+
+        transform: rotate(0deg);
     }
 
     &-youtube {
@@ -68,17 +70,17 @@
     }
 }
 
-.b-button-white--up:first-child {
-    display: block;
+    .b-card-video .b-button-square:first-child {
+        display: block;
 
-    transform: rotate(0deg);
-}
+        transform: rotate(0deg);
+    }
 
-.b-button-green--down {
-    transform: rotate(0deg);
-}
+    .b-card-video .b-button-square:nth-child(2) {
+        transform: rotate(0deg);
+    }
 
-.b-button-white--up:last-child {
-    display: none;
-}
+    .b-card-video .b-button-square:last-child {
+        display: none;
+    }
 }
