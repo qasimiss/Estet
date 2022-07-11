@@ -22,34 +22,59 @@ h1 {
     margin-top: 47px;
 }
 .b-intro__inner {
+    width: 1600px;
     padding: 0;
 	position: relative;
-    height: 100%;
+    height: 900px;
+    &::before {
+        content: "";
+        position:absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: @black00;
+        opacity: 0.35;
+        z-index: 1;
+    }
 }
 .b-intro__inner > .slick-list {
     height: 100%;
     padding: 0;
 }
 .b-intro__inner .slick-arrow {
+    display: flex;
 	position: absolute;
 	top: 50%;
 	z-index: 2;
 	font-size: 0;
-	width: 100px;
-    height: 30px;
+	width: 54px;
+    height: 54px;
     border:0;
 }
 .b-intro__inner .slick-arrow:hover {
     cursor: pointer;
 }
 .b-intro__inner .slick-arrow.slick-prev {
-	background: url("../img/icons/right-white.svg") 0 0 / 100% no-repeat;
+    margin-left: 80px;
+    transform: rotate(180deg);
+	background: url("../img/icons/right-white.svg") 50% 50% no-repeat;
 	left: 0;
 }
 .b-intro__inner .slick-arrow.slick-next {
-	background: url("../img/icons/right-white.svg") 0 0 / 100% no-repeat;
+	background: url("../img/icons/right-white.svg")50% 50% no-repeat;
+    margin-right: 80px;
 	right: 0;
 }
 .b-intro__item {
-    text-align: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    height: 900px;
+    display: block;
+}
+.b-intro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
