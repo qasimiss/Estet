@@ -12,14 +12,23 @@ mixin b-advertising(yu)
                     <path id="Line 6" d="M5 0.5V0H4V0.5H5ZM4.14645 17.8536C4.34171 18.0488 4.65829 18.0488 4.85355 17.8536L8.03553 14.6716C8.2308 14.4763 8.2308 14.1597 8.03553 13.9645C7.84027 13.7692 7.52369 13.7692 7.32843 13.9645L4.5 16.7929L1.67157 13.9645C1.47631 13.7692 1.15973 13.7692 0.964466 13.9645C0.769204 14.1597 0.769204 14.4763 0.964466 14.6716L4.14645 17.8536ZM4 0.5V17.5H5V0.5H4Z"/>
                     </svg>
         .b-card-advertising__container
-            picture.b-picture.b-picture--aside
-                source(type="image/webp" srcset="img/content/mobile/3-search/1/10-1x.webp 1x, img/content/mobile/3-search/1/10-2x.webp 2x" media="(max-width: 767px)")
-                source(type="image/jpeg" srcset="img/content/mobile/3-search/1/10-1x.jpg 1x, img/content/mobile/3-search/1/10-2x.jpg 2x" media="(max-width: 767px)")
-                source(type="image/webp" srcset="img/content/tablet/3-search/1/1-1x.webp 1x, img/content/tablet/3-search/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                source(type="image/jpeg" srcset="img/content/tablet/3-search/1/1-1x.jpg 1x, img/content/tablet/3-search/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                source(type="image/webp" srcset="img/content/desktop/3-search/1/1-1x.webp 1x, img/content/desktop/3-search/1/1-2x.webp 2x")
-                source(type="image/jpeg" srcset="img/content/desktop/3-search/1/1-1x.jpg 1x, img/content/desktop/3-search/1/1-2x.jpg 2x")
-                img(src="img/content/desktop/3-search/1/1-1x.jpg")
+            .b-picture.b-picture--aside
+                picture
+                    source(type="image/webp" srcset="img/content/mobile/3-search/1/10-1x.webp 1x, img/content/mobile/3-search/1/10-2x.webp 2x" media="(max-width: 767px)")
+                    source(type="image/jpeg" srcset="img/content/mobile/3-search/1/10-1x.jpg 1x, img/content/mobile/3-search/1/10-2x.jpg 2x" media="(max-width: 767px)")
+                    source(type="image/webp" srcset="img/content/tablet/3-search/1/1-1x.webp 1x, img/content/tablet/3-search/1/1-2x.webp 2x" media="(max-width: 1023px)")
+                    source(type="image/jpeg" srcset="img/content/tablet/3-search/1/1-1x.jpg 1x, img/content/tablet/3-search/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                    source(type="image/webp" srcset="img/content/desktop/3-search/1/1-1x.webp 1x, img/content/desktop/3-search/1/1-2x.webp 2x")
+                    source(type="image/jpeg" srcset="img/content/desktop/3-search/1/1-1x.jpg 1x, img/content/desktop/3-search/1/1-2x.jpg 2x")
+                    img(src="img/content/desktop/3-search/1/1-1x.jpg")
+                picture
+                    source(type="image/webp" srcset="img/content/mobile/3-search/1/10-1x.webp 1x, img/content/mobile/3-search/1/10-2x.webp 2x" media="(max-width: 767px)")
+                    source(type="image/jpeg" srcset="img/content/mobile/3-search/1/10-1x.jpg 1x, img/content/mobile/3-search/1/10-2x.jpg 2x" media="(max-width: 767px)")
+                    source(type="image/webp" srcset="img/content/tablet/3-search/1/1-1x.webp 1x, img/content/tablet/3-search/1/1-2x.webp 2x" media="(max-width: 1023px)")
+                    source(type="image/jpeg" srcset="img/content/tablet/3-search/1/1-1x.jpg 1x, img/content/tablet/3-search/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                    source(type="image/webp" srcset="img/content/desktop/3-search/1/1-1x.webp 1x, img/content/desktop/3-search/1/1-2x.webp 2x")
+                    source(type="image/jpeg" srcset="img/content/desktop/3-search/1/1-1x.jpg 1x, img/content/desktop/3-search/1/1-2x.jpg 2x")
+                    img(src="img/content/desktop/3-search/1/1-1x.jpg")
             +b-button-white--left
             +b-button-green--right
         strong.b-card-advertising__title Распродажа классических коллекций
