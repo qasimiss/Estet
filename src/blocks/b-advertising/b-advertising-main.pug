@@ -1,5 +1,5 @@
-include ../../elements/b-button-white-green/b-button-green--right.pug
-include ../../elements/b-button-white-green/b-button-white--left.pug
+include ../../elements/b-button-square/b-button-square.pug
+
 mixin b-advertising(yu)
     aside.b-card-advertising.b-container.b-container--no-padd-table.b-container--no-padd-mobile
         if yu == true
@@ -20,8 +20,14 @@ mixin b-advertising(yu)
                 source(type="image/webp" srcset="img/content/desktop/3-search/1/1-1x.webp 1x, img/content/desktop/3-search/1/1-2x.webp 2x")
                 source(type="image/jpeg" srcset="img/content/desktop/3-search/1/1-1x.jpg 1x, img/content/desktop/3-search/1/1-2x.jpg 2x")
                 img(src="img/content/desktop/3-search/1/1-1x.jpg")
-            +b-button-white--left
-            +b-button-green--right
+            +b-button-square({
+                modificationColor: "white",
+                modificationArrow: "left",
+                        })
+            +b-button-square({
+                modificationColor: "green",
+                modificationArrow: "right",
+                        })
         strong.b-card-advertising__title Распродажа классических коллекций
         .b-card-advertising__wrap
             span.b-card-advertising__caption -20%
