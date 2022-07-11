@@ -36,8 +36,8 @@ $(document).ready(function() {
         ]
     });
     $('.b-picture--aside').slick({
-        prevArrow: $('.b-button-white--left'),
-        nextArrow: $('.b-button-green--right'),
+        prevArrow: $('.b-button-square--white'),
+        nextArrow: $('.b-button-square--green'),
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
