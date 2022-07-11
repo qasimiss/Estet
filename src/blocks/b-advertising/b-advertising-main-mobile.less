@@ -13,6 +13,7 @@
     // width: 100%;
     &__container {
         display: flex;
+        position: relative;
     }
     &__caption {
         margin: 0;
@@ -38,6 +39,17 @@
     &__wrap {
         padding: 0 35px 72px 25px;
     }
+    & .b-button-square--white {
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    & .b-button-square--green {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 .b-button-green--right__aside {
@@ -47,7 +59,4 @@
 .b-card-advertising__title,
 .b-card-advertising .b-button-square:nth-child(2) {
     display: none;
-}
-.b-button-white--left {
-    visibility: hidden;
 }
