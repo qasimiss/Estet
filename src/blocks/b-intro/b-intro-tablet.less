@@ -1,9 +1,31 @@
 .b-intro {
     height: 1024px;
+    &__inner {
+        height: 1024px;
+        width: 100%;
+    }
+}
+.b-intro__inner > .slick-list > .slick-track {
+    height:100%
 }
 .b-subtitle--intro {
     padding: 0 0 0 95px;
     font-size: 21px;
     max-width: 790px;
     font-weight: 300;
+}
+.b-intro__inner .slick-arrow {
+	top: 434px;
+	width: 54px;
+    height: 54px;
+}
+.b-intro__inner .slick-arrow.slick-prev {
+    transform: rotate(180deg) translateY(-1px);
+	left: 15px;
+}
+.b-intro__inner .slick-arrow.slick-next {
+	right: 16px;
+}
+.b-intro__inner .slick-arrow:hover {
+    cursor: pointer;
 }

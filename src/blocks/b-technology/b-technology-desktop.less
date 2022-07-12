@@ -30,6 +30,9 @@
         color: @whiteFF;
         display: block;
     }
+    &__caption,&__subcaption {
+        color: inherit;
+    }
     &__post {
         width: 100%;
         padding: 58px 35px 58px 38px;
@@ -103,6 +106,15 @@
             height: 36.5%;
             z-index: 100;
         }
+        &--vase {
+            width: 45%;
+            height: 63.5%;
+            z-index: 0;
+            order: 4;
+            position: relative;
+            transform: translateY(-57.5%);
+            transition: z-index 0.5 ease-in-out;
+        }
     }
     &__link-hover {
         position: absolute;
@@ -135,6 +147,19 @@
         &--grass {
             top: 20%;
             left: 10%;
+        }
+        &:hover ~ .b-technology__post--quality {
+            transform: translateY(0%);
+            z-index: 1;
+            opacity: 1;
+            display: block;
+        }
+        &:hover ~ .b-picture--lamp {
+            transform: translateY(-53%);
+            z-index: 22;
+            opacity: 1;
+            display: block;
+            height: 700px;
         }
     }
 }
@@ -183,16 +208,6 @@
     transition: background-color 0.5s ease-in-out;
 }
 
-.b-technology__wrapper--vase {
-    width: 45%;
-    height: 63.5%;
-    z-index: 0;
-    order: 4;
-    position: relative;
-    transform: translateY(-57.5%);
-    transition: z-index 0.5 ease-in-out;
-}
-
 .b-subtitle--technology {
     margin: 0;
     font-size: 14px;
@@ -204,21 +219,6 @@
 
 .b-technology-logo--white {
     display: block;
-}
-
-.b-technology__link-hover:hover ~ .b-technology__post--quality {
-    transform: translateY(0%);
-    z-index: 1;
-    opacity: 1;
-    display: block;
-}
-
-.b-technology__link-hover:hover ~ .b-picture--lamp {
-    transform: translateY(-53%);
-    z-index: 22;
-    opacity: 1;
-    display: block;
-    height: 700px;
 }
 
 .b-oval-white {
@@ -234,10 +234,6 @@
     width: 50%;
     height: 50%;
     transform: translate(-50%,-50%);
-}
-
-.b-technology__caption,.b-technology__subcaption {
-    color: inherit;
 }
 
 @media (max-width: 1350px) {
@@ -305,13 +301,13 @@
 
 #technology__link-hover--vase:hover ~ .b-technology__wrapper--vase .b-technology__post--vase {
     transform: translateY(133.5%);
-    z-index: 2500;
+    z-index: 250;
 }
 
 #technology__link-hover--vase:focus ~ .b-technology__wrapper--vase .b-technology__post--vase,
 #technology__link-hover--vase:active ~ .b-technology__wrapper--vase .b-technology__post--vase{
     display: block;
-    z-index: 3000;
+    z-index: 300;
     transform: translateY(133.5%);
 }
 
@@ -331,4 +327,16 @@
     .b-picture--lamp {
         height: 580px;
     }
+}
+
+.b-hover-quality__title {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.b-hover-quality__post {
+    font-size: 14px;
+    line-height: 25px;
 }
