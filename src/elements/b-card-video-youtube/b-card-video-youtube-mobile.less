@@ -10,12 +10,6 @@
     text-decoration: none;
     color: @grey3C;
 
-    transition: color .1s linear;
-
-    &:hover {
-        color: @green47;
-    }
-
     &__img {
         width: 20px;
         height: 18px;
@@ -28,8 +22,15 @@
         padding-left: 19px;
     }
 
-    &__text--bold {
+    &__link {
         font-weight: 700;
+        color: @grey3C;
         text-decoration: underline;
+
+        transition: color .3s linear;
+
+        &:hover {
+            color: @green47;
+        }
     }
 }

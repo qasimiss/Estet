@@ -1,17 +1,8 @@
 include ../../elements/b-button-square/b-button-square.pug
 
-mixin b-advertising(yu)
-    aside.b-card-advertising.b-container.b-container--no-padd-table.b-container--no-padd-mobile
-        if yu == true
-            .b-advertising-collection
-                .b-advertising-collection__margin
-                    span.b-advertising-collection_8 8
-                    span.b-advertising-collection_14 /14
-                a(href="javascript: void(0);", title="показать ещё").b-advertising-collection_link ПОКАЗАТЬ ЕЩЕ
-                    <svg width="5" height="18" viewBox="0 0 5 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="Line 6" d="M5 0.5V0H4V0.5H5ZM4.14645 17.8536C4.34171 18.0488 4.65829 18.0488 4.85355 17.8536L8.03553 14.6716C8.2308 14.4763 8.2308 14.1597 8.03553 13.9645C7.84027 13.7692 7.52369 13.7692 7.32843 13.9645L4.5 16.7929L1.67157 13.9645C1.47631 13.7692 1.15973 13.7692 0.964466 13.9645C0.769204 14.1597 0.769204 14.4763 0.964466 14.6716L4.14645 17.8536ZM4 0.5V17.5H5V0.5H4Z"/>
-                    </svg>
-        .b-card-advertising__container
+mixin b-advertising(modification)
+    aside.b-card-advertising.b-container.b-container--no-padd-table.b-container--no-padd-mobile(class=modification ? modification.modificationAside: "")
+        .b-card-advertising__container(class=modification ? modification.modificationPicture: "")
             .b-picture.b-picture--aside
                 picture
                     source(type="image/webp" srcset="img/content/mobile/3-search/1/10-1x.webp 1x, img/content/mobile/3-search/1/10-2x.webp 2x" media="(max-width: 767px)")
@@ -45,11 +36,14 @@ mixin b-advertising(yu)
                 modificationColor: "green",
                 modificationArrow: "right",
                         })
-        strong.b-card-advertising__title Распродажа классических коллекций
-        .b-card-advertising__wrap
-            span.b-card-advertising__caption -20%
-            span.b-card-advertising__post.b-card-advertising__post--margin на&nbsp;коллекции
-            span.b-card-advertising__post.b-card-advertising__post--border MIO, ENGLAND, FIGURE
-        .b-card-advertising__wrapper
-            span.b-card-advertising__description Успейте купить межкомнатные двери классической коллекции со скидкой&nbsp;20% до&nbsp;середины февраля.
-            span.b-card-advertising__stock Акция действует до&nbsp;15&nbsp;февраля 2021г
+        strong.b-card-advertising__title(class=modification ? modification.modificationTitle: "") Распродажа классических коллекций
+        .b-card-advertising__wrap(class=modification ? modification.modificationWrap: "")
+            span.b-card-advertising__caption(class=modification ? modification.modificationPost: "") -20%
+            span.b-card-advertising__post.b-card-advertising__post--margin  на&nbsp;коллекции MIO, ENGLAND, FIGURE
+        .b-card-advertising__wrapper(class=modification ? modification.modificationWrapper: "")
+            if (modification)
+                .b-card-advertising__descr-doors -20% на коллекции MIO, ENGLAND, FIGURE
+            .b-card-advertising__description(class=modification ? modification.modificationDescription: "") Успейте купить межкомнатные двери классической коллекции со скидкой&nbsp;20% до&nbsp;середины февраля.
+            if (modification)
+                a(href="").b-card-advertising__detailed-doors ПОДРОБНЕЕ
+        .b-card-advertising__stock(class=modification ? modification.modificationStock: "") Акция действует до&nbsp;15&nbsp;февраля 2021г
