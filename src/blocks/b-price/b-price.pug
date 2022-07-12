@@ -3,26 +3,26 @@ include b-mixin-catalog/b-sonata.pug
 include b-mixin-catalog/b-renaissance.pug
 include b-mixin-catalog/b-genesis.pug
 mixin b-price
-    section.b-price.b-container
+    section.b-price.b-container.b-container--no-padd-mobile
+        .b-aside
         .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
         +b-button-collection()
-        .b-price__wrap.b-price__wrap--one
-            +sonata({
-            margin_padding_sonata: 'b-sonata-padding-top-card'
-            })
-            +renaissance({
-            padding_renaissance_text: 'b-renaissance-padding-top-text',
-            background_color_renaissance_no_white: 'b_background_color_renaissance_no_white'
-            })
-        .b-price__wrap.b-price__wrap--second
-            +sonata({
-            margin_padding_sonata: 'b-sonata-padding-top-card b-sonata-none'
-            })
-            +renaissance({
-            padding_renaissance_text: 'b-renaissance-padding-top-text',
-            background_color_renaissance_no_white: 'b_background_color_renaissance_no_white b-eleventh-order-r'
-            })
-        .b-price__wrap.b-price__wrap--post
+        .empty_block
+        +sonata({
+        margin_padding_sonata: 'b-sonata-padding-top-card'
+        })
+        +renaissance({
+        padding_renaissance_text: 'b-renaissance-padding-top-text',
+        background_color_renaissance_no_white: 'b_background_color_renaissance_no_white'
+        })
+        +sonata({
+        margin_padding_sonata: 'b-sonata-padding-top-card b-sonata-none'
+        })
+        +renaissance({
+        padding_renaissance_text: 'b-renaissance-padding-top-text',
+        background_color_renaissance_no_white: 'b_background_color_renaissance_no_white b-eleventh-order-r'
+        })
+        .b-price__wrap--post
             span.b-price__post В&nbsp;компании ESTET вы&nbsp;можете купить качественные межкомнатные двери. Богатый выбор является гарантией того, что вы&nbsp;обязательно найдете модель, оптимально соответствующую вашим потребностям, пожеланиям и&nbsp;финансовым возможностям.
         +sonata({
             padding_top_text: 'b-sonata-padding-top-text',
@@ -50,10 +50,15 @@ mixin b-price
         margin_padding_sonata: 'b-sonata-padding-top-card',
         margin_padding_sonata: 'b-sonata-six-order'
         })
-        +renaissance({
-            padding_renaissance_text: 'b-renaissance-padding-top-text',
-            background_color_renaissance_no_white: 'b_background_color_renaissance_no_white b-fourteenth-order-r'
-        })
+        .wrap
+            +renaissance({
+                padding_renaissance_text: 'b-renaissance-padding-top-text',
+                background_color_renaissance_no_white: 'b_background_color_renaissance_no_white b-fourteenth-order-r'
+            })
+            +genesis({
+            padding_text_g: 'b-padding_text_g',
+            padding_card_g: 'b-padding_card_g_last_order b_tablet_none'
+            })
         +genesis({
             padding_text_g: 'b-not-padding_text_g_t',
             padding_card_g: 'b-padding_card_g_twelve_order'
@@ -62,12 +67,18 @@ mixin b-price
         margin_padding_sonata: 'b-sonata-padding-top-card b-sonata-none'
         })
         .b-price__modern Современные материалы и&nbsp;инновационные покрытия
-        picture.b-picture.b-picture--modern
-            source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.webp 1x, img/content/mobile/9-price/4/12-2x.webp 2x") 
-            source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.jpg 1x, img/content/mobile/9-price/4/12-2x.jpg 2x") 
-            img(src="img/content/desktop/9-price/4/1-1x.jpg" width="375" height="531")
-            .b-price__modern-number 5
-            .b-price__modern-post лет гарантии на&nbsp;любую продукцию ESTET
+        .wrapper
+            picture.b-picture.b-picture--modern
+                source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.webp 1x, img/content/mobile/9-price/4/12-2x.webp 2x" media="(max-width: 767px)")
+                source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.jpg 1x, img/content/mobile/9-price/4/12-2x.jpg 2x" media="(max-width: 767px)")
+                source(type="image/webp" srcset="img/content/tablet/9-price/4/1-1x.webp 1x, img/content/tablet/9-price/4/1-2x.webp 2x" media="(max-width: 1023px)")
+                source(type="image/webp" srcset="img/content/tablet/9-price/4/1-1x.jpg 1x, img/content/tablet/9-price/4/1-2x.jpg 2x" media="(max-width: 1023px)")
+                source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.webp 1x, img/content/desktop/9-price/4/1-2x.webp 2x")
+                source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.jpg 1x, img/content/desktop/9-price/4/1-2x.jpg 2x")
+                img(src="img/content/desktop/9-price/4/1-1x.jpg" width="375" height="531" alt="modern")
+            .wrapper_post
+                .b-price__modern-number 5
+                .b-price__modern-post лет гарантии на&nbsp;любую продукцию ESTET
         +renaissance({
             padding_renaissance_text: 'b-renaissance-not-padding-top-text',
             background_color_renaissance_no_white: 'b-r-third-order'
