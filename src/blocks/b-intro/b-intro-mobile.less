@@ -4,23 +4,17 @@ h1 {
 }
 .b-intro {
     position: relative;
-    height: 670px;
+    height: 100vh;
     width: 100%;
     margin: 0 auto;
-    &-image {
-        width: 100%;
+    &__inner {
         height: 100%;
-        object-fit: cover;
-    }
-    &-image-wrap {
-        margin: 0 auto;
-        max-width: 1600px;
         width: 100%;
-        height: 100%;
-        display: block;
         position: absolute;
-        z-index: -2;
-        &::after {
+        top:0;
+        left:0;
+        overflow: hidden;
+        &::before {
             content: "";
             position:absolute;
             top:0;
@@ -32,6 +26,39 @@ h1 {
             z-index: 1;
         }
     }
+    & .slick-track {
+        height:100%
+    }
+}
+.b-intro .b-container {
+    position: absolute;
+    z-index: 10;
+}
+.b-intro__inner > .slick-list {
+    height: 100%;
+    padding: 0;
+}
+.b-intro__inner .slick-arrow {
+    display: flex;
+    position: absolute;
+    top: 601px;
+    z-index: 10;
+    font-size: 0;
+    width: 43px;
+    height: 43px;
+    border:0;
+}
+.b-intro__inner .slick-arrow:hover {
+    cursor: pointer;
+}
+.b-intro__inner .slick-arrow.slick-prev {
+    transform: rotate(180deg) translateY(0);
+    background: url("../img/icons/right-white.svg") 50% 50% no-repeat;
+    left: 26px;
+}
+.b-intro__inner .slick-arrow.slick-next {
+    background: url("../img/icons/right-white.svg")50% 50% no-repeat;
+    right: 218px;
 }
 .b-subtitle--intro {
     max-width: 289px;

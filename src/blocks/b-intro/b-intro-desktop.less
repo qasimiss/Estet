@@ -1,11 +1,11 @@
 .b-intro {
-    max-width: 1600px;
-    height: 900px;
+    height: 100vh;
+    &__inner {
+        height: 100%;
+        width: 100%;
+    }
 }
-h1 {
-    margin: 0;
-    padding: 0;
-}
+
 .b-subtitle--intro {
     padding: 0 0 0 179px;
     max-width: 590px;
@@ -15,9 +15,9 @@ h1 {
         padding-top: 289px;
     }
 }
-.b-switcher-city--white {
-    margin-left: 77px;
+.b-intro__inner .slick-arrow.slick-prev {
+	left: 80px;
 }
-.b-button-tel {
-    margin-top: 47px;
+.b-intro__inner .slick-arrow.slick-next {
+	right: 80px;
 }

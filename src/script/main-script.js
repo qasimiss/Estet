@@ -46,6 +46,24 @@ $(document).ready(function() {
             },
         ]
     });
+$(document).ready(function(){
+    $(".b-intro__inner").slick({
+        arrows: true,
+        easing: "ease-in-out",
+        slidesToShows: 1,
+        speed: 2500,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    });
+});
+    // $('.b-card-advertising__inner').slick({
+    //     prevArrow: $('.b-button-white--left'),
+    //     nextArrow: $('.b-button-green--right'),
+    //     arrows: true,
+    //     easing: "ease-in-out",
+    //     speed: 1000,
+    //     swipe: false,
+    // });
     $('.b-picture--aside').slick({
         prevArrow: $('.b-button-square--white'),
         nextArrow: $('.b-button-square--green'),
