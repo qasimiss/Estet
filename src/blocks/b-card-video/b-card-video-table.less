@@ -16,6 +16,7 @@
     }
 
     &__item {
+        width: auto;
         margin-bottom: 31px;
         margin-left: 25px;
     }
@@ -26,21 +27,14 @@
 
     &__box-switcher-position {
         display: flex;
+        transform: rotate(180deg);
     }
-}
 
-.b-button-white--up:first-child {
-    display: none;
-}
+    & .b-button-square:first-child {
+        transform: rotate(-90deg);
+    }
 
-.b-button-white--up:last-child {
-    display: block;
-}
-
-.b-button-green--down {
-    transform: rotate(90deg);
-}
-
-.b-button-white--up {
-    transform: rotate(90deg);
+    & .b-button-square:nth-child(2) {
+        transform: rotate(-90deg);
+    }
 }

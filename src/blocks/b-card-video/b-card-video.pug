@@ -1,6 +1,5 @@
 include ../../elements/b-card-video__item/b-card-video__item.pug
-include ../../elements/b-button-white-green/b-button-white--up.pug
-include ../../elements/b-button-white-green/b-button-green--down.pug
+include ../../elements/b-button-square/b-button-square.pug
 include ../../elements/b-card-video-youtube/b-card-video-youtube.pug
 
 mixin b-card-video()
@@ -28,7 +27,12 @@ mixin b-card-video()
                     +b-card-video__item ("Современный ремонт квартиры-студии!")
                 .b-card-video__box-switcher
                     .b-card-video__box-switcher-position
-                        +b-button-white--up
-                        +b-button-green--down
-                        +b-button-white--up
+                        +b-button-square({
+                            modificationColor: "white",
+                            modificationArrow: "up",
+                        })
+                        +b-button-square({
+                            modificationColor: "green",
+                            modificationArrow: "down",
+                        })
             +b-card-video-youtube
