@@ -40,9 +40,9 @@ $(document).ready(function(){
         arrows: true,
         easing: "ease-in-out",
         slidesToShows: 1,
-        speed: 1000,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        speed: 2500,
+        autoplay: true,
+        autoplaySpeed: 5000,
     });
 });
     // $('.b-card-advertising__inner').slick({

@@ -1,32 +1,18 @@
-include ../../elements/b-intro__footer/b-intro__footer.pug
+include ../../elements/b-intro-square/b-intro-square.pug
+include ../../elements/b-intro__item/b-intro__item.pug
 
 mixin b-intro()
     section.b-intro
-        //- .b-container.b-container--no-padd-desktop
-        //-     h1(class="b-title b-title--intro") Stylish doors
-        //-     div(class="b-subtitle b-subtitle--intro") сделанные по новейшим разработкам из проверенных материалов
+        .b-container.b-container--no-padd-desktop
+            h1(class="b-title b-title--intro") Stylish doors
+            div(class="b-subtitle b-subtitle--intro") сделанные по новейшим разработкам из проверенных материалов
         .b-intro__inner
-            picture(class="b-intro__item")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/mobile/1-intro/1/1-1x.webp 1x, img/content/mobile/1-intro/1/1-2x.webp 2x," media="(max-width: 767px)")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/mobile/1-intro/1/1-1x.jpg 1x, img/content/mobile/1-intro/1/1-2x.jpg 2x" media="(max-width: 767px)")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/tablet/1-intro/1/1-1x.webp 1x, img/content/tablet/1-intro/1/1-2x.webp 2x," media="(max-width: 1023px)")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/tablet/1-intro/1/1-2x.jpg 1x, img/content/tablet/1-intro/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/desktop/1-intro/1/1-1x.webp 1x, img/content/desktop/1-intro/1/1-2x.webp 2x,")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/desktop/1-intro/1/1-2x.jpg 1x, img/content/desktop/1-intro/1/1-2x.jpg 2x")
-                img(class="b-intro-image" alt="intro-door" src="img/content/mobile/1-intro/1/1-1x.jpg")
-            picture(class="b-intro__item")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/mobile/1-intro/1/1-1x.webp 1x, img/content/mobile/1-intro/1/1-2x.webp 2x," media="(max-width: 767px)")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/mobile/1-intro/1/1-1x.jpg 1x, img/content/mobile/1-intro/1/1-2x.jpg 2x" media="(max-width: 767px)")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/tablet/1-intro/1/1-1x.webp 1x, img/content/tablet/1-intro/1/1-2x.webp 2x," media="(max-width: 1023px)")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/tablet/1-intro/1/1-2x.jpg 1x, img/content/tablet/1-intro/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/desktop/1-intro/1/1-1x.webp 1x, img/content/desktop/1-intro/1/1-2x.webp 2x,")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/desktop/1-intro/1/1-2x.jpg 1x, img/content/desktop/1-intro/1/1-2x.jpg 2x")
-                img(class="b-intro-image" alt="intro-door" src="img/content/mobile/1-intro/1/1-1x.jpg")
-            picture(class="b-intro__item")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/mobile/1-intro/1/1-1x.webp 1x, img/content/mobile/1-intro/1/1-2x.webp 2x," media="(max-width: 767px)")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/mobile/1-intro/1/1-1x.jpg 1x, img/content/mobile/1-intro/1/1-2x.jpg 2x" media="(max-width: 767px)")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/tablet/1-intro/1/1-1x.webp 1x, img/content/tablet/1-intro/1/1-2x.webp 2x," media="(max-width: 1023px)")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/tablet/1-intro/1/1-2x.jpg 1x, img/content/tablet/1-intro/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                source(class="b-intro-image" type="image/webp" srcset="img/content/desktop/1-intro/1/1-1x.webp 1x, img/content/desktop/1-intro/1/1-2x.webp 2x,")
-                source(class="b-intro-image" type="image/jpeg" srcset="img/content/desktop/1-intro/1/1-2x.jpg 1x, img/content/desktop/1-intro/1/1-2x.jpg 2x")
-                img(class="b-intro-image" alt="intro-door" src="img/content/mobile/1-intro/1/1-1x.jpg")
+            +b-intro__item
+            +b-intro__item
+            +b-intro__item
+            +b-intro__item
+            +b-intro__item
+            +b-intro__item
+            +b-intro__item
+            +b-intro__item
+        +b-intro-square
