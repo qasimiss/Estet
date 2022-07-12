@@ -56,21 +56,14 @@ $(document).ready(function(){
         autoplaySpeed: 5000,
     });
 });
-    // $('.b-card-advertising__inner').slick({
-    //     prevArrow: $('.b-button-white--left'),
-    //     nextArrow: $('.b-button-green--right'),
-    //     arrows: true,
-    //     easing: "ease-in-out",
-    //     speed: 1000,
-    //     swipe: false,
-    // });
     $('.b-picture--aside').slick({
-        prevArrow: $('.b-button-square--white'),
-        nextArrow: $('.b-button-square--green'),
+        prevArrow: $('.b-card-advertising .b-button-square--white'),
+        nextArrow: $('.b-card-advertising .b-button-square--green'),
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
         swipe: false,
+        autoplay: true,
         waitForAnimate: false,
         responsive: [
             {
@@ -89,8 +82,8 @@ $(document).ready(function(){
     });
 
     $('.b-card-video__inner').slick({
-        prevArrow: $('.b-button-square--white'),
-        nextArrow: $('.b-button-square--green'),
+        prevArrow: $('b-card-video .b-button-square--white'),
+        nextArrow: $('b-card-video .b-button-square--green'),
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 4,
