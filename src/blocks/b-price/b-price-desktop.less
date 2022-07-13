@@ -1,181 +1,167 @@
 .b-price {
     position: relative;
-}
-
-.b-price__21collection {
-    display: none;
-}
-
-.empty_block {
-    width: 50%;
-    order: 0;
-}
-
-.b-r-third-order {
-    // order: 1;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    background-color: white;
-    bottom: 100%;
-    height: 10%;
-    padding-top: 80px;
-}
-
-.b-sonata-padding-top-card {
-    width: 50%;
-    order: 2;
-}
-
-.b-padding_card_g {
-    order: 3;
-    width: 50%;
-    margin-bottom: 0;
-    padding-bottom: 80px;
-    background-color: @whiteF7;
-}
-
-.b_background_color_renaissance_no_white {
-    order: 4;
-    width: 50%;
-}
-
-.b-price__wrap--post {
-    order: 5;
-    width: 50%;
-    padding: 0;
-    padding-left: 62px;
-    padding-bottom: 80px;
-    margin-top: auto;
-}
-
-.b-sonata-six-order {
-    order: 6;
-    width: 50%;
-    padding-top: 80px;
-}
-
-
-.b-picture--renaissance-collection {
-    margin-bottom: 0;
-    order: 7;
-    width: 50%;
-}
-
-.b-price__wrap-option {
-    order: 7;
-    width: 50%;
-    background-color: @whiteF7;
-}
-
-.b-ten-order-r {
-    order: 10;
-    width: 50%;
-    background-color: @whiteFF;
-    padding-bottom: 0;
-}
-
-.b-padding_card_g_twelve_order {
-    order: 11;
-    padding-top: 80px;
-    width: 50%;
-}
-
-.b-padding_card_g_last_order {
-    order: 12;
-    width: 50%;
-    padding-bottom: 80px;
-}
-
-.b-eleventh-order-r {
-    order: 13;
-    padding-bottom: 80px;
-}
-
-.b-price__modern {
-    order: 14;
-    width: 50%;
-    padding: 65px 295px 0 66px;
-}
-
-.b-fourteenth-order-r {
-    order: 16;
-    width: 50%;
-    height: 50%;
-    padding-bottom: 0;
-    padding-top: 80px;
-}
-
-.b_tablet_none {
-    order: 17;
-}
-
-.b-padding_text_g {
-    width: 50%;
-}
-
-.b_tablet_none {
-    display: block;
-}
-
-.b-price__modern {
-    order: 13;
-    width: 50%;
-}
-
-.b-picture--modern {
-    order: 14;
-    margin-bottom: 0;
-}
-
-.b-price__wrapper-doors {
-    order: 15;
-    width: 50%;
-    & .b-fourteenth-order-r {
+    &__21collection {
+        display: none;
+    }
+    &__modern {
+        order: 13;
+        width: 50%;
+    }
+    &__wrapper-doors {
+        order: 16;
+        width: 50%;
+        & .b-price___ren-order {
+            width: 100%;
+        }
+    }
+    &__wrap-post {
+        order: 5;
+        width: 50%;
+        padding: 0;
+        padding-left: 62px;
+        padding-bottom: 80px;
+        margin-top: auto;
+    }
+    &__wrap-option {
+        order: 7;
+        width: 50%;
+        background-color: @whiteF7;
+    }
+    &__empty_block {
+        width: 50%;
+        order: 0;
+    }
+    &__sonata-padding-card {
+        width: 50%;
+        order: 2;
+        padding-top: 80px;
+    }
+    &__pad_card_genesis {
+        order: 3;
+        width: 50%;
+        margin-bottom: 0;
+        padding-bottom: 80px;
+        background-color: @whiteF7;
+    }
+    &__renaissance-padding-text {
+        width: 50%;
+        padding-top: 80px;
+    }
+    &___renaissance-no-white {
+        order: 4;
+        width: 50%;
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+    &__ren-order {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        bottom: 100%;
+        height: 10%;
+    }
+    &__sonata-order {
+        order: 6;
+        width: 50%;
+        padding-top: 80px;
+    }
+    &__renaissance-ord {
+        order: 10;
+        width: 50%;
+        background-color: @whiteFF;
+        padding-bottom: 0;
+        padding-top: 80px;
+    }
+    &__pad-card-genesis-ord {
+        order: 11;
+        padding-top: 80px;
+        width: 50%;
+    }
+    &__pad-card-gen-ord {
+        order: 12;
+        width: 50%;
+        padding-bottom: 80px;
+    }
+    &__order-renaissance {
+        order: 13;
+        padding-bottom: 80px;
+    }
+    &__modern {
+        order: 14;
+        width: 50%;
+        padding: 65px 295px 0 66px;
+    }
+    &__wrapper-doors-modern {
+        order: 15;
+        width: 50%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    &___ren-order {
+        order: 16;
+        width: 50%;
+        height: 50%;
+        padding-bottom: 0;
+        padding-top: 80px;
+    }
+    &__gen-tabl-none {
+        order: 17;
         width: 100%;
+        display: flex;
+        height: 50%;
+        padding-bottom: 80px;
+    }
+    &__pad_text_genesis {
+        width: 50%;
+    }
+    &__wrap-still {
+        order: 18;
+    }
+    &__mixin-wrap {
+        width: 48%;
+    }
+    & .b-button-collection__navigation {
+        display: none;
+    }
+    &__mixin {
+        transition: background-color 0.3s ease-in-out;
+    }
+    &__mixin:hover {
+        background-color: @green47;
+    }
+    &__mixin:hover .b-title--renaissance,
+    &__mixin:hover .b-price__mixin-wrap .b-title--little,
+    &__mixin:hover .b-mixin-price__price {
+    color: @whiteFF;
+    }
+    &__information {
+        display: block;
+        color: @whiteFF;
+        padding-right: 5px;
     }
 }
 
-.b_tablet_none {
-    width: 100%;
-    display: flex;
-    height: 50%;
-    padding-bottom: 80px;
-}
-
-.b-renaissance-padding-top-text {
-    width: 50%;
-}
-
-.b-picture--genesis img {
-    height: 100%;
-}
-
-.b-price__wrapper-doors-modern {
-    order: 14;
-    width: 50%;
-    height: auto;
-    margin-bottom: 0;
-}
-
-.b-picture--modern {
-    width: 100%;
-}
-
-.b-price__wrap-still {
-    order: 18;
-}
-
-.b-picture--sonata {
-    height: 100%;
-}
-
-.b-picture--sonata img {
-    height: 100%;
-}
-
-.b-price__mixin-wrap {
-    width: 48%;
+.b-picture {
+    &--renaissance-collection {
+        margin-bottom: 0;
+        order: 7;
+        height: 100%;
+        width: 50%;
+    }
+    &--genesis img {
+        height: 100%;
+    }
+    &--modern {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    &--sonata {
+        height: 100%;
+        & img {
+            height: 100%;
+        }
+    }
 }
 
 @media (max-width: 1300px) {
@@ -187,11 +173,11 @@
     }
 }
 
-// .ccc {
-//     order: 1;
-//     width: 50%;
-// }
-
-.b-price .b-button-collection__navigation {
-    display: none;
+.b-mixin-price__price {
+    margin-bottom: 65%;
 }
+
+.b-title--renaissance,.b-title--little,.b-mixin-price__price {
+    transition: color 0.3s ease-in-out;
+}
+
