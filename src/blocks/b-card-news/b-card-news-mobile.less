@@ -20,23 +20,35 @@
         margin-bottom: 41px;
     }
     &__button{
-        &-active{
+        &-news {
             width:85px;
             height: 25px;
             text-align: left;
             border-bottom: 1px solid @greyCD;
-            &:active{
+            transition: opacity 0.2s;
+            &.active{
                 color:@green47;
                 border-color:@green47;
+            }
+            &:hover {
+                opacity: 0.7;
             }
         }
         &-tips{
             width:84px ;
             padding-left: 22px;
             border-bottom: 1px solid @greyCD;
+            transition: opacity 0.2s;
+            &.active{
+                color:@green47;
+                border-color:@green47;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
         }
         &-switcher{
-            width: 325px;
+            padding-right: 25px;
             margin-bottom: 67px;
         }
     }
@@ -44,17 +56,22 @@
         display: none;
     }
     &__news{
-        overflow:hidden;
-        width: 100%;
-        position: relative;
+        display:none;
+        &.active {
+            display: block;
+            overflow:hidden;
+            width: 100%;
+            position: relative;
+        }
         &::before{
             content:"";
             position: absolute;
             width: 200px;
-            height:700px;
+            height:100%;
             background: linear-gradient(to left, white 5%, transparent 100%);
             top:0;
             right: 0;
+            z-index: 1;
         }
     }
     &__wrapper{
@@ -64,14 +81,12 @@
     &__item{
         display: block;
         margin-right: 36px;
-        margin-bottom: 28px;
+        margin-bottom: 56px;
         text-decoration: none;
-        width: 100%;
         &:nth-child(6){
             display: none;
         }
         & img{
-            margin-bottom: 17px;
             object-fit:cover;
             width: 100%;
         }
@@ -83,9 +98,14 @@
             }
         }
     }
+    &__icon {
+        height: 140px;
+        margin-bottom: 17px;
+    }
     &__picture {
         display: block;
         width: 100%;
+        margin-bottom: 17px;
     }
     &__description{
         width: 258px;
@@ -109,9 +129,6 @@
         line-height: 14px;
         color:@grey99;
     }
-    &__tips{
-       display:none;
-    }
-}   
+}
 
 

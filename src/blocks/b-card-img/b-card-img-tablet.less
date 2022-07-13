@@ -9,32 +9,50 @@
             margin-bottom: 43px;
             text-decoration: none;
             margin-left: 0;
-            z-index: 1;
+            z-index: 12;
             & img{
                 width: 100%;
                 object-fit: cover;
             }
         }
         &--skorob{
+            position: relative;
             order: 2;
             width: 50%;
             height: 362px;
             text-decoration: none;
-            margin-left: auto;
+            & picture{
+                width: 100%;
+            }
             & img{
                 object-fit: cover;
                 width: 100%;
             }
+            & a{
+                width: 100%;
+            }
         }
         &--reiki{
+            position: relative;
             order: 3;
             width: 50%;
             height: 362px;
             text-decoration: none;
             margin-bottom: 0;
-            img{
+            & picture{
+                width: 100%;
+            }
+            &  img{
                 object-fit: cover;
                 width: 100%;
+                height: 100%;
+                margin-right: auto;
+            }
+            & a{    
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                margin-left: 0;
             }
         }
         &--sliding{
@@ -59,16 +77,26 @@
             }
         }
         &--holz{
+            position: relative;
             order: 5;
-            width: 50%;
+            width: 100%;
             height:224px;
             text-decoration: none;
-            margin-left: auto;
             margin-bottom:0;
             margin-right: 0;
-            img{
-                width: 100%;
+            & picture{
+                width: 50%;
+                height: 100%; 
+            }
+            & img{
                 object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            & a{
+                width: 50%;
+                height: 100%;
+                margin-left: auto;
             }
         }
         &--verso{
@@ -86,6 +114,19 @@
             width: 100%;
             height: 225px;
             text-decoration: none;
+            & picture{
+                width: 50%;
+            }
+            &  img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            & a{    
+                width: 50%;
+                height: 100%;
+                text-decoration: none;
+            }
         }
         &--janelle{
             order: 8;
@@ -93,7 +134,20 @@
             height: 225px;
             text-decoration: none;
             margin-bottom: 42px;
-            padding-bottom: 25px;
+            & picture{
+                width: 50%;
+            }
+            &  img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            & a{    
+                width: 50%;
+                height: 100%;
+                text-decoration: none;
+                margin-left: auto;
+            }
         }
     }
     &-icon{
@@ -115,7 +169,6 @@
         &--holz {
             order: 4;
             width: 239px;
-            height: 186px;
             font-size: 14px;
             font-weight: 400;
             line-height: 30px;
