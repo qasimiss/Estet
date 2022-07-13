@@ -1,7 +1,10 @@
 const hamburger = document.querySelector(".b-header-main__hamburger"),
       navContainer = document.querySelector(".b-hamburger"),
       videoItem = document.querySelectorAll('.b-card-video__item'),
-      target = document.querySelector(".slick-current")
+      target = document.querySelector(".slick-current"),
+      buttonNews = document.querySelector(".b-card-news__button-news"),
+      buttonTips = document.querySelector(".b-card-news__button-tips"),
+      news = document.querySelectorAll(".b-card-news__news");
 
 
 $(hamburger).on('click', function() {
@@ -9,18 +12,32 @@ $(hamburger).on('click', function() {
     navContainer.classList.toggle("active")
 })
 
-.on('click', function() {
-    const target = event.target
-    target.classList.add('slick-current')
+$(buttonNews).on('click', function() {
+    buttonTips.classList.remove("active")
+    news[1].classList.remove("active")
+    buttonNews.classList.add("active")
+    news[0].classList.add("active")
 })
+
+$(buttonTips).on('click', function() {
+    buttonNews.classList.remove("active")
+    news[0].classList.remove("active")
+    buttonTips.classList.add("active")
+    news[1].classList.add("active")
+})
+
+// .on('click', function() {
+//     const target = event.target
+//     target.classList.add('slick-current')
+// })
 //     video__item.classList.remove("slick-active")
 //     video__item.classList.add("slick-current")
 // })
 
 $(document).ready(function() {
     $('.b-card-address__inner').slick({
-        prevArrow: $('.b-link-and-switcher__link-left-arrow'),
-        nextArrow: $('.b-link-and-switcher__link-right-arrow'),
+        prevArrow: $('.b-card-address .b-link-and-switcher__link-left-arrow'),
+        nextArrow: $('.b-card-address .b-link-and-switcher__link-right-arrow'),
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
@@ -46,7 +63,7 @@ $(document).ready(function() {
             },
         ]
     });
-$(document).ready(function(){
+
     $(".b-intro__inner").slick({
         arrows: true,
         easing: "ease-in-out",
@@ -55,7 +72,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
     });
-});
+
     $('.b-picture--aside').slick({
         prevArrow: $('.b-card-advertising .b-button-square--white'),
         nextArrow: $('.b-card-advertising .b-button-square--green'),
@@ -103,4 +120,62 @@ $(document).ready(function(){
         waitForAnimate: false,
         asNavFor: '.b-card-video__inner'
     });
-})
+
+    $('.b-card-news__news .b-card-news__wrapper').slick({
+        prevArrow: $('.b-card-news .b-link-and-switcher__link-left-arrow'),
+        nextArrow: $('.b-card-news .b-link-and-switcher__link-right-arrow'),
+        arrows: true,
+        easing: "ease-in-out",
+        speed: 1000,
+        swipe: false,
+        waitForAnimate: false,
+        variableWidth: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        asNavFor: '.b-card-news__news .b-card-news__wrapper',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+        ]
+    });
+    $('.b-card-news__news .b-card-news__wrapper').slick({
+        prevArrow: $('.b-card-news .b-link-and-switcher__link-left-arrow'),
+        nextArrow: $('.b-card-news .b-link-and-switcher__link-right-arrow'),
+        arrows: true,
+        easing: "ease-in-out",
+        speed: 1000,
+        swipe: false,
+        waitForAnimate: false,
+        variableWidth: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+        ]
+    });
+});
