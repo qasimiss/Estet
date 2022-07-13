@@ -27,11 +27,22 @@ html(lang="en")
         include blocks/b-card-modern/b-card-modern.pug
         include blocks/b-card-address/b-card-address.pug
         include blocks/b-footer/b-footer.pug
+        include blocks/b-aside/b-aside.pug
         .b-container--max-width
             +b-header-doors
+            +b-aside
             +b-intro-second
             +b-price
-            +b-advertising
+            +b-advertising({
+                modificationAside: "b-card-advertising--doors",
+                modificationPicture: "b-card-advertising__container--doors",
+                modificationWrap: "b-card-advertising__wrap--doors",
+                modificationTitle: "b-card-advertising__title--doors",
+                modificationStock: "b-card-advertising__stock--doors",
+                modificationWrapper: "b-card-advertising__wrapper--doors",
+                modificationPost: "b-card-advertising__post--doors",
+                modificationDescription: "b-card-advertising__description--doors",
+            })
             +b-slider-video
             +b-card-modern
             +b-card-address--buy("Купить в вашем городе")

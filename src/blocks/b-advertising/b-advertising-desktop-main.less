@@ -1,39 +1,85 @@
 .b-card-advertising {
+    & .slick-list, & .slick-track {
+        height: 100%;
+    }
+    &--doors {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 197px;
+        background: linear-gradient(180deg, transparent 152px, @whiteF7 152px 100%);
+        margin-bottom: 0;
+        position: relative;
+    }
     width: 100%;
+    &__container {
+        &--doors {
+            width: 50%;
+            order: 5;
+        }
+    }
     &__wrap {
         position: absolute;
-        right: 40%;
-        top: 15%;
+        height: 100%;
+        width: calc(50% - 200px);
+        right: 200px;
+        top: 0;
+    }
+    &__wrapper {
+        &--doors {
+            padding-top: 232px;
+        }
+    }
+    &__caption {
+        position: absolute;
+        top: 45px;
+        right: 343px;
+        font-weight: 400;
+        font-size: 150px;
+        line-height: 192px;
     }
     &__stock {
         position: absolute;
-        right: 0;
-        top: -130%;
+        right: 200px;
+        top: 539px;
         color: @grey99;
-    }
-    &__wrapper {
-        position: relative;
-        padding-left: 0;
     }
     &__post {
         position: absolute;
-        right: -115%;
-        top: 40%;
+        right: 100px;
+        top: 82px;
         &--margin {
-            top: 20%;
-            right: -80%;
-        }
-        &--border {
             padding-bottom: 7px;
             border-bottom: 1px solid @whiteFF;
+            top: 100px;
+            right: 100px;
+            width: 200px;
+            font-size: 18px;
+            line-height: 21px;
+            color: @whiteFF;
+        }
+        &--doors {
+            font-family: lora;
+            right: 100%;
+            top: 0;
+            font-size: 150px;
+            line-height: 192px;
+            color: @whiteF7;
         }
     }
     &__title {
         padding-left: 0;
-        padding-right: 5%;
+        padding-right: 0;
+        padding-top: 0;
+        width: calc(100% - 300px);
+        &--doors {
+            display: none;
+        }
     }
-    & .slick-track {
-        min-height: 497px;
+    &__descr-doors {
+        display: block;
+    }
+    &__detailed-doors {
+        display: block;
     }
     & .b-button-square:nth-child(2) {
         display: block;
@@ -56,6 +102,31 @@
         right: 60px;
         top: 0;
     }
+    &__stock,
+    &__description {
+    padding-left: 0;
+    color: @grey99;
+    }
+    &__descr-doors {
+        font-size: 36px;
+        line-height: 42px;
+        color: @grey3C;
+        margin-bottom: 21px;
+    }
+    &__description {
+        margin-bottom: 63px;
+        max-width: 565px;
+        &--doors {
+            max-width: 371px;
+        }
+    }
+    &__detailed-doors {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: @green47;
+    }
 }
 
 .b-picture--aside img {
@@ -68,33 +139,4 @@
     position: absolute;
     top: 0;
     right: 60px;
-}
-
-.b-advertising-collection {
-    background-color: @whiteFF;
-    height: 191px;
-    padding-top: 50px;
-    padding-left: 25px;
-    &_8 {
-        font-size: 24px;
-        line-height: 28.13px;
-        color: @grey3C;
-    }
-    &_14 {
-        font-size: 16px;
-        line-height: 18px;
-        color: @grey99;
-    }
-    &__margin {
-        margin-bottom: 12px;
-    }
-    &_link {
-        display: block;
-        color: @green47;
-        text-decoration: none;
-    }
-    &_link svg {
-        margin-left: 28px;
-        fill: @green47;
-    }
 }

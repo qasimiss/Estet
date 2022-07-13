@@ -2,6 +2,20 @@
     width: 100%;
     padding-top: 70px;
     // ПАДИНГ ПОТОМ НУЖНО УДАЛИТЬ
+    &__mixin {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    &__mixin-wrap {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+        padding-left: 25px;
+    }
     &__21collection {
         padding-left: 25px;
     }
@@ -59,6 +73,52 @@
         left: 15%;
         width: 251px;
     }
+    &__wrapper-doors-modern {
+        width: 100%;
+        position: relative;
+        margin-bottom: 43px;
+    }
+    &__wrap-warranty {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+    &__modern-number {
+        font-family: @second-font;
+        font-weight: 400;
+        font-size: 100px;
+        list-style: 128px;
+    }
+    &__modern-post {
+        font-family: @second-font;
+        font-weight: 400;
+        font-size: 30px;
+        list-style: 33px;
+    }
+    &__wrap-still-link {
+        display: block;
+        color: @green47;
+        text-decoration: none;
+        transition: opacity 0.3s ease-in-out;
+        & img {
+            margin-left: 28px;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &__wrap-still-8 {
+        font-size: 24px;
+        line-height: 28px;
+        color: @grey3C;
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+    &__wrap-still-14 {
+        font-size: 16px;
+        line-height: 18px;
+        color: @grey99;
+    }
 }
 
 .b-card-icon--palitra {
@@ -94,10 +154,6 @@
 }
 
 .b-picture--modern {
-    height: 531px;
-    width: 100%;
-    position: relative;
-    margin-bottom: 43px;
     & img {
         width: 100%;
         height: 100%;
@@ -139,4 +195,18 @@
 
 .b_pading_none_sonata {
     padding-bottom: 0;
+}
+
+.b-price__wrap-still {
+    padding: 46px 0 86px 25px;
+}
+
+// .b-price__wrap-still-link:hover {
+//     opacity: 0.7;
+// }
+
+@media (max-width: 767px) {
+    .b-mixin-price--genesis {
+        display: none;
+    }
 }
