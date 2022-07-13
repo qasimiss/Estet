@@ -5,9 +5,11 @@
     &__title-box {
         display: flex;
         justify-content: space-between;
-        width: 630px;
+        width: 100%;
         padding-top: 45px;
         margin-bottom: 26px;
+        padding-right: 63px;
+        align-items: flex-end;
     }
 
     &__inner {
@@ -18,16 +20,16 @@
         margin-bottom: 43px;
         margin-left: -13px;
         background-color: @whiteFF;
+        overflow: hidden;
     }
 
     &__item {
         margin: 0;
         padding: 49px 0 20px 52px;
-
-        // &:nth-child(n+5) {
-        //     padding-left: 0px;
-        //     margin-left: -4px;
-        // }
+    }
+    & .slick-track {
+        display: flex;
+        flex-flow: column wrap;
     }
 }
 
