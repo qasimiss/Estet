@@ -3,7 +3,7 @@ include b-mixin-catalog/b-sonata.pug
 include b-mixin-catalog/b-renaissance.pug
 include b-mixin-catalog/b-genesis.pug
 mixin b-price
-    section.b-price.b-container.b-container--no-padd-mobile
+    section.b-price.b-container.b-container--no-padd-mobile.b-container--no-padd-desktop
         .b-aside
         .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
         +b-button-collection()
@@ -50,9 +50,8 @@ mixin b-price
         margin_padding_sonata: 'b-sonata-padding-top-card',
         margin_padding_sonata: 'b-sonata-six-order'
         })
-        .wrap
+        .b-price__wrapper-doors
             +renaissance({
-                padding_renaissance_text: 'b-renaissance-padding-top-text',
                 background_color_renaissance_no_white: 'b_background_color_renaissance_no_white b-fourteenth-order-r'
             })
             +genesis({
@@ -67,7 +66,7 @@ mixin b-price
         margin_padding_sonata: 'b-sonata-padding-top-card b-sonata-none'
         })
         .b-price__modern Современные материалы и&nbsp;инновационные покрытия
-        .wrapper
+        .b-price__wrapper-doors-modern
             picture.b-picture.b-picture--modern
                 source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.webp 1x, img/content/mobile/9-price/4/12-2x.webp 2x" media="(max-width: 767px)")
                 source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.jpg 1x, img/content/mobile/9-price/4/12-2x.jpg 2x" media="(max-width: 767px)")
@@ -76,7 +75,7 @@ mixin b-price
                 source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.webp 1x, img/content/desktop/9-price/4/1-2x.webp 2x")
                 source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.jpg 1x, img/content/desktop/9-price/4/1-2x.jpg 2x")
                 img(src="img/content/desktop/9-price/4/1-1x.jpg" width="375" height="531" alt="modern")
-            .wrapper_post
+            .b-price__wrap-warranty
                 .b-price__modern-number 5
                 .b-price__modern-post лет гарантии на&nbsp;любую продукцию ESTET
         +renaissance({
@@ -94,5 +93,6 @@ mixin b-price
         .b-price__wrap-still
             span.b-price__wrap-still-8 8
             span.b-price__wrap-still-14 /14
-            a(href="").b-price__wrap-still-linl ПОКАЗАТЬ ЕЩЕ
+            a(href="").b-price__wrap-still-link ПОКАЗАТЬ ЕЩЕ
+                img(src="img/icons/down-green.svg" width="7" height="18" alt="Показать ещё")
 
