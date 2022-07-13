@@ -27,6 +27,21 @@
             padding-left: 51px;
         }
     }
+
+    .slick {
+        &-track {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+
+            height: 660px;
+
+            margin-bottom: 44px;
+
+            background-color: @whiteFF;
+            flex-direction: column;
+        }
+    }
 }
 
 .b-switcher-city__position {
@@ -46,20 +61,5 @@
         width: 100%;
 
         margin-right: 84px;
-    }
-}
-
-.slick {
-    &-track {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: start;
-
-        height: 660px;
-
-        margin-bottom: 44px;
-
-        background-color: @whiteFF;
-        flex-direction: column;
     }
 }
