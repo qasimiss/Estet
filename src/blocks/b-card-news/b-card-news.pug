@@ -3,7 +3,7 @@ mixin b-card-news()
     section.b-card-news
         .b-container
             .b-card-news__header
-                .b-title.b-title--main  Новости и советы
+                h2.b-title.b-title--main  Новости и советы
                 .b-card-news__nav
                     .b-card-news__button-news.active Новости
                     .b-card-news__button-tips Советы
@@ -158,4 +158,7 @@ mixin b-card-news()
                         .b-card-news__date
                             time(datetime="2021-01-25") 25  января 2021 г.
             .b-card-news__button-switcher
-                +b-link-and-switcher("Все новости")
+                +b-link-and-switcher({
+                modificationValue: "Все новости",
+                modificationTitle: "Показать все новости",
+            })
