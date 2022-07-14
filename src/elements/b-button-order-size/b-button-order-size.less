@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 375px;
     height: 60px;
-    background-color: @green47;
+    background: @green47;
     position: absolute;
     bottom:0;
     right:0;
@@ -12,6 +12,7 @@
     color: @whiteFF;
     box-sizing: border-box;
     padding: 13px 24px 13px 26px;
+    z-index: 2;
     &__square {
     display: flex;
     justify-content: space-between;
@@ -33,5 +34,8 @@
     }
     &__arrow {
     width: 44px;
+    }
+    &:hover {
+        background: lighten(@green4A,20%);
     }
 }
