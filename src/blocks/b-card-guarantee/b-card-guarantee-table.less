@@ -1,7 +1,9 @@
 .b-card-guarantee {
+    width: 50%;
+
     &-service {
         display: flex;
-        position: relative;
+        flex-wrap: wrap;
     }
 
     &__box {
@@ -24,20 +26,15 @@
                     20px 100%, 0 100%, 0 0);
     }
 
-    &__title-box {
-        position: absolute;
-        top: 274px;
-        left: 50px;
-    }
-
     &__suptitle {
         display: none;
     }
 
     &__content {
-        margin: 27px 15px 0 82px;
+        position: relative;
+        margin: -93px 0px 0 81px;
 
-        text-align: start;
+        z-index: 1;
     }
 
     &__text {
@@ -45,11 +42,14 @@
 
         font-size: 16px;
         line-height: 38px;
+        text-align: left;
     }
 
     &__link {
         font-size: 16px;
         line-height: 38px;
+
+        text-align: left;
 
         &:hover {
             color: lighten(@green47, 20%);
