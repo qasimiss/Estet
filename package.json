@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://bitbucket.org/qasimis/estet/issues"
   },
-  "homepage": "https://bitbucket.org/qasimis/estet#readme"
+  "homepage": "https://bitbucket.org/qasimis/estet#readme",
+  "dependencies": {
+    "eslint": "^8.19.0"
+  }
 }
