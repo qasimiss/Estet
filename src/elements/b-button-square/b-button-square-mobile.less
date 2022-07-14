@@ -10,10 +10,17 @@
 
     &--green {
         background-color: @green47;
+        transition: background-color linear .3s;
     }
 
     &--white {
         background-color: @whiteFF;
+        transition: background-color linear .3s;
+
+        &:hover .b-button-square-img--up,
+        &:hover .b-button-square-img--left {
+            fill: @whiteFF;
+        }
     }
 
     &:hover {
@@ -42,11 +49,23 @@
         fill: @green47;
 
         transform: translate(-50%, -50%) rotate(90deg);
+
+        transition: fill linear .3s;
+
+        // &:hover {
+        //     fill: @whiteFF;
+        // }
     }
 
     &--left {
         fill: @green47;
 
         transform: translate(-50%, -50%);
+
+        transition: fill linear .3s;
+
+        // &:hover {
+        //     fill: @whiteFF;
+        // }
     }
 }
