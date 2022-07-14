@@ -3,82 +3,84 @@ include ../../elements/b-button-square/b-button-square.pug
 mixin b-technology()
     section.b-technology
         .b-container.b-container--technology.b-container--no-padd-table.b-container--no-padd-desktop
-            a(id="technology__link-hover--grass" href="javascript:void(0);")
-                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
-                    img(class="b-oval-green" src="img/icons/oval-green.svg", alt="")
-            a(id="technology__link-hover--vase" href="javascript:void(0);")
-                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
             .b-technology__container
-                h2.b-title.b-title--technology ESTET
-                p.b-subtitle.b-subtitle--technology.b-subtitle--padding Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
+                    h2.b-title.b-title--technology ESTET
+                    p.b-subtitle.b-subtitle--technology.b-subtitle--padding Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
             .b-technology__wrap
                 +b-button-square({
                     modificationColor: "white",
                     modificationArrow: "left",
                     modificationTitle: "Назад",
-                        })
+                })
                 +b-button-square({
                     modificationColor: "green",
                     modificationArrow: "right",
                     modificationTitle: "Далее",
-                        })
-            .b-technology__wrap-grass
-                picture.b-picture.b-picture--technology
-                    source(type="image/webp" srcset="img/content/mobile/7-technology/1/14-1x.webp 1x, img/content/mobile/7-technology/1/14-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/7-technology/1/14-1x.jpg 1x, img/content/mobile/7-technology/1/14-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/7-technology/1/1-1x.webp 1x, img/content/tablet/7-technology/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/7-technology/1/1-1x.jpg 1x, img/content/tablet/7-technology/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/7-technology/1/1-1x.webp 1x, img/content/desktop/7-technology/1/1-2x.webp 2x") 
-                    source(type="image/jpeg" srcset="img/content/desktop/7-technology/1/1-1x.jpg 1x, img/content/desktop/7-technology/1/1-2x.jpg 2x")
-                    img(src="img/content/desktop/7-technology/1/1-1x.jpg")
-                .b-technology__post.b-technology__post--grass
-                    strong.b-technology__caption Современные интерьерные решения
-                    p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
-            .b-technology__wrapper.b-technology__wrapper--mirror
-                picture.b-picture.b-picture--mirror
-                    source(type="image/webp" srcset="img/content/tablet/7-technology/5/1-1x.webp 1x, img/content/tablet/7-technology/5/1-2x.webp 2x" media="(min-width: 768px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/7-technology/5/1-1x.jpg 1x, img/content/tablet/7-technology/5/1-2x.jpg 2x" media="(min-width: 768px)")
-                    img(src="img/content/tablet/7-technology/5/1-1x.jpg")
-            .b-technology__wrapper.b-technology__wrapper--techn
-                a(class="b-technology__link-hover b-technology__link-hover--tech" href="javascript:void(0);")
-                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="") 
+                })
+            a(id="technology__link-hover--grass" href="javascript:void(0);")
+                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
                     img(class="b-oval-green" src="img/icons/oval-green.svg", alt="")
-                picture.b-picture.b-picture--techn
-                    source(type="image/webp" srcset="img/content/mobile/7-technology/3/1-1x.webp 1x, ../img/content/mobile/7-technology/3/1-2x.webp 2x" media="(max-width: 767px)") 
-                    source(type="image/jpeg" srcset="img/content/mobile/7-technology/3/1-1x.jpg 1x, ../img/content/mobile/7-technology/3/1-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/desktop/7-technology/3/1-1x.webp 1x, ../img/content/desktop/7-technology/3/1-2x.webp 2x") 
-                    source(type="image/jpeg" srcset="img/content/desktop/7-technology/3/1-1x.jpg 1x, ../img/content/desktop/7-technology/3/1-2x.jpg 2x")
-                    img(src="../img/content/desktop/7-technology/3/1-1x.jpg")
-                .b-technology__post.b-technology__post--company
-                    h2.b-title.b-title--technology.b-title--company Компания
-                    p.b-subtitle.b-subtitle--technology Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.
-            .b-technology__wrapper.b-technology__wrapper--lamp
-                a(class="b-technology__link-hover b-technology__link-hover--lamp" href="javascript:void(0);")
-                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="") 
-                picture.b-picture.b-picture--lamp
-                    source(type="image/jpeg" srcset="img/content/mobile/7-technology/4/1-1x.jpg 1x, img/content/mobile/7-technology/4/1-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/7-technology/4/1-1x.webp 1x, img/content/tablet/7-technology/4/1-2x.webp 2x" media="(max-width: 1023px)") 
-                    source(type="image/jpeg" srcset="img/content/tablet/7-technology/4/1-1x.jpg 1x, img/content/tablet/7-technology/4/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/7-technology/4/1-1x.webp 1x, img/content/desktop/7-technology/4/1-2x.webp 2x") 
-                    source(type="image/jpeg" srcset="img/content/desktop/7-technology/4/1-1x.jpg 1x, img/content/desktop/7-technology/4/1-2x.jpg 2x")
-                    img(src="img/content/desktop/7-technology/4/1-1x.jpg")
-                .b-technology__post.b-technology__post--quality
-                    div.b-title.b-title--quality Высокое качество
-                    span.b-technology__info Все наши двери проходят строжайший контроль качества на&nbsp;всех этапах производства. Следить за&nbsp;качеством, мы&nbsp;считаем, важнейшая задача производителя.
-            .b-technology__wrapper.b-technology__wrapper--vase
-                //- a(class="b-technology__link-hover b-technology__link-hover--vase" href="javascript:void(0);")
-                //-     img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
-                picture.b-picture.b-picture--vase
-                    source(type="image/webp" srcset="img/content/mobile/7-technology/2/1-1x.webp 1x, img/content/mobile/7-technology/2/1-2x.webp 2x" media="(max-width: 767px)") 
-                    source(type="image/jpeg" srcset="img/content/mobile/7-technology/2/1-1x.jpg 1x, img/content/mobile/7-technology/2/1-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/7-technology/2/1-1x.webp 1x, img/content/tablet/7-technology/2/1-2x.webp 2x" media="(max-width: 1023px)") 
-                    source(type="image/jpeg" srcset="img/content/tablet/7-technology/2/1-1x.jpg 1x, img/content/tablet/7-technology/2/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/7-technology/5/5-1x.webp 1x, img/content/desktop/7-technology/5/5-2x.webp 2x") 
-                    source(type="image/jpeg" srcset="img/content/desktop/7-technology/5/5-1x.jpg 1x, img/content/desktop/7-technology/5/-2x.jpg 2x")
-                    img(src="img/content/desktop/7-technology/5/5-1x.jpg")
-                .b-technology__post.b-technology__post--vase
-                    strong.b-hover-quality__title Новые технологии
-                    span.b-hover-quality__post Каркас двери и&nbsp;дверная коробка изготавливаются из&nbsp;хвойного бруса высокого качества, срощенного по&nbsp;длине и&nbsp;оптимизированного, то&nbsp;есть из&nbsp;него вырезаны сучки, смоляные карманы и&nbsp;другие пороки, присущие натуральному дереву.
-            .b-logo-wrap
-                img(class="b-technology-logo b-technology-logo--white" src="img/icons/logo-white.svg" alt="")
-                img(class="b-technology-logo b-logo-green" src="img/icons/logo-green.svg" alt="")
+            a(id="technology__link-hover--vase" href="javascript:void(0);")
+                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
+            .b-technology__inner
+                .b-technology__container
+                    h2.b-title.b-title--technology ESTET
+                    p.b-subtitle.b-subtitle--technology.b-subtitle--padding Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
+                .b-technology__wrap-grass
+                    picture.b-picture.b-picture--technology
+                        source(type="image/webp" srcset="img/content/mobile/7-technology/1/14-1x.webp 1x, img/content/mobile/7-technology/1/14-2x.webp 2x" media="(max-width: 767px)")
+                        source(type="image/jpeg" srcset="img/content/mobile/7-technology/1/14-1x.jpg 1x, img/content/mobile/7-technology/1/14-2x.jpg 2x" media="(max-width: 767px)")
+                        source(type="image/webp" srcset="img/content/tablet/7-technology/1/1-1x.webp 1x, img/content/tablet/7-technology/1/1-2x.webp 2x" media="(max-width: 1023px)")
+                        source(type="image/jpeg" srcset="img/content/tablet/7-technology/1/1-1x.jpg 1x, img/content/tablet/7-technology/1/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="img/content/desktop/7-technology/1/1-1x.webp 1x, img/content/desktop/7-technology/1/1-2x.webp 2x") 
+                        source(type="image/jpeg" srcset="img/content/desktop/7-technology/1/1-1x.jpg 1x, img/content/desktop/7-technology/1/1-2x.jpg 2x")
+                        img(src="img/content/desktop/7-technology/1/1-1x.jpg")
+                    .b-technology__post.b-technology__post--grass
+                        strong.b-technology__caption Современные интерьерные решения
+                        p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
+                .b-technology__wrapper.b-technology__wrapper--mirror
+                    picture.b-picture.b-picture--mirror
+                        source(type="image/webp" srcset="img/content/tablet/7-technology/5/1-1x.webp 1x, img/content/tablet/7-technology/5/1-2x.webp 2x" media="(min-width: 768px)")
+                        source(type="image/jpeg" srcset="img/content/tablet/7-technology/5/1-1x.jpg 1x, img/content/tablet/7-technology/5/1-2x.jpg 2x" media="(min-width: 768px)")
+                        img(src="img/content/tablet/7-technology/5/1-1x.jpg")
+                .b-technology__wrapper.b-technology__wrapper--techn
+                    a(class="b-technology__link-hover b-technology__link-hover--tech" href="javascript:void(0);")
+                        img(class="b-oval-white" src="img/icons/oval-white.svg", alt="") 
+                        img(class="b-oval-green" src="img/icons/oval-green.svg", alt="")
+                    picture.b-picture.b-picture--techn
+                        source(type="image/webp" srcset="img/content/mobile/7-technology/3/1-1x.webp 1x, ../img/content/mobile/7-technology/3/1-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/jpeg" srcset="img/content/mobile/7-technology/3/1-1x.jpg 1x, ../img/content/mobile/7-technology/3/1-2x.jpg 2x" media="(max-width: 767px)")
+                        source(type="image/webp" srcset="img/content/desktop/7-technology/3/1-1x.webp 1x, ../img/content/desktop/7-technology/3/1-2x.webp 2x") 
+                        source(type="image/jpeg" srcset="img/content/desktop/7-technology/3/1-1x.jpg 1x, ../img/content/desktop/7-technology/3/1-2x.jpg 2x")
+                        img(src="../img/content/desktop/7-technology/3/1-1x.jpg")
+                    .b-technology__post.b-technology__post--company
+                        h2.b-title.b-title--technology.b-title--company Компания
+                        p.b-subtitle.b-subtitle--technology Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.
+                .b-technology__wrapper.b-technology__wrapper--lamp
+                    a(class="b-technology__link-hover b-technology__link-hover--lamp" href="javascript:void(0);")
+                        img(class="b-oval-white" src="img/icons/oval-white.svg", alt="") 
+                    picture.b-picture.b-picture--lamp
+                        source(type="image/jpeg" srcset="img/content/mobile/7-technology/4/1-1x.jpg 1x, img/content/mobile/7-technology/4/1-2x.jpg 2x" media="(max-width: 767px)")
+                        source(type="image/webp" srcset="img/content/tablet/7-technology/4/1-1x.webp 1x, img/content/tablet/7-technology/4/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpeg" srcset="img/content/tablet/7-technology/4/1-1x.jpg 1x, img/content/tablet/7-technology/4/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="img/content/desktop/7-technology/4/1-1x.webp 1x, img/content/desktop/7-technology/4/1-2x.webp 2x") 
+                        source(type="image/jpeg" srcset="img/content/desktop/7-technology/4/1-1x.jpg 1x, img/content/desktop/7-technology/4/1-2x.jpg 2x")
+                        img(src="img/content/desktop/7-technology/4/1-1x.jpg")
+                    .b-technology__post.b-technology__post--quality
+                        div.b-title.b-title--quality Высокое качество
+                        span.b-technology__info Все наши двери проходят строжайший контроль качества на&nbsp;всех этапах производства. Следить за&nbsp;качеством, мы&nbsp;считаем, важнейшая задача производителя.
+                .b-technology__wrapper.b-technology__wrapper--vase
+                    picture.b-picture.b-picture--vase
+                        source(type="image/webp" srcset="img/content/mobile/7-technology/2/1-1x.webp 1x, img/content/mobile/7-technology/2/1-2x.webp 2x" media="(max-width: 767px)") 
+                        source(type="image/jpeg" srcset="img/content/mobile/7-technology/2/1-1x.jpg 1x, img/content/mobile/7-technology/2/1-2x.jpg 2x" media="(max-width: 767px)")
+                        source(type="image/webp" srcset="img/content/tablet/7-technology/2/1-1x.webp 1x, img/content/tablet/7-technology/2/1-2x.webp 2x" media="(max-width: 1023px)") 
+                        source(type="image/jpeg" srcset="img/content/tablet/7-technology/2/1-1x.jpg 1x, img/content/tablet/7-technology/2/1-2x.jpg 2x" media="(max-width: 1023px)")
+                        source(type="image/webp" srcset="img/content/desktop/7-technology/5/5-1x.webp 1x, img/content/desktop/7-technology/5/5-2x.webp 2x") 
+                        source(type="image/jpeg" srcset="img/content/desktop/7-technology/5/5-1x.jpg 1x, img/content/desktop/7-technology/5/-2x.jpg 2x")
+                        img(src="img/content/desktop/7-technology/5/5-1x.jpg")
+                    .b-technology__post.b-technology__post--vase
+                        strong.b-hover-quality__title Новые технологии
+                        span.b-hover-quality__post Каркас двери и&nbsp;дверная коробка изготавливаются из&nbsp;хвойного бруса высокого качества, срощенного по&nbsp;длине и&nbsp;оптимизированного, то&nbsp;есть из&nbsp;него вырезаны сучки, смоляные карманы и&nbsp;другие пороки, присущие натуральному дереву.
+                .b-logo-wrap
+                    img(class="b-technology-logo b-technology-logo--white" src="img/icons/logo-white.svg" alt="")
+                    img(class="b-technology-logo b-logo-green" src="img/icons/logo-green.svg" alt="")
