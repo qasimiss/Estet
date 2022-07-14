@@ -7,6 +7,10 @@ h1 {
     height: 210px;
     width: 100%;
     margin: 0 auto;
+    & .b-container {
+        position: relative;
+        z-index: 1;
+    }
     &-image-wrap {
     margin: 0 auto;
     width: 100%;
@@ -56,6 +60,10 @@ h1 {
 .b-intro-list__item {
     display: inline-flex;
     margin-right: 10px;
+}
+.b-intro-list__item a {
+    text-decoration: none;
+    color: @whiteFF;
 }
 .b-intro-list .b-intro-list__item + .b-intro-list__item {
     font-weight: 700;
