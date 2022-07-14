@@ -1,6 +1,11 @@
 .b-card-guarantee {
+
+    &-service {
+        margin-bottom: 90px;
+    }
+
     &__box {
-        display: flex;
+        display: block;
 
         padding-top: 100px;
     }
@@ -12,7 +17,7 @@
         padding-top: 52px;
         padding-left: 28px;
 
-        font-family: 'Lora';
+        font-family: @second-font;
         font-size: 150px;
         font-weight: 700;
         line-height: 192px;
@@ -27,14 +32,9 @@
                     20px 100%, 0 100%, 0 0);
     }
 
-    &__title-box {
-        align-self: flex-end;
-        margin-left: 32px;
-        margin-bottom: 3px;
-    }
-
     &__suptitle {
-        margin-bottom: 3px;
+        width: 50%;
+        margin-left: 161px;
 
         font-family: 'Lora';
         font-size: 60px;
@@ -45,9 +45,7 @@
     }
 
     &__content {
-        margin: 51px 26px 56px 25px;
-
-        text-align: end;
+        margin: -93px 26px 56px 25px;
     }
 
     &__text {
@@ -57,14 +55,19 @@
         line-height: 25px;
 
         color: @grey3C;
+
+        text-align: right;
     }
 
     &__link {
+        display: block;
         font-size: 14px;
         font-weight: 700;
         line-height: 25px;
 
         color: @green47;
+
+        text-align: right;
 
         &:hover {
             color: lighten(@green47, 20%);
