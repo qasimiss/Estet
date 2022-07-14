@@ -19,6 +19,7 @@
             border-bottom: 1px solid @greyCD;
         }
         &-switcher{
+            width: 100%;
             margin-left: auto;
             margin-right: 280px;
         }
@@ -63,14 +64,6 @@
         height: calc(50% - 36px);
         margin-right: 37px;
         margin-bottom:23px;
-        &:nth-child(6){
-            display: block;
-        }
-        &-video{
-            &::before{
-                display: none;
-            }
-        }
     }
     &__tips{
         display: none;
@@ -89,8 +82,10 @@
         margin-left: 0;
     }
     &__icon{
-        width:calc(100% - 37px);
-        height: calc(100% - 10px);
+        & picture{
+            width:calc(100% - 37px);
+            height: calc(100% - 48px);
+        }
     }
     & .slick-track, & .slick-list{
         height: 100%;
