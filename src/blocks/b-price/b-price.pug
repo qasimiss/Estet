@@ -6,7 +6,6 @@ mixin b-price
     section.b-price.b-container.b-container--no-padd-mobile.b-container--no-padd-desktop
         .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
         +b-button-collection()
-        .b-price__empty_block
         +sonata({
         margin_padding_sonata: 'b-price__sonata-padding-card'
         })
@@ -79,7 +78,8 @@ mixin b-price
                 .b-price__modern-post лет гарантии на&nbsp;любую продукцию ESTET
         +renaissance({
             padding_renaissance_text: 'b-price__renaissance-not-pad-text',
-            background_color_renaissance_no_white: 'b-price__ren-order b-price__margin-hover'
+            background_color_renaissance_no_white: 'b-price__ren-order b-price__margin-hover',
+            margin_price_ren: 'b-price__marg-pr-ren'
         })
         +sonata({
             padding_top_text: 'b-price__sonata-padding-text b-price__pad-none-sonata ',
