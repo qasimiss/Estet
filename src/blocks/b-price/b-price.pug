@@ -4,7 +4,6 @@ include b-mixin-catalog/b-renaissance.pug
 include b-mixin-catalog/b-genesis.pug
 mixin b-price
     section.b-price.b-container.b-container--no-padd-mobile.b-container--no-padd-desktop
-        .b-aside
         .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
         +b-button-collection()
         .b-price__empty_block
@@ -33,7 +32,7 @@ mixin b-price
             source(type="image/webp" srcset="img/content/mobile/9-price/3/7-1x.jpg 1x, img/content/mobile/9-price/3/7-2x.jpg 2x" media="(max-width: 767px)")
             source(type="image/webp" srcset="img/content/tablet/9-price/3/1-1x.webp 1x, img/content/tablet/9-price/3/1-2x.webp 2x" media="(max-width: 1023px)")
             source(type="image/webp" srcset="img/content/tablet/9-price/3/1-1x.jpg 1x, img/content/tablet/9-price/3/1-2x.jpg 2x" media="(max-width: 1023px)")
-            img(src="img/content/desktop/9-price/3/1-1x.jpg" width="370" height="450")
+            img(src="img/content/desktop/9-price/3/1-1x.jpg" width="370" height="450", alt="RENAISSANCE COLLECTION")
             .b-title.b-title--renaissance-collection RENAISSANCE COLLECTION
         +renaissance({
             padding_renaissance_text: 'b-price__renaissance-not-pad-text',
@@ -74,7 +73,7 @@ mixin b-price
                 source(type="image/webp" srcset="img/content/tablet/9-price/4/1-1x.jpg 1x, img/content/tablet/9-price/4/1-2x.jpg 2x" media="(max-width: 1023px)")
                 source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.webp 1x, img/content/desktop/9-price/4/1-2x.webp 2x")
                 source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.jpg 1x, img/content/desktop/9-price/4/1-2x.jpg 2x")
-                img(src="img/content/desktop/9-price/4/1-1x.jpg" width="375" height="531" alt="modern")
+                img(src="img/content/desktop/9-price/4/1-1x.jpg" width="375" height="531", alt="Современные материалы")
             .b-price__wrap-warranty
                 .b-price__modern-number 5
                 .b-price__modern-post лет гарантии на&nbsp;любую продукцию ESTET
