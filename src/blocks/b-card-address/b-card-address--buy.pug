@@ -18,12 +18,11 @@ mixin b-card-address--buy(title)
             img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
         .b-card-address__title-box
             h2.b-title--card-address--buy= title
-            .b-switcher-city__position
-                +b-switcher-city({
-                    modificationElements: "",
-                    modificationSelect: "",
-                    imgGeo: "img/icons/geo-green.svg"
-                })
+            +b-switcher-city({
+                modificationElements: "",
+                modificationSelect: "",
+                imgGeo: "img/icons/geo-green.svg"
+            })
         .b-card-address__inner
             +b-card-address__item
             +b-card-address__item
@@ -33,8 +32,7 @@ mixin b-card-address--buy(title)
             +b-card-address__item
             +b-card-address__item
             +b-card-address__item
-        .b-link-and-switcher__container
-            +b-link-and-switcher({
-                modificationValue: "Все салоны",
-                modificationTitle: "Показать все адреса магазинов",
-            })
+        +b-link-and-switcher({
+            modificationValue: "Все салоны",
+            modificationTitle: "Показать все адреса магазинов",
+        })
