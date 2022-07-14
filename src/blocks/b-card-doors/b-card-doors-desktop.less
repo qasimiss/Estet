@@ -1,4 +1,22 @@
 .b-card-doors {
+    position: relative;
+    &__intro {
+        width: 100%;
+        position: absolute;
+        display: block;
+        bottom: 100%;
+        z-index: 10;
+    }
+    &__empty {
+        display: flex;
+        justify-content: flex-end;
+        .b-doors{
+            background-color:@whiteF7;
+            &:nth-child(2) {
+                background-color: @whiteFF;
+            }
+        }
+    }
     padding: 0;
     &__wrapper {
         margin-bottom: 69px;
