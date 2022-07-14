@@ -24,6 +24,7 @@
         margin-bottom: 96px;
         text-decoration: none;
         & img{
+            object-fit: cover;
             margin-bottom: 40px;
         }
         &-description{
@@ -83,6 +84,7 @@
         &-video{
             text-decoration:none ;
             img{
+                object-fit: cover;
                 width: 32px;
                 height: 32px;
             }
@@ -110,11 +112,21 @@
         }
     }
     &__icon{
-        width:calc(100% - 37px);
-        height: calc(100% - 10px);
+        width: 100%;
+        height: 140px;
+    }
+    & .slick-list {
+        height: 100%;
     }
     & .slick-track {
+        display: flex;
         justify-content: space-between;
+        height: 100%;
+        align-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    & .slick-slide {
+        width: 260px;
     }
 }
-
