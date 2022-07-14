@@ -29,10 +29,12 @@ html(lang="ru")
         include blocks/b-footer/b-footer.pug
         include blocks/b-aside/b-aside.pug
         .b-container--max-width
-            +b-header-doors
-            +b-aside
-            +b-intro-second
-            +b-price
+            .b-doors-wrapper
+                +b-aside
+                .b-doors-wrapper__section
+                    +b-header-doors
+                    +b-intro-second
+                    +b-price
             +b-advertising({
                 modificationAside: "b-card-advertising--doors",
                 modificationPicture: "b-card-advertising__container--doors",
