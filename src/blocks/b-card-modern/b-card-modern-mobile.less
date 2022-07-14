@@ -29,13 +29,15 @@
         margin-right:21px;
         text-decoration: none;
         & img{
+            object-fit: cover;
             margin-bottom: 42px;
         }
-        &-long{
+        &--long{
             margin-bottom: 39px;
         }
-        &-block{
+        &--block{
             & img{
+                object-fit: cover;
                 width: calc(100% - 42px);
             }
         }
@@ -56,5 +58,5 @@
             overflow: hidden;
             margin-bottom: 46px;
         }
-    }    
+    }
 }

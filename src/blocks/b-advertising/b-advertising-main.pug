@@ -31,10 +31,12 @@ mixin b-advertising(modification)
             +b-button-square({
                 modificationColor: "white",
                 modificationArrow: "left",
+                modificationTitle: "Назад",
                         })
             +b-button-square({
                 modificationColor: "green",
                 modificationArrow: "right",
+                modificationTitle: "Далее",
                         })
         strong.b-card-advertising__title(class=modification ? modification.modificationTitle: "") Распродажа классических коллекций
         .b-card-advertising__wrap(class=modification ? modification.modificationWrap: "")
