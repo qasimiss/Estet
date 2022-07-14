@@ -166,4 +166,7 @@ mixin b-card-news()
                     .b-card-news__date
                         time(datetime="2021-01-25") 25  января 2021 г.
             .b-card-news__button-switcher
-                +b-link-and-switcher("Все новости")
+                +b-link-and-switcher({
+                modificationValue: "Все новости",
+                modificationTitle: "Показать все новости",
+            })
