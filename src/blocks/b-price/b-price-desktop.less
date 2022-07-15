@@ -22,7 +22,6 @@
         padding-left: 62px;
         padding-bottom: 80px;
         margin-top: auto;
-        padding-right: 20%;
     }
     &__wrap-option {
         order: 7;
@@ -62,7 +61,6 @@
         background-color: white;
         bottom: 100%;
         height: 10%;
-        display: flex;
     }
     &__sonata-order {
         order: 6;
@@ -135,25 +133,23 @@
     }
     &__mixin:hover .b-title--renaissance,
     &__mixin:hover .b-price__mixin-wrap .b-title--little,
-    &__mixin:hover .b-mixin-price__price,
-    &__mixin:hover .b-price__information {
+    &__mixin:hover .b-mixin-price__price {
     color: @whiteFF;
     }
     &__information {
         display: block;
-        color: transparent;
+        color: @whiteFF;
         padding-right: 5px;
     }
 }
 
-.b-price__renaissance-collection {
-    margin-bottom: 0;
-    order: 7;
-    height: 100%;
-    width: 50%;
-}
-
 .b-picture {
+    &--renaissance-collection {
+        margin-bottom: 0;
+        order: 7;
+        height: 100%;
+        width: 50%;
+    }
     &--genesis img {
         height: 100%;
     }
