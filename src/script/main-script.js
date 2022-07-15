@@ -160,35 +160,4 @@ $(document).ready(function() {
             },
         ]
     });
-
-    $('.b-card-news__news .b-card-news__wrapper').slick({
-        prevArrow: $('.b-card-news .b-link-and-switcher__link-left-arrow'),
-        nextArrow: $('.b-card-news .b-link-and-switcher__link-right-arrow'),
-        arrows: true,
-        easing: "ease-in-out",
-        speed: 1000,
-        swipe: false,
-        waitForAnimate: false,
-        variableWidth: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-        ]
-    });
-
-    
 });
