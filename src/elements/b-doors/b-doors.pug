@@ -9,30 +9,30 @@ mixin b-doors(doors)
                     source(type="image/jpg" srcset= item.imgJpgMediaMax1023X1+' 1x,'+item.imgJpgMediaMax1023X2+' 2x' media="(max-width:1023px)")
                     source(type="image/webp" srcset= item.imgWebpMediaMaxDeskX1+' 1x,'+item.imgWebpMediaMaxDeskX2+' 2x')
                     source(type="image/jpg" srcset= item.imgjpgMediaMaxDeskX1+' 1x,'+item.imgjpgMediaMaxDeskX2+' 2x')
-                    img.b-doors__img(src= item.imgjpgMediaMaxDeskX1 alt="doors")
+                    img.b-doors__img(src= item.imgjpgMediaMaxDeskX1 alt="Дверь")
             .b-doors__mark-top
                 .b-doors__mark-wrapper-heart
-                    img.b-doors__heart-img(src="img/icons/heart-green.svg", alt="heart")
+                    img.b-doors__heart-img(src="img/icons/heart-green.svg", alt="")
                 .b-doors__mark(class=  item.markModification) !{item.mark}
             .b-title.b-title--doors !{item.title}
             hr.b-doors__line
             .b-doors__choice-wrapper
                 input.b-doors__choice(type="radio" id= item.idRadio1 name= item.nameRadio value="color")
                 label(for= item.idRadio1)
-                    img.b-doors__choice-textures(src="img/textures/black.png", alt="textures-black")
+                    img.b-doors__choice-textures(src="img/textures/black.png", alt="")
                 input.b-doors__choice(type="radio" id= item.idRadio2 name= item.nameRadio value="color")
                 label(for= item.idRadio2)
-                    img.b-doors__choice-textures(src="img/textures/beige.png", alt="textures-beige")
+                    img.b-doors__choice-textures(src="img/textures/beige.png", alt="")
                 input.b-doors__choice(type="radio" id= item.idRadio3 name= item.nameRadio value="color")
                 label(for= item.idRadio3)
-                    img.b-doors__choice-textures(src="img/textures/light-beige.png", alt="light-beige")
+                    img.b-doors__choice-textures(src="img/textures/light-beige.png", alt="")
                 input.b-doors__choice(type="radio" id= item.idRadio4 name= item.nameRadio value="color")
                 label(for= item.idRadio4)
-                    img.b-doors__choice-textures(src="img/textures/grey.png", alt="grey")
+                    img.b-doors__choice-textures(src="img/textures/grey.png", alt="")
                 input.b-doors__choice(type="radio" id= item.idRadio5 name= item.nameRadio value="color")
                 label(for= item.idRadio5)
-                    img.b-doors__choice-textures(src="img/textures/marble.png", alt="marble")
+                    img.b-doors__choice-textures(src="img/textures/marble.png", alt="")
                 input.b-doors__choice(type="radio" id= item.idRadio6 name= item.nameRadio value="color")
                 label(for= item.idRadio6)
-                    img.b-doors__choice-textures(src="img/textures/grey-tree.png", alt="grey-tree")
+                    img.b-doors__choice-textures(src="img/textures/grey-tree.png", alt="")
                 button.b-doors__choice-button +5
