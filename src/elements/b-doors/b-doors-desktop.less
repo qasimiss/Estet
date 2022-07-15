@@ -13,6 +13,23 @@
         background-color: @whiteF7;
     }
 
+    &:hover {
+        background-color: @green47;
+    }
+    &:hover .b-title--doors, &:hover &__price, &:hover &__choice-button, &:hover &__price-irrelevant {
+        color: @whiteFF;
+        visibility: visible;
+        text-decoration-color: @whiteFF;
+    }
+
+    &--intro {
+        width: 50%;
+    }
+
+    &__price {
+        display: flex;
+    }
+
     &__mark {
         font-size: 10px;
         line-height: 12px;

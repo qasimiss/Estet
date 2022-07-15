@@ -11,14 +11,14 @@ mixin b-price
         })
         +renaissance({
         padding_renaissance_text: 'b-price__renaissance-padding-text',
-        background_color_renaissance_no_white: 'b-price___renaissance-no-white'
+        background_color_renaissance_no_white: 'b-price__renaissance-no-white'
         })
         +sonata({
         margin_padding_sonata: 'b-price__sonata-padding-card b-price__sonata-none'
         })
         +renaissance({
         padding_renaissance_text: 'b-price__renaissance-padding-text',
-        background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price__order-renaissance'
+        background_color_renaissance_no_white: 'b-price__renaissance-no-white b-price__order-renaissance'
         })
         .b-price__wrap-post
             span.b-price__post В&nbsp;компании ESTET вы&nbsp;можете купить качественные межкомнатные двери. Богатый выбор является гарантией того, что вы&nbsp;обязательно найдете модель, оптимально соответствующую вашим потребностям, пожеланиям и&nbsp;финансовым возможностям.
@@ -36,8 +36,9 @@ mixin b-price
             .b-title.b-title--renaissance-collection RENAISSANCE COLLECTION
         +renaissance({
             padding_renaissance_text: 'b-price__renaissance-not-pad-text',
-            background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price__padd-renaissance b-price__renaissance-ord'
-            })
+            background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price__padd-renaissance b-price__renaissance-ord',
+            margin_price_ren: 'b-price__marg-pr-ren'
+        })
         +genesis({
             padding_text_g: 'b-price__pad_text_genesis',
             padding_card_g: 'b-price__pad_card_genesis'
@@ -51,7 +52,7 @@ mixin b-price
         })
         .b-price__wrapper-doors
             +renaissance({
-                background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price___ren-order b-price___renaissance-pad-top'
+                background_color_renaissance_no_white: 'b-price__renaissance-no-white b-price___ren-order b-price___renaissance-pad-top'
             })
             +genesis({
             padding_text_g: 'b-price__pad_text_genesis',
@@ -68,11 +69,11 @@ mixin b-price
         .b-price__wrapper-doors-modern
             picture.b-picture.b-picture--modern
                 source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.webp 1x, img/content/mobile/9-price/4/12-2x.webp 2x" media="(max-width: 767px)")
-                source(type="image/webp" srcset="img/content/mobile/9-price/4/12-1x.jpg 1x, img/content/mobile/9-price/4/12-2x.jpg 2x" media="(max-width: 767px)")
+                source(type="image/jpg" srcset="img/content/mobile/9-price/4/12-1x.jpg 1x, img/content/mobile/9-price/4/12-2x.jpg 2x" media="(max-width: 767px)")
                 source(type="image/webp" srcset="img/content/tablet/9-price/4/1-1x.webp 1x, img/content/tablet/9-price/4/1-2x.webp 2x" media="(max-width: 1023px)")
-                source(type="image/webp" srcset="img/content/tablet/9-price/4/1-1x.jpg 1x, img/content/tablet/9-price/4/1-2x.jpg 2x" media="(max-width: 1023px)")
+                source(type="image/jpg" srcset="img/content/tablet/9-price/4/1-1x.jpg 1x, img/content/tablet/9-price/4/1-2x.jpg 2x" media="(max-width: 1023px)")
                 source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.webp 1x, img/content/desktop/9-price/4/1-2x.webp 2x")
-                source(type="image/webp" srcset="img/content/desktop/9-price/4/1-1x.jpg 1x, img/content/desktop/9-price/4/1-2x.jpg 2x")
+                source(type="image/jpg" srcset="img/content/desktop/9-price/4/1-1x.jpg 1x, img/content/desktop/9-price/4/1-2x.jpg 2x")
                 img(src="img/content/desktop/9-price/4/1-1x.jpg" width="375" height="531" alt="Современные материалы")
             .b-price__wrap-warranty
                 .b-price__modern-number 5
@@ -84,7 +85,7 @@ mixin b-price
         })
         +sonata({
             padding_top_text: 'b-price__sonata-padding-text b-price__pad-none-sonata ',
-            margin_padding_sonata: 'b-price___renaissance-no-white b-price__padd-sonata b-price__sonata-none'
+            margin_padding_sonata: 'b-price__renaissance-no-white b-price__padd-sonata b-price__sonata-none'
         })
         +genesis({
             padding_text_g: 'b-price__pad_text_genesis',
@@ -93,5 +94,5 @@ mixin b-price
         .b-price__wrap-still
             span.b-price__wrap-still-8 8
             span.b-price__wrap-still-14 /14
-            a(href="").b-price__wrap-still-link ПОКАЗАТЬ ЕЩЕ
+            a(href="javascript:void(0);" title="Показать ещё").b-price__wrap-still-link ПОКАЗАТЬ ЕЩЕ
                 img(src="img/icons/down-green.svg" width="7" height="18" alt="Показать ещё")
