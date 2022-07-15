@@ -6,6 +6,8 @@ $(hamburger).on('click', function() {
     navContainer.classList.toggle("active")
 })
 
+$("*").on("touchend", function(e) { $(this).focus(); });
+
 $(document).ready(function() {
     $('.b-slider-video').slick({
         arrows: true,

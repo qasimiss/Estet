@@ -26,7 +26,7 @@ h1 {
             height: 100%;
             background: @black00;
             opacity: 0.35;
-            z-index: 1;
+            z-index: 2;
         }
     }
     & .slick-track {
@@ -35,17 +35,19 @@ h1 {
 }
 .b-intro .b-container {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 .b-intro__inner > .slick-list {
     height: 100%;
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 .b-intro__inner .slick-arrow {
     display: flex;
     position: absolute;
     bottom: 25px;
-    z-index: 4;
+    z-index: 5;
     font-size: 0;
     width: 43px;
     height: 43px;

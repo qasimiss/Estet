@@ -27,7 +27,10 @@ html(lang="ru")
         include blocks/b-card-news/b-card-news.pug
         include blocks/b-card-address/b-card-address.pug
         include blocks/b-footer/b-footer.pug
+        +b-header
+        +b-intro
         .b-container--max-width
+<<<<<<< HEAD
             +b-header
             main
                 +b-intro
@@ -41,6 +44,18 @@ html(lang="ru")
                 +b-technology
                 +b-card-news
                 +b-card-address("Магазины")
+=======
+            +b-card__img
+            +b-card-select
+            +b-advertising
+            section.b-card-guarantee-service
+                +b-card-guarantee
+                +b-card-service
+            +b-card-video
+            +b-technology
+            +b-card-news
+            +b-card-address("Магазины")
+>>>>>>> f2214d471a9e89838a14c6b7c978915049c62905
             +b-footer
 
 
@@ -48,3 +63,4 @@ html(lang="ru")
         script(src="script/slick.min.js")
         script(src="script/main-script.js")
         script(src="script/main-script2.js")
+        script(src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js")
