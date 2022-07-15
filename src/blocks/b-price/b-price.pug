@@ -26,14 +26,13 @@ mixin b-price
             padding_top_text: 'b-price__sonata-padding-text',
             margin_padding_sonata: "b-price__sonata-margin b-price__sonata-none"
         })
-        picture.b-picture.b-picture--renaissance-collection
-            source(type="image/webp" srcset="img/content/mobile/9-price/3/7-1x.webp 1x, img/content/mobile/9-price/3/7-2x.webp 2x" media="(max-width: 767px)")
-            source(type="image/jpg" srcset="img/content/mobile/9-price/3/7-1x.jpg 1x, img/content/mobile/9-price/3/7-2x.jpg 2x" media="(max-width: 767px)")
-            source(type="image/webp" srcset="img/content/tablet/9-price/3/1-1x.webp 1x, img/content/tablet/9-price/3/1-2x.webp 2x" media="(max-width: 1023px)")
-            source(type="image/jpg" srcset="img/content/tablet/9-price/3/1-1x.jpg 1x, img/content/tablet/9-price/3/1-2x.jpg 2x" media="(max-width: 1023px)")
-            source(type="image/webp" srcset="img/content/desktop/9-price/3/1-1x.webp 1x, img/content/tablet/9-price/3/1-2x.webp 2x")
-            source(type="image/jpg" srcset="img/content/desktop/9-price/3/1-1x.jpg 1x, img/content/tablet/9-price/3/1-2x.jpg 2x")
-            img(src="img/content/desktop/9-price/3/1-1x.jpg" width="370" height="450" alt="Колекция Ренесанс")
+        .b-price__renaissance-collection
++            picture.b-picture.b-picture--renaissance-collection
++                source(type="image/webp" srcset="img/content/mobile/9-price/3/7-1x.webp 1x, img/content/mobile/9-price/3/7-2x.webp 2x" media="(max-width: 767px)")
++                source(type="image/webp" srcset="img/content/mobile/9-price/3/7-1x.jpg 1x, img/content/mobile/9-price/3/7-2x.jpg 2x" media="(max-width: 767px)")
++                source(type="image/webp" srcset="img/content/tablet/9-price/3/1-1x.webp 1x, img/content/tablet/9-price/3/1-2x.webp 2x" media="(max-width: 1023px)")
++                source(type="image/webp" srcset="img/content/tablet/9-price/3/1-1x.jpg 1x, img/content/tablet/9-price/3/1-2x.jpg 2x" media="(max-width: 1023px)")
++                img(src="img/content/desktop/9-price/3/1-1x.jpg" width="370" height="450" alt="Колекция Ренесанс")
             .b-title.b-title--renaissance-collection RENAISSANCE COLLECTION
         +renaissance({
             padding_renaissance_text: 'b-price__renaissance-not-pad-text',
