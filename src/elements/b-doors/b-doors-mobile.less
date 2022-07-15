@@ -10,6 +10,24 @@
     &:last-child {
         margin-bottom: 0;
     }
+    &__price {
+        display: none;
+        margin-bottom: 11px;
+        margin-left: 11px;
+        visibility: hidden;
+        &-actual {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            padding-right: 20px;
+        }
+        &-irrelevant {
+            text-decoration: line-through;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
     &__img-background {
         width: 100%;
         grid-row-start: 1;
