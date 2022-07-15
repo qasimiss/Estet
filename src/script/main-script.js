@@ -6,7 +6,6 @@ const hamburger = document.querySelector(".b-header-main__hamburger"),
       buttonTips = document.querySelector(".b-card-news__button-tips"),
       news = document.querySelectorAll(".b-card-news__news");
 
-
 $(hamburger).on('click', function() {
     hamburger.classList.toggle("active")
     navContainer.classList.toggle("active")
@@ -25,6 +24,8 @@ $(buttonTips).on('click', function() {
     buttonTips.classList.add("active")
     news[1].classList.add("active")
 });
+
+$("*").on("touchend", function(e) { $(this).focus(); });
 
 $(document).ready(function() {
     $('.b-card-address__inner').slick({
