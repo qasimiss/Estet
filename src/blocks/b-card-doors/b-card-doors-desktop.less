@@ -1,19 +1,24 @@
 .b-card-doors {
     position: relative;
     &__intro {
-        width: 100%;
+        width: 50%;
         position: absolute;
         display: block;
         bottom: 100%;
-        z-index: 10;
+        right: 0;
+        z-index: 1;
     }
     &__empty {
         display: flex;
         justify-content: flex-end;
+        position: relative;
         .b-doors{
             background-color:@whiteF7;
             &:nth-child(2) {
                 background-color: @whiteFF;
+            }
+            &:hover {
+                background-color: @green47;
             }
         }
     }

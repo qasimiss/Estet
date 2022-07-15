@@ -75,26 +75,36 @@
             display: none;
         }
     }
-    &__descr-doors {
-        display: block;
+    &__descr{
+        &-doors{
+            display:block;
+        }
     }
-    &__detailed-doors {
-        display: block;
+    &__detailed{
+        &-doors {
+            display: block;
+        }
     }
-    & .b-button-square:nth-child(2) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 60px;
+    & .b-button-square{
+        &:nth-child(2){
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 60px;
+        }
     }
-    & .b-button-square:last-child {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
+    & .b-button-square{
+        &:last-child {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
-    & .b-button-white--left {
-        visibility: visible;
+    & .b-button-white{
+        &--left {
+            visibility: visible;
+        }
     }
     & .b-button-square--white {
         visibility: visible;
@@ -129,11 +139,15 @@
     }
 }
 
-.b-picture--aside img {
-    width: 100%;
-    height: 100%;
+.b-picture{
+    &--aside{
+        & img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 31px;
+        }
+    }
 }
-
 .b-card-advertising .b-button-square {
     display: block;
     position: absolute;
