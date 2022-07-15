@@ -67,4 +67,19 @@ $(document).ready(function() {
             },
         ]
     });
+    $('.b-card-modern__wrapper').slick({
+        prevArrow: $('.b-card-modern .b-link-and-switcher__link-left-arrow'),
+        nextArrow: $('.b-card-modern .b-link-and-switcher__link-right-arrow'),
+        arrows: true,
+        easing: "ease-in-out",
+        speed: 1000,
+        swipe: true,
+        waitForAnimate: false,
+        variableWidth: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1500,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
 })
