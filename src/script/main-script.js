@@ -126,12 +126,9 @@ $(document).ready(function() {
         swipe: false,
         draggable: true,
         waitForAnimate: false,
-        centerMode: true,
-        focusOnSelect: true,
         asNavFor: '.b-card-video__inner',
         appendDots: $('.b-card-video__item'),
         dotsClass: $('b-card-video__item'),
-        centerMode: true,
     });
 
     $('.b-card-news__news .b-card-news__wrapper').slick({
