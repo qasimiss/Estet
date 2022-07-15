@@ -125,6 +125,12 @@
     & .b-button-collection__navigation {
         display: none;
     }
+    &__information {
+        display: block;
+        // color: @whiteFF;
+        color: transparent;
+        padding-right: 5px;
+    }
     &__mixin {
         transition: background-color 0.3s ease-in-out;
     }
@@ -133,21 +139,22 @@
     }
     &__mixin:hover .b-title--renaissance,
     &__mixin:hover .b-price__mixin-wrap .b-title--little,
-    &__mixin:hover .b-mixin-price__price {
+    &__mixin:hover .b-mixin-price__price,
+    &__mixin:hover .b-price__information {
     color: @whiteFF;
     }
-    &__information {
-        display: block;
-        color: @whiteFF;
-        padding-right: 5px;
-    }
+    // &__information {
+    //     display: block;
+    //     // color: @whiteFF;
+    //     color: transparent;
+    //     padding-right: 5px;
+    // }
 }
 
 .b-picture {
     &--renaissance-collection {
         margin-bottom: 0;
         order: 7;
-        height: 100%;
         width: 50%;
     }
     &--genesis img {
