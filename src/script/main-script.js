@@ -102,6 +102,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 5000,
         swipe: true,
+        pauseOnHover: false,
     });
 
     $('.b-picture--aside').slick({
