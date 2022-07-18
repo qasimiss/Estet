@@ -1,4 +1,3 @@
 node_modules
 dist
-main.pug
-src/main.pug
+.css
