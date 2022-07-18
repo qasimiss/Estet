@@ -3,6 +3,7 @@ h1 {
     padding: 0;
 }
 .b-intro {
+    min-height: 670px;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -71,4 +72,9 @@ h1 {
     font-size: 14px;
     line-height: 25px;
     color: @whiteFF;
+}
+@media screen and (max-width:360px){
+    .b-intro__inner .slick-arrow.slick-next {
+        right: 163px;
+    }
 }
