@@ -34,24 +34,61 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
+        swipeToSlide: false,
         waitForAnimate: false,
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        mobileFirst: true,
         responsive: [
             {
-                breakpoint: 767,
+                breakpoint: 465,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 686,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                    slidesToShow: 12,
+                    slidesToScroll: 4
                 }
             },
             {
                 breakpoint: 1023,
                 settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1310,
+                settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1601,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
                 }
             },
         ]
@@ -64,6 +101,8 @@ $(document).ready(function() {
         speed: 2500,
         autoplay: true,
         autoplaySpeed: 5000,
+        swipe: true,
+        pauseOnHover: false,
     });
 
     $('.b-picture--aside').slick({
@@ -72,7 +111,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         autoplay: true,
         waitForAnimate: false,
         responsive: [
@@ -102,6 +141,7 @@ $(document).ready(function() {
         centerMode: true,
         asNavFor: '.b-card-video__slider',
         focusOnSelect: true,
+        mobileFirst: true,
         responsive: [
             {
                 breakpoint: 768,
@@ -124,7 +164,7 @@ $(document).ready(function() {
         arrows: false,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         draggable: true,
         waitForAnimate: false,
         asNavFor: '.b-card-video__inner',
@@ -138,24 +178,46 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
         variableWidth: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         asNavFor: '.b-card-news__news .b-card-news__wrapper',
+        mobileFirst: true,
         responsive: [
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 935,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 1230,
+                settings: {
+                    slidesToShow: 4,
                     slidesToScroll: 2,
                 }
             },
