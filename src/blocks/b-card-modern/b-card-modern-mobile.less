@@ -15,22 +15,23 @@
         width: 100%;
         overflow: hidden;
         position: relative;
-        &::before{
-            content:"";
-            position: absolute;
-            width: 140px;
-            height:720px;
-            background: linear-gradient(to left, white 5%, transparent 100%);
-            top:0;
-            right: 0;
-            z-index: 1;
-        }
+        // &::before{
+        //     content:"";
+        //     position: absolute;
+        //     width: 140px;
+        //     height:720px;
+        //     background: linear-gradient(to left, white 5%, transparent 100%);
+        //     top:0;
+        //     right: 0;
+        //     z-index: 1;
+        // }
     }
     &__item {
         display: block;
         margin-bottom: 54px;
         margin-right:21px;
         text-decoration: none;
+        opacity: .5;
         & img{
             object-fit: cover;
             margin-bottom: 42px;
@@ -47,6 +48,9 @@
     }
     .slick-slide {
         width: 270px;
+    }
+    .slick-active {
+        opacity: 1;
     }
     &__description{
         width: 221px;
