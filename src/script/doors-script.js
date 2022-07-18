@@ -15,7 +15,7 @@ $(document).ready(function() {
         autoplay: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
     });
     $('.b-card-address__inner').slick({
@@ -24,7 +24,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
         variableWidth: true,
         slidesToShow: 1,
@@ -52,7 +52,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
         responsive: [
             {
