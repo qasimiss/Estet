@@ -2,29 +2,117 @@ include ../../elements/b-button-collection/b-button-collection.pug
 include b-mixin-catalog/b-sonata.pug
 include b-mixin-catalog/b-renaissance.pug
 include b-mixin-catalog/b-genesis.pug
+include ../../elements/b-price-item/b-price-item.pug
 mixin b-price
     section.b-price.b-container.b-container--no-padd-mobile.b-container--no-padd-desktop
         .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
         +b-button-collection()
-        +sonata({
-        margin_padding_sonata: 'b-price__sonata-padding-card'
+        //- +sonata({
+        //- margin_padding_sonata: 'b-price__sonata-padding-card'
+        //- })
+        +b-price-item({
+            b_price_item: 'b-price-item--sonata b-price-item--padding-top',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/1/2-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.jpg',
+            title: 'SONATA',
+            price: 'от 7500 Р'
         })
-        +renaissance({
-        padding_renaissance_text: 'b-price__renaissance-padding-text',
-        background_color_renaissance_no_white: 'b-price___renaissance-no-white'
+        //- +renaissance({
+        //- padding_renaissance_text: 'b-price__renaissance-padding-text',
+        //- background_color_renaissance_no_white: 'b-price___renaissance-no-white'
+        //- })
+        +b-price-item({
+            b_price_item: 'b-price-item--renaissance b-price-item--renaissance-order4',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/2/3-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.jpg',
+            b_price_item_info: 'b-price-item--info-padding',
+            title: 'RENAISSANCE',
+            price: 'от 7500 Р'
         })
-        +sonata({
-        margin_padding_sonata: 'b-price__sonata-padding-card b-price__sonata-none'
+        //- +sonata({
+        //- margin_padding_sonata: 'b-price__sonata-padding-card b-price__sonata-none'
+        //- })
+        +b-price-item({
+            b_price_item: 'b-price-item--sonata b-price-item--sonata-none b-price-item--sonata-pad',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/1/2-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.jpg',
+            title: 'SONATA',
+            price: 'от 7500 Р'
         })
-        +renaissance({
-        padding_renaissance_text: 'b-price__renaissance-padding-text',
-        background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price__order-renaissance'
+        //- +renaissance({
+        //- padding_renaissance_text: 'b-price__renaissance-padding-text',
+        //- background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price__order-renaissance'
+        //- })
+        +b-price-item({
+            b_price_item: 'b-price-item--renaissance b-price-item--renaissance-ord',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/2/3-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.jpg',
+            b_price_item_info: 'b-price-item--info-padding',
+            title: 'RENAISSANCE',
+            price: 'от 7500 Р'
         })
         .b-price__wrap-post
             span.b-price__post В&nbsp;компании ESTET вы&nbsp;можете купить качественные межкомнатные двери. Богатый выбор является гарантией того, что вы&nbsp;обязательно найдете модель, оптимально соответствующую вашим потребностям, пожеланиям и&nbsp;финансовым возможностям.
-        +sonata({
-            padding_top_text: 'b-price__sonata-padding-text',
-            margin_padding_sonata: "b-price__sonata-margin b-price__sonata-none"
+        //- +sonata({
+        //-     padding_top_text: 'b-price__sonata-padding-text',
+        //-     margin_padding_sonata: "b-price__sonata-margin b-price__sonata-none"
+        //- })
+        +b-price-item({
+            b_price_item: 'b-price-item--sonata b-price-item--sonata-none b-price-item--sonata-margin',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/1/2-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.jpg',
+            title: 'SONATA',
+            price: 'от 7500 Р'
         })
         picture.b-picture.b-picture--renaissance-collection
             source(type="image/webp" srcset="img/content/mobile/9-price/3/7-1x.webp 1x, img/content/mobile/9-price/3/7-2x.webp 2x" media="(max-width: 767px)")
@@ -33,29 +121,100 @@ mixin b-price
             source(type="image/webp" srcset="img/content/tablet/9-price/3/1-1x.jpg 1x, img/content/tablet/9-price/3/1-2x.jpg 2x" media="(max-width: 1023px)")
             img(src="img/content/desktop/9-price/3/1-1x.jpg" width="370" height="450" alt="Колекция Ренесанс")
             .b-title.b-title--renaissance-collection RENAISSANCE COLLECTION
-        +renaissance({
-            padding_renaissance_text: 'b-price__renaissance-not-pad-text',
-            background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price__padd-renaissance b-price__renaissance-ord'
-            })
-        +genesis({
-            padding_text_g: 'b-price__pad_text_genesis',
-            padding_card_g: 'b-price__pad_card_genesis'
+        //- +renaissance({
+        //-     padding_renaissance_text: 'b-price__renaissance-not-pad-text',
+        //-     background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price__padd-renaissance b-price__renaissance-ord'
+        //-     })
+        +b-price-item({
+            b_price_item: 'b-price-item--renaissance b-price-item--renaissance-ord2',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/2/3-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.jpg',
+            title: 'RENAISSANCE',
+            price: 'от 7500 Р'
+        })
+        //- +genesis({
+        //-     padding_text_g: 'b-price__pad_text_genesis',
+        //-     padding_card_g: 'b-price__pad_card_genesis'
+        //- })
+        +b-price-item({
+            b_price_item: 'b-price-item--genesis b-price-item--genesis-ord',
+            imgWebpPriceDeskX1: 'img/content/tablet/9-price/5/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/tablet/9-price/5/2-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/tablet/9-price/5/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/tablet/9-price/5/2-2x.jpg',
+            b_price_item_info: 'b-price-item--info-padding',
+            title: 'GENESIS',
+            price: 'от 14 500 Р'
         })
         .b-price__wrap-option
             .b-price__wrap-option__number 25
             .b-price__wrap-option__post коллекций и&nbsp;более 300 опций
-        +sonata({
-        margin_padding_sonata: 'b-price__sonata-padding-card',
-        margin_padding_sonata: 'b-price__sonata-order'
+        //- +sonata({
+        //- margin_padding_sonata: 'b-price__sonata-padding-card',
+        //- margin_padding_sonata: 'b-price__sonata-order'
+        //- })
+        +b-price-item({
+            b_price_item: 'b-price-item--sonata b-price-item--sonata-ord',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/1/2-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/1/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/1/1-2x.jpg',
+            title: 'SONATA',
+            price: 'от 7500 Р'
         })
         .b-price__wrapper-doors
-            +renaissance({
-                background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price___ren-order b-price___renaissance-pad-top'
-            })
-            +genesis({
-            padding_text_g: 'b-price__pad_text_genesis',
-            padding_card_g: 'b-price__pad-card-gen-ord b-price__gen-tabl-none'
-            })
+            //- +renaissance({
+            //-     background_color_renaissance_no_white: 'b-price___renaissance-no-white b-price___ren-order b-price___renaissance-pad-top'
+            //- })
+            +b-price-item({
+            b_price_item: 'b-price-item--renaissance b-price-item--renaissance-ord3 b-price-item--sonata-pad',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.webp',
+            imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
+            imgWebpPrice767X1: 'img/content/mobile/9-price/2/3-1x.jpg',
+            imgJpgPrice767X2: 'img/content/mobile/9-price/2/3-2x.jpg',
+            imgWebpPrice1023X1: 'img/content/tablet/9-price/1/1-1x.webp',
+            imgWebpPrice1023X2: 'img/content/tablet/9-price/1/1-2x.webp',
+            imgJpgPrice1023X1: 'img/content/tablet/9-price/1/1-1x.jpg',
+            imgJpgPrice1023X2: 'img/content/tablet/9-price/1/1-2x.jpg',
+            imgWebpPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/desktop/9-price/2/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/desktop/9-price/2/1-2x.jpg',
+            title: 'RENAISSANCE',
+            price: 'от 7500 Р'
+        })
+            //- +genesis({
+            //- padding_text_g: 'b-price__pad_text_genesis',
+            //- padding_card_g: 'b-price__pad-card-gen-ord b-price__gen-tabl-none'
+            //- })
+            +b-price-item({
+            b_price_item: 'b-price-item--genesis b-price-item--genesis-ord1 b-price-item--pad-bot',
+            imgWebpPriceDeskX1: 'img/content/tablet/9-price/5/1-1x.webp',
+            imgWebpPriceDeskX2: 'img/content/tablet/9-price/5/2-2x.webp',
+            imgjpgPriceDeskX1: 'img/content/tablet/9-price/5/1-1x.jpg',
+            imgjpgPriceDeskX2: 'img/content/tablet/9-price/5/2-2x.jpg',
+            b_price_item_info: 'b-price-item--info-padding',
+            title: 'GENESIS',
+            price: 'от 14 500 Р'
+        })
         +genesis({
             padding_text_g: 'b-price__renaissance-not-pad-text',
             padding_card_g: 'b-price__pad-card-genesis-ord'

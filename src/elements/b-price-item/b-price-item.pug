@@ -1,0 +1,16 @@
+mixin b-price-item(price)
+    a.b-price-item(class= price.b_price_item href="javascript: void(0);" title="")
+        picture.b-picture.b-picture--price
+            source(type="image/webp" srcset= price.imgWebpPrice767X1+' 1x,'+price.imgWebpMediaMax767X2+' 2x' media="(max-width: 767px)")
+            source(type="image/jpeg" srcset= price.imgWebpPrice767X1+' 1x,'+price.imgJpgPrice767X2+' 2x' media="(max-width: 767px)")
+            source(type="image/webp" srcset= price.imgWebpPrice1023X1+' 1x,'+price.imgWebpPrice1023X2+' 2x' media="(max-width: 1023px)")
+            source(type="image/jpeg" srcset= price.imgJpgPrice1023X1+' 1x,'+price.imgJpgPrice1023X2+' 2x' media="(max-width:1023px)")
+            source(type="image/webp" srcset=price.imgWebpPriceDeskX1+' 1x,'+price.imgWebpPriceDeskX2+' 2x')
+            source(type="image/jpeg" srcset= price.imgjpgPriceDeskX1+' 1x,'+price.imgjpgPriceDeskX2+' 2x')
+            img.b-price-item__img(src= price.imgjpgPriceDeskX1 alt="Дверь")
+        .b-price-item__info(class= price.b_price_item_info)
+            .b-title.b-title--price-door !{price.title}
+            span.b-price-item__price !{price.price}
+            .b-card-icon.b-card-icon--palitra
+                img(src="img/icons/go-to.svg" alt="")
+            .b-price-item__post Классический дизайн, навеянный великими музыкальными произведениями одноименного жанра
