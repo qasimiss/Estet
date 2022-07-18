@@ -209,8 +209,12 @@
         &-social {
             display: flex;
             flex-wrap: wrap;
+            align-items:center;
             margin-left: -10px;
             &-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transition: opacity 0.2s;
                 &:hover {
                     opacity: 0.5;
@@ -218,8 +222,15 @@
             }
             &-link {
                 display: flex;
+                justify-content: center;
+                align-items:center;
                 padding: 10px;
             }
         }
+    }
+}
+@media (max-width: 330px) {
+    .b-hamburger__choice-link {
+        width: 46px;
     }
 }
