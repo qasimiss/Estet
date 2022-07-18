@@ -15,7 +15,7 @@ $(document).ready(function() {
         autoplay: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
     });
     $('.b-card-address__inner').slick({
@@ -24,24 +24,60 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        mobileFirst: true,
         responsive: [
             {
-                breakpoint: 767,
+                breakpoint: 465,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 686,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                    slidesToShow: 12,
+                    slidesToScroll: 4
                 }
             },
             {
                 breakpoint: 1023,
                 settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1310,
+                settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1601,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
                 }
             },
         ]
@@ -52,7 +88,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
         responsive: [
             {
@@ -82,6 +118,30 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 1500,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 599,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 924,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1342,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 })
