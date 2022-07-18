@@ -37,12 +37,16 @@
     }
 
     &__item {
+        display: block;
+
         flex-shrink: 0;
 
         padding: 48px 0 0 70px;
         box-sizing: content-box;
 
         background-color: @whiteFF;
+
+        opacity: .5;
 
         &:first-child {
             padding-left: 39px;
@@ -51,6 +55,10 @@
 
     & .slick-track {
         flex-flow: row;
+    }
+
+    & .slick-active {
+        opacity: 1;
     }
 
     & .b-button-show-map {

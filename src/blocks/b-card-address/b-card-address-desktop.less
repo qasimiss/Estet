@@ -15,12 +15,16 @@
     }
 
     &__item {
+        display: block;
+
         flex-shrink: 0;
 
         padding: 48px 0 0 39px;
         box-sizing: content-box;
 
         background-color: @whiteFF;
+
+        opacity: .5;
     }
 
     .slick {
@@ -31,6 +35,10 @@
             min-height: 206px;
             margin-left: 0;
             margin-bottom: 24px;
+        }
+
+        &-active {
+            opacity: 1;
         }
     }
 
