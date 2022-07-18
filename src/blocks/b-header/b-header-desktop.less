@@ -11,12 +11,14 @@
     &__nav-product {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        width: calc(50% - 208px);
+        justify-content: flex-end;
+        width: calc(50% - 40px);
+        margin: 0 -25px;
         &-item {
             font-size: 16px;
             line-height: 19px;
             transition: transform 0.2s;
+            margin: 0 25px;
             &:hover {
                 transform: scale(1.1);
             }
@@ -34,7 +36,6 @@
     }
     &__language {
         display: block;
-        margin-right: auto;
         width: 29px;
         height: 26px;
         transition: transform 0.2s;
@@ -55,7 +56,7 @@
         margin: 0 -35px;
         margin-right: 100px;
         &-item {
-            margin: 0 35px;
+            margin: 0 25px;
         }
     }
     &__info-wrapper {
@@ -130,19 +131,10 @@
     .b-header__logo {
         margin: 0;
     }
-    .b-header__info {
-        margin-right: 30px;
-    }
-    .b-header__info-item {
-        margin: 0 25px;
-    }
-    .b-header__desktop__choice-item {
-        margin: 0 15px;
+    .b-header__nav-product {
+        width: calc(50% - 125px);
     }
     .b-header__info-list {
-        flex-wrap: wrap;
-    }
-    .b-header__desktop__choice {
         flex-wrap: wrap;
     }
 }
