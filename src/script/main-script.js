@@ -61,7 +61,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         slidesToShows: 1,
-        speed: 2500,
+        speed: 1000,
         autoplay: true,
         autoplaySpeed: 5000,
     });
@@ -102,6 +102,7 @@ $(document).ready(function() {
         centerMode: true,
         asNavFor: '.b-card-video__slider',
         focusOnSelect: true,
+        mobileFirst: true,
         responsive: [
             {
                 breakpoint: 768,
