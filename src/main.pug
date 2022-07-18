@@ -28,19 +28,20 @@ html(lang="ru")
         include blocks/b-card-address/b-card-address.pug
         include blocks/b-footer/b-footer.pug
         +b-header
-        +b-intro
-        .b-container--max-width
-            +b-card__img
-            +b-card-select
-            +b-advertising
-            section.b-card-guarantee-service
-                +b-card-guarantee
-                +b-card-service
-            +b-card-video
-            +b-technology
-            +b-card-news
-            +b-card-address("Магазины")
-            +b-footer
+        main
+            +b-intro
+            .b-container--max-width
+                +b-card__img
+                +b-card-select
+                +b-advertising
+                section.b-card-guarantee-service
+                    +b-card-guarantee
+                    +b-card-service
+                +b-card-video
+                +b-technology
+                +b-card-news
+                +b-card-address("Магазины")
+        +b-footer
 
 
         script(src="script/jquery-3.6.0.min.js")

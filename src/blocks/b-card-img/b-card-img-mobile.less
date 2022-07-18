@@ -2,7 +2,7 @@
     display: flex;
     & .b-container {
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
     }
@@ -12,10 +12,14 @@
     &__img {
         &--palitra{
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width: calc(100% - 25px);
             height: 251px;
             position: relative;
+            padding: 0 0 29px 0;
             margin-bottom: 25px;
+            text-decoration: none;
             margin-left: 25px;
             margin-top: 25px;
             z-index: 1;
@@ -30,11 +34,6 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-            }
-            & a{
-                width: 100%;
-                height: 100%;
-                text-decoration: none;
             }
         }
         &--skorob{
@@ -87,22 +86,25 @@
         }
         &--sliding{
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width: 100%;
             height: 174px;
             background-color: @greyF0;
             position: relative;
+            text-decoration: none;
+            padding-top: 30px;
             margin-bottom: 26px;
-            & a{
-                width: 100%;
-                height: 100%;
-                text-decoration: none;
+            &::before{
+                content:"";
+                position: absolute;
+                background-image:url(../img/content/mobile/2-door-types/4/1.svg);
+                width: 112px;
+                height: 235px;
+                z-index: 1;
+                bottom:23px;
+                left:32px;
             }
-        }
-        &--door{
-            position: absolute;
-            bottom:23px;
-            left:32px;
-            z-index: 1;
         }
         &--holz{
             display: flex;
@@ -111,8 +113,9 @@
             position: relative;
             text-decoration: none;
             margin-bottom: 48px;
-            padding-right: 25px;
+            margin-right: 25px;
             & picture{
+                width: 100%;
                 position: absolute;
                 display: block;
                 height: 100%;
@@ -131,10 +134,14 @@
         }
         &--verso{
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width:100%;
             height: 311px;
             position: relative;
+            padding: 0 0 31px 0;
             margin-bottom: 26px;
+            text-decoration: none;
             margin-left: 25px;
             & picture{
                 position: absolute;
@@ -147,11 +154,6 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-            }
-            & a{
-                width:100%;
-                height:100%;
-                text-decoration: none;
             }
         }
         &--corso{
@@ -204,18 +206,14 @@
         }
     }
     &-icon {
-        cursor: pointer;
         &--palitra {
-            & img{
-                position: absolute;
-                width: 40px;
-                height:40px;
-                transition: transform 0.3s;
-                right: 30px;
-                bottom: 30px;
-                &:hover{
-                    transform: scale(1.2);
-                }
+            width: 40px;
+            height:40px;
+            margin-left: auto;
+            transition: transform 0.3s;
+            margin-right: 25px;
+            &:hover{
+                transform: scale(1.2);
             }
         }
         &--skorob {
@@ -223,8 +221,8 @@
                 position: absolute;
                 width: 40px;
                 height:40px;
-                left: 30px;
-                bottom:30px;
+                left: 27px;
+                bottom:35px;
                 transition: transform 0.3s;
                 z-index: 1;
                 &:hover{
@@ -237,8 +235,8 @@
                 position: absolute;
                 width: 40px;
                 height:40px;
-                right: 30px;
-                top:30px;
+                right: 25px;
+                top:20px;
                 transition: transform 0.3s;
                 z-index: 1;
                 &:hover{
@@ -250,10 +248,9 @@
             position: absolute;
             width: 40px;
             height:40px;
-            right: 30px;
-            bottom:30px;
+            right: 25px;
+            bottom:26px;
             transition: transform 0.3s;
-            z-index: 1;
             &:hover{
                 transform: scale(1.2);
             }
@@ -262,8 +259,8 @@
             position: absolute;
             width: 40px;
             height:40px;
-            left:30px;
-            bottom:30px;
+            left:25px;
+            bottom:36px;
             transition: transform 0.3s;
             z-index: 1;
             &:hover{
@@ -271,11 +268,11 @@
             }
         }
         &--verso{
-            position: absolute;
             width: 40px;
             height:40px;
-            right: 30px;
-            top:30px;
+            margin-left: auto;
+            margin-top: 26px;
+            margin-right: 25px;
             transition: transform 0.3s;
             z-index: 1;
             &:hover{
@@ -287,8 +284,8 @@
                 position: absolute;
                 width: 40px;
                 height:40px;
-                left: 118px;
-                top:30px;
+                left: 121px;
+                top:26px;
                 transition:transform 0.3s;
                 z-index: 1;
                 &:hover{
@@ -301,8 +298,8 @@
                 position: absolute;
                 width: 40px;
                 height:40px;
-                right: 30px;
-                bottom:30px;
+                right: 25px;
+                bottom:31px;
                 transition: transform 0.3s;
                 z-index: 1;
                 &:hover{
