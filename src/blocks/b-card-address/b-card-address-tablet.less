@@ -17,6 +17,8 @@
     }
 
     &__item {
+        display: none;
+
         margin: 0;
         padding: 48px 0 21px 27px;
         box-sizing: content-box;
@@ -40,6 +42,10 @@
 
             background-color: @whiteFF;
             flex-direction: column;
+        }
+
+        &-active {
+            display: block;
         }
     }
 
