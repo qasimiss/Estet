@@ -118,6 +118,30 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 1500,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 599,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 924,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1342,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 })

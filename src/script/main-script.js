@@ -181,21 +181,43 @@ $(document).ready(function() {
         swipe: true,
         waitForAnimate: false,
         variableWidth: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         asNavFor: '.b-card-news__news .b-card-news__wrapper',
+        mobileFirst: true,
         responsive: [
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 935,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 1230,
+                settings: {
+                    slidesToShow: 4,
                     slidesToScroll: 2,
                 }
             },
