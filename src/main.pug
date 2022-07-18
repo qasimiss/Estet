@@ -27,10 +27,10 @@ html(lang="ru")
         include blocks/b-card-news/b-card-news.pug
         include blocks/b-card-address/b-card-address.pug
         include blocks/b-footer/b-footer.pug
-        .b-container--max-width
-            +b-header
-            main
-                +b-intro
+        +b-header
+        main
+            +b-intro
+            .b-container--max-width
                 +b-card__img
                 +b-card-select
                 +b-advertising
@@ -41,10 +41,11 @@ html(lang="ru")
                 +b-technology
                 +b-card-news
                 +b-card-address("Магазины")
-            +b-footer
+        +b-footer
 
 
         script(src="script/jquery-3.6.0.min.js")
         script(src="script/slick.min.js")
         script(src="script/main-script.js")
         script(src="script/main-script2.js")
+        script(src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js")
