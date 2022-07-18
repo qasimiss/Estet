@@ -34,7 +34,8 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
+        swipeToSlide: false,
         waitForAnimate: false,
         variableWidth: true,
         slidesToShow: 1,
@@ -61,9 +62,10 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         slidesToShows: 1,
-        speed: 2500,
+        speed: 1000,
         autoplay: true,
         autoplaySpeed: 5000,
+        swipe: true,
     });
 
     $('.b-picture--aside').slick({
@@ -72,7 +74,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         autoplay: true,
         waitForAnimate: false,
         responsive: [
@@ -102,6 +104,7 @@ $(document).ready(function() {
         centerMode: true,
         asNavFor: '.b-card-video__slider',
         focusOnSelect: true,
+        mobileFirst: true,
         responsive: [
             {
                 breakpoint: 768,
@@ -124,7 +127,7 @@ $(document).ready(function() {
         arrows: false,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         draggable: true,
         waitForAnimate: false,
         asNavFor: '.b-card-video__inner',
@@ -138,7 +141,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
-        swipe: false,
+        swipe: true,
         waitForAnimate: false,
         variableWidth: true,
         slidesToShow: 2,
