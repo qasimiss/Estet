@@ -1,5 +1,6 @@
 .b-price-item {
     width: 50%;
+    transition: background-color 0.3s ease-in-out;
     &--renaissance-order4 {
         order: 4;
         padding-bottom: 80px;
@@ -38,7 +39,6 @@
         width: 100%;
         height: 50%;
         padding-bottom: 0;
-        padding-top: 80px;
     }
     &--genesis-ord1 {
         order: 12;
@@ -47,5 +47,58 @@
     &--pad-bot {
         padding-bottom: 80px;
     }
+    &--tabl-none {
+        display: flex;
+    }
+    &--genesis-ord2 {
+        order: 11;
+        width: 50%;
+    }
+    &--sonata-ord1 {
+        width: 50%;
+        order: 2;
+        padding-top: 80px;
+    }
+    &--renaissance-ord4 {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        bottom: 100%;
+        height: 10%;
+    }
+    &--pad-top-desk {
+        padding-top: 80px;
+    }
+    &--desk-none {
+        display: none;
+    }
+    &--genesis-ord3 {
+        order: 12;
+        width: 50%;
+        background-color: @whiteF7;
+    }
+    &__post {
+        display: block;
+        color: transparent;
+        transition: color 0.3s ease-in-out;
+    }
+    &__price {
+        transition: color 0.3s ease-in-out;
+    }
+    &:hover {
+        background-color: @green47;
+    }
+    &:hover .b-price-item__post,
+    &:hover .b-title--price-door,
+    &:hover .b-price-item__price{
+        color: @whiteFF
+    }
+    &__price--margin {
+        margin-bottom: 25%;
+    }
 }
 
+.b-title--price-door {
+    transition: color 0.3s ease-in-out;
+}
