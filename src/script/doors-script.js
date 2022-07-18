@@ -29,19 +29,55 @@ $(document).ready(function() {
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        mobileFirst: true,
         responsive: [
             {
-                breakpoint: 767,
+                breakpoint: 465,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 686,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                    slidesToShow: 12,
+                    slidesToScroll: 4
                 }
             },
             {
                 breakpoint: 1023,
                 settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1310,
+                settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1601,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
                 }
             },
         ]
