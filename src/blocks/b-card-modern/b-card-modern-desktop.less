@@ -15,7 +15,7 @@
         margin-left:auto ;
         padding-right: 170px;
     }
-    &__wrapper{
+    &__wrapper.slick-slider{
         min-width: 0;
         display: flex;
         overflow: hidden;
@@ -40,27 +40,27 @@
             object-fit: cover;
         }
         &--block{
-            & img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
             & picture{
                 width:100%;
-                height:calc(50% + 90px);
                 margin-bottom: 38px;
+                height: 505px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
         &--long{
-            & img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
             & picture{
                 width:100%;
-                height:calc(50% - 50px);
+                height: 360px;
                 margin-bottom: 38px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }
