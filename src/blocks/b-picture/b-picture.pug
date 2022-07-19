@@ -1,0 +1,32 @@
+mixin b-picture(name)
+    each item in name
+        picture(class= item.pictureClass)
+            source(type="image/webp" srcset= item.imgWebpMediaMax767X1+' 1x,'+item.imgWebpMediaMax767X2+' 2x' media="(max-width: 767px)")
+            source(type="image/jpeg" srcset= item.imgJpgMediaMax767X1+' 1x,'+item.imgJpgMediaMax767X2+' 2x' media="(max-width: 767px)")
+            source(type="image/webp" srcset= item.imgWebpMediaMax1023X1+' 1x,'+item.imgWebpMediaMax1023X2+' 2x' media="(max-width: 1023px)")
+            source(type="image/jpeg" srcset= item.imgJpgMediaMax1023X1+' 1x,'+item.imgJpgMediaMax1023X2+' 2x' media="(max-width:1023px)")
+            source(type="image/webp" srcset= item.imgWebpMediaMaxDeskX1+' 1x,'+item.imgWebpMediaMaxDeskX2+' 2x')
+            source(type="image/jpeg" srcset= item.imgjpgMediaMaxDeskX1+' 1x,'+item.imgjpgMediaMaxDeskX2+' 2x')
+            img(class= item.imgClass src= item.imgjpgMediaMaxDeskX1 alt= item.alt)
+
+
+// Использовать:
+    ([
+        {
+            pictureClass: "",
+            imgWebpMediaMax767X1: "",
+            imgWebpMediaMax767X2: "",
+            imgJpgMediaMax767X1: "",
+            imgJpgMediaMax767X2: """",
+            imgWebpMediaMax1023X1: "",
+            imgWebpMediaMax1023X2: "",
+            imgJpgMediaMax1023X1: "",
+            imgJpgMediaMax1023X2: "",
+            imgWebpMediaMaxDeskX1: "",
+            imgWebpMediaMaxDeskX2: "",
+            imgjpgMediaMaxDeskX1: "",
+            imgjpgMediaMaxDeskX2: "",
+            imgClass: "",
+            alt: "",
+        }
+    ])
