@@ -1,17 +1,18 @@
-
-    .b-technology {
+  .b-technology {
         margin-bottom: 100px;
         &__wrap {
             display: flex;
             margin-left: auto;
         }
-        &__caption {
+        &__caption,
+        .b-title--company,
+        .b-title--quality,
+        .b-hover-quality__title {
             font-size: 24px;
             line-height: 28.13px;
-            color: @grey3C;
             font-weight: 400;
             margin-bottom: 20px;
-            display: inline-block;
+            display: block;
             margin-top: 22px;
         }
         &__wrap-grass {
@@ -32,6 +33,12 @@
                 display: none;
             }
         }
+        &__post--grass,
+        &__post--company,
+        &__post--quality,
+        &__post--vase {
+            padding-right: 120px;
+        }
     }
 
     .b-container--technology {
@@ -46,31 +53,31 @@
         margin-bottom: 65px;
     }
 
-    .b-picture--technology {
+    .b-picture {
         width: 100%;
-        padding: 0;
+        margin-bottom: 22px;
         & img {
             width: 100%;
             object-fit: cover;
         }
+        &--technology {
+        padding: 0;
     }
+}
 
-    .b-picture--lamp,
-    .b-picture--vase,
-    // .b-technology__wrapper,
-    .b-logo-green,
-    .b-hover-quality,
-    .b-wrap-vase__link,
-    .b-picture--techn,
-    .b-technology__post--vase,
-    .b-technology__wrapper--techn,
-    .b-picture--mirror,
     #technology__link-hover--grass,
     #technology__link-hover--vase,
-    .b-technology-logo {
+    .b-technology-logo,
+    .b-technology__wrapper--mirror,
+    .b-logo-wrap,
+    .b-technology__link-hover--tech {
         display: none;
     }
 
-    .b-technology__post--quality {
+    .b-technology__link-hover--lamp {
         display: none;
+    }
+
+    .b-title--company {
+        color: inherit;
     }
