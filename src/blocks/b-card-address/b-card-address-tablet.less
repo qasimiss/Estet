@@ -17,8 +17,6 @@
     }
 
     &__item {
-        display: none;
-
         width: 230px;
 
         margin: 0;
@@ -26,6 +24,8 @@
         box-sizing: content-box;
 
         background-color: @whiteFF;
+
+        color: fade(@grey3C, 0);
 
         &-title {
             margin-bottom: 23px;
@@ -51,7 +51,7 @@
         }
 
         &-active {
-            display: block;
+            color: @grey3C;
         }
     }
 
