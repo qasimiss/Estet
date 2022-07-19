@@ -1,4 +1,3 @@
-include ../../elements/b-card-video__item/b-card-video__item.pug
 include ../../elements/b-button-square/b-button-square.pug
 
 mixin b-card-video()
@@ -73,14 +72,30 @@ mixin b-card-video()
                     img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
             .b-card-video__box
                 .b-card-video__inner
-                    +b-card-video__item("Современный ремонт квартиры-студии!")
-                    +b-card-video__item("ESTET воплощает мечты")
-                    +b-card-video__item("Двери ESTET. Жизнь фабрики.")
-                    +b-card-video__item("Современный ремонт квартиры-студии!")
-                    +b-card-video__item("Современный ремонт квартиры-студии!")
-                    +b-card-video__item("ESTET воплощает мечты")
-                    +b-card-video__item("Двери ESTET. Жизнь фабрики.")
-                    +b-card-video__item("Современный ремонт квартиры-студии!")
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text= Современный ремонт квартиры-студии!
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text= ESTET воплощает мечты
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text=Двери ESTET. Жизнь фабрики.
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text=Современный ремонт квартиры-студии!
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text=Современный ремонт квартиры-студии!
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text=ESTET воплощает мечты
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text=Двери ESTET. Жизнь фабрики.
+                    a.b-card-video__item(href="javascript: void(0);")
+                        img.b-card-video__icon(src="img/icons/play-white.svg" alt="")
+                        div.b-card-video__text=Современный ремонт квартиры-студии!
                 .b-card-video__box-switcher
                     .b-card-video__box-switcher-position
                         +b-button-square({
