@@ -1,15 +1,27 @@
+include ../../blocks/b-picture/b-picture.pug
 mixin b-doors(doors)
     each item in doors
         .b-doors(class= item.doorsModification ? item.doorsModification: "")
             .b-doors__img-background
-                picture.b-doors__img-wrapper
-                    source(type="image/webp" srcset= item.imgWebpMediaMax767X1+' 1x,'+item.imgWebpMediaMax767X2+' 2x' media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset= item.imgJpgMediaMax767X1+' 1x,'+item.imgJpgMediaMax767X2+' 2x' media="(max-width: 767px)")
-                    source(type="image/webp" srcset= item.imgWebpMediaMax1023X1+' 1x,'+item.imgWebpMediaMax1023X2+' 2x' media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset= item.imgJpgMediaMax1023X1+' 1x,'+item.imgJpgMediaMax1023X2+' 2x' media="(max-width:1023px)")
-                    source(type="image/webp" srcset= item.imgWebpMediaMaxDeskX1+' 1x,'+item.imgWebpMediaMaxDeskX2+' 2x')
-                    source(type="image/jpeg" srcset= item.imgjpgMediaMaxDeskX1+' 1x,'+item.imgjpgMediaMaxDeskX2+' 2x')
-                    img.b-doors__img(src= item.imgjpgMediaMaxDeskX1 alt="Дверь")
+                +b-picture([
+                    {
+                        pictureClass: "b-doors__img-wrapper",
+                        imgWebpMediaMax767X1: item.imgWebpMediaMax767X1,
+                        imgWebpMediaMax767X2: item.imgWebpMediaMax767X2,
+                        imgJpgMediaMax767X1: item.imgJpgMediaMax767X1,
+                        imgJpgMediaMax767X2: item.imgJpgMediaMax767X2,
+                        imgWebpMediaMax1023X1: item.imgWebpMediaMax1023X1,
+                        imgWebpMediaMax1023X2: item.imgWebpMediaMax1023X2,
+                        imgJpgMediaMax1023X1: item.imgJpgMediaMax1023X1,
+                        imgJpgMediaMax1023X2: item.imgJpgMediaMax1023X2,
+                        imgWebpMediaMaxDeskX1: item.imgWebpMediaMaxDeskX1,
+                        imgWebpMediaMaxDeskX2: item.imgWebpMediaMaxDeskX2,
+                        imgjpgMediaMaxDeskX1: item.imgjpgMediaMaxDeskX1,
+                        imgjpgMediaMaxDeskX2: item.imgjpgMediaMaxDeskX2,
+                        imgClass: "b-doors__img",
+                        alt: "Дверь",
+                    }
+                ])
             .b-doors__mark-top
                 .b-doors__mark-wrapper-heart
                     img.b-doors__heart-img(src="img/icons/heart-green.svg", alt="")
