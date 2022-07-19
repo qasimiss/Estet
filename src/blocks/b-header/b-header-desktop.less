@@ -101,33 +101,31 @@
     &__header-item--search {
         display: none;
     }
-    &__desktop {
-        &__choice {
-            display: flex;
-            align-items: center;
-            margin: 0 -25px;
-            &-item {
-                margin: 0 15px;
-                &--counter {
-                    position: relative;
-                    &::after {
-                        content: "100";
-                        position: absolute;
-                        left: 100%;
-                        bottom: 100%;
-                        padding: 0 5px;
-                        height: 16px;
-                        background-color: @green47;
-                        border-radius: 8px;
-                        font-size: 10px;
-                        line-height: 16px;
-                        color: @whiteFF;
-                    }
+    &__choice {
+        display: flex;
+        align-items: center;
+        margin: 0 -25px;
+        &-item {
+            margin: 0 15px;
+            &--counter {
+                position: relative;
+                &::after {
+                    content: "100";
+                    position: absolute;
+                    left: 100%;
+                    bottom: 100%;
+                    padding: 0 5px;
+                    height: 16px;
+                    background-color: @green47;
+                    border-radius: 8px;
+                    font-size: 10px;
+                    line-height: 16px;
+                    color: @whiteFF;
                 }
             }
-            &-link {
-                display: flex;
-            }
+        }
+        &-link {
+            display: flex;
         }
     }
 }
