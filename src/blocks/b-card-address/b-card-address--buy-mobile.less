@@ -29,9 +29,7 @@
 
         background-color: @whiteFF;
 
-        color: @grey3C;
-
-        opacity: .5;
+        color: fade(@grey3C, 50%);
 
         &-title {
             margin-bottom: 12px;
@@ -70,6 +68,6 @@
     }
 
     & .slick-active {
-        opacity: 1;
+        color: @grey3C;
     }
 }
