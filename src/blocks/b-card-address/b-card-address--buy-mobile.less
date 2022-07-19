@@ -19,6 +19,8 @@
     }
 
     &__item {
+        width: 180px;
+
         flex-shrink: 0;
 
         margin-bottom: 29px;
@@ -27,7 +29,22 @@
 
         background-color: @whiteFF;
 
-        opacity: .5;
+        color: fade(@grey3C, 50%);
+
+        &-title {
+            margin-bottom: 12px;
+
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: -.4px;
+        }
+
+        &-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+        }
 
         &:last-child {
             padding: 49px 37px 38px 43px;
@@ -51,6 +68,6 @@
     }
 
     & .slick-active {
-        opacity: 1;
+        color: @grey3C;
     }
 }

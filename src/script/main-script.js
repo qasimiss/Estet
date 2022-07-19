@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".b-header-main__hamburger"),
+const hamburger = document.querySelector(".b-header__hamburger"),
       navContainer = document.querySelector(".b-hamburger"),
       videoItem = document.querySelectorAll('.b-card-video__item'),
       target = document.querySelector(".slick-current"),
@@ -57,7 +57,7 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 8,
                     slidesToScroll: 4

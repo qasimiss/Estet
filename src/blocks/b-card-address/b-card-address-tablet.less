@@ -17,13 +17,19 @@
     }
 
     &__item {
-        display: none;
+        width: 230px;
 
         margin: 0;
         padding: 48px 0 21px 27px;
         box-sizing: content-box;
 
         background-color: @whiteFF;
+
+        color: fade(@grey3C, 0);
+
+        &-title {
+            margin-bottom: 23px;
+        }
 
         &:nth-child(n+5) {
             padding-left: 51px;
@@ -45,7 +51,7 @@
         }
 
         &-active {
-            display: block;
+            color: @grey3C;
         }
     }
 
