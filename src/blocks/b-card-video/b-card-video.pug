@@ -1,6 +1,5 @@
 include ../../elements/b-card-video__item/b-card-video__item.pug
 include ../../elements/b-button-square/b-button-square.pug
-include ../../elements/b-card-video-youtube/b-card-video-youtube.pug
 
 mixin b-card-video()
     section.b-card-video
@@ -94,4 +93,9 @@ mixin b-card-video()
                             modificationArrow: "down",
                             modificationTitle: "Далее",
                         })
-            +b-card-video-youtube
+            .b-card-video-youtube
+                img.b-card-video-youtube__img(src="img/icons/youtube-green.svg", width="20", height="16" alt="")
+                .b-card-video-youtube__text
+                    | Еще больше новых обзоров вы найдете на нашем&nbsp;
+                    a.b-card-video-youtube__link(href="javascript: void(0);", title="Больше обзоров") Youtube
+                    | &nbsp;канале

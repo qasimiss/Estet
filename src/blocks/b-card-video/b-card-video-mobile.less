@@ -70,4 +70,41 @@
         margin-bottom: 22px;
         margin-left: 25px;
     }
+
+    &-youtube {
+        display: flex;
+        align-items: flex-start;
+
+        margin-left: 25px;
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21px;
+        text-decoration: none;
+        color: @grey3C;
+
+        &__img {
+            width: 20px;
+            height: 18px;
+
+            padding-top: 2px;
+        }
+
+        &__text {
+            width: 80%;
+            padding-left: 19px;
+        }
+
+        &__link {
+            font-weight: 700;
+            color: @grey3C;
+            text-decoration: underline;
+
+            transition: color .3s linear;
+
+            &:hover {
+                color: @green47;
+            }
+        }
+    }
 }
