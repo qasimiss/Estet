@@ -13,10 +13,10 @@
         &-item {
             font-size: 16px;
             line-height: 19px;
-            transition: transform 0.2s;
+            transition: opacity 0.2s;
             margin: 0 25px;
             &:hover {
-                transform: scale(1.1);
+                opacity: 0.5;
             }
         }
         &-link {
@@ -30,15 +30,19 @@
             padding-right: 11px;
             text-decoration: none;
             cursor: pointer;
+            transition: opacity 0.2s;
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
     &__language {
         display: block;
         width: 29px;
         height: 26px;
-        transition: transform 0.2s;
+        transition: opacity 0.2s;
         &:hover {
-            transform: scale(1.1);
+            opacity: 0.5;
         }
     }
     &__logo {
