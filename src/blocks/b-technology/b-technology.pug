@@ -96,13 +96,6 @@ mixin b-technology()
                 .b-technology__wrapper.b-technology__wrapper--lamp
                     a(class="b-technology__link-hover b-technology__link-hover--lamp" href="javascript:void(0);")
                         img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
-                    //- picture.b-picture.b-picture--lamp
-                    //-     source(type="image/jpeg" srcset="img/content/mobile/7-technology/4/1-1x.jpg 1x, img/content/mobile/7-technology/4/1-2x.jpg 2x" media="(max-width: 767px)")
-                    //-     source(type="image/webp" srcset="img/content/tablet/7-technology/4/1-1x.webp 1x, img/content/tablet/7-technology/4/1-2x.webp 2x" media="(max-width: 1023px)")
-                    //-     source(type="image/jpeg" srcset="img/content/tablet/7-technology/4/1-1x.jpg 1x, img/content/tablet/7-technology/4/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    //-     source(type="image/webp" srcset="img/content/desktop/7-technology/4/1-1x.webp 1x, img/content/desktop/7-technology/4/1-2x.webp 2x")
-                    //-     source(type="image/jpeg" srcset="img/content/desktop/7-technology/4/1-1x.jpg 1x, img/content/desktop/7-technology/4/1-2x.jpg 2x")
-                    //-     img(src="img/content/desktop/7-technology/4/1-1x.jpg")
                     +b-picture([
                     {
                         pictureClass: "b-picture--lamp",
@@ -126,14 +119,25 @@ mixin b-technology()
                         div.b-title.b-title--quality Высокое качество
                         span.b-technology__info Все наши двери проходят строжайший контроль качества на&nbsp;всех этапах производства. Следить за&nbsp;качеством, мы&nbsp;считаем, важнейшая задача производителя.
                 .b-technology__wrapper.b-technology__wrapper--vase
-                    picture.b-picture.b-picture--vase
-                        source(type="image/webp" srcset="img/content/mobile/7-technology/2/1-1x.webp 1x, img/content/mobile/7-technology/2/1-2x.webp 2x" media="(max-width: 767px)") 
-                        source(type="image/jpeg" srcset="img/content/mobile/7-technology/2/1-1x.jpg 1x, img/content/mobile/7-technology/2/1-2x.jpg 2x" media="(max-width: 767px)")
-                        source(type="image/webp" srcset="img/content/tablet/7-technology/2/1-1x.webp 1x, img/content/tablet/7-technology/2/1-2x.webp 2x" media="(max-width: 1023px)") 
-                        source(type="image/jpeg" srcset="img/content/tablet/7-technology/2/1-1x.jpg 1x, img/content/tablet/7-technology/2/1-2x.jpg 2x" media="(max-width: 1023px)")
-                        source(type="image/webp" srcset="img/content/desktop/7-technology/5/5-1x.webp 1x, img/content/desktop/7-technology/5/5-2x.webp 2x") 
-                        source(type="image/jpeg" srcset="img/content/desktop/7-technology/5/5-1x.jpg 1x, img/content/desktop/7-technology/5/5-2x.jpg 2x")
-                        img(src="img/content/desktop/7-technology/5/5-1x.jpg")
+                    +b-picture([
+                    {
+                        pictureClass: "b-picture--vase",
+                        imgWebpMediaMax767X1: 'img/content/mobile/7-technology/2/1-1x.webp',
+                        imgWebpMediaMax767X2: 'img/content/mobile/7-technology/2/1-2x.webp',
+                        imgJpgMediaMax767X1: 'img/content/mobile/7-technology/2/1-1x.jpg',
+                        imgJpgMediaMax767X2: 'img/content/mobile/7-technology/2/1-2x.jpg',
+                        imgWebpMediaMax1023X1: 'img/content/tablet/7-technology/2/1-1x.webp',
+                        imgWebpMediaMax1023X2: 'img/content/tablet/7-technology/2/1-2x.webp',
+                        imgJpgMediaMax1023X1: 'img/content/tablet/7-technology/2/1-1x.jpg',
+                        imgJpgMediaMax1023X2: 'img/content/tablet/7-technology/2/1-2x.jpg',
+                        imgWebpMediaMaxDeskX1: 'img/content/desktop/7-technology/5/5-1x.webp',
+                        imgWebpMediaMaxDeskX2: 'img/content/desktop/7-technology/5/5-2x.webp',
+                        imgjpgMediaMaxDeskX1: 'img/content/desktop/7-technology/5/5-1x.jpg',
+                        imgjpgMediaMaxDeskX2: 'img/content/desktop/7-technology/5/5-2x.jpg',
+                        imgClass: "b-picture__img--vase",
+                        alt: "Новые технологии"
+                    }
+                ])
                     .b-technology__post.b-technology__post--vase
                         strong.b-hover-quality__title Новые технологии
                         span.b-hover-quality__post Каркас двери и&nbsp;дверная коробка изготавливаются из&nbsp;хвойного бруса высокого качества, срощенного по&nbsp;длине и&nbsp;оптимизированного, то&nbsp;есть из&nbsp;него вырезаны сучки, смоляные карманы и&nbsp;другие пороки, присущие натуральному дереву.
