@@ -1,13 +1,25 @@
+include ../../blocks/b-picture/b-picture.pug
 mixin b-price-item(price)
     a.b-price-item(class= price.b_price_item href="javascript: void(0);" title="")
-        picture.b-picture.b-picture--price
-            source(type="image/webp" srcset= price.imgWebpPrice767X1+' 1x,'+price.imgWebpMediaMax767X2+' 2x' media="(max-width: 767px)")
-            source(type="image/jpeg" srcset= price.imgWebpPrice767X1+' 1x,'+price.imgJpgPrice767X2+' 2x' media="(max-width: 767px)")
-            source(type="image/webp" srcset= price.imgWebpPrice1023X1+' 1x,'+price.imgWebpPrice1023X2+' 2x' media="(max-width: 1023px)")
-            source(type="image/jpeg" srcset= price.imgJpgPrice1023X1+' 1x,'+price.imgJpgPrice1023X2+' 2x' media="(max-width:1023px)")
-            source(type="image/webp" srcset= price.imgWebpPriceDeskX1+' 1x,'+price.imgWebpPriceDeskX2+' 2x')
-            source(type="image/jpeg" srcset= price.imgjpgPriceDeskX1+' 1x,'+price.imgjpgPriceDeskX2+' 2x')
-            img.b-price-item__img(src= price.imgjpgPriceDeskX1 alt="Дверь")
+        +b-picture([
+                    {
+                        pictureClass: "b-picture--price",
+                        imgWebpMediaMax767X1: price.imgWebpMediaMax767X1,
+                        imgWebpMediaMax767X2: price.imgWebpMediaMax767X2,
+                        imgJpgMediaMax767X1: price.imgJpgMediaMax767X1,
+                        imgJpgMediaMax767X2: price.imgJpgMediaMax767X2,
+                        imgWebpMediaMax1023X1: price.imgWebpMediaMax1023X1,
+                        imgWebpMediaMax1023X2: price.imgWebpMediaMax1023X2,
+                        imgJpgMediaMax1023X1: price.imgJpgMediaMax1023X1,
+                        imgJpgMediaMax1023X2: price.imgJpgMediaMax1023X2,
+                        imgWebpMediaMaxDeskX1: price.imgWebpMediaMaxDeskX1,
+                        imgWebpMediaMaxDeskX2: price.imgWebpMediaMaxDeskX2,
+                        imgjpgMediaMaxDeskX1: price.imgjpgMediaMaxDeskX1,
+                        imgjpgMediaMaxDeskX2: price.imgjpgMediaMaxDeskX2,
+                        imgClass: "b-picture__img--price",
+                        alt: "Дверь",
+                    }
+                ])
         .b-price-item__info(class= price.b_price_item_info)
             .b-title.b-title--price-door !{price.title}
             span.b-price-item__price(class= price.b_price_item_price) !{price.price}
