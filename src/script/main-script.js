@@ -9,7 +9,15 @@ const hamburger = document.querySelector(".b-header__hamburger"),
 $(hamburger).on('click', function() {
     hamburger.classList.toggle("active")
     navContainer.classList.toggle("active")
+    if ($(this).hasClass('active')) {
+        $('body').css({"overflow": "hidden"});
+    } else {
+        $('body').css({"overflow": "visible"});
+    }
 });
+
+
+
 
 $(buttonNews).on('click', function() {
     buttonTips.classList.remove("active")
