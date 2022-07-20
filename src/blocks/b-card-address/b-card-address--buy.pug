@@ -1,14 +1,22 @@
 include ../../blocks/b-switcher-city/b-switcher-city
 include ../../blocks/b-link-and-switcher/b-link-and-switcher
+include ../../blocks/b-picture/b-picture
 include ../../elements/b-button-show-map/b-button-show-map
 
 mixin b-card-address--buy(title)
     section.b-card-address
         +b-button-show-map
-        picture.b-card-address__picture
-            source(type="image/webp" srcset="img/content/desktop/11-materials/6/1-1x.webp 1x, img/content/desktop/11-materials/6/1-2x.webp 2x")
-            source(type="image/jpeg" srcset="img/content/desktop/11-materials/6/1-1x.jpg 1x, img/content/desktop/11-materials/6/1-2x.jpg 2x")
-            img.b-card-address__img(src="img/content/desktop/11-materials/6/1-1x.jpg" alt="Карта с адресами")
+        +b-picture([
+            {
+                pictureClass: "b-card-address__picture",
+                imgWebpMediaMaxDeskX1: "img/content/desktop/11-materials/6/1-1x.webp",
+                imgWebpMediaMaxDeskX2: "img/content/desktop/11-materials/6/1-2x.webp",
+                imgjpgMediaMaxDeskX1: "img/content/desktop/11-materials/6/1-1x.jpg",
+                imgjpgMediaMaxDeskX2: "img/content/desktop/11-materials/6/1-2x.jpg",
+                imgClass: "b-card-address__img",
+                alt: "Карта с адресами",
+            }
+        ])
         .b-map-marker.b-map-marker__1
             img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
         .b-map-marker.b-map-marker__2
@@ -18,8 +26,8 @@ mixin b-card-address--buy(title)
         .b-card-address__title-box
             h2.b-title--card-address--buy= title
             +b-switcher-city({
-                modificationElements: "",
-                modificationSelect: "",
+                Elements: "",
+                Select: "",
                 imgGeo: "img/icons/geo-green.svg"
             })
         .b-card-address__inner
@@ -60,6 +68,6 @@ mixin b-card-address--buy(title)
                 .b-card-address__item-title Фирменный салон ESTET
                 .b-card-address__item-text Советский район, ул. Бекетова, д.13, литер "А", СЦ Бекетов, 3
         +b-link-and-switcher({
-            modificationValue: "Все салоны",
-            modificationTitle: "Показать все адреса магазинов",
+            Value: "Все салоны",
+            Title: "Показать все адреса магазинов",
         })
