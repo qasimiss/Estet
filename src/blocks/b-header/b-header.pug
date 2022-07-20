@@ -1,4 +1,4 @@
-include ../../elements/b-hamburger/b-hamburger.pug
+include ../b-hamburger/b-hamburger.pug
 mixin b-header
     header.b-header
         .b-container.b-container--no-padd-desktop
@@ -31,15 +31,15 @@ mixin b-header
                                 option(value="") Компания
                         li.b-header__info-item
                             a(href="javascript:void(0);" title="Где купить").b-header__info-link Где купить
-                    ul.b-header__desktop__choice
-                        li.b-header__desktop__choice-item
-                            a.b-header__desktop__choice-link(href="javascript:void(0);" title="Поиск")
-                                img.b-header__desktop__choice-img(src="img/icons/glass-white.svg", alt="Поиск")
-                        li.b-header__desktop__choice-item.b-header__desktop__choice-item--counter
-                            a.b-header__desktop__choice-link(href="javascript:void(0);" title="Нравиться")
-                                img.b-header__desktop__choice-img(src="img/icons/heart-white.svg", alt="Нравиться")
-                        li.b-header__desktop__choice-item.b-header__desktop__choice-item--counter
-                            a.b-header__desktop__choice-link(href="javascript:void(0);" title="Корзина")
-                                img.b-header__desktop__choice-img(src="img/icons/basket-white.svg", alt="Корзина")
+                    ul.b-header__choice
+                        li.b-header__choice-item
+                            a.b-header__choice-link(href="javascript:void(0);" title="Поиск")
+                                img.b-header__choice-img(src="img/icons/glass-white.svg", alt="Поиск")
+                        li.b-header__choice-item.b-header__choice-item--counter
+                            a.b-header__choice-link(href="javascript:void(0);" title="Нравиться")
+                                img.b-header__choice-img(src="img/icons/heart-white.svg", alt="Нравиться")
+                        li.b-header__choice-item.b-header__desktop__choice-item--counter
+                            a.b-header__choice-link(href="javascript:void(0);" title="Корзина")
+                                img.b-header__choice-img(src="img/icons/basket-white.svg", alt="Корзина")
                 button.b-header__hamburger
             +b-hamburger
