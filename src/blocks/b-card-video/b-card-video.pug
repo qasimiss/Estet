@@ -1,4 +1,5 @@
-include ../../elements/b-button-square/b-button-square.pug
+include ../../elements/b-button-square/b-button-square
+include ../../blocks/b-picture/b-picture
 
 mixin b-card-video()
     section.b-card-video
@@ -6,70 +7,158 @@ mixin b-card-video()
         .b-card-video__grey
         .b-card-video__container
             .b-card-video__slider
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
-                picture.b-card-video__picture
-                    source(type="image/webp" srcset="img/content/mobile/6-review/1/13-1x.webp 1x, img/content/mobile/6-review/1/13-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/6-review/1/13-1x.jpg 1x, img/content/mobile/6-review/1/13-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/6-review/1/1-1x.webp 1x, img/content/tablet/6-review/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/6-review/1/1-1x.jpg 1x, img/content/tablet/6-review/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/6-review/1/1-1x.webp 1x, img/content/desktop/6-review/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/6-review/1/1-1x.jpg 1x, img/content/desktop/6-review/1/1-2x.jpg 2x")
-                    img.b-card-video__img(src="img/content/desktop/6-review/1/1-1x.jpg", alt="Женщина рассказывает о дверях")
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-video__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/6-review/1/13-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/6-review/1/13-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/6-review/1/13-1x.jpg",
+                        imgJpgMediaMax767X2: "img/content/mobile/6-review/1/13-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/6-review/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/6-review/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/6-review/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/6-review/1/1-2x.jpg",
+                        imgClass: "b-card-video__img",
+                        alt: "Женщина рассказывает о дверях",
+                    }
+                ])
             .b-card-video__box
                 .b-card-video__inner
                     a.b-card-video__item(href="javascript: void(0);")
