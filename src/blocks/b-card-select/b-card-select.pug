@@ -1,15 +1,31 @@
 include ../../elements/b-button-rect--top/b-button-rect--top.pug
+include ../../blocks/b-picture/b-picture
 mixin b-card-select()
     section.b-card-select
-        .container.b-container--no-padd-mobile
+        .b-container
             h2.b-card-select__title Подберем интерьерное решение?
-            .b-card-select__descr Ответьте на мои 10 вопросов, и&nbsp;я&nbsp;покажу&nbsp; вам вариант вашей мечты
+            .b-card-select__descr Ответьте на мои 10 вопросов, и&nbsp;я&nbsp;покажу&nbsp; вам вариант вашей&nbsp;мечты
             +b-button-rect({
                 description: "Подобрать"
             })
-        picture.b-card-select-wrap
-                    source(type="image/webp" srcset="img/content/tablet/7-technology/3/1-1x.webp 1x, img/content/tablet/7-technology/3/1-2x.webp 2x" media="(max-width:1024px)" class="-card-select__img")
-                    source(type="image/jpeg" srcset="img/content/tablet/7-technology/3/1-1x.jpg 1x, img/content/tablet/7-technology/3/1-2x.jpg 2x" media="(max-width:1024px)" class="b-card-select__img")
-                    source(type="image/webp" srcset="img/content/desktop/7-technology/6/1-1x.webp 1x, img/content/desktop/7-technology/6/1-2x.webp 2x" class="b-card-select__img")
-                    source(type="image/jpeg" srcset="img/content/desktop/7-technology/6/1-1x.jpg 1x, img/content/desktop/7-technology/6/1-2x.jpg 2x")
-                    img(src="img/content/desktop/7-technology/6/1-1x.jpg" alt="Интерьер" class="b-card-select__img")
+        +b-picture([
+                {
+                    pictureClass: "b-card-select-wrap",
+                    imgWebpMediaMax1023X1: "img/content/tablet/7-technology/3/1-1x.webp",
+                    imgWebpMediaMax1023X2: "img/content/tablet/7-technology/3/1-2x.webp",
+                    imgJpgMediaMax1023X1: "img/content/tablet/7-technology/3/1-1x.jpg",
+                    imgJpgMediaMax1023X2: "img/content/tablet/7-technology/3/1-2x.jpg",
+                    imgWebpMediaMaxDeskX1: "img/content/desktop/7-technology/6/1-1x.webp",
+                    imgWebpMediaMaxDeskX2: "img/content/desktop/7-technology/6/1-2x.webp",
+                    imgjpgMediaMaxDeskX1: "img/content/desktop/7-technology/6/1-1x.jpg",
+                    imgjpgMediaMaxDeskX2: "img/content/desktop/7-technology/6/1-2x.jpg",
+                    imgClass: "b-card-select__img",
+                    alt: "Интерьер",
+                }
+            ])
+        //- picture.b-card-select-wrap
+        //-             source(type="image/webp" srcset="img/content/tablet/7-technology/3/1-1x.webp 1x, img/content/tablet/7-technology/3/1-2x.webp 2x" media="(max-width:1024px)" class="-card-select__img")
+        //-             source(type="image/jpeg" srcset="img/content/tablet/7-technology/3/1-1x.jpg 1x, img/content/tablet/7-technology/3/1-2x.jpg 2x" media="(max-width:1024px)" class="b-card-select__img")
+        //-             source(type="image/webp" srcset="img/content/desktop/7-technology/6/1-1x.webp 1x, img/content/desktop/7-technology/6/1-2x.webp 2x" class="b-card-select__img")
+        //-             source(type="image/jpeg" srcset="img/content/desktop/7-technology/6/1-1x.jpg 1x, img/content/desktop/7-technology/6/1-2x.jpg 2x")
+        //-             img(src="img/content/desktop/7-technology/6/1-1x.jpg" alt="Интерьер" class="b-card-select__img")
