@@ -41,9 +41,9 @@
         height: 24px;
         padding: 12px;
         box-sizing: content-box;
-        transition: transform 0.2s;
+        transition: opacity 0.2s;
         &:hover {
-            transform: scale(1.1);
+            opacity: 0.5;
         }
     }
     &__callback {
@@ -55,6 +55,10 @@
         border-bottom: 1px solid fade(@whiteFF, 50%);
         margin-bottom: 19px;
         text-decoration: none;
+        transition: opacity 0.2s;
+        &:hover {
+            opacity: 0.5;
+        }
     }
     &__number {
         width: 100%;
@@ -63,6 +67,10 @@
         line-height: 42px;
         color: @whiteFF;
         text-decoration: none;
+        transition: opacity 0.2s;
+        &:hover {
+            opacity: 0.5;
+        }
     }
     &__info {
         background-color: @grey31;
@@ -100,5 +108,9 @@
         color: @grey99;
         border-bottom: 1px solid #999999;
         padding-bottom: 3px;
+        transition: opacity 0.2s;
+        &:hover {
+            opacity: 0.5;
+        }
     }
 }
