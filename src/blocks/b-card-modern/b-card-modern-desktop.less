@@ -40,27 +40,46 @@
             object-fit: cover;
         }
         &--block{
+            & img{
+                height: 100%;
+                object-fit: cover;
+            }
             & picture{
                 width:100%;
                 margin-bottom: 38px;
-                height: 505px;
-                & img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            }
+        }
+        &--greyblock{
+            & picture{
+                width: 100%;
+                height: 480px;
+                margin-bottom:38px;
+            }
+            & img{
+                object-fit: cover;
+                height: 100%;
             }
         }
         &--long{
+            & img{
+                height: 100%;
+                object-fit: cover;
+            }
             & picture{
                 width:100%;
+                height:calc(50% - 255px);
+            }
+        }
+        &--greylong{
+            & picture{
+                width: 100%;
                 height: 360px;
-                margin-bottom: 38px;
-                & img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+                background-color: #F7F7F7;
+            }
+            & img{
+                width: calc(100% - 60px);
+                height: 100%;
+                margin-left: 22%;
             }
         }
     }
