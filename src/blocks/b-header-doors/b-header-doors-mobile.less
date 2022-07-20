@@ -40,6 +40,10 @@
         margin: 0 auto;
         flex: 4;
         &-item {
+            transition: opacity 0.3s;
+            &:hover {
+                opacity: 0.5;
+            }
             &--basket {
                 margin: 0 auto;
             }
@@ -62,6 +66,7 @@
         background-color: @green47;
         width: 60px;
         height: 60px;
+        cursor: pointer;
         &-wrapper {
             z-index: 55;
             display: flex;
@@ -72,7 +77,6 @@
             width: 29px;
             height: 20px;
             position: relative;
-            cursor: pointer;
         }
         &-line {
             position: relative;
