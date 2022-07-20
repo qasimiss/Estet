@@ -27,9 +27,13 @@
         padding: 49px 0 38px 43px;
         box-sizing: content-box;
 
+        text-decoration: none;
+
         background-color: @whiteFF;
 
         color: fade(@grey3C, 50%);
+
+        pointer-events: none;
 
         &-title {
             margin-bottom: 12px;
@@ -69,5 +73,12 @@
 
     & .slick-active {
         color: @grey3C;
+        pointer-events: initial;
+
+        transition: color .3s linear;
+
+        &:hover {
+            color: fade(@green47, 70%);
+        }
     }
 }
