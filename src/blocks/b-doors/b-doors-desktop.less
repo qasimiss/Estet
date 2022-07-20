@@ -3,6 +3,7 @@
     padding: 14px 53px 24px 16px;
     background-color: @whiteFF;
     max-height: 603px;
+    cursor: pointer;
     &:nth-child(4n+2), &:nth-child(4n+3) {
         background-color: @whiteFF;
     }
@@ -42,10 +43,24 @@
         padding-left: 44px;
         margin-bottom: 17px;
     }
-    &__img-background {
-        min-height: 400px;
-    }
     &__choice-button {
         margin-right: -28px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .b-doors {
+        &__img-background {
+            padding: 5px 5px 5px 24px;
+        }
+        &__price {
+            &-actual {
+                font-size: 12px;
+                padding-right: 2px;
+            }
+            &-irrelevant {
+                font-size: 10px;
+            }
+        }
     }
 }
