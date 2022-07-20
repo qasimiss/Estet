@@ -1,4 +1,4 @@
-include ../../elements/b-link-and-switcher/b-link-and-switcher.pug
+include ../../blocks/b-link-and-switcher/b-link-and-switcher.pug
 mixin b-card-news()
     section.b-card-news
         .b-container
@@ -167,6 +167,6 @@ mixin b-card-news()
                             time(datetime="2021-01-25") 25  января 2021 г.
             .b-card-news__button-switcher
                 +b-link-and-switcher({
-                modificationValue: "Все новости",
-                modificationTitle: "Показать все новости",
+                Value: "Все новости",
+                Title: "Показать все новости",
             })

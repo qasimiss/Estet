@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    left: calc(-100% - 85px);
+    left: 100%;
     top: 0;
     width: 100%;
     max-width: 385px;
@@ -10,6 +10,7 @@
     background-color: @green47;
     overflow-y: auto;
     z-index: 150;
+    transition: left 0.3s;
     &::-webkit-scrollbar-track {
         border: 1px solid #000;
         padding: 2px 0;
@@ -193,6 +194,7 @@
         height: 183px;
         background-color: @black00;
         padding: 40px 0 50px 60px;
+        margin-top: auto;
         &-number {
             display: block;
             font-weight: 600;

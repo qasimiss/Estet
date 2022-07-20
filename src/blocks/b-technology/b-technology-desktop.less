@@ -35,12 +35,23 @@
     &__caption,&__subcaption {
         color: inherit;
     }
+    &__caption {
+        font-size: 24px;
+        line-height: 28px;
+        color: @whiteFF;
+        display: block;
+        margin-bottom: 35px
+    }
     &__post {
         width: 100%;
         padding: 28px 35px 58px 38px;
         transition: background-color 0.4s ease-in-out,color  0.5s ease-in-out;
         height: 100%;
-        transform: translateY(-100%);
+        &--company {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
         &--quality {
             background-color: @green47;
             width: 100%;
@@ -64,6 +75,7 @@
             width: 50%;
             height: 100%;
             color: @whiteFF;
+            padding-top: 100px;
             display: block;
             transition: all 0.5s ease-in-out;
             transform: translateX(0%);
@@ -137,10 +149,9 @@
             display: block;
             opacity: 1;
         }
-        &--tech:hover ~ .b-technology__post{
+        &--tech:hover ~ .b-technology__post--company{
             background-color: @green47;
             color: white;
-            transform: translateY(-100%);
         }
         &--vase {
             bottom: 25%;
@@ -166,7 +177,7 @@
     }
 }
 
-.b-picture {
+.b-technology .b-picture {
     width: 100%;
     height: 100%;
     & img {
@@ -265,12 +276,26 @@
 
 #technology__link-hover--grass {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 10%;
     display: block;
     width: 25px;
     height: 25px;
     z-index: 600;
+    border-radius: 50%;
+    background-color: @whiteFF;
+}
+
+#technology__link-hover--grass::before {
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #1E8A47;
+    width: 30%;
+    height: 30%;
 }
 
 #technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrap-grass {
@@ -289,6 +314,7 @@
     left: 30%;
     display: block;
     z-index: 310;
+    transition: opacity 0.3s ease-in-out;
 }
 
 #technology__link-hover--vase:focus {
@@ -299,10 +325,8 @@
     z-index: 251;
 }
 
-#technology__link-hover--vase:focus ~ .b-technology__inner .b-technology__wrapper--vase,
-#technology__link-hover--vase:active ~ .b-technology__inner .b-technology__wrapper--vase {
-    display: block;
-    z-index: 250;
+#technology__link-hover--vase:hover {
+    opacity: 0;
 }
 
 #technology__link-hover--vase:hover ~ .b-technology__inner .b-technology__wrapper--vase .b-technology__post--vase {
@@ -340,9 +364,16 @@
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 12px;
+    color: @whiteFF;
 }
 
 .b-hover-quality__post {
     font-size: 14px;
     line-height: 25px;
+}
+
+.b-technology .b-title--quality,
+.b-technology .b-hover-quality__title {
+    color: @whiteFF;
+    margin-top: 0;
 }

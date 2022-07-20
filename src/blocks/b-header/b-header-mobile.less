@@ -32,6 +32,10 @@
         border: none;
         background: linear-gradient(to bottom,transparent 0 9px,#fff 9px 11px,transparent 11px 20px);
         background: -ms-linear-gradient(top,transparent 9px, #fff 9px, #fff 11px, transparent 11px);
+        transition: opacity 0.2s;
+        &:hover {
+            opacity: 0.5;
+        }
         &::before {
             content: "";
             position: absolute;

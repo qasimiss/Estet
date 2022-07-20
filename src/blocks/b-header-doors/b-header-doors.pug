@@ -1,5 +1,5 @@
-include ../../elements/b-hamburger/b-hamburger.pug
-include ../../elements/b-switcher-city/b-switcher-city.pug
+include ..//b-hamburger/b-hamburger.pug
+include ../../blocks/b-switcher-city/b-switcher-city.pug
 mixin b-header-doors
     header.b-header-doors
         .b-container.b-container--no-padd-table.b-container--no-padd-desktop
@@ -22,10 +22,10 @@ mixin b-header-doors
                             img(src="img/icons/basket-white.svg", alt="basket")
                     li.b-header-doors__choice-item.b-header-doors__choice-item--language
                         a.b-header-doors__choice--link(href="javascript:void(0);" title="language")
-                            img(src="img/icons/languge.svg", alt="language")
+                            img(src="img/icons/language.svg", alt="language")
                 +b-switcher-city({
-                    modificationElements: "b-switcher-city--header",
-                    modificationSelect: "b-switcher-city__inner--white",
+                    Elements: "b-switcher-city--header",
+                    Select: "b-switcher-city__inner--white",
                     imgGeo: "img/icons/geo.svg"
                 })
                 .b-header-doors__hamburger

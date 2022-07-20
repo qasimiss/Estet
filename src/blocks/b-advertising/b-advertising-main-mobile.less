@@ -26,6 +26,16 @@
         font-size: 21px;
         line-height: 24.61px;
         margin-bottom: 22px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 20%;
+            height: 2.5%;
+            background-color: @whiteFF;
+            position: absolute;
+            top: 16.5%;
+            left: -7%;
+        }
     }
     &__descr-doors {
         display: none;
