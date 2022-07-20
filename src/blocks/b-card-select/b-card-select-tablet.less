@@ -3,6 +3,7 @@
     padding: 0 0 87px 100px;
     position: relative;
     justify-content: space-between;
+    margin-bottom: 30px;
     &__title {
         margin: 0;
         min-width: 334px;
@@ -17,15 +18,29 @@
         font-size: 18px;
         line-height: 21px;
         font-weight: 400;
-        margin-bottom: 331px;;
+        margin-bottom: 318px;;
     }
     &-wrap {
-        max-width:375px;
-        height: auto;
+        padding-top: 217px;
         display: block;
+        margin-bottom: 0;
+        width: calc(100% - 350px);
+    }
+    &__img {
+        width:100%;
+        height:100%;
         object-fit: cover;
-        position: static;
-        align-self: flex-end;
-        margin-left: -25px;
+    }
+    .b-container {
+        padding: 0;
+        width: 350px;
+        .b-button-rect {
+            width: 279px;
+        }
     }
 }
+// .b-card-select > .b-container {
+//     padding: 0;
+//     width: 350px;
+//     // padding-left: 82px;
+// }
