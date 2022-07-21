@@ -1,0 +1,43 @@
+mixin b-button ({btn})
+    if btn
+        button.b-button(class= btn.button.classBtn?btn.button.classBtn:'' title=btn.button.titleBtn?btn.button.titleBtn:'') !{btn.button.descrBtn?btn.button.descrBtn:''}
+        if (btn.button.imgUrl)
+            img(class= btn.button.imgClass?btn.button.imgClass:'' src= btn.button.imgUrl?btn.button.imgUrl:'', alt= btn.button.imgAlt?btn.button.imgAlt:'')
+        if (btn.button.svg)
+            svg(class= btn.button.svgClass?btn.button.svgClass:'' alt="") !{btn.button.svg?btn.button.svg:''}
+    if btn.link
+        a.b-link(class= btn.link.classLink, title=btn.link.classTitle, href="javascript:void(0);")
+            if btn.link.imgBeffore
+                img(class=btn.link.imgBefforeClass, src=btn.link.imgBeffore, alt=btn.link.imgBefforeAlt)
+            if btn.link.descr
+                div(class=btn.link.descrClass) !{btn.link.descr}
+            if btn.link.imgAfter
+                img(class=btn.link.imgAfterClass, src=btn.link.imgAfter, alt=btn.link.imgAfterAlt)
+
+
+//- +b-button({
+//-     btn: {
+//-         button: {
+//-             classBtn: 'b-button-collection__button',
+//-             titleBtn: '',
+//-             descrBtn: 'Коллекции',
+//-             imgUrl: '',
+//-             imgClass: '',
+//-             imgAlt: '',
+//-             svg: '',
+//-             svgClass: '',
+//-         },
+//-         link: {
+//-             classLink: '',
+//-             classTitle: '',
+//-             imgBeffore: '',
+//-             imgBefforeClass: '',
+//-             imgBefforeAlt: '',
+//-             descr: '',
+//-             descrClass: '',
+//-             imgAfter: '',
+//-             imgAfterClass: '',
+//-             imgAfterAlt: '',
+//-         }
+//-     }
+//- })
