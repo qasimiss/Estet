@@ -13,16 +13,19 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
 
         padding-top: 82px;
         padding-left: 34px;
+        & .slick-track {
+            flex-direction: row;
+        }
     }
 
     &__item {
         display: block;
 
-        width: 33%;
+        width: 170px !important;
         height: 95px;
 
         margin-bottom: 31px;
