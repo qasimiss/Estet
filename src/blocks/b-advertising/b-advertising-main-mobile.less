@@ -66,9 +66,10 @@
     & .b-button-square {
         z-index: 10;
         &--white {
-            visibility: hidden;
+            // visibility: hidden;
             position: absolute;
             right: 0;
+            transform: translateX(-100%);
             top: 0;
         }
         &--green {
@@ -89,7 +90,6 @@
     position: absolute;
 }
 
-.b-card-advertising__title,
-.b-card-advertising .b-button-square:nth-child(2) {
+.b-card-advertising__title {
     display: none;
 }
