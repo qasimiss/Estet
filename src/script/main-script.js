@@ -117,7 +117,7 @@ $(document).ready(function() {
         easing: "ease-in-out",
         speed: 1000,
         swipe: true,
-        autoplay: true,
+        autoplay: false,
         waitForAnimate: false,
         responsive: [
             {
