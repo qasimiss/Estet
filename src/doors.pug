@@ -26,12 +26,10 @@ html(lang="ru")
         include blocks/b-intro-second/b-intro-second.pug
         include blocks/b-card-doors/b-card-doors.pug
         include blocks/b-advertising/b-advertising-main.pug
-        include blocks/b-card-address/b-card-address--buy.pug
+        include blocks/b-card-address/b-card-address.pug
         include blocks/b-aside/b-aside.pug
-        include blocks/b-card-address/b-card-address--buy.pug
         include blocks/b-slider-video/b-slider-video.pug
         include blocks/b-card-modern/b-card-modern.pug
-        include blocks/b-card-address/b-card-address.pug
         include blocks/b-footer/b-footer.pug
         .b-container--max-width
             .b-doors-wrapper
@@ -52,7 +50,7 @@ html(lang="ru")
             })
             +b-slider-video
             +b-card-modern
-            +b-card-address--buy("Купить в вашем городе")
+            +b-card-address("Купить в вашем городе")
             +b-footer
 
 
