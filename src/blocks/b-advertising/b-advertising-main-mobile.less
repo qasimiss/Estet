@@ -11,8 +11,16 @@
 }
 
 .b-card-advertising {
+    height: 100%;
     margin-bottom: 36px;
     position: relative;
+    &__item {
+        position: relative;
+        height: 100%;
+    }
+    &__picture {
+        margin-bottom: 24px;
+    }
     &--doors {
         margin-bottom: 108px;
     }
@@ -34,7 +42,7 @@
             background-color: @whiteFF;
             position: absolute;
             top: 16.5%;
-            left: -7%;
+            left: -6%;
         }
     }
     &__descr-doors {
@@ -79,7 +87,7 @@
         }
     }
     & .slick-track {
-        height: 315px;
+        height: auto;
     }
     .slick-slide {
         height: 100%;
