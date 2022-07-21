@@ -9,6 +9,11 @@ const hamburger = document.querySelector(".b-header__hamburger"),
 $(hamburger).on('click', function() {
     hamburger.classList.toggle("active")
     navContainer.classList.toggle("active")
+    if ($(this).hasClass('active')) {
+        $('body').css({"overflow": "hidden"});
+    } else {
+        $('body').css({"overflow": "visible"});
+    }
 });
 
 $(buttonNews).on('click', function() {
@@ -112,19 +117,19 @@ $(document).ready(function() {
         easing: "ease-in-out",
         speed: 1000,
         swipe: true,
-        autoplay: true,
+        autoplay: false,
         waitForAnimate: false,
         responsive: [
             {
                 breakpoint: 767,
                 settings: {
-                    prevArrow: "false",
+                    prevArrow: $('.b-card-advertising .b-button-square--white'),
                 }
             },
             {
                 breakpoint: 1023,
                 settings: {
-                    prevArrow: $('.b-button-square--white'),
+                    prevArrow: $('.b-card-advertising .b-button-square--white'),
                 }
             },
         ]

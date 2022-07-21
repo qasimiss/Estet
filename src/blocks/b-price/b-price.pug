@@ -1,10 +1,10 @@
-include ../../elements/b-button-collection/b-button-collection.pug
+include ../b-doors-nav/b-doors-nav.pug
 include ../b-price-item/b-price-item.pug
 include ../../blocks/b-picture/b-picture.pug
 mixin b-price
     section.b-price.b-container.b-container--no-padd-mobile.b-container--no-padd-desktop
         .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
-        +b-button-collection()
+        +b-doors-nav()
         +b-price-item({
             b_price_item: 'b-price-item--sonata b-price-item--padding-top',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/1/2-1x.webp',
