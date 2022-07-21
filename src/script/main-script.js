@@ -123,13 +123,13 @@ $(document).ready(function() {
             {
                 breakpoint: 767,
                 settings: {
-                    prevArrow: "false",
+                    prevArrow: $('.b-card-advertising .b-button-square--white'),
                 }
             },
             {
                 breakpoint: 1023,
                 settings: {
-                    prevArrow: $('.b-button-square--white'),
+                    prevArrow: $('.b-card-advertising .b-button-square--white'),
                 }
             },
         ]
