@@ -16,9 +16,6 @@ $(hamburger).on('click', function() {
     }
 });
 
-
-
-
 $(buttonNews).on('click', function() {
     buttonTips.classList.remove("active")
     news[1].classList.remove("active")
