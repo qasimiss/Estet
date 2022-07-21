@@ -17,9 +17,8 @@ mixin b-technology()
                     modificationArrow: "right",
                     modificationTitle: "Далее",
                 })
-            a(id="technology__link-hover--grass" href="javascript:void(0);")
-            a(id="technology__link-hover--vase" href="javascript:void(0);")
-                    img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
+            a(id="technology__link-hover--grass" class="b-technology__link-hover" href="javascript:void(0);")
+            a(id="technology__link-hover--vase" class="b-technology__link-hover" href="javascript:void(0);")
             .b-technology__inner
                 .b-technology__container
                     h2.b-title.b-title--technology ESTET
@@ -69,8 +68,6 @@ mixin b-technology()
                     ])
                 .b-technology__wrapper.b-technology__wrapper--techn
                     a(class="b-technology__link-hover b-technology__link-hover--tech" href="javascript:void(0);")
-                        img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
-                        img(class="b-oval-green" src="img/icons/oval-green.svg", alt="")
                     +b-picture([
                     {
                         pictureClass: "b-picture--techn",
@@ -95,7 +92,6 @@ mixin b-technology()
                         p.b-subtitle.b-subtitle--technology Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.
                 .b-technology__wrapper.b-technology__wrapper--lamp
                     a(class="b-technology__link-hover b-technology__link-hover--lamp" href="javascript:void(0);")
-                        img(class="b-oval-white" src="img/icons/oval-white.svg", alt="")
                     +b-picture([
                     {
                         pictureClass: "b-picture--lamp",

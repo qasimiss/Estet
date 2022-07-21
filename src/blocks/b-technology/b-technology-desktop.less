@@ -136,6 +136,27 @@
         height: 25px;
         z-index: 30;
         display: block;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, 0.9);
+        background-color: @whiteFF;
+        &::before {
+            position: absolute;
+            content: "";
+            border-radius: 100%;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            background-color: @green47;
+            width: 30%;
+            height: 30%;
+        }
+        &--tech {
+            background-color: @green47;
+            &::before {
+                background-color: @whiteFF;
+            }
+        }
         &--lamp {
             top: 25%;
             right: 42%;
@@ -198,21 +219,6 @@
     display: block;
 }
 
-.b-oval-white {
-    display: block;
-    position: relative;
-    box-shadow: 0 0 10px 10px @whiteFF;
-}
-
-.b-oval-green {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    height: 50%;
-    transform: translate(-50%,-50%);
-}
-
 .technology__link-hover--vase {
     display: block;
 }
@@ -243,11 +249,7 @@
     top: 20%;
     left: 10%;
     display: block;
-    width: 25px;
-    height: 25px;
     z-index: 600;
-    border-radius: 50%;
-    background-color: @whiteFF;
 }
 
 #technology__link-hover--grass::before {
