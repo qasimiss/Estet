@@ -1,12 +1,17 @@
-include ../../elements/b-button-rect--top/b-button-rect--top.pug
+include ../../elements/b-button/b-button.pug
 include ../../blocks/b-picture/b-picture
 mixin b-card-select()
     section.b-card-select
         .b-container
             h2.b-card-select__title Подберем интерьерное решение?
             .b-card-select__descr Ответьте на мои 10 вопросов, и&nbsp;я&nbsp;покажу&nbsp; вам вариант вашей&nbsp;мечты
-            +b-button-rect({
-                description: "Подобрать"
+            +b-button({
+                btn: {
+                    button: {
+                        descrBtn: "Подобрать",
+                        classBtn: "b-button--rect"
+                    }
+                }
             })
         +b-picture([
                 {
