@@ -111,8 +111,8 @@ $(document).ready(function() {
     });
 
     $('.b-picture--aside').slick({
-        prevArrow: $('.b-card-advertising .b-button-square--white'),
-        nextArrow: $('.b-card-advertising .b-button-square--green'),
+        prevArrow: $('.b-card-advertising .b-button--square-white'),
+        nextArrow: $('.b-card-advertising .b-button--square-green'),
         arrows: true,
         easing: "ease-in-out",
         speed: 1000,
@@ -123,21 +123,21 @@ $(document).ready(function() {
             {
                 breakpoint: 767,
                 settings: {
-                    prevArrow: $('.b-card-advertising .b-button-square--white'),
+                    prevArrow: $('.b-card-advertising .b-button--square-white'),
                 }
             },
             {
                 breakpoint: 1023,
                 settings: {
-                    prevArrow: $('.b-card-advertising .b-button-square--white'),
+                    prevArrow: $('.b-card-advertising .b-button--square-white'),
                 }
             },
         ]
     });
 
     $('.b-card-video__inner').slick({
-        prevArrow: $('.b-card-video .b-button-square--white'),
-        nextArrow: $('.b-card-video .b-button-square--green'),
+        prevArrow: $('.b-card-video .b-button--square-white'),
+        nextArrow: $('.b-card-video .b-button--square-green'),
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 4,
@@ -151,15 +151,15 @@ $(document).ready(function() {
             {
                 breakpoint: 768,
                 settings: {
-                    prevArrow: $('.b-card-video .b-button-square--white'),
-                    nextArrow: $('.b-card-video .b-button-square--green'),
+                    prevArrow: $('.b-card-video .b-button--square-white'),
+                    nextArrow: $('.b-card-video .b-button--square-green'),
                 }
             },
             {
                 breakpoint: 1463,
                 settings: {
-                    prevArrow: $('.b-card-video .b-button-square--green'),
-                    nextArrow: $('.b-card-video .b-button-square--white'),
+                    prevArrow: $('.b-card-video .b-button--square-green'),
+                    nextArrow: $('.b-card-video .b-button--square-white'),
                 }
             },
         ]

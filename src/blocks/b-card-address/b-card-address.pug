@@ -1,11 +1,21 @@
 include ../../blocks/b-switcher-city/b-switcher-city
 include ../../blocks/b-link-and-switcher/b-link-and-switcher
 include ../../blocks/b-picture/b-picture
-include ../../elements/b-button-show-map/b-button-show-map
+include ../../elements/b-button/b-button
 
 mixin b-card-address(title)
     section.b-card-address
-        +b-button-show-map
+        +b-button({
+            btn: {
+                link: {
+                    classLink: 'b-button--show-map',
+                    classTitle: 'Показать на карте',
+                    descrLink: 'Показать на карте',
+                    imgAfter: 'img/icons/local.svg',
+                    imgAfterClass: 'b-button__img--show-map',
+                }
+            }
+        })
         +b-picture([
             {
                 pictureClass: "b-card-address__picture",
