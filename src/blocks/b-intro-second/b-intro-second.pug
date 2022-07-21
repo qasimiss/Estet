@@ -1,16 +1,27 @@
 include ../../elements/b-button-order-size/b-button-order-size.pug
 mixin b-intro-second()
     section.b-intro
-        picture(class="b-intro-image-wrap")
-            source(class="b-intro-image" type="image/webp" srcset="img/content/mobile/1-intro/2/2-1x.webp 1x, img/content/mobile/1-intro/2/2-2x.webp 2x" media="(max-width: 767px)")
-            source(class="b-intro-image" type="image/jpeg" srcset="img/content/mobile/1-intro/2/2-1x.jpg 1x, img/content/mobile/1-intro/2/2-2x.jpg 2x" media="(max-width: 767px)")
-            source(class="b-intro-image" type="image/webp" srcset="img/content/tablet/1-intro/2/2-1x.webp 1x, img/content/tablet/1-intro/2/2-2x.webp 2x" media="(max-width: 1023px)")
-            source(class="b-intro-image" type="image/jpeg" srcset="img/content/tablet/1-intro/2/2-2x.jpg 1x, img/content/tablet/1-intro/2/2-2x.jpg 2x" media="(max-width: 1023px)")
-            source(class="b-intro-image" type="image/webp" srcset="img/content/desktop/1-intro/2/1-1x.webp 1x, img/content/desktop/1-intro/2/1-2x.webp 2x")
-            source(class="b-intro-image" type="image/jpeg" srcset="img/content/desktop/1-intro/2/1-2x.jpg 1x, img/content/desktop/1-intro/2/1-2x.jpg 2x")
-            img(class="b-intro-image" alt="Вводная секция" src="img/content/desktop/1-intro/2/1-1x.jpg")
+        section.b-intro
+        +b-picture([
+                {
+                    pictureClass: "b-intro-image-wrap",
+                    imgWebpMediaMax767X1: "img/content/mobile/1-intro/2/2-1x.webp",
+                    imgWebpMediaMax767X2: "img/content/mobile/1-intro/2/2-2x.webp",
+                    imgJpgMediaMax767X1: "img/content/mobile/1-intro/2/2-1x.jpg",
+                    imgJpgMediaMax767X2: "img/content/mobile/1-intro/2/2-2x.jpg",
+                    imgWebpMediaMax1023X1: "img/content/tablet/1-intro/2/2-1x.webp",
+                    imgWebpMediaMax1023X2: "img/content/tablet/1-intro/2/2-2x.webp",
+                    imgJpgMediaMax1023X1: "img/content/tablet/1-intro/2/2-2x.jpg",
+                    imgJpgMediaMax1023X2: "img/content/tablet/1-intro/2/2-2x.jpg",
+                    imgWebpMediaMaxDeskX1: "img/content/desktop/1-intro/2/1-1x.webp",
+                    imgWebpMediaMaxDeskX2: "img/content/desktop/1-intro/2/1-2x.webp",
+                    imgjpgMediaMaxDeskX1: "img/content/desktop/1-intro/2/1-2x.jpg",
+                    imgjpgMediaMaxDeskX2: "img/content/desktop/1-intro/2/1-2x.jpg",
+                    imgClass: "b-intro-image",
+                    alt: "Выдающиеся двери",
+                }
+            ])
         .b-container.b-container--no-padd-desktop
-        
             ul(class="b-intro-list")
                 li(class="b-intro-list__item")
                     a(class="b-intro-list__link" href="main.html" title="Перейти на главную") Главная
