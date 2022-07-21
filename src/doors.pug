@@ -37,7 +37,20 @@ html(lang="ru")
                 .b-doors-wrapper
                     +b-aside
                     .b-doors-wrapper__section
-                        +b-intro-second
+                        +b-intro-second([
+                            {
+                                title: 'Главная',
+                                link: "main.html"
+                            },
+                            {
+                                title: 'Межкомнатные двери',
+                                link: "collection.html"
+                            },
+                            {
+                                title: 'Все двери',
+                                link: "doors.html"
+                            }
+                        ])
                         +b-card-doors
                 +b-advertising({
                     modificationAside: "b-card-advertising--doors",

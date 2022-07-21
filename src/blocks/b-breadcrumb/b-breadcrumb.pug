@@ -1,0 +1,4 @@
+mixin breadcrumb(items)
+    each item in items
+        li.breadcrumb__item
+            a.breadcrumb__link(href=item.link title=item.title) !{item.title}
