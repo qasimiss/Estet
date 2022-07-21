@@ -1,4 +1,4 @@
-include ../../elements/b-button-rect--top/b-button-rect--top
+include ../../elements/b-button/b-button
 include ../../blocks/b-picture/b-picture
 
 mixin b-card-service()
@@ -25,6 +25,11 @@ mixin b-card-service()
         .b-card-service__content
             h2.b-title--card-service Сервис
             .b-card-service__text Мы предоставляем клиентам выезд на замер, консультации на объекте; доставку и подъем продукции; врезку фурнитуры на профессиональном оборудовании; демонтаж и установку межкомнатных дверей; укладку массивной и паркетной доски.
-            +b-button-rect({
-                description: "Заказать замер"
+            +b-button({
+                btn: {
+                    button: {
+                        descrBtn: "Заказать замер",
+                        classBtn: "b-button--rect"
+                    }
+                }
             })

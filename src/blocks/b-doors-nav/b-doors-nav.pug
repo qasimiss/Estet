@@ -1,13 +1,23 @@
-include ../../elements/b-button-collection/b-button-collection__button.pug
+include ../../elements/b-button/b-button.pug
 mixin b-doors-nav
-    nav.b-button-collection__navigation
-        +b-button-collection__button({
-            descr: "Коллекции",
-            class: ""
+    nav.b-doors-nav
+        +b-button({
+            btn: {
+                button: {
+                    classBtn: 'b-button--collection',
+                    descrBtn: 'Коллекции',
+                    titleBtn: 'Коллекции'
+                }
+            }
         })
-        +b-button-collection__button({
-            descr: "Все двери",
-            class: "active"
+        +b-button({
+            btn: {
+                button: {
+                    classBtn: 'b-button--collection active',
+                    descrBtn: 'Все двери',
+                    titleBtn: 'Все двери'
+                }
+            }
         })
-        .b-button-collection__filter
+        .b-doors-nav__filter
             img(src="img/icons/filter.svg", alt="filter")

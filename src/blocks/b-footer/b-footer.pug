@@ -1,4 +1,4 @@
-include ../../elements/b-button-help/b-button-help.pug
+include ../../elements/b-button/b-button.pug
 include ../../elements/b-footer__nav-products-item/b-footer__nav-products-item.pug
 mixin b-footer
     footer.b-footer
@@ -38,8 +38,14 @@ mixin b-footer
                 .b-container.b-container--no-padd-desktop
                     .b-footer__mail-wrapper
                         h2.b-title.b-title--footer Остались вопросы? Напишите нам.
-                        +b-button-help({
-                            description: 'Обратиться'
+                        +b-button({
+                            btn: {
+                                button: {
+                                    descrBtn: 'Обратиться',
+                                    classBtn: 'b-button--help',
+                                    titleBtn: 'Обратиться',
+                                }
+                            }
                         })
                         a.b-footer__button
                             span.b-footer__button-descr Помощь в подборе
