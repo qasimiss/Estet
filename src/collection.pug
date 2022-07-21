@@ -34,25 +34,26 @@ html(lang="ru")
         include blocks/b-footer/b-footer.pug
         include blocks/b-aside/b-aside.pug
         .b-container--max-width
-            .b-doors-wrapper
-                +b-aside
-                .b-doors-wrapper__section
-                    +b-header-doors
-                    +b-intro-second
-                    +b-price
-            +b-advertising({
-                modificationAside: "b-card-advertising--doors",
-                modificationPicture: "b-card-advertising__container--doors",
-                modificationWrap: "b-card-advertising__wrap--doors",
-                modificationTitle: "b-card-advertising__title--doors",
-                modificationStock: "b-card-advertising__stock--doors",
-                modificationWrapper: "b-card-advertising__wrapper--doors",
-                modificationPost: "b-card-advertising__post--doors",
-                modificationDescription: "b-card-advertising__description--doors",
-            })
-            +b-slider-video
-            +b-card-modern
-            +b-card-address("Купить в вашем городе")
+            +b-header-doors
+            main
+                .b-doors-wrapper
+                    +b-aside
+                    .b-doors-wrapper__section
+                        +b-intro-second
+                        +b-price
+                +b-advertising({
+                    modificationAside: "b-card-advertising--doors",
+                    modificationPicture: "b-card-advertising__container--doors",
+                    modificationWrap: "b-card-advertising__wrap--doors",
+                    modificationTitle: "b-card-advertising__title--doors",
+                    modificationStock: "b-card-advertising__stock--doors",
+                    modificationWrapper: "b-card-advertising__wrapper--doors",
+                    modificationPost: "b-card-advertising__post--doors",
+                    modificationDescription: "b-card-advertising__description--doors",
+                })
+                +b-slider-video
+                +b-card-modern
+                +b-card-address("Купить в вашем городе")
             +b-footer
 
 
