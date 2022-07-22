@@ -16,8 +16,21 @@
     }
 
     &__inner {
+        position: relative;
         margin-bottom: -3px;
         overflow: hidden;
+
+        &::before {
+            content:"";
+            position: absolute;
+            width: 170px;
+            height: 100%;
+            background: linear-gradient(to left, white 5%, transparent 100%);
+            top:0;
+            right: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
     }
 
     &__item {
@@ -33,9 +46,8 @@
 
         background-color: @whiteFF;
 
-        color: fade(@grey3C, 50%);
-
-        pointer-events: none;
+        color: @grey3C;
+        transition: color .3s linear;
 
         &-title {
             margin-bottom: 12px;
@@ -51,6 +63,10 @@
             font-weight: 400;
             line-height: 19px;
         }
+
+        &:hover {
+            color: fade(@green47, 70%);
+        }
     }
 
     & .b-link-and-switcher {
@@ -64,16 +80,5 @@
     }
     &-track {
         display: flex;
-    }
-
-    &-active {
-        color: @grey3C;
-        pointer-events: initial;
-
-        transition: color .3s linear;
-
-        &:hover {
-            color: fade(@green47, 70%);
-        }
     }
 }
