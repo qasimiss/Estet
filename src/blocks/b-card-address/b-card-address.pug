@@ -16,30 +16,30 @@ mixin b-card-address(title)
                 }
             }
         })
-        +b-picture([
-            {
-                pictureClass: "b-card-address__picture",
-                imgWebpMediaMaxDeskX1: "img/content/desktop/11-materials/6/1-1x.webp",
-                imgWebpMediaMaxDeskX2: "img/content/desktop/11-materials/6/1-2x.webp",
-                imgjpgMediaMaxDeskX1: "img/content/desktop/11-materials/6/1-1x.jpg",
-                imgjpgMediaMaxDeskX2: "img/content/desktop/11-materials/6/1-2x.jpg",
-                imgClass: "b-card-address__img",
-                alt: "Карта с адресами",
-            }
-        ])
-        .b-map-marker.b-map-marker__1
-            img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
-        .b-map-marker.b-map-marker__2
-            img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
-        .b-map-marker.b-map-marker__3
-            img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
-        .b-card-address__title-box
-            h2.b-title--card-address--buy= title
-            +b-switcher-city({
-                Elements: "",
-                Select: "",
-                imgGeo: "img/icons/geo-green.svg"
-            })
+        .b-card-address__map
+            +b-picture([
+                {
+                    pictureClass: "b-card-address__picture",
+                    imgWebpMediaMaxDeskX1: "img/content/desktop/11-materials/6/1-1x.webp",
+                    imgWebpMediaMaxDeskX2: "img/content/desktop/11-materials/6/1-2x.webp",
+                    imgjpgMediaMaxDeskX1: "img/content/desktop/11-materials/6/1-1x.jpg",
+                    imgjpgMediaMaxDeskX2: "img/content/desktop/11-materials/6/1-2x.jpg",
+                    imgClass: "b-card-address__img",
+                    alt: "Карта с адресами",
+                }
+            ])
+            .b-map-marker.b-map-marker__1
+                img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
+            .b-map-marker.b-map-marker__2
+                img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
+            .b-map-marker.b-map-marker__3
+                img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
+        h2.b-title--card-address= title
+        +b-switcher-city({
+            Elements: "",
+            Select: "",
+            imgGeo: "img/icons/geo-green.svg"
+        })
         .b-card-address__inner
             a.b-card-address__item(href="javascript:void(0);", title="Наш адресс")
                 .b-card-address__item-title
