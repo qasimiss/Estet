@@ -1,18 +1,26 @@
-.b-button-tel {
-    display: inline-block;
-    width: 79px;
-    height: 80px;
-    background: @green4A;
-    padding: 27px 26px 28px 27px;
-    &:hover {
-        background: lighten(@green4A,20%);
+.b-button {
+    &--tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 79px;
+        height: 80px;
+        background-color: @green4A;
+        padding: 27px 26px 28px 27px;
+        &:hover {
+            background: lighten(@green4A,20%);
+        }
     }
     &__img {
-        width: 26px;
-        height: 25px;
-        display:inline-block;
+        &--tel {
+            width: 26px;
+            height: 25px;
+            display:inline-block;
+        }
     }
     &__descr {
-        display: none;
+        &--tel {
+            display: none;
+        }
     }
 }
