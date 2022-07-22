@@ -210,7 +210,6 @@ $(document).ready(function () {
             slidesToShow: 4,
             easing: 'ease-in-out',
             speed: 1000,
-            centerMode: false,
             asNavFor: '.b-card-video__slider',
             focusOnSelect: true,
             mobileFirst: true,
