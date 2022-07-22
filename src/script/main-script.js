@@ -213,6 +213,14 @@ $(document).ready(function () {
             asNavFor: '.b-card-video__slider',
             focusOnSelect: true,
             mobileFirst: true,
+            responsive: [
+                {
+                    breakpoint: 422,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+            ]
         });
     }
 
