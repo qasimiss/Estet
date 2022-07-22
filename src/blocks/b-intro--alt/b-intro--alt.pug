@@ -1,5 +1,5 @@
 include ../../elements/b-button-order-size/b-button-order-size
-include ../b-breadcrumb/b-breadcrumb
+include ../../elements/b-breadcrumb/b-breadcrumb
 mixin b-intro--alt(items)
     section.b-intro
         +b-picture([
@@ -22,10 +22,10 @@ mixin b-intro--alt(items)
                 }
             ])
         .b-container.b-container--no-padd-desktop
-            nav.breadcrumb
-                ul.breadcrumb__list
+            nav.b-breadcrumb
+                ul.b-breadcrumb__list
                     each item in items
-                        +breadcrumb([
+                        +b-breadcrumb([
                             {
                                 title: item.title,
                                 link: item.link
