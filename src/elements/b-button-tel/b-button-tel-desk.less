@@ -1,24 +1,30 @@
-.b-button-tel {
-    display: flex;
-    width: 348px;
-    height: 103px;
-    background: @green4A;
-    padding: 36px 54px 36px 36px;
-    align-items: center;
-    text-decoration: none;
-    transition: background 0.3s linear;
-    &:hover {
-        background: lighten(@green4A,20%);
+.b-button {
+    &--tel {
+        display: flex;
+        width: 348px;
+        height: 103px;
+        background: @green4A;
+        padding: 36px 54px 36px 36px;
+        align-items: center;
+        text-decoration: none;
+        transition: background 0.3s linear;
+        &:hover {
+            background: lighten(@green4A,20%);
+        }
     }
     &__img {
-        width: 31px;
-        height: 31px;
-        margin-right: 37px;
+        &--tel {
+            width: 31px;
+            height: 31px;
+            margin-right: 37px;
+        }
     }
     &__descr {
-        color: @whiteFF;
-        font-size: 18px;
-        text-transform: uppercase;
-        display: block;
+        &--tel {
+            color: @whiteFF;
+            font-size: 18px;
+            text-transform: uppercase;
+            display: block;
+        }
     }
 }
