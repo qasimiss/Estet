@@ -120,6 +120,8 @@
         color: @black00;
         text-decoration: none;
         transition: background-color 0.2s, color 0.2s;
+        margin: 0 -31px 0 -29px;
+        padding: 0 31px 0 29px;
         &:hover {
             background-color: @green47;
             color: @whiteFF;
@@ -133,7 +135,7 @@
         border: none;
         margin-bottom: 19px;
         cursor: pointer;
-        transition: transform 0.2s;
+        transition: opacity 0.2s;
         width: 100%;
         text-align: left;
         &::after {
@@ -157,7 +159,7 @@
             background-color: @grey97;
         }
         &:hover {
-            transform: scale(1.1);
+            opacity: 0.5;
         }
     }
     &__stock {
