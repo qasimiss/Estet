@@ -1,11 +1,11 @@
 include ../b-doors-nav/b-doors-nav.pug
-include ../b-price-item/b-price-item.pug
+include ../b-collection-item/b-collection-item.pug
 include ../../blocks/b-picture/b-picture.pug
-mixin b-price
+mixin b-collection
     section.b-price.b-container.b-container--no-padd-mobile.b-container--no-padd-desktop
         .b-price__21collection 21&nbsp;КОЛЛЕКЦИЯ
         +b-doors-nav()
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--sonata b-price-item--padding-top',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/1/2-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
@@ -23,7 +23,7 @@ mixin b-price
             title: 'SONATA',
             price: 'от 7500 Р'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--renaissance b-price-item--renaissance-order4 b-price-item--padd-bot-47',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/2/3-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
@@ -42,7 +42,7 @@ mixin b-price
             title: 'RENAISSANCE',
             price: 'от 7500 Р'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--sonata b-price-item--sonata-none b-price-item--pad-top-47-80 b-price-item--sonata-pad',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/1/2-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
@@ -60,7 +60,7 @@ mixin b-price
             title: 'SONATA',
             price: 'от 7500 Р'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--renaissance b-price-item--renaissance-ord b-price-item--padd-bot-47',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/2/3-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
@@ -81,7 +81,7 @@ mixin b-price
         })
         .b-price__wrap-post
             span.b-price__post В&nbsp;компании ESTET вы&nbsp;можете купить качественные межкомнатные двери. Богатый выбор является гарантией того, что вы&nbsp;обязательно найдете модель, оптимально соответствующую вашим потребностям, пожеланиям и&nbsp;финансовым возможностям.
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--sonata b-price-item--sonata-none b-price-item--sonata-margin',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/1/2-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
@@ -121,7 +121,7 @@ mixin b-price
                     }
                 ])
             .b-title.b-title--renaissance-collection RENAISSANCE COLLECTION
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--renaissance b-price-item--renaissance-ord2',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/2/3-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
@@ -140,7 +140,7 @@ mixin b-price
             price: 'от 7500 Р',
             b_price_item_price: 'b-price-item__price--margin'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--genesis b-price-item--genesis-ord',
             imgWebpMediaMax1023X1: 'img/content/tablet/9-price/5/1-1x.webp',
             imgWebpMediaMax1023X2: 'img/content/tablet/9-price/5/2-2x.webp',
@@ -158,7 +158,7 @@ mixin b-price
         .b-price__wrap-option
             .b-price__wrap-option__number 25
             .b-price__wrap-option__post коллекций и&nbsp;более 300 опций
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--sonata b-price-item--sonata-ord b-price-item--sonata-pad b-price-item--pad-top-47-80',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/1/2-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
@@ -177,7 +177,7 @@ mixin b-price
             price: 'от 7500 Р'
         })
         .b-price__wrapper-doors
-            +b-price-item({
+            +b-collection-item({
             b_price_item: 'b-price-item--renaissance b-price-item--pad-top-desk b-price-item--renaissance-ord3 b-price-item--pad-0 b-price-item--sonata-pad b-price-item--padd-bot-47',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/2/3-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
@@ -197,7 +197,7 @@ mixin b-price
             price: 'от 7500 Р',
             b_price_item_price: 'b-price-item__price--margin'
         })
-            +b-price-item({
+            +b-collection-item({
             b_price_item: 'b-price-item--genesis b-price-item--genesis-ord1 b-price-item--pad-bot b-price-item--tabl-none',
             imgWebpMediaMax1023X1: 'img/content/tablet/9-price/5/1-1x.webp',
             imgWebpMediaMax1023X2: 'img/content/tablet/9-price/5/2-2x.webp',
@@ -212,7 +212,7 @@ mixin b-price
             title: 'GENESIS',
             price: 'от 14 500 Р'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--genesis b-price-item--genesis-ord2',
             imgWebpMediaMax1023X1: 'img/content/tablet/9-price/5/1-1x.webp',
             imgWebpMediaMax1023X2: 'img/content/tablet/9-price/5/2-2x.webp',
@@ -228,7 +228,7 @@ mixin b-price
             price: 'от 14 500 Р',
             b_price_item_price: 'b-price-item__price--margin'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--sonata b-price-item--sonata-ord1 b-price-item--pad-top-47-80 b-price-item--tabl-none b-price-item--desk-none b-price-item--padd-bot-47',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/1/2-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
@@ -270,7 +270,7 @@ mixin b-price
             .b-price__wrap-warranty
                 .b-price__modern-number 5
                 .b-price__modern-post лет гарантии на&nbsp;любую продукцию ESTET
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--renaissance b-price-item--renaissance-ord4 b-price-item--padding-top',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/2/3-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/2/3-2x.webp',
@@ -289,7 +289,7 @@ mixin b-price
             price: 'от 7500 Р',
             b_price_item_price: 'b-price-item__price--margin'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--sonata b-price-item--sonata-pad b-price-item--desk-none b-price-item--tabl-none b-price-item--padding-top',
             imgWebpPrice767X1: 'img/content/mobile/9-price/1/2-1x.webp',
             imgWebpMediaMax767X2: 'img/content/mobile/9-price/1/2-2x.webp',
@@ -307,7 +307,7 @@ mixin b-price
             title: 'SONATA',
             price: 'от 7500 Р'
         })
-        +b-price-item({
+        +b-collection-item({
             b_price_item: 'b-price-item--genesis b-price-item--genesis-ord3 b-price-item--pad-bot',
             imgWebpMediaMax1023X1: 'img/content/tablet/9-price/5/1-1x.webp',
             imgWebpMediaMax1023X2: 'img/content/tablet/9-price/5/2-2x.webp',

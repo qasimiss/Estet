@@ -4,6 +4,11 @@ const hamburger = document.querySelector(".b-header-doors__hamburger"),
 $(hamburger).on('click', function() {
     hamburger.classList.toggle("active")
     navContainer.classList.toggle("active")
+    if ($(this).hasClass('active')) {
+        $('body').css({"overflow": "hidden"});
+    } else {
+        $('body').css({"overflow": "visible"});
+    }
 })
 
 $("*").on("touchend", function(e) { $(this).focus(); });
