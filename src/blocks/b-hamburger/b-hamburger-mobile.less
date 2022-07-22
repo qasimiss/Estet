@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    left: 100%;
+    right: -100%;
     top: 0;
     width: 100%;
     max-width: 385px;
@@ -10,7 +10,7 @@
     background-color: @green47;
     overflow-y: auto;
     z-index: 150;
-    transition: left 0.3s;
+    transition: right 0.3s;
     &::-webkit-scrollbar-track {
         border: 1px solid #000;
         padding: 2px 0;
@@ -26,7 +26,7 @@
         border: 1px solid #000;
     }
     &.active {
-        left: 0;
+        right: 0;
     }
     &__header {
         display: flex;
