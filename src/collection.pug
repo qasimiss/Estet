@@ -11,9 +11,9 @@ html(lang="ru")
         link(rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin)
         link(rel="stylesheet" href="fonts/fonts.css")
         link(rel="stylesheet" href="css/style.css")
-        link(rel="stylesheet" href="css/collection-mobile-style.css")
-        link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/collection-tablet-style.css")
-        link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/collection-desktop-style.css")
+        link(rel="stylesheet" href="css/main-mobile-style.css")
+        link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/main-tablet-style.css")
+        link(rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/main-desktop-style.css")
         link(rel="stylesheet" href="css/slick.css")
         link(type="image/x-icon" rel="shortcut icon" href="img/fav/favicon.ico")
         link(rel="icon" href="img/icons/logo-green.svg" type="image/svg+xml")
@@ -25,7 +25,7 @@ html(lang="ru")
     body
         include blocks/b-header-doors/b-header-doors.pug
         include blocks/b-intro--alt/b-intro--alt.pug
-        include blocks/b-price/b-price.pug
+        include blocks/b-collection/b-collection.pug
         include blocks/b-advertising/b-advertising-main.pug
         include blocks/b-card-address/b-card-address.pug
         include blocks/b-slider-video/b-slider-video.pug
@@ -38,17 +38,19 @@ html(lang="ru")
                 .b-doors-wrapper
                     +b-aside
                     .b-doors-wrapper__section
-                        +b-intro--alt([
-                            {
+                        +b-intro--alt({
+                            modification: "b-intro-alt--collection",
+                            arr: [{
                                 title: 'Главная',
                                 link: "main.html"
                             },
                             {
+                                modification: "b-intro-alt",
                                 title: 'Межкомнатные двери',
                                 link: "collection.html"
-                            },
-                        ])
-                        +b-price
+                            }]
+                        })
+                        +b-collection
                 +b-advertising({
                     modificationAside: "b-card-advertising--doors",
                     modificationPicture: "b-card-advertising__container--doors",
@@ -70,4 +72,4 @@ html(lang="ru")
 
         script(src="script/jquery-3.6.0.min.js")
         script(src="script/slick.min.js")
-        script(src="script/collection-script.js")
+        script(src="script/main-script.js")
