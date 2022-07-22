@@ -119,6 +119,7 @@ $(document).ready(function() {
         swipe: true,
         autoplay: false,
         waitForAnimate: false,
+        mobileFirst: true,
         responsive: [
             {
                 breakpoint: 767,
@@ -212,7 +213,6 @@ $(document).ready(function () {
             speed: 1000,
             asNavFor: '.b-card-video__slider',
             focusOnSelect: true,
-            mobileFirst: true,
         });
     }
 
@@ -269,7 +269,6 @@ $(document).ready(function () {
             centerMode: false,
             asNavFor: '.b-card-video__slider',
             focusOnSelect: true,
-            mobileFirst: true,
         });
     }
 
