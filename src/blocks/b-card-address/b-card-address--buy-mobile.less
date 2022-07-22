@@ -16,12 +16,21 @@
     &__inner {
         display: flex;
         margin-bottom: -4px;
+        &::before {
+            content:"";
+            position: absolute;
+            width: 170px;
+            height: 100%;
+            background: linear-gradient(to left, white 5%, transparent 100%);
+            top:0;
+            right: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
     }
 
     &__item {
         width: 180px;
-
-        flex-shrink: 0;
 
         margin-bottom: 29px;
         padding: 49px 0 38px 43px;
@@ -31,9 +40,8 @@
 
         background-color: @whiteFF;
 
-        color: fade(@grey3C, 50%);
-
-        pointer-events: none;
+        color: @grey3C;
+        transition: color .3s linear;
 
         &-title {
             margin-bottom: 12px;
@@ -53,6 +61,10 @@
         &:last-child {
             padding: 49px 37px 38px 43px;
         }
+
+        &:hover {
+            color: fade(@green47, 70%);
+        }
     }
 
     & .b-button--show-map {
@@ -69,16 +81,5 @@
 
     & .slick-slide {
         height: auto;
-    }
-
-    & .slick-active {
-        color: @grey3C;
-        pointer-events: initial;
-
-        transition: color .3s linear;
-
-        &:hover {
-            color: fade(@green47, 70%);
-        }
     }
 }

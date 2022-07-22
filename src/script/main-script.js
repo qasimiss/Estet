@@ -119,6 +119,7 @@ $(document).ready(function() {
         swipe: true,
         autoplay: false,
         waitForAnimate: false,
+        mobileFirst: true,
         responsive: [
             {
                 breakpoint: 767,
@@ -196,6 +197,24 @@ $(document).ready(function() {
                     slidesToScroll: 2,
                 }
             },
+        ]
+    });
+
+    $('.b-technology__inner').slick({
+        prevArrow: $('.b-technology__wrap .b-button--square-white'),
+        nextArrow: $('.b-technology__wrap .b-button--square-green'),
+        dots: false,
+        autoplay: true,
+        easing: "ease-in-out",
+        speed: 1000,
+        swipe: true,
+        waitForAnimate: true,
+        mobileFirst: true,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: "unslick"
+            }
         ]
     });
 });
@@ -277,7 +296,6 @@ $(document).ready(function () {
             centerMode: false,
             asNavFor: '.b-card-video__slider',
             focusOnSelect: true,
-            mobileFirst: true,
         });
     }
 
