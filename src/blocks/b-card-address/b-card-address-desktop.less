@@ -12,6 +12,10 @@
         min-height: 206px;
 
         margin-bottom: 24px;
+
+        &::before {
+            width: 340px;
+        }
     }
 
     &__item {
@@ -24,7 +28,7 @@
 
         background-color: @whiteFF;
 
-        color: fade(@grey3C, 50%);
+        color: @grey3C;
     }
 
     .slick {
@@ -35,15 +39,6 @@
             min-height: 206px;
             margin-left: 0;
             margin-bottom: 24px;
-        }
-
-        &-active {
-            color: @grey3C;
-            transition: color .3s linear;
-
-            &:hover {
-                color: fade(@green47, 70%);
-        }
         }
     }
 

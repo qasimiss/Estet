@@ -16,15 +16,17 @@
         margin-bottom: 29px;
     }
 
+    &__inner {
+        &::before {
+            width: 170px;
+        }
+    }
+
     &__item {
-        display: none;
         width: 230px;
 
         margin: 0;
         padding: 48px 0 21px 27px;
-        box-sizing: content-box;
-
-        background-color: @whiteFF;
 
         &-title {
             margin-bottom: 23px;
@@ -47,10 +49,6 @@
 
             background-color: @whiteFF;
             flex-direction: column;
-        }
-
-        &-active {
-            display: block;
         }
     }
 
