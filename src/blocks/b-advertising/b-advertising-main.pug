@@ -4,30 +4,63 @@ mixin b-advertising(modification)
     aside.b-card-advertising.b-container.b-container--no-padd-table.b-container--no-padd-mobile(class=modification ? modification.modificationAside: "")
         .b-card-advertising__container(class=modification ? modification.modificationPicture: "")
             .b-picture.b-picture--aside
-                picture
-                    source(type="image/webp" srcset="img/content/mobile/3-search/1/10-1x.webp 1x, img/content/mobile/3-search/1/10-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/3-search/1/10-1x.jpg 1x, img/content/mobile/3-search/1/10-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/3-search/1/1-1x.webp 1x, img/content/tablet/3-search/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/3-search/1/1-1x.jpg 1x, img/content/tablet/3-search/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/3-search/1/1-1x.webp 1x, img/content/desktop/3-search/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/3-search/1/1-1x.jpg 1x, img/content/desktop/3-search/1/1-2x.jpg 2x")
-                    img(src="img/content/desktop/3-search/1/1-1x.jpg" alt="Фото")
-                picture
-                    source(type="image/webp" srcset="img/content/mobile/3-search/1/10-1x.webp 1x, img/content/mobile/3-search/1/10-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/3-search/1/10-1x.jpg 1x, img/content/mobile/3-search/1/10-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/3-search/1/1-1x.webp 1x, img/content/tablet/3-search/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/3-search/1/1-1x.jpg 1x, img/content/tablet/3-search/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/3-search/1/1-1x.webp 1x, img/content/desktop/3-search/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/3-search/1/1-1x.jpg 1x, img/content/desktop/3-search/1/1-2x.jpg 2x")
-                    img(src="img/content/desktop/3-search/1/1-1x.jpg" alt="Фото")
-                picture
-                    source(type="image/webp" srcset="img/content/mobile/3-search/1/10-1x.webp 1x, img/content/mobile/3-search/1/10-2x.webp 2x" media="(max-width: 767px)")
-                    source(type="image/jpeg" srcset="img/content/mobile/3-search/1/10-1x.jpg 1x, img/content/mobile/3-search/1/10-2x.jpg 2x" media="(max-width: 767px)")
-                    source(type="image/webp" srcset="img/content/tablet/3-search/1/1-1x.webp 1x, img/content/tablet/3-search/1/1-2x.webp 2x" media="(max-width: 1023px)")
-                    source(type="image/jpeg" srcset="img/content/tablet/3-search/1/1-1x.jpg 1x, img/content/tablet/3-search/1/1-2x.jpg 2x" media="(max-width: 1023px)")
-                    source(type="image/webp" srcset="img/content/desktop/3-search/1/1-1x.webp 1x, img/content/desktop/3-search/1/1-2x.webp 2x")
-                    source(type="image/jpeg" srcset="img/content/desktop/3-search/1/1-1x.jpg 1x, img/content/desktop/3-search/1/1-2x.jpg 2x")
-                    img(src="img/content/desktop/3-search/1/1-1x.jpg" alt="Фото")
+                +b-picture([
+                    {
+                        pictureClass: "b-card-advertising__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/3-search/1/10-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/3-search/1/10-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/3-search/1/10-1x",
+                        imgJpgMediaMax767X2: "img/content/mobile/3-search/1/10-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.jpg",
+                        imgClass: "b-card-advertising__img",
+                        alt: "Дверь и диван",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-advertising__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/3-search/1/10-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/3-search/1/10-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/3-search/1/10-1x",
+                        imgJpgMediaMax767X2: "img/content/mobile/3-search/1/10-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.jpg",
+                        imgClass: "b-card-advertising__img",
+                        alt: "Дверь и диван",
+                    }
+                ])
+                +b-picture([
+                    {
+                        pictureClass: "b-card-advertising__picture",
+                        imgWebpMediaMax767X1: "img/content/mobile/3-search/1/10-1x.webp",
+                        imgWebpMediaMax767X2: "img/content/mobile/3-search/1/10-2x.webp",
+                        imgJpgMediaMax767X1: "img/content/mobile/3-search/1/10-1x",
+                        imgJpgMediaMax767X2: "img/content/mobile/3-search/1/10-2x.jpg",
+                        imgWebpMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.webp",
+                        imgWebpMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.webp",
+                        imgJpgMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.jpg",
+                        imgJpgMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.jpg",
+                        imgWebpMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.webp",
+                        imgWebpMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.webp",
+                        imgjpgMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.jpg",
+                        imgjpgMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.jpg",
+                        imgClass: "b-card-advertising__img",
+                        alt: "Дверь и диван",
+                    }
+                ])
             +b-button({
                 btn: {
                     button: {
