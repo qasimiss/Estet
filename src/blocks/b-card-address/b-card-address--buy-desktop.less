@@ -26,27 +26,20 @@
     }
 
     &__inner {
-        flex-wrap: nowrap;
-        flex-direction: row;
-
         height: 0;
         min-height: 206px;
 
         margin-left: 0;
         margin-bottom: 25px;
+        &::before {
+            width: 340px;
+        }
     }
 
     &__item {
-        display: block;
-
         flex-shrink: 0;
 
         padding: 48px 0 0 70px;
-        box-sizing: content-box;
-
-        background-color: @whiteFF;
-
-        color: fade(@grey3C, 50%);
 
         &:first-child {
             padding-left: 39px;
@@ -55,10 +48,6 @@
 
     & .slick-track {
         flex-flow: row;
-    }
-
-    & .slick-active {
-        color: @grey3C;
     }
 
     & .b-button--show-map {
