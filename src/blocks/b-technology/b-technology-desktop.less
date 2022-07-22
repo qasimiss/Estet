@@ -104,7 +104,7 @@
             order: 3;
             z-index: 200;
             background-color: @whiteFF;
-            transition: background-color 0.4s ease-in-out;
+            transition: background-color 0.4s ease-in-out, z-index 0.9s ease-in-out;
             position: absolute;
             top: 36.5%;
             left: 40%;
@@ -364,4 +364,8 @@
 .b-technology .b-hover-quality__title {
     color: @whiteFF;
     margin-top: 0;
+}
+
+#technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrapper--techn {
+   z-index: 0;
 }
