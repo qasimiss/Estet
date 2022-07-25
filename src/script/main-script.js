@@ -43,7 +43,20 @@ $(buttonTips).on('click', function() {
     news[1].classList.add("active")
 });
 
+function changeTemplate(){
+    if($(window).width()<768){
+      $('.b-technology .b-container.b-container--technology.b-container--no-padd-table.b-container--no-padd-desktop .b-technology__inner .b-technology__container').prependTo('.b-technology .b-container.b-container--technology.b-container--no-padd-table.b-container--no-padd-desktop');
+    }else{
+      $('.b-technology .b-container.b-container--technology.b-container--no-padd-table.b-container--no-padd-desktop .b-technology__container').prependTo('.b-technology__inner');
+    }
+}
+
+  $(document).ready(changeTemplate);
+  $(window).resize(changeTemplate);
+
 $("*").on("touchend", function(e) { $(this).focus(); });
+
+
 
 $(document).ready(function() {
     $(".b-intro__inner").slick({
@@ -371,4 +384,4 @@ $(document).ready(function() {
             },
         ]
     });
-});
+})
