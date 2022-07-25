@@ -36,17 +36,16 @@ html(lang="ru")
                 .b-doors-wrapper
                     +b-aside
                     .b-doors-wrapper__section
-                        +b-intro--alt({
-                            modification: "b-intro--alt-collection",
-                            arr: [{
+                        +b-intro--alt(
+                            [{
                                 title: 'Главная',
                                 link: "main.html"
                             },
                             {
                                 modification: "b-intro--alt",
                                 title: 'Межкомнатные двери'
-                            }]
-                        })
+                            }],
+                            "b-intro--alt-collection")
                         +b-collection
                 +b-advertising({
                     modificationAside: "b-card-advertising--doors",
