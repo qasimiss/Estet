@@ -336,7 +336,6 @@ $(document).ready(function() {
         nextArrow: $('.b-card-modern .b-link-and-switcher__link-right-arrow'),
         arrows: true,
         easing: "ease-in-out",
-        speed: 1000,
         swipe: true,
         waitForAnimate: false,
         variableWidth: true,
@@ -345,6 +344,8 @@ $(document).ready(function() {
         speed: 1500,
         autoplay: true,
         autoplaySpeed: 3000,
+        adaptiveHeight: true,
+        focusOnSelect: true,
         mobileFirst: true,
         responsive: [
             {
