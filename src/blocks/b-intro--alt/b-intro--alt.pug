@@ -1,10 +1,10 @@
 include ../../elements/b-button-order-size/b-button-order-size
 include ../../elements/b-breadcrumb/b-breadcrumb
 mixin b-intro--alt(items)
-    section.b-intro-alt(class=items.modification?items.modification:"")
+    section.b-intro--alt(class=items.modification?items.modification:"")
         +b-picture([
                 {
-                    pictureClass: "b-intro-alt-image-wrap",
+                    pictureClass: "b-intro--alt-image-wrap",
                     imgWebpMediaMax767X1: "img/content/mobile/1-intro/2/2-1x.webp",
                     imgWebpMediaMax767X2: "img/content/mobile/1-intro/2/2-2x.webp",
                     imgJpgMediaMax767X1: "img/content/mobile/1-intro/2/2-1x.jpg",
@@ -17,7 +17,7 @@ mixin b-intro--alt(items)
                     imgWebpMediaMaxDeskX2: "img/content/desktop/1-intro/2/1-2x.webp",
                     imgjpgMediaMaxDeskX1: "img/content/desktop/1-intro/2/1-2x.jpg",
                     imgjpgMediaMaxDeskX2: "img/content/desktop/1-intro/2/1-2x.jpg",
-                    imgClass: "b-intro-alt-image",
+                    imgClass: "b-intro--alt-image",
                     alt: "Выдающиеся двери",
                 }
             ])
