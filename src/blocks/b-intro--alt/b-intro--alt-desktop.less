@@ -1,20 +1,30 @@
-.b-button-order-size {
-    top:450px;
+.b-intro--alt {
+    height: 688px;
+    .b-intro-list {
+        color: @whiteFF;
+        position: absolute;
+        top: 110px;
+        left: 59px;
+        display: block;
+    }
+    .b-intro-list__item {
+        display: inline-flex;
+        margin-right: 10px;
+    }
+    .b-intro-list .b-intro-list__item + .b-intro-list__item {
+        font-weight: 700;
+    }
 }
-.b-intro-list {
-    color: @whiteFF;
-    position: absolute;
-    top: 110px;
-    left: 59px;
-    display: block;
+.b-intro--alt-collection {
+    height: 530px;
+    position: relative;
+    z-index: 1;
+    .b-button-order-size {
+       bottom:0;
+       right: 50%;
+   }
 }
-.b-intro-list__item {
-    display: inline-flex;
-    margin-right: 10px;
-}
-.b-intro-list .b-intro-list__item + .b-intro-list__item {
-    font-weight: 700;
-}
+
 @media screen and (max-width: 1200px) {
     .b-title--intro-second {
         font-size: 38px;
