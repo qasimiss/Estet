@@ -45,7 +45,6 @@
     }
     & .b-picture {
         margin-bottom: 0;
-        // height: 100%;
     }
     & .b-picture--technology {
         height: 100%;
@@ -58,6 +57,13 @@
     }
     & .b-picture--mirror {
         height: 327px;
+    }
+    &_logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        fill: @whiteFF;
     }
 }
 
@@ -79,10 +85,6 @@
 .b-technology__post--company {
     order: 2;
     padding: 58px 35px 0 38px;
-}
-
-.b-oval-white {
-    display: none;
 }
 
 .b-technology__wrapper--vase {
@@ -122,10 +124,6 @@
 
 .b-technology-wrapper--techn,
 .b-technology__post--quality {
-    display: block;
-}
-
-.b-technology-logo--white {
     display: block;
 }
 

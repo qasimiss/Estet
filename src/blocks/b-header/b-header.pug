@@ -1,4 +1,5 @@
 include ../b-hamburger/b-hamburger.pug
+include ../b-logo/b-logo.pug
 mixin b-header
     header.b-header
         .b-container.b-container--no-padd-desktop
@@ -20,8 +21,10 @@ mixin b-header
                             option(value="Покупателям") Покупателям
                     li.b-header__nav-product-item
                         a.b-header__nav-product-link(href="javascript:void(0);" title="Дизайнерам") Дизайнерам
-                .b-header__logo
-                    img(src="img/icons/logo-white.svg", alt="Логотип Estet")
+                +b-logo({
+                    class: "b-logo--header",
+                    urlImg: "img/icons/logo-white.svg"
+                })
                 .b-header__info
                     ul.b-header__info-list
                         li.b-header__info-item
