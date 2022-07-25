@@ -1,7 +1,7 @@
 include ../../elements/b-button-order-size/b-button-order-size
 include ../../elements/b-breadcrumb/b-breadcrumb
-mixin b-intro--alt(items)
-    section.b-intro--alt(class=items.modification?items.modification:"")
+mixin b-intro--alt(items, modification)
+    section.b-intro--alt(class=modification?modification:"")
         +b-picture([
                 {
                     pictureClass: "b-intro--alt-image-wrap",

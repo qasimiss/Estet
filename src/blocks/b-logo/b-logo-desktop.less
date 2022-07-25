@@ -1,0 +1,25 @@
+.b-logo {
+    width: 57px;
+    height: 57px;
+    &--header {
+        margin: 0 70px 0 89px;
+    }
+    &--aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        background-color: @green47;
+        &:hover .b-logo__img--aside {
+            transform: scale(1.2);
+        }
+    }
+    &__img {
+        &--aside {
+            width: 57px;
+            height: 57px;
+            transition: transform 0.2s;
+        }
+    }
+}
