@@ -1,28 +1,31 @@
-include ../../blocks/b-picture/b-picture.pug
-mixin b-collection-item(price)
-    a.b-price-item(class= price.b_price_item href="javascript: void(0);" title="")
+include ../b-picture/b-picture.pug
+include ../b-price/b-price.pug
+mixin b-collection-item(collection)
+    a.b-collection-item(class= collection.b_collection_item href="javascript: void(0);" title="")
         +b-picture([
-                    {
-                        pictureClass: "b-picture--price",
-                        imgWebpMediaMax767X1: price.imgWebpMediaMax767X1,
-                        imgWebpMediaMax767X2: price.imgWebpMediaMax767X2,
-                        imgJpgMediaMax767X1: price.imgJpgMediaMax767X1,
-                        imgJpgMediaMax767X2: price.imgJpgMediaMax767X2,
-                        imgWebpMediaMax1023X1: price.imgWebpMediaMax1023X1,
-                        imgWebpMediaMax1023X2: price.imgWebpMediaMax1023X2,
-                        imgJpgMediaMax1023X1: price.imgJpgMediaMax1023X1,
-                        imgJpgMediaMax1023X2: price.imgJpgMediaMax1023X2,
-                        imgWebpMediaMaxDeskX1: price.imgWebpMediaMaxDeskX1,
-                        imgWebpMediaMaxDeskX2: price.imgWebpMediaMaxDeskX2,
-                        imgjpgMediaMaxDeskX1: price.imgjpgMediaMaxDeskX1,
-                        imgjpgMediaMaxDeskX2: price.imgjpgMediaMaxDeskX2,
-                        imgClass: "b-picture__img--price",
-                        alt: "Дверь",
-                    }
-                ])
-        .b-price-item__info(class= price.b_price_item_info)
-            .b-title.b-title--price-door !{price.title}
-            span.b-price-item__price(class= price.b_price_item_price) !{price.price}
+            {
+                pictureClass: "b-picture--price",
+                imgWebpMediaMax767X1: collection.imgWebpMediaMax767X1,
+                imgWebpMediaMax767X2: collection.imgWebpMediaMax767X2,
+                imgJpgMediaMax767X1: collection.imgJpgMediaMax767X1,
+                imgJpgMediaMax767X2: collection.imgJpgMediaMax767X2,
+                imgWebpMediaMax1023X1: collection.imgWebpMediaMax1023X1,
+                imgWebpMediaMax1023X2: collection.imgWebpMediaMax1023X2,
+                imgJpgMediaMax1023X1: collection.imgJpgMediaMax1023X1,
+                imgJpgMediaMax1023X2: collection.imgJpgMediaMax1023X2,
+                imgWebpMediaMaxDeskX1: collection.imgWebpMediaMaxDeskX1,
+                imgWebpMediaMaxDeskX2: collection.imgWebpMediaMaxDeskX2,
+                imgjpgMediaMaxDeskX1: collection.imgjpgMediaMaxDeskX1,
+                imgjpgMediaMaxDeskX2: collection.imgjpgMediaMaxDeskX2,
+                imgClass: "b-picture__img--price",
+                alt: "Дверь"
+            }
+        ])
+        .b-collection-item__info(class= collection.b_collection_item_info)
+            .b-title.b-title--price-door !{collection.title}
+            +b-price({
+                    price: collection.price
+                })
             .b-card-icon.b-card-icon--palitra
                 img(src="img/icons/go-to.svg" alt="")
-            .b-price-item__post Классический дизайн, навеянный великими музыкальными произведениями одноименного жанра
+            .b-collection-item__post Классический дизайн, навеянный великими музыкальными произведениями одноименного жанра
