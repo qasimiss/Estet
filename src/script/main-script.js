@@ -275,45 +275,47 @@ $(document).ready(function() {
         ]
     });
 });
-$(document).ready(function () {
-    $('.b-technology__inner').slick({
-        prevArrow: $('.b-technology__wrap .b-button--square-white'),
-        nextArrow: $('.b-technology__wrap .b-button--square-green'),
-        dots: false,
-        autoplay: true,
-        easing: "ease-in-out",
-        speed: 1000,
-        swipe: true,
-        waitForAnimate: true,
-        mobileFirst: true,
-    });
-    onresize();
-    $(window).resize(function () {
-        onresize();
-    });
-});
-function onresize(){
-    checkWidth();
-}
-function checkWidth() {
-    if ($(window).width() < 768 ) {
-        $('.b-technology__inner').slick('unslick');
-        $('.b-technology__inner').slick({
-            prevArrow: $('.b-technology__wrap .b-button--square-white'),
-            nextArrow: $('.b-technology__wrap .b-button--square-green'),
-            dots: false,
-            autoplay: true,
-            easing: "ease-in-out",
-            speed: 1000,
-            swipe: true,
-            waitForAnimate: true,
-            mobileFirst: true,
-        });
-    }
-    if ($(window).width() > 767 ) {
-        $('.b-technology__inner').slick('unslick');
-    };
-}
+// $(document).ready(function () {
+//     $('.b-technology__inner').slick({
+//         prevArrow: $('.b-technology__wrap .b-button--square-white'),
+//         nextArrow: $('.b-technology__wrap .b-button--square-green'),
+//         dots: false,
+//         autoplay: true,
+//         easing: "ease-in-out",
+//         speed: 1000,
+//         swipe: true,
+//         waitForAnimate: true,
+//         mobileFirst: true,
+//     });
+//     onresize();
+//     $(window).resize(function () {
+//         onresize();
+//     });
+// });
+// function onresize(){
+//     checkWidth();
+// }
+// function checkWidth() {
+//     if ($(window).width() < 768 ) {
+//         $('.b-technology__inner').slick('unslick');
+//         $('.b-technology__inner').slick({
+//             prevArrow: $('.b-technology__wrap .b-button--square-white'),
+//             nextArrow: $('.b-technology__wrap .b-button--square-green'),
+//             dots: false,
+//             autoplay: true,
+//             easing: "ease-in-out",
+//             speed: 1000,
+//             swipe: true,
+//             waitForAnimate: true,
+//             mobileFirst: true,
+//         });
+//     }
+
+//     if ($(window).width() > 800 ) {
+//         $('.b-technology__inner').slick('unslick');
+//         $('.b-technology__inner').slick('unslick');
+//     }
+// }
 $(document).ready(function () {
     $('.b-card-video__inner').slick({
         prevArrow: $('.b-card-video .b-button--square-white'),
