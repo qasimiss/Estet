@@ -208,6 +208,9 @@
     & .b-picture--vase {
         width: 100%;
     }
+    &__logo {
+        transition: fill 0.3s ease-in-out;
+    }
 }
 
 .b-logo-wrap {
@@ -325,10 +328,8 @@
     background-color: @whiteFF;
 }
 
-#technology__link-hover--vase:focus ~ .b-technology__inner .b-logo-wrap .b-logo-green,
-#technology__link-hover--vase:hover ~ .b-technology__inner .b-logo-wrap .b-logo-green,
-#technology__link-hover--vase:active ~ .b-technology__inner .b-logo-wrap .b-logo-green {
-    display: block;
+#technology__link-hover--vase:hover ~ .b-technology__inner .b-technology_logo {
+    fill: @green47;
 }
 
 @media (max-width: 1218px) {
