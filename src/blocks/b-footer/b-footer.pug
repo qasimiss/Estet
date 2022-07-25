@@ -1,6 +1,7 @@
 include ../../elements/b-button/b-button.pug
+include ../b-logo/b-logo.pug
 include ../b-footer__nav-products-item/b-footer__nav-products-item.pug
-mixin b-footer
+mixin b-footer(date)
     footer.b-footer
             nav.b-footer__nav
                 .b-container.b-container--no-padd-table.b-container--no-padd-desktop
@@ -66,12 +67,14 @@ mixin b-footer
                     a(href="tel:+78005513240" title="Свяжитесь с нами").b-footer__number 8 800 551 32 40
             .b-footer__info
                 .b-container.b-container--no-padd-desktop
-                        .b-footer__logo
-                            img.b-footer__logo-img(src="img/icons/logo-grey.svg", alt="Логотип Estet")
-                        .b-footer__info-wrapper
-                            .b-footer__description
-                                p © 20201 Дверные технологии. Все права защищены.
-                                p Чувашская республика, Цивильский район, пос. Молодежный, ул. Заводская 1Г
-                            a(href="javascript:void(0);").b-footer__policy Политика конфиденциальности
-                            .b-footer__kontora-logo
-                                img(src="img/icons/logo-kontora.svg", alt="Логотип Kontora")
+                    +b-logo({
+                        link: date.link?date.link:'',
+                        urlImg: "img/icons/logo-grey.svg"
+                    })
+                    .b-footer__info-wrapper
+                        .b-footer__description
+                            p © 20201 Дверные технологии. Все права защищены.
+                            p Чувашская республика, Цивильский район, пос. Молодежный, ул. Заводская 1Г
+                        a(href="javascript:void(0);").b-footer__policy Политика конфиденциальности
+                        .b-footer__kontora-logo
+                            img(src="img/icons/logo-kontora.svg", alt="Логотип Kontora")

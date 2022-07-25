@@ -1,8 +1,13 @@
+include ../b-logo/b-logo.pug
 mixin b-aside
     .b-aside
         .b-aside__header
-            a(href="../main.html").b-aside__logo
-                img.b-aside__logo-img(src="img/icons/logo-white.svg", alt="Логотип Estet")
+            +b-logo({
+                class: "b-logo--aside",
+                urlImg: "img/icons/logo-white.svg",
+                link: true,
+                classImg: "b-logo__img--aside",
+            })
             .b-aside__header-wrapper
                 a.b-aside__btn(href="javascript:void(0);" title="Звонок")
                     img.b-aside__btn-img(src="img/icons/shape.svg", alt="")
