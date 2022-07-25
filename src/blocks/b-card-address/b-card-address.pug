@@ -5,17 +5,18 @@ include ../../elements/b-button/b-button
 
 mixin b-card-address(title)
     section.b-card-address
-        +b-button({
-            btn: {
-                link: {
-                    classLink: 'b-button--show-map',
-                    classTitle: 'Показать на карте',
-                    descrLink: 'Показать на карте',
-                    imgAfter: 'img/icons/local.svg',
-                    imgAfterClass: 'b-button__img--show-map',
+        .b-card-address__box
+            +b-button({
+                btn: {
+                    link: {
+                        classLink: 'b-button--show-map',
+                        classTitle: 'Показать на карте',
+                        descrLink: 'Показать на карте',
+                        imgAfter: 'img/icons/local.svg',
+                        imgAfterClass: 'b-button__img--show-map',
+                    }
                 }
-            }
-        })
+            })
         .b-card-address__map
             +b-picture([
                 {
@@ -34,12 +35,13 @@ mixin b-card-address(title)
                 img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
             .b-map-marker.b-map-marker__3
                 img.b-map-marker__img(src="img/icons/logo-green.svg", alt="Логотип Эстет")
-        h2.b-title--card-address= title
-        +b-switcher-city({
-            Elements: "",
-            Select: "",
-            imgGeo: "img/icons/geo-green.svg"
-        })
+        .b-card-address__title-box
+            h2.b-title--card-address= title
+            +b-switcher-city({
+                Elements: "",
+                Select: "",
+                imgGeo: "img/icons/geo-green.svg"
+            })
         .b-card-address__inner
             a.b-card-address__item(href="javascript:void(0);", title="Наш адресс")
                 .b-card-address__item-title

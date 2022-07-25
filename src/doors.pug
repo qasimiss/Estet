@@ -9,7 +9,6 @@ html(lang="ru")
         link(rel="preload" href="fonts/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin)
         link(rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin)
         link(rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin)
-        link(rel="stylesheet" href="fonts/fonts.css")
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" href="css/main-mobile-style.css")
         link(rel="stylesheet" media="only screen and (min-width: 768px)" href="css/main-tablet-style.css")
@@ -47,7 +46,6 @@ html(lang="ru")
                             },
                             {
                                 title: 'Все двери',
-                                link: "doors.html"
                             }
                         ])
                         +b-card-doors
@@ -64,7 +62,9 @@ html(lang="ru")
                 +b-slider-video
                 +b-card-modern
                 +b-card-address("Купить в вашем городе")
-            +b-footer
+            +b-footer({
+                link: true,
+            })
 
 
         script(src="script/jquery-3.6.0.min.js")
