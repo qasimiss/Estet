@@ -9,7 +9,7 @@
         flex-wrap: wrap;
         justify-content: flex-end;
         width: calc(50% - 40px);
-        margin: 0 -25px;
+        margin-right: -25px;
         &-item {
             font-size: 16px;
             line-height: 19px;
@@ -133,7 +133,7 @@
 }
 
 @media(max-width: 1441px) {
-    .b-header__logo {
+    .b-logo--header {
         margin: 0 35px 0 45px;
     }
 }
@@ -141,13 +141,20 @@
     .b-header__language {
         margin-right: 0;
     }
+    .b-header {
+        &__nav-product {
+            &-item {
+                margin: 0 15px;
+            }
+        }
+    }
 }
 @media(max-width: 1281px) {
     .b-header__wrapper {
         width: calc(100% + 120px);
         margin-left: -60px;
     }
-    .b-header__logo {
+    .b-logo--header {
         margin: 0;
     }
     .b-header__nav-product {
