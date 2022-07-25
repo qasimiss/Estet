@@ -355,8 +355,6 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 1500,
-        autoplay: true,
-        autoplaySpeed: 3000,
         adaptiveHeight: true,
         focusOnSelect: true,
         mobileFirst: true,
