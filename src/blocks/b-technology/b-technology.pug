@@ -1,4 +1,5 @@
 include ../../elements/b-button/b-button.pug
+include ../b-logo/b-logo.pug
 
 mixin b-technology()
     section.b-technology
@@ -148,7 +149,7 @@ mixin b-technology()
                     .b-technology__post.b-technology__post--vase
                         strong.b-hover-quality__title Новые технологии
                         span.b-hover-quality__post Каркас двери и&nbsp;дверная коробка изготавливаются из&nbsp;хвойного бруса высокого качества, срощенного по&nbsp;длине и&nbsp;оптимизированного, то&nbsp;есть из&nbsp;него вырезаны сучки, смоляные карманы и&nbsp;другие пороки, присущие натуральному дереву.
-                .b-logo-wrap
-                    <svg class="b-technology_logo" width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M7.05636 49.6681H49.6681V7.05636H7.05636V49.6681ZM14.1268 36.1296H38.8382L42.5981 43.1867H14.1268V36.1296ZM36.8183 24.9278H14.1268V31.9842H36.8197L36.8183 24.9278ZM14.1268 13.5378H42.5981L38.7659 20.5952H14.1268V13.5378ZM0 56.7241H56.7245V0H0V56.7241Z"/>
-                    </svg>
+                +b-logo({
+                    svg: '<svg class="b-logo__svg-technology" width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg"><path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M7.05636 49.6681H49.6681V7.05636H7.05636V49.6681ZM14.1268 36.1296H38.8382L42.5981 43.1867H14.1268V36.1296ZM36.8183 24.9278H14.1268V31.9842H36.8197L36.8183 24.9278ZM14.1268 13.5378H42.5981L38.7659 20.5952H14.1268V13.5378ZM0 56.7241H56.7245V0H0V56.7241Z"/></svg>',
+                    class: "b-logo--technology"
+                })
