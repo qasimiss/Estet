@@ -342,32 +342,6 @@ function checkWidthVideo() {
             asNavFor: '.b-card-video__slider',
             focusOnSelect: false,
             mobileFirst: true,
-            // responsive: [
-            //     {
-            //         breakpoint: 967,
-            //         settings: {
-            //             rows: 2,
-            //             slidesToShow: 4,
-            //             slidesToScroll: 1,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 1167,
-            //         settings: {
-            //             rows: 2,
-            //             slidesToShow: 5,
-            //             slidesToScroll: 1,
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 1367,
-            //         settings: {
-            //             rows: 2,
-            //             slidesToShow: 6,
-            //             slidesToScroll: 1,
-            //         }
-            //     },
-            // ]
         });
     }
     if ($(window).width() > 967 && $(window).width() <= 1167) {
