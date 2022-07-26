@@ -24,7 +24,12 @@
 
         color: @whiteFF;
 
-        background: linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
+        background-image: -webkit-gradient(0deg, @whiteFF 0%, @green3E 100%);
+        background-image: -webkit-linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
+        background-image: -moz-linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
+        background-image: -ms-linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
+        background-image: -o-linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
+        background-image: linear-gradient(0deg, @whiteFF 0%, @green3E 100%);
         border-width: 15px;
         clip-path: polygon(
                     0 0, 0 0, 100% 40px,
