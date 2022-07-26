@@ -1,3 +1,4 @@
+include ../b-language/b-language.pug
 mixin b-hamburger()
     .b-hamburger
         ul.b-hamburger__header
@@ -5,8 +6,9 @@ mixin b-hamburger()
                 a.b-hamburger__header-link(href="javascript:void(0);" title="Поиск")
                     img(src="img/icons/glass-white.svg", alt="")
             li.b-hamburger__header-item.b-hamburger__header-item--language
-                a.b-hamburger__header-link(href="javascript:void(0);" title="Язык")
-                    img(src="img/icons/language.svg", alt="")
+                +b-language({
+                    modification: "b-language--hamburger"
+                })
             li.b-hamburger__header-item.b-hamburger__header-item--geo
                 a.b-hamburger__header-link(href="javascript:void(0);" title="Наши магазины")
                     img(src="img/icons/geo.svg", alt="")

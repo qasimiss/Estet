@@ -1,13 +1,15 @@
 include ../b-hamburger/b-hamburger.pug
 include ../b-logo/b-logo.pug
+include ../b-language/b-language.pug
 mixin b-header
     header.b-header
         .b-container.b-container--no-padd-desktop
             .b-header__wrapper
                 a.b-header__search(href="javascript:void(0);" title="Поиск")
                     img(src="img/icons/glass-white.svg", alt="")
-                a.b-header__language(href="javascript:void(0);" title="Язык")
-                    img(src="img/icons/language.svg", alt="")
+                +b-language({
+                    modification: ""
+                })
                 ul.b-header__nav-product
                     li.b-header__nav-product-item
                         select.b-header__nav-product-link(name="Каталог")
