@@ -1,6 +1,7 @@
 .b-card-advertising {
     & .slick-list, & .slick-track {
         height: 100%;
+        width: 100%;
     }
     &--doors {
         display: flex;
@@ -9,12 +10,36 @@
         background: linear-gradient(180deg, transparent 152px, @whiteF7 152px 100%);
         margin-bottom: 0;
         position: relative;
+        & .b-picture--advertising {
+            width: calc(50% - 1px);
+            order: 4;
+            margin-right: 1px;
+            margin-bottom: 0;
+        }
+        & .b-button.b-button--square.b-button--square-white {
+            right: 1px;
+        }
+        & .b-button.b-button--square.b-button--square-green {
+            right: 1px;
+        }
+        & .b-card-advertising__stock {
+            padding-top: 14px;
+            margin-left: auto;
+            position: static;
+            order: 5;
+        }
+        & .b-card-advertising__caption::before {
+            background-color: @whiteF7;
+        }
     }
-    width: 100%;
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
     &__container {
         margin-bottom: 30px;
         &--doors {
-            width: 50%;
+            width: 100%;
             order: 5;
         }
     }
@@ -22,12 +47,20 @@
         position: absolute;
         height: 100%;
         width: calc(50% - 200px);
-        right: 200px;
         top: 0;
+        &--doors {
+            width: 50%;
+            padding: 0;
+            right: 0;
+        }
     }
     &__wrapper {
+        order: 3;
+        padding-top: 23px;
         &--doors {
+            width: 50%;
             padding-top: 232px;
+            order: 3;
         }
     }
     &__caption {
@@ -44,14 +77,15 @@
             background-color: @whiteFF;
             position: absolute;
             top: 55.5%;
-            left: -15%;
+            left: -35%;
         }
     }
     &__stock {
-        position: absolute;
-        right: 200px;
-        top: 539px;
+        display: flex;
+        align-items: center;
+        width: 300px;
         color: @grey99;
+        order: 2;
     }
     &__post {
         position: absolute;
@@ -80,8 +114,9 @@
         padding-left: 0;
         padding-right: 0;
         padding-top: 0;
-        width: 100%;
-        padding-right: 300px;
+        width: calc(100% - 300px);
+        order: 1;
+        margin: 0;
         &--doors {
             display: none;
         }
@@ -123,7 +158,6 @@
         margin-bottom: 21px;
     }
     &__description {
-        margin-bottom: 63px;
         max-width: 565px;
         &--doors {
             max-width: 371px;
@@ -136,11 +170,6 @@
         text-decoration: none;
         color: @green47;
     }
-}
-
-.b-picture--aside img {
-    width: 100%;
-    height: 100%;
 }
 
 .b-card-advertising .b-button--square {
