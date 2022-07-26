@@ -45,6 +45,12 @@
         display: block;
         margin-bottom: 35px
     }
+    .b-subtitle--padding {
+        width: 104%;
+    }
+    &__sub--hover {
+        width: 100%;
+    }
     &__post {
         width: 100%;
         padding: 28px 35px 58px 38px;
@@ -323,6 +329,12 @@
 
 #technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrapper--techn {
    z-index: 0;
+}
+
+@media (max-width: 1176px) {
+    .b-technology__sub--hover {
+        line-height: 20px;
+    }
 }
 
 @media (max-width: 1350px) {
