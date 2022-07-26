@@ -68,7 +68,7 @@ $(document).ready(function() {
         pauseOnHover: false,
     });
 
-    $('.b-card-advertising .b-picture--aside').slick({
+    $('.b-card-advertising .b-card-advertising__inner').slick({
         prevArrow: $('.b-card-advertising .b-button--square-white'),
         nextArrow: $('.b-card-advertising .b-button--square-green'),
         arrows: true,
@@ -78,20 +78,6 @@ $(document).ready(function() {
         autoplay: false,
         waitForAnimate: false,
         mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    prevArrow: $('.b-card-advertising .b-button--square-white'),
-                }
-            },
-            {
-                breakpoint: 1023,
-                settings: {
-                    prevArrow: $('.b-card-advertising .b-button--square-white'),
-                }
-            },
-        ]
     });
 
     $('.b-card-video__slider').slick({
