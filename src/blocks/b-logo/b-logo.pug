@@ -1,7 +1,10 @@
 mixin b-logo(img)
     if !img.link
-        .b-logo(class=img.class?img.class:"")
-            img(src=img.urlImg, alt="Логотип Estet")
+        if img.svg
+            .b-logo(class=img.class?img.class:"") !{img.svg}
+        if img.urlImg
+            .b-logo(class=img.class?img.class:"")
+                img(src=img.urlImg, alt="Логотип Estet")
     if img.link
         a.b-logo(class=img.class?img.class:"", href='index.html')
             img.b-logo__img(src=img.urlImg, class=img.classImg?img.classImg:"", alt="Логотип Estet")
