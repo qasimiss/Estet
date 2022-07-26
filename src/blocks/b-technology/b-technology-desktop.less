@@ -133,6 +133,10 @@
             transition: z-index 0.5 ease-in-out;
         }
     }
+    &__sub--hover,
+    & .b-title--company {
+        transition: color 0.5s ease-in-out;
+    }
     &__link-hover {
         position: absolute;
         width: 25px;
@@ -177,7 +181,8 @@
             background-color: @green47;
             color: @whiteFF;
         }
-        &--tech:hover ~ .b-technology__post--company .b-technology__sub--hover {
+        &--tech:hover ~ .b-technology__post--company .b-technology__sub--hover,
+        &--tech:hover ~ .b-technology__post--company .b-title--company {
             color: @whiteFF;
         }
         &--vase {
@@ -218,6 +223,14 @@
         order: 3;
         transition: background-color 0.5s ease-in-out,fill 0.3s ease-in-out;
     }
+    & .b-title--company {
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+
+.b-hover-quality__post {
+    color: @whiteFF;
 }
 
 .b-technology__sub-none {
@@ -302,6 +315,14 @@
     fill: @green47;
 }
 
+.b-technology__wrapper--techn {
+    transition: opacity 0.8s ease-in-out;
+}
+
+#technology__link-hover--vase:hover ~ .b-technology__inner .b-technology__wrapper--techn {
+    opacity: 0;
+}
+
 .b-hover-quality__title {
     display: block;
     font-size: 24px;
@@ -369,5 +390,12 @@
     }
     .b-technology__post--quality {
         padding-top: 10px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .b-technology__post--company {
+        padding: 2px 0 0 2px;
+        line-height: 20px;
     }
 }
