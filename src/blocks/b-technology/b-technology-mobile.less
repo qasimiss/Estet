@@ -4,9 +4,6 @@
             display: flex;
             margin-left: auto;
         }
-        // &.b-picture {
-        //     height: 242px;
-        // }
         &__caption,
         .b-title--company,
         .b-title--quality,
@@ -37,6 +34,12 @@
             margin-bottom: 22px;
             height: 242px;
         }
+        & .b-logo {
+            display: none;
+        }
+        &__container {
+            margin-bottom: 65px;
+        }
     }
 
     .b-container--technology {
@@ -44,11 +47,11 @@
         flex-wrap: wrap;
     }
 
-    .b-subtitle--technology {
+    .b-technology__sub {
         font-size: 14px;
         line-height: 25px;
         color: @grey3C;
-        margin-bottom: 65px;
+        // margin-bottom: 65px;
     }
 
     #technology__link-hover--grass,
