@@ -1,4 +1,4 @@
-include ../../elements/b-button-order-size/b-button-order-size
+include ../../elements/b-button/b-button
 include ../../elements/b-breadcrumb/b-breadcrumb
 mixin b-intro--alt(items, modification)
     section.b-intro--alt(class=modification?modification:"")
@@ -32,4 +32,19 @@ mixin b-intro--alt(items, modification)
                             }
                         ])
             h1(class="b-title b-title--intro-second") Межкомнатные двери
-        +b-button-order-size
+        +b-button({
+    btn: {
+        link: {
+            classLink: 'b-button--order-size',
+            classTitle: 'Заказать размер',
+            imgBeffore: 'img/icons/linepensil.svg',
+            imgBefforeClass: 'b-button__img--order-size-beffore',
+            imgBefforeAlt: '',
+            descr: 'Заказать замер',
+            descrClass: 'b-button__descr--order-size',
+            imgAfter: 'img/icons/right-white.svg',
+            imgAfterClass: 'b-button__img--order-size',
+            imgAfterAlt: '',
+        }
+    }
+})
