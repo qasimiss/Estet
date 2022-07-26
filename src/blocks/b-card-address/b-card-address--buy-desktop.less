@@ -1,4 +1,4 @@
-.b-card-address {
+.b-card-address--buy {
     position: relative;
     justify-content: flex-start;
     padding-left: 200px;
@@ -119,12 +119,26 @@
             margin-left: 68px;
         }
     }
+    & .b-card-address__map {
+        display: block;
+    }
 }
 
-.b-card-address__map {
-    display: block;
+@media screen and (max-width: 1440px) {
+    .b-card-address {
+        padding-left: 170px;
+    }
 }
-
+@media screen and (max-width: 1366px) {
+    .b-card-address {
+        padding-left: 150px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .b-card-address {
+        padding-left: 130px;
+    }
+}
 
 
 

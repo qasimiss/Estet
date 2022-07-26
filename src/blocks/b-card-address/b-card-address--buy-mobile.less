@@ -1,24 +1,23 @@
-.b-card-address {
+.b-card-address--buy {
     padding-left: 24px;
     padding-bottom: 54px;
 
-    background-color: @whiteF9;
-
-    &__box {
+    & .b-card-address__box {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
 
-    &__map {
+    & .b-card-address__map {
         display: none;
     }
 
-    &__title-box {
+    & .b-card-address__title-box {
         padding-top: 50px;
         margin-bottom: 40px;
     }
 
-    &__inner {
+    & .b-card-address__inner {
         display: flex;
         margin-bottom: -4px;
         &::before {
@@ -34,7 +33,7 @@
         }
     }
 
-    &__item {
+    & .b-card-address__item {
         width: 180px;
 
         margin-bottom: 29px;
@@ -86,5 +85,9 @@
 
     & .slick-slide {
         height: auto;
+    }
+
+    & .b-button--show-map {
+        display: block;
     }
 }
