@@ -1,13 +1,15 @@
 include ..//b-hamburger/b-hamburger.pug
 include ../../blocks/b-switcher-city/b-switcher-city.pug
+include ../b-language/b-language.pug
 mixin b-header-doors
     header.b-header-doors
         .b-container.b-container--no-padd-table.b-container--no-padd-desktop
             .b-header-doors__wrapper
                 ul.b-header-doors__search
                     li.b-header-doors__search-item
-                        a.b-header-doors__search-link(href="javascript:void(0);" title="Поиск")
-                            img(src="img/icons/glass-white.svg", alt="")
+                        +b-search({
+                            modification: ""
+                        })
                     li.b-header-doors__search-item.b-header-doors__search-item--shape
                         a.b-header-doors__search-link(href="javascript:void(0);" title="Звонок")
                             img(src="img/icons/Shape.svg", alt="")
@@ -21,8 +23,9 @@ mixin b-header-doors
                         a.b-header-doors__choice--link(href="javascript:void(0);" title="Корзина")
                             img(src="img/icons/basket-white.svg", alt="")
                     li.b-header-doors__choice-item.b-header-doors__choice-item--language
-                        a.b-header-doors__choice--link(href="javascript:void(0);" title="Язык")
-                            img(src="img/icons/language.svg", alt="")
+                        +b-language({
+                            modification:'b-language--header-doors'
+                        })
                 +b-switcher-city({
                     Elements: "b-switcher-city--header",
                     Select: "b-switcher-city__inner--white",

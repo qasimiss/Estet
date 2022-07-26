@@ -342,7 +342,7 @@ function checkWidthVideo() {
             speed: 1000,
             centerMode: false,
             asNavFor: '.b-card-video__slider',
-            focusOnSelect: false,
+            focusOnSelect: true,
             mobileFirst: true,
         });
     }
@@ -358,7 +358,7 @@ function checkWidthVideo() {
             speed: 1000,
             centerMode: false,
             asNavFor: '.b-card-video__slider',
-            focusOnSelect: false,
+            focusOnSelect: true,
             mobileFirst: true,
         });
     }
@@ -374,7 +374,7 @@ function checkWidthVideo() {
             speed: 1000,
             centerMode: false,
             asNavFor: '.b-card-video__slider',
-            focusOnSelect: false,
+            focusOnSelect: true,
             mobileFirst: true,
         });
     }
@@ -390,7 +390,7 @@ function checkWidthVideo() {
             speed: 1000,
             centerMode: false,
             asNavFor: '.b-card-video__slider',
-            focusOnSelect: false,
+            focusOnSelect: true,
             mobileFirst: true,
         });
     }

@@ -1,0 +1,21 @@
+.b-search {
+    &--header {
+        display: none;
+    }
+    &--aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: @greyE6;
+        width: 80px;
+        height: 80px;
+        & .b-search__img {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.2s;
+        }
+        &:hover .b-search__img{
+            transform: scale(1.2);
+        }
+    }
+}
