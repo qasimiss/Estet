@@ -1,10 +1,10 @@
 include ../../elements/b-button/b-button.pug
-mixin b-doors-nav
+mixin b-doors-nav(active)
     nav.b-doors-nav
         +b-button({
             btn: {
                 button: {
-                    classBtn: 'b-button--collection',
+                    classBtn: `b-button--collection ${active.collection?active.collection:''}`,
                     descrBtn: 'Коллекции',
                     titleBtn: 'Коллекции'
                 }
@@ -13,7 +13,7 @@ mixin b-doors-nav
         +b-button({
             btn: {
                 button: {
-                    classBtn: 'b-button--collection active',
+                    classBtn: `b-button--collection ${active.doors?active.doors:''}`,
                     descrBtn: 'Все двери',
                     titleBtn: 'Все двери'
                 }
