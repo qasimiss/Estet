@@ -1,9 +1,11 @@
 include ../b-doors-nav/b-doors-nav.pug
-include ..//b-doors/b-doors.pug
+include ../b-doors/b-doors.pug
 mixin b-card-doors
     section.b-card-doors
         .b-title.b-title--doors-header 1567 дверей
-        +b-doors-nav()
+        +b-doors-nav({
+            doors: "active",
+        })
         .b-card-doors__wrapper
             .b-card-doors__intro
                 .b-card-doors__empty

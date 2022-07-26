@@ -33,12 +33,33 @@ html(lang="ru")
             +b-header-doors
             main
                 .b-doors-wrapper
-                    +b-aside
+                    +b-aside({
+                        doors: "active",
+                        arr: [
+                            {
+                                collection: "active",
+                                title: "КОЛЛЕКЦИИ",
+                                list: ['bliss', 'urban', 'perfect', 'sonata', 'novella', 'mio', 'ways', 'royal', 'perfect volume']
+                            },
+                            {
+                                title: "СТИЛЬ",
+                            },
+                            {
+                                title: "ЦВЕТА",
+                            },
+                            {
+                                title: "ОТДЕЛКА",
+                            },
+                            {
+                                title: "ЦЕНА",
+                            }
+                        ]
+                    })
                     .b-doors-wrapper__section
                         +b-intro--alt([
                             {
                                 title: 'Главная',
-                                link: "main.html"
+                                link: "index.html"
                             },
                             {
                                 title: 'Межкомнатные двери',
