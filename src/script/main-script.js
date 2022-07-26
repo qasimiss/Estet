@@ -113,6 +113,7 @@ $(document).ready(function() {
         easing: "ease-in-out",
         speed: 1000,
         swipe: true,
+        focusOnSelect: true,
         waitForAnimate: false,
         variableWidth: true,
         slidesToShow: 1,
@@ -168,6 +169,7 @@ $(document).ready(function() {
         swipeToSlide: false,
         waitForAnimate: false,
         variableWidth: true,
+        focusOnSelect: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         mobileFirst: true,
@@ -328,7 +330,7 @@ function checkWidthVideo() {
             mobileFirst: true,
         });
     }
-    if ($(window).width() > 768 && $(window).width() <= 967) {
+    if ($(window).width() > 767 && $(window).width() <= 967) {
         $('.b-card-video .b-card-video__inner').slick('unslick');
         $('.b-card-video .b-card-video__inner').slick({
             nextArrow: $('.b-card-video .b-button--square-white'),
