@@ -1,10 +1,3 @@
-.b-container--technology {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
 .b-technology {
     width: 100%;
     height: 56.25vw;
@@ -12,6 +5,12 @@
     max-height: 900px;
     & .b-picture {
         width: 100%;
+    }
+    & .b-container--technology {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
     }
     &__wrap-grass {
         z-index: 150;
@@ -94,8 +93,10 @@
             position: absolute;
             top: 0;
             transition: all 0.5s ease-in-out;
+            transform: translate(0px, 230%);
             left: 0;
             display: block;
+            opacity: 0;
             background-color: @green47;
             color: @whiteFF;
             height: 43%;
@@ -110,7 +111,7 @@
             order: 3;
             z-index: 200;
             background-color: @whiteFF;
-            transition: background-color 0.4s ease-in-out, z-index 0.9s ease-in-out;
+            transition: background-color 0.4s ease-in-out, opacity 0.5s ease;
             position: absolute;
             top: 36.5%;
             left: 40%;
@@ -131,12 +132,12 @@
         }
         &--vase {
             width: 45%;
-            height: 63.5%;
-            z-index: 0;
+            height: 27%;
+            z-index: 250;
             order: 4;
             position: relative;
-            transform: translateY(-57.5%);
-            transition: z-index 0.5 ease-in-out;
+            transform: translate(0%);
+            transition: all 0.5s;
         }
     }
     &__sub--hover,
@@ -218,9 +219,11 @@
     }
     & .b-picture--techn {
         width: 655px;
+        display: block;
     }
     & .b-picture--vase {
         width: 100%;
+        transition: all 0.5s;
     }
     &__logo {
         width: 15%;
@@ -233,65 +236,64 @@
         font-size: 36px;
         font-weight: 600;
     }
-}
-
-.b-hover-quality__post {
-    color: @whiteFF;
-}
-
-.b-technology__sub-none {
-    display: block;
-    color: @whiteFF;
-}
-
-.b-subtitle--technology {
-    margin: 0;
-    font-size: 14px;
-    color: inherit;
-}
-    &--padding {
-        padding: 0 112px 77px 0;
+    &__sub-none {
+        display: block;
+        color: @whiteFF;
     }
-
-.b-technology-logo--white {
-    display: block;
+    & .b-title--quality,
+    & .b-technology__quality-title {
+        color: @whiteFF;
+        margin-top: 0;
+    }
+    .b-technology__quality-post {
+        font-size: 14px;
+        line-height: 25px;
+        color: @whiteFF;
+    }
+    &__quality-title {
+        display: block;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 12px;
+        color: @whiteFF;
+    }
 }
 
-.technology__link-hover--vase {
-    display: block;
-}
-
-#technology__link-hover--grass {
+#b-technology__link-hover{
+    &--grass {
     position: absolute;
     top: 20%;
     left: 10%;
     display: block;
     z-index: 600;
+    &::before {
+        position: absolute;
+        content: "";
+        border-radius: 100%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        background-color: #1E8A47;
+        width: 30%;
+        height: 30%;
+        }
+    &:hover ~ .b-technology__inner .b-technology__wrap-grass {
+        z-index: 500;
+        & .b-technology__post--grass {
+            transform: translateX(100%);
+            opacity: 1;
+            display: block;
+            }
+        }
+    }
 }
 
-#technology__link-hover--grass::before {
-    position: absolute;
-    content: "";
-    border-radius: 100%;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    background-color: #1E8A47;
-    width: 30%;
-    height: 30%;
-}
 
-#technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrap-grass {
-    z-index: 500;
-}
+#b-technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrapper--techn {
+    opacity: 0;
+ }
 
-#technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrap-grass .b-technology__post--grass {
-    transform: translateX(100%);
-    opacity: 1;
-    display: block;
-}
-
-#technology__link-hover--vase {
+#b-technology__link-hover--vase {
     position: absolute;
     bottom: 10%;
     left: 30%;
@@ -300,55 +302,31 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-#technology__link-hover--vase:hover ~ .b-technology__inner .b-technology__wrapper--vase {
+#b-technology__link-hover--vase:hover ~ .b-technology__inner .b-technology__wrapper--vase {
     z-index: 251;
+    height: 63.5%;
+    transform: translateY(-57.5%);
 }
 
-#technology__link-hover--vase:hover {
+#b-technology__link-hover--vase:hover {
     opacity: 0;
 }
 
-#technology__link-hover--vase:hover ~ .b-technology__inner .b-technology__wrapper--vase .b-technology__post--vase {
+#b-technology__link-hover--vase:hover ~ .b-technology__inner .b-technology__wrapper--vase .b-technology__post--vase {
     transform: translateY(133.5%);
-    z-index: 250;
+    z-index: 1;
+    opacity: 1;
 }
 
-#technology__link-hover--vase:hover ~ .b-technology__inner .b-logo--technology {
+#b-technology__link-hover--vase:hover ~ .b-technology__inner .b-logo--technology {
     background-color: @whiteFF;
 }
 
-#technology__link-hover--vase:hover ~ .b-technology__inner .b-logo__svg-technology {
+#b-technology__link-hover--vase:hover ~ .b-technology__inner .b-logo__svg-technology {
     fill: @green47;
 }
 
-.b-technology__wrapper--techn {
-    transition: opacity 0.8s ease-in-out;
-}
-
-#technology__link-hover--vase:hover ~ .b-technology__inner .b-technology__wrapper--techn {
-    opacity: 0;
-}
-
-.b-hover-quality__title {
-    display: block;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 12px;
-    color: @whiteFF;
-}
-
-.b-hover-quality__post {
-    font-size: 14px;
-    line-height: 25px;
-}
-
-.b-technology .b-title--quality,
-.b-technology .b-hover-quality__title {
-    color: @whiteFF;
-    margin-top: 0;
-}
-
-#technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrapper--techn {
+#b-technology__link-hover--grass:hover ~ .b-technology__inner .b-technology__wrapper--techn {
    z-index: 0;
 }
 
