@@ -4,7 +4,9 @@ include ../../blocks/b-picture/b-picture.pug
 mixin b-collection
     section.b-collection.b-container.b-container--no-padd-mobile.b-container--no-padd-desktop
         .b-collection__21collection 21&nbsp;КОЛЛЕКЦИЯ
-        +b-doors-nav()
+        +b-doors-nav({
+            collection: "active",
+        })
         +b-collection-item({
             b_collection_item: 'b-collection-item--sonata b-collection-item--padding-top',
             imgWebpMediaMax767X1: 'img/content/mobile/9-price/1/2-1x.webp',
