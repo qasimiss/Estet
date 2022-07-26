@@ -77,7 +77,10 @@ html(lang="ru")
                 })
                 +b-slider-video
                 +b-card-modern
-                +b-card-address("Купить в вашем городе")
+                +b-card-address({
+                    title: "Купить в вашем городе",
+                    modification: "b-card-address--buy"
+                })
             +b-footer({
                 link: true,
             })
