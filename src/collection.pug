@@ -34,7 +34,25 @@ html(lang="ru")
             +b-header-doors
             main
                 .b-doors-wrapper
-                    +b-aside
+                    +b-aside({
+                        collection: "active",
+                        arr: [
+                            {
+                                collection: "active",
+                                title: "СТИЛЬ",
+                                list: ['Современный', 'Классический', 'Неоклассический', 'Дизайнерский']
+                            },
+                            {
+                                title: "ОТДЕЛКА",
+                                list: ['Эмаль', 'Покрытие',]
+                            },
+                            {
+                                collection: "active",
+                                title: "ЦЕНА",
+                                input: true
+                            },
+                        ]
+                    })
                     .b-doors-wrapper__section
                         +b-intro--alt(
                             [{

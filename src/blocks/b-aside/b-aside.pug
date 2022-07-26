@@ -1,5 +1,6 @@
 include ../b-logo/b-logo.pug
-mixin b-aside
+include ../b-aside__filter/b-aside__filter.pug
+mixin b-aside(date)
     .b-aside
         .b-aside__header
             +b-logo({
@@ -15,37 +16,9 @@ mixin b-aside
                     img.b-aside__search-img(src="img/icons/glass-black.svg", alt="")
                 a.b-aside__number-link(href="tel:+78005513240" title="Свяжитесь с нами") 8 800 551 32 40
         nav.b-aside__wrapper-btn
-            button.b-aside__collection Коллекции
-            button.b-aside__collection.active Все двери
-        nav.b-aside__filter
-            h2.b-title.b-title--aside.active КОЛЛЕКЦИИ
-            ul.b-aside__list
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  bliss
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  urban
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  perfect
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  sonata
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  novella
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  mio
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  ways
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  royal
-                li.b-aside__item
-                    a.b-aside__link(href="javascript:void(0);" title="Перейти")  perfect volume
-            h2.b-title.b-title--aside СТИЛЬ
-            ul.b-aside__list
-            h2.b-title.b-title--aside ЦВЕТА
-            ul.b-aside__list
-            h2.b-title.b-title--aside ОТДЕЛКА
-            ul.b-aside__list
-            h2.b-title.b-title--aside ЦЕНА
-            ul.b-aside__list
+            button.b-aside__collection(class=date.collection?date.collection:'') Коллекции
+            button.b-aside__collection(class=date.doors?date.doors:'') Все двери
+        +b-aside__filter(date.arr)
             button.b-aside__reset Сбросить все
             .b-aside__stock
                 input.b-aside__checkbox(type="checkbox" id="stock" name="stock")
