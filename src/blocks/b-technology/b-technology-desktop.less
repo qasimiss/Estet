@@ -175,10 +175,10 @@
         }
         &--tech:hover ~ .b-technology__post--company {
             background-color: @green47;
-            color: white;
+            color: @whiteFF;
         }
         &--tech:hover ~ .b-technology__post--company .b-technology__sub--hover {
-            color: white;
+            color: @whiteFF;
         }
         &--vase {
             bottom: 25%;
@@ -218,6 +218,11 @@
         order: 3;
         transition: background-color 0.5s ease-in-out,fill 0.3s ease-in-out;
     }
+}
+
+.b-technology__sub-none {
+    display: block;
+    color: @whiteFF;
 }
 
 .b-subtitle--technology {
