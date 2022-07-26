@@ -76,7 +76,7 @@ $(document).ready(function() {
         speed: 1000,
         swipe: true,
         autoplay: false,
-        waitForAnimate: false,
+        waitForAnimate: true,
         mobileFirst: true,
     });
 
@@ -86,7 +86,7 @@ $(document).ready(function() {
         speed: 1000,
         swipe: true,
         draggable: true,
-        waitForAnimate: false,
+        waitForAnimate: true,
         asNavFor: '.b-card-video__inner',
         appendDots: $('.b-card-video__item'),
         dotsClass: $('b-card-video__item'),
@@ -100,7 +100,7 @@ $(document).ready(function() {
         speed: 1000,
         swipe: true,
         focusOnSelect: true,
-        waitForAnimate: false,
+        waitForAnimate: true,
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -153,7 +153,7 @@ $(document).ready(function() {
         speed: 1000,
         swipe: true,
         swipeToSlide: false,
-        waitForAnimate: false,
+        waitForAnimate: true,
         variableWidth: true,
         focusOnSelect: true,
         slidesToShow: 1,
@@ -219,7 +219,7 @@ $(document).ready(function() {
         easing: "ease-in-out",
         speed: 1000,
         swipe: true,
-        waitForAnimate: false,
+        waitForAnimate: true,
     });
 
     $('.b-card-modern__wrapper').slick({
@@ -228,7 +228,7 @@ $(document).ready(function() {
         arrows: true,
         easing: "ease-in-out",
         swipe: true,
-        waitForAnimate: false,
+        waitForAnimate: true,
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -308,7 +308,7 @@ function checkWidthVideo() {
             vertical: true,
             verticalSwiping: true,
             waitForAnimate: true,
-            slidesToShow: 4,
+            slidesToShow: 7,
             easing: 'ease-in-out',
             speed: 1000,
             asNavFor: '.b-card-video__slider',
