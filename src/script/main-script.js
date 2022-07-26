@@ -328,7 +328,7 @@ function checkWidthVideo() {
             mobileFirst: true,
         });
     }
-    if ($(window).width() > 768 && $(window).width() <= 1463) {
+    if ($(window).width() > 768 && $(window).width() <= 967) {
         $('.b-card-video .b-card-video__inner').slick('unslick');
         $('.b-card-video .b-card-video__inner').slick({
             nextArrow: $('.b-card-video .b-button--square-white'),
@@ -342,32 +342,80 @@ function checkWidthVideo() {
             asNavFor: '.b-card-video__slider',
             focusOnSelect: false,
             mobileFirst: true,
-            responsive: [
-                {
-                    breakpoint: 967,
-                    settings: {
-                        rows: 2,
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 1167,
-                    settings: {
-                        rows: 2,
-                        slidesToShow: 5,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 1367,
-                    settings: {
-                        rows: 2,
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                    }
-                },
-            ]
+            // responsive: [
+            //     {
+            //         breakpoint: 967,
+            //         settings: {
+            //             rows: 2,
+            //             slidesToShow: 4,
+            //             slidesToScroll: 1,
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 1167,
+            //         settings: {
+            //             rows: 2,
+            //             slidesToShow: 5,
+            //             slidesToScroll: 1,
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 1367,
+            //         settings: {
+            //             rows: 2,
+            //             slidesToShow: 6,
+            //             slidesToScroll: 1,
+            //         }
+            //     },
+            // ]
+        });
+    }
+    if ($(window).width() > 967 && $(window).width() <= 1167) {
+        $('.b-card-video .b-card-video__inner').slick('unslick');
+        $('.b-card-video .b-card-video__inner').slick({
+            nextArrow: $('.b-card-video .b-button--square-white'),
+            prevArrow: $('.b-card-video .b-button--square-green'),
+            slidesToShow: 4,
+            rows: 2,
+            easing: 'ease-in-out',
+            waitForAnimate: true,
+            speed: 1000,
+            centerMode: false,
+            asNavFor: '.b-card-video__slider',
+            focusOnSelect: false,
+            mobileFirst: true,
+        });
+    }
+    if ($(window).width() > 1167 && $(window).width() <= 1367) {
+        $('.b-card-video .b-card-video__inner').slick('unslick');
+        $('.b-card-video .b-card-video__inner').slick({
+            nextArrow: $('.b-card-video .b-button--square-white'),
+            prevArrow: $('.b-card-video .b-button--square-green'),
+            slidesToShow: 5,
+            rows: 2,
+            easing: 'ease-in-out',
+            waitForAnimate: true,
+            speed: 1000,
+            centerMode: false,
+            asNavFor: '.b-card-video__slider',
+            focusOnSelect: false,
+            mobileFirst: true,
+        });
+    }
+    if ($(window).width() > 1367 && $(window).width() <= 1463) {
+        $('.b-card-video .b-card-video__inner').slick('unslick');
+        $('.b-card-video .b-card-video__inner').slick({
+            nextArrow: $('.b-card-video .b-button--square-white'),
+            prevArrow: $('.b-card-video .b-button--square-green'),
+            slidesToShow: 5,
+            rows: 2,
+            easing: 'ease-in-out',
+            waitForAnimate: true,
+            speed: 1000,
+            centerMode: false,
+            asNavFor: '.b-card-video__slider',
+            focusOnSelect: false,
+            mobileFirst: true,
         });
     }
     if ($(window).width() > 1463) {
