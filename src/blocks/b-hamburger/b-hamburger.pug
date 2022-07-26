@@ -1,10 +1,13 @@
 include ../b-language/b-language.pug
+include ../b-search/b-search.pug
+
 mixin b-hamburger()
     .b-hamburger
         ul.b-hamburger__header
             li.b-hamburger__header-item.b-hamburger__header-item--search
-                a.b-hamburger__header-link(href="javascript:void(0);" title="Поиск")
-                    img(src="img/icons/glass-white.svg", alt="")
+                +b-search({
+                    modification: "b-search--hamburger"
+                })
             li.b-hamburger__header-item.b-hamburger__header-item--language
                 +b-language({
                     modification: "b-language--hamburger"
