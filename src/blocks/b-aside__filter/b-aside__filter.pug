@@ -9,3 +9,7 @@ mixin b-aside__filter(date)
                             a.b-aside__link(href="javascript:void(0);" title="Перейти") !{item}
                 if items.input
                     input.b-aside__range(type="range" multiple min="0" max="30000")
+        button.b-aside__reset Сбросить все
+        .b-aside__stock
+            input.b-aside__checkbox(type="checkbox" id="stock" name="stock")
+            label.b-aside__checkbox-label(for="stock") Только по акции
