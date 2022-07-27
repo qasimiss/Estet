@@ -212,7 +212,7 @@ $(document).ready(function() {
         ]
     });
 
-    $('.b-slider-video').slick({
+    $('.b-slider-video .b-container.b-container--no-padd-mobile.b-container--no-padd-table').slick({
         arrows: true,
         dots: true,
         autoplay: true,

@@ -22,7 +22,3 @@ mixin b-aside(date)
             button.b-aside__collection(class=date.collection?date.collection:'') Коллекции
             button.b-aside__collection(class=date.doors?date.doors:'') Все двери
         +b-aside__filter(date.arr)
-            button.b-aside__reset Сбросить все
-            .b-aside__stock
-                input.b-aside__checkbox(type="checkbox" id="stock" name="stock")
-                label.b-aside__checkbox-label(for="stock") Только по акции

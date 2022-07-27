@@ -1,5 +1,6 @@
 .b-slider-video {
     background-color: @whiteF7;
+    padding: 0;
 
     &__picture {
         height: 676px;
@@ -18,7 +19,6 @@
     }
 
     &__button-box {
-        padding-bottom: 91px;
         margin-bottom: 0;
         margin-bottom: 84px;
         background-color: @whiteF7;
@@ -31,6 +31,10 @@
     .b-slider-video .slick-next {
         right: 170px;
     }
+    .b-slider-video .slick-dots {
+        bottom: -34px;
+        left: 170px;
+    }
 }
 @media (max-width: 1366px) {
     .b-slider-video .slick-prev {
@@ -39,6 +43,10 @@
     .b-slider-video .slick-next {
         right: 150px;
     }
+    .b-slider-video .slick-dots {
+        bottom: -34px;
+        left: 150px;
+    }
 }
 @media (max-width: 1280px) {
     .b-slider-video .slick-prev {
@@ -46,5 +54,9 @@
     }
     .b-slider-video .slick-next {
         right: 130px;
+    }
+    .b-slider-video .slick-dots {
+        bottom: -34px;
+        left: 130px;
     }
 }
