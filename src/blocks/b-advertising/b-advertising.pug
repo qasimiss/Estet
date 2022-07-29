@@ -1,0 +1,124 @@
+include ../../elements/b-button/b-button.pug
+
+mixin b-advertising(modification)
+    aside.b-card-advertising(class=modification ? modification.modificationAside: "")
+        .b-container.b-container--no-padd-table.b-container--no-padd-mobile
+            .b-card-advertising__container(class=modification ? modification.modificationPicture: "")
+                .b-card-advertising__inner
+                    .b-card-advertising__item
+                        +b-picture([
+                            {
+                                pictureClass: "b-picture--advertising",
+                                imgWebpMediaMax767X1: "img/content/mobile/3-search/1/10-1x.webp",
+                                imgWebpMediaMax767X2: "img/content/mobile/3-search/1/10-2x.webp",
+                                imgJpgMediaMax767X1: "img/content/mobile/3-search/1/10-1x",
+                                imgJpgMediaMax767X2: "img/content/mobile/3-search/1/10-2x.jpg",
+                                imgWebpMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.webp",
+                                imgWebpMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.webp",
+                                imgJpgMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.jpg",
+                                imgJpgMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.jpg",
+                                imgWebpMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.webp",
+                                imgWebpMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.webp",
+                                imgjpgMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.jpg",
+                                imgjpgMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.jpg",
+                                imgClass: "b-card-advertising__img",
+                                alt: "Дверь и диван",
+                            }
+                        ])
+                        .b-card-advertising__wrap(class=modification ? modification.modificationWrap: "")
+                            span.b-card-advertising__caption(class=modification ? modification.modificationPost: "") 20%
+                            span.b-card-advertising__post.b-card-advertising__post--margin  на&nbsp;коллекции MIO, ENGLAND, FIGURE
+                        strong.b-card-advertising__title(class=modification ? modification.modificationTitle: "") Распродажа классических коллекций
+                        .b-card-advertising__wrapper(class=modification ? modification.modificationWrapper: "")
+                            if (modification)
+                                .b-card-advertising__descr-doors &mdash;20% на коллекции MIO, ENGLAND, FIGURE
+                            .b-card-advertising__description(class=modification ? modification.modificationDescription: "") Успейте купить межкомнатные двери классической коллекции со скидкой&nbsp;20% до&nbsp;середины февраля.
+                            if (modification)
+                                a(href="").b-card-advertising__detailed-doors ПОДРОБНЕЕ
+                        .b-card-advertising__stock(class=modification ? modification.modificationStock: "") Акция действует до&nbsp;15&nbsp;февраля 2021г
+                    .b-card-advertising__item
+                        +b-picture([
+                            {
+                                pictureClass: "b-picture--advertising",
+                                imgWebpMediaMax767X1: "img/content/mobile/3-search/1/10-1x.webp",
+                                imgWebpMediaMax767X2: "img/content/mobile/3-search/1/10-2x.webp",
+                                imgJpgMediaMax767X1: "img/content/mobile/3-search/1/10-1x",
+                                imgJpgMediaMax767X2: "img/content/mobile/3-search/1/10-2x.jpg",
+                                imgWebpMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.webp",
+                                imgWebpMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.webp",
+                                imgJpgMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.jpg",
+                                imgJpgMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.jpg",
+                                imgWebpMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.webp",
+                                imgWebpMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.webp",
+                                imgjpgMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.jpg",
+                                imgjpgMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.jpg",
+                                imgClass: "b-card-advertising__img",
+                                alt: "Дверь и диван",
+                            }
+                        ])
+                        .b-card-advertising__wrap(class=modification ? modification.modificationWrap: "")
+                            span.b-card-advertising__caption(class=modification ? modification.modificationPost: "") 20%
+                            span.b-card-advertising__post.b-card-advertising__post--margin  на&nbsp;коллекции MIO, ENGLAND, FIGURE
+                        strong.b-card-advertising__title(class=modification ? modification.modificationTitle: "") Распродажа классических коллекций
+                        .b-card-advertising__wrapper(class=modification ? modification.modificationWrapper: "")
+                            if (modification)
+                                .b-card-advertising__descr-doors &mdash;20% на коллекции MIO, ENGLAND, FIGURE
+                            .b-card-advertising__description(class=modification ? modification.modificationDescription: "") Успейте купить межкомнатные двери классической коллекции со скидкой&nbsp;20% до&nbsp;середины февраля.
+                            if (modification)
+                                a(href="").b-card-advertising__detailed-doors ПОДРОБНЕЕ
+                        .b-card-advertising__stock(class=modification ? modification.modificationStock: "") Акция действует до&nbsp;15&nbsp;февраля 2021г
+                    .b-card-advertising__item
+                        +b-picture([
+                            {
+                                pictureClass: "b-picture--advertising",
+                                imgWebpMediaMax767X1: "img/content/mobile/3-search/1/10-1x.webp",
+                                imgWebpMediaMax767X2: "img/content/mobile/3-search/1/10-2x.webp",
+                                imgJpgMediaMax767X1: "img/content/mobile/3-search/1/10-1x",
+                                imgJpgMediaMax767X2: "img/content/mobile/3-search/1/10-2x.jpg",
+                                imgWebpMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.webp",
+                                imgWebpMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.webp",
+                                imgJpgMediaMax1023X1: "img/content/tablet/3-search/1/1-1x.jpg",
+                                imgJpgMediaMax1023X2: "img/content/tablet/3-search/1/1-2x.jpg",
+                                imgWebpMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.webp",
+                                imgWebpMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.webp",
+                                imgjpgMediaMaxDeskX1: "img/content/desktop/3-search/1/1-1x.jpg",
+                                imgjpgMediaMaxDeskX2: "img/content/desktop/3-search/1/1-2x.jpg",
+                                imgClass: "b-card-advertising__img",
+                                alt: "Дверь и диван",
+                            }
+                        ])
+                        .b-card-advertising__wrap(class=modification ? modification.modificationWrap: "")
+                            span.b-card-advertising__caption(class=modification ? modification.modificationPost: "") 20%
+                            span.b-card-advertising__post.b-card-advertising__post--margin  на&nbsp;коллекции MIO, ENGLAND, FIGURE
+                        strong.b-card-advertising__title(class=modification ? modification.modificationTitle: "") Распродажа классических коллекций
+                        .b-card-advertising__wrapper(class=modification ? modification.modificationWrapper: "")
+                            if (modification)
+                                .b-card-advertising__descr-doors &mdash;20% на коллекции MIO, ENGLAND, FIGURE
+                            .b-card-advertising__description(class=modification ? modification.modificationDescription: "") Успейте купить межкомнатные двери классической коллекции со скидкой&nbsp;20% до&nbsp;середины февраля.
+                            if (modification)
+                                a(href="").b-card-advertising__detailed-doors ПОДРОБНЕЕ
+                        .b-card-advertising__stock(class=modification ? modification.modificationStock: "") Акция действует до&nbsp;15&nbsp;февраля 2021г
+                +b-button({
+                    btn: {
+                        button: {
+                            classBtn: 'b-button--square b-button--square-white',
+                            titleBtn: 'Назад',
+                            svg: `svg.b-button--square__img(class= "b-button--square__img-left" width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(fill-rule="evenodd" clip-rule="evenodd" d="M25.5 4.5H0.5H25.5Z")
+                            path(d="M25.5 4H26V5H25.5V4ZM0.146446 4.85355C-0.0488148 4.65829 -0.0488148 4.34171 0.146446 4.14645L3.32843 0.964466C3.52369 0.769204 3.84027 0.769204 4.03553 0.964466C4.2308 1.15973 4.2308 1.47631 4.03553 1.67157L1.20711 4.5L4.03553 7.32843C4.2308 7.52369 4.2308 7.84027 4.03553 8.03553C3.84027 8.2308 3.52369 8.2308 3.32843 8.03553L0.146446 4.85355ZM25.5 5H0.5V4H25.5V5Z")`,
+                            svgClass: 'b-button__img--square b-button__img--square-left'
+                        },
+                    }
+                })
+                +b-button({
+                    btn: {
+                        button: {
+                            classBtn: 'b-button--square b-button--square-green',
+                            titleBtn: 'Далее',
+                            svg: `svg.b-button--square-img(class= "b-button--square__img-right" width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(fill-rule="evenodd" clip-rule="evenodd" d="M25.5 4.5H0.5H25.5Z")
+                            path(d="M25.5 4H26V5H25.5V4ZM0.146446 4.85355C-0.0488148 4.65829 -0.0488148 4.34171 0.146446 4.14645L3.32843 0.964466C3.52369 0.769204 3.84027 0.769204 4.03553 0.964466C4.2308 1.15973 4.2308 1.47631 4.03553 1.67157L1.20711 4.5L4.03553 7.32843C4.2308 7.52369 4.2308 7.84027 4.03553 8.03553C3.84027 8.2308 3.52369 8.2308 3.32843 8.03553L0.146446 4.85355ZM25.5 5H0.5V4H25.5V5Z")`,
+                            svgClass: 'b-button__img--square b-button__img--square-right'
+                        },
+                    }
+                })

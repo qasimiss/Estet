@@ -1,0 +1,24 @@
+mixin b-modern(name)
+    each item in name
+        a.b-card-modern__item(href="javascript:void(0);", title="Материалы изделий", class= item.modification)
+            +b-picture([
+                {
+                    pictureClass: "",
+                    imgWebpMediaMax767X1: item.imgWebpMediaMax767X1,
+                    imgWebpMediaMax767X2: item.imgWebpMediaMax767X2,
+                    imgJpgMediaMax767X1: item.imgJpgMediaMax767X1,
+                    imgJpgMediaMax767X2: item.imgJpgMediaMax767X2,
+                    imgWebpMediaMax1023X1: item.imgWebpMediaMax1023X1,
+                    imgWebpMediaMax1023X2: item.imgWebpMediaMax1023X2,
+                    imgJpgMediaMax1023X1: item.imgJpgMediaMax1023X1,
+                    imgJpgMediaMax1023X2: item.imgJpgMediaMax1023X2,
+                    imgWebpMediaMaxDeskX1: item.imgWebpMediaMaxDeskX1,
+                    imgWebpMediaMaxDeskX2: item.imgWebpMediaMaxDeskX2,
+                    imgjpgMediaMaxDeskX1: item.imgjpgMediaMaxDeskX1,
+                    imgjpgMediaMaxDeskX2: item.imgjpgMediaMaxDeskX2,
+                    imgClass: "",
+                    alt: "Материалы",
+                }
+            ])
+            .b-title.b-title--modern(lang="en") !{item.title}
+            .b-card-modern__description !{item.descr}

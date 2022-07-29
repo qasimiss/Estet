@@ -1,0 +1,7 @@
+mixin b-breadcrumb(items)
+    each item in items
+        if item.link == null
+            li.b-breadcrumb__item !{item.title}
+        else
+            li.b-breadcrumb__item
+                a.b-breadcrumb__link(href=item.link title=item.title) !{item.title}

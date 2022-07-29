@@ -1,0 +1,197 @@
+.b-card-advertising {
+    & .slick-list, & .slick-track {
+        height: 100%;
+        width: 100%;
+    }
+    &--doors {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 197px;
+        background: linear-gradient(180deg, transparent 152px, @whiteF7 152px 100%);
+        margin-bottom: 0;
+        position: relative;
+        & .b-picture--advertising {
+            width: calc(50% - 1px);
+            order: 4;
+            margin-right: 1px;
+            margin-bottom: 0;
+        }
+        & .b-button.b-button--square.b-button--square-white {
+            right: 1px;
+        }
+        & .b-button.b-button--square.b-button--square-green {
+            right: 1px;
+        }
+        & .b-card-advertising__stock {
+            padding-top: 14px;
+            margin-left: auto;
+            position: static;
+            order: 5;
+        }
+        & .b-card-advertising__caption::before {
+            background-color: @whiteF7;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__container {
+        margin-bottom: 30px;
+        &--doors {
+            width: 100%;
+            order: 5;
+        }
+    }
+    &__wrap {
+        position: absolute;
+        height: 100%;
+        width: calc(50% - 200px);
+        top: 0;
+        &--doors {
+            width: 50%;
+            padding: 0;
+            right: 0;
+        }
+    }
+    &__wrapper {
+        order: 3;
+        padding-top: 23px;
+        &--doors {
+            width: 50%;
+            padding-top: 232px;
+            order: 3;
+        }
+    }
+    &__caption {
+        position: absolute;
+        top: 45px;
+        right: 343px;
+        font-weight: 400;
+        font-size: 150px;
+        line-height: 192px;
+        &::before {
+            content: '';
+            width: 30%;
+            height: 6.5%;
+            background-color: @whiteFF;
+            position: absolute;
+            top: 55.5%;
+            left: -35%;
+        }
+    }
+    &__stock {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        color: @grey99;
+        order: 2;
+    }
+    &__post {
+        position: absolute;
+        right: 100px;
+        top: 82px;
+        &--margin {
+            padding-bottom: 7px;
+            border-bottom: 1px solid @whiteFF;
+            top: 100px;
+            right: 100px;
+            width: 170px;
+            font-size: 18px;
+            line-height: 21px;
+            color: @whiteFF;
+        }
+        &--doors {
+            font-family: lora;
+            right: 100%;
+            top: 0;
+            font-size: 150px;
+            line-height: 192px;
+            color: @whiteF7;
+        }
+    }
+    &__title {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        width: calc(100% - 300px);
+        order: 1;
+        margin: 0;
+        &--doors {
+            display: none;
+        }
+    }
+    &__descr-doors {
+        display: block;
+    }
+    &__detailed-doors {
+        display: block;
+    }
+    & .b-button--square:nth-child(2) {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+    & .b-button--square:last-child {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    & .b-button-white--left {
+        visibility: visible;
+    }
+    & .b-button--square-white {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+    }
+    &__stock,
+    &__description {
+    padding-left: 0;
+    color: @grey99;
+    }
+    &__descr-doors {
+        font-size: 36px;
+        line-height: 42px;
+        color: @grey3C;
+        margin-bottom: 21px;
+    }
+    &__description {
+        max-width: 565px;
+        &--doors {
+            max-width: 371px;
+        }
+    }
+    &__detailed-doors {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: @green47;
+    }
+}
+
+.b-card-advertising .b-button--square {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+@media (max-width: 1420px) {
+    .b-card-advertising__title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .b-card-advertising__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .b-card-advertising__title {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,30 @@
+include ../../elements/b-button/b-button.pug
+include ../../blocks/b-picture/b-picture
+mixin b-card-select()
+    section.b-card-select
+        .b-container
+            h2.b-card-select__title Подберем интерьерное решение?
+            .b-card-select__descr Ответьте на мои 10 вопросов, и&nbsp;я&nbsp;покажу&nbsp; вам вариант вашей&nbsp;мечты
+            +b-button({
+                btn: {
+                    button: {
+                        descrBtn: "Подобрать",
+                        classBtn: "b-button--rect"
+                    }
+                }
+            })
+        +b-picture([
+                {
+                    pictureClass: "b-card-select-wrap",
+                    imgWebpMediaMax1023X1: "img/content/tablet/7-technology/3/1-1x.webp",
+                    imgWebpMediaMax1023X2: "img/content/tablet/7-technology/3/1-2x.webp",
+                    imgJpgMediaMax1023X1: "img/content/tablet/7-technology/3/1-1x.jpg",
+                    imgJpgMediaMax1023X2: "img/content/tablet/7-technology/3/1-2x.jpg",
+                    imgWebpMediaMaxDeskX1: "img/content/desktop/7-technology/6/1-1x.webp",
+                    imgWebpMediaMaxDeskX2: "img/content/desktop/7-technology/6/1-2x.webp",
+                    imgjpgMediaMaxDeskX1: "img/content/desktop/7-technology/6/1-1x.jpg",
+                    imgjpgMediaMaxDeskX2: "img/content/desktop/7-technology/6/1-2x.jpg",
+                    imgClass: "b-card-select__img",
+                    alt: "Интерьер",
+                }
+            ])

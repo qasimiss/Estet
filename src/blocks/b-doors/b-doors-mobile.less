@@ -1,0 +1,126 @@
+.b-doors {
+    display: grid;
+    grid: repeat(4, auto) / 50% calc(50% - 45px);
+    column-gap: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+    &:nth-child(2n+1) &__img-background {
+        background-color: @whiteF7;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &__price {
+        display: none;
+        margin-bottom: 11px;
+        margin-left: 11px;
+        visibility: hidden;
+        &-actual {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            padding-right: 20px;
+        }
+        &-irrelevant {
+            text-decoration: line-through;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+    &__img-background {
+        width: 100%;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        padding: 15px 50px;
+    }
+    &__mark {
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            width: 100%;
+            margin-bottom: 55px;
+            align-items: flex-start;
+        }
+        &-wrapper {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 15px 25px 15px 20px;
+        }
+    }
+    &__line {
+        width: 45px;
+        height: 1px;
+        background-color: @grey97;
+        margin-left: auto;
+        margin-bottom: 39px;
+    }
+    &__mark-wrapper-heart {
+        width: 21px;
+        height: 18px;
+    }
+    &__mark {
+        text-align: right;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 2.86px;
+        &--orange {
+            color: @orange00;
+        }
+        &--green {
+            color: @green47;
+        }
+    }
+    &__choice {
+        display: none;
+        &+label {
+            display: block;
+            width: 22px;
+            height: 22px;
+            padding: 8px;
+            box-sizing: content-box;
+            cursor: pointer;
+            transition: opacity 0.3s, transform 0.3s;
+            &:hover {
+                opacity: 0.5;
+            }
+            &:nth-of-type(n+4) {
+                display: none;
+            }
+        }
+        &:checked+label {
+            transform: scale(1.3);
+        }
+        &-textures {
+            width: 100%;
+            height: 100%;
+        }
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: calc(100% + 16px);
+            margin-top: auto;
+            align-items: flex-end;
+            margin-left: -8px;
+            padding-bottom: 7px;
+        }
+        &-button {
+            background-color: transparent;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 8px;
+            box-sizing: content-box;
+            border: 1px solid transparent;
+            transition: transform 0.3s;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

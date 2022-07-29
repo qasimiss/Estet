@@ -1,0 +1,73 @@
+.b-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 320px;
+    z-index: 11;
+    &__nav-product, &__info {
+        display: none;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 18px 0 0;
+    }
+    &__hamburger {
+        position: relative;
+        width: 29px;
+        height: 20px;
+        z-index: 200;
+        cursor: pointer;
+        border: none;
+        background: linear-gradient(to bottom,transparent 0 9px,#fff 9px 11px,transparent 11px 20px);
+        background: -ms-linear-gradient(top,transparent 9px, #fff 9px, #fff 11px, transparent 11px);
+        transition: opacity 0.2s;
+        &:hover {
+            opacity: 0.5;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0;
+            height: 2px;
+            width: 29px;
+            background-color: @whiteFF;
+            transition: transform 0.2s;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            height: 2px;
+            width: 20px;
+            background-color: @whiteFF;
+            transition: transform 0.2s;
+        }
+        &.active {
+            background: transparent;
+        }
+        &.active {
+            background-color: transparent;
+        }
+        &.active::before{
+            top: 50%;
+            transform: rotate(45deg);
+        }
+        &.active::after {
+            top: 50%;
+            width: 29px;
+            transform: rotate(-45deg);
+        }
+    }
+    & li a {
+        transition: opacity 0.2s;
+    }
+    & li a:hover {
+        opacity: 0.5;
+    }
+}

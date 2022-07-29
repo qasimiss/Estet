@@ -1,0 +1,155 @@
+include ../../elements/b-button/b-button.pug
+include ../b-logo/b-logo.pug
+
+mixin b-technology()
+    section.b-technology
+        .b-container.b-container--technology.b-container--no-padd-table.b-container--no-padd-desktop
+            .b-technology__wrap
+                +b-button({
+                    btn: {
+                        button: {
+                            classBtn: 'b-button--square b-button--square-white',
+                            titleBtn: 'Назад',
+                            svg: `svg.b-button--square__img(class= "b-button--square__img-left" width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(fill-rule="evenodd" clip-rule="evenodd" d="M25.5 4.5H0.5H25.5Z")
+                            path(d="M25.5 4H26V5H25.5V4ZM0.146446 4.85355C-0.0488148 4.65829 -0.0488148 4.34171 0.146446 4.14645L3.32843 0.964466C3.52369 0.769204 3.84027 0.769204 4.03553 0.964466C4.2308 1.15973 4.2308 1.47631 4.03553 1.67157L1.20711 4.5L4.03553 7.32843C4.2308 7.52369 4.2308 7.84027 4.03553 8.03553C3.84027 8.2308 3.52369 8.2308 3.32843 8.03553L0.146446 4.85355ZM25.5 5H0.5V4H25.5V5Z")`,
+                            svgClass: 'b-button__img--square b-button__img--square-left'
+                        },
+                    }
+                })
+                +b-button({
+                    btn: {
+                        button: {
+                            classBtn: 'b-button--square b-button--square-green',
+                            titleBtn: 'Далее',
+                            svg: `svg.b-button--square-img(class= "b-button--square__img-right" width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(fill-rule="evenodd" clip-rule="evenodd" d="M25.5 4.5H0.5H25.5Z")
+                            path(d="M25.5 4H26V5H25.5V4ZM0.146446 4.85355C-0.0488148 4.65829 -0.0488148 4.34171 0.146446 4.14645L3.32843 0.964466C3.52369 0.769204 3.84027 0.769204 4.03553 0.964466C4.2308 1.15973 4.2308 1.47631 4.03553 1.67157L1.20711 4.5L4.03553 7.32843C4.2308 7.52369 4.2308 7.84027 4.03553 8.03553C3.84027 8.2308 3.52369 8.2308 3.32843 8.03553L0.146446 4.85355ZM25.5 5H0.5V4H25.5V5Z")`,
+                            svgClass: 'b-button__img--square b-button__img--square-right'
+                        },
+                    }
+                })
+            a(id="b-technology__link-hover--grass" class="b-technology__link-hover" href="javascript:void(0);")
+            a(id="b-technology__link-hover--vase" class="b-technology__link-hover" href="javascript:void(0);")
+            .b-technology__inner
+                .b-technology__container
+                    h2.b-title.b-title--technology ESTET
+                    p.b-subtitle.b-technology__sub.b-subtitle--padding Дверные технологии ESTET превращают квадратные метры в&nbsp;уютный Дом, пространство в&nbsp;удобное и&nbsp;прекрасное Жильё. Наши двери создают неповторимые ощущения, когда каждый день&nbsp;Вы открываете дверь и&nbsp;вместе с&nbsp;тем что-то новое, а&nbsp;главное&nbsp;&mdash; открываете с&nbsp;удовольствием!
+                .b-technology__wrap-grass
+                    +b-picture([
+                    {
+                        pictureClass: "b-picture--technology",
+                        imgWebpMediaMax767X1: 'img/content/mobile/7-technology/1/14-1x.webp',
+                        imgWebpMediaMax767X2: 'img/content/mobile/7-technology/1/14-2x.webp',
+                        imgJpgMediaMax767X1: 'img/content/mobile/7-technology/1/14-1x.jpg',
+                        imgJpgMediaMax767X2: 'img/content/mobile/7-technology/1/14-2x.jpg',
+                        imgWebpMediaMax1023X1: 'img/content/tablet/7-technology/1/1-1x.webp',
+                        imgWebpMediaMax1023X2: 'img/content/tablet/7-technology/1/1-2x.webp',
+                        imgJpgMediaMax1023X1: 'img/content/tablet/7-technology/1/1-1x.jpg',
+                        imgJpgMediaMax1023X2: 'img/content/tablet/7-technology/1/1-2x.jpg',
+                        imgWebpMediaMaxDeskX1: 'img/content/desktop/7-technology/1/1-1x.webp',
+                        imgWebpMediaMaxDeskX2: 'img/content/desktop/7-technology/1/1-2x.webp',
+                        imgjpgMediaMaxDeskX1: 'img/content/desktop/7-technology/1/1-1x.jpg',
+                        imgjpgMediaMaxDeskX2: 'img/content/desktop/7-technology/1/1-2x.jpg',
+                        imgClass: "b-picture__img--technology",
+                        alt: "Современные интерьерные решения"
+                    }
+                ])
+                    .b-technology__post.b-technology__post--grass
+                        strong.b-technology__caption Современные интерьерные решения
+                        p.b-technology__subcaption Межкомнатные и&nbsp;офисные двери с&nbsp;богатой цветовой гаммой, стильным дизайном, различными вариантами исполнения и&nbsp;нестандартными размерами
+                .b-technology__wrapper.b-technology__wrapper--mirror
+                    +b-picture([
+                    {
+                        pictureClass: "b-picture--mirror",
+                        imgWebpMediaMax767X1: 'img/content/tablet/7-technology/5/1-1x.webp',
+                        imgWebpMediaMax767X2: 'img/content/tablet/7-technology/5/1-2x.webp',
+                        imgJpgMediaMax767X1: 'img/content/tablet/7-technology/5/1-1x.jpg',
+                        imgJpgMediaMax767X2: 'img/content/tablet/7-technology/5/1-2x.jpg',
+                        imgWebpMediaMax1023X1: 'img/content/tablet/7-technology/5/1-1x.webp',
+                        imgWebpMediaMax1023X2: 'img/content/tablet/7-technology/5/1-2x.webp',
+                        imgJpgMediaMax1023X1: 'img/content/tablet/7-technology/5/1-1x.jpg',
+                        imgJpgMediaMax1023X2: 'img/content/tablet/7-technology/5/1-2x.jpg',
+                        imgWebpMediaMaxDeskX1: 'img/content/tablet/7-technology/5/1-1x.webp',
+                        imgWebpMediaMaxDeskX2: 'img/content/tablet/7-technology/5/1-2x.webp',
+                        imgjpgMediaMaxDeskX1: 'img/content/tablet/7-technology/5/1-1x.jpg',
+                        imgjpgMediaMaxDeskX2: 'img/content/tablet/7-technology/5/1-2x.jpg',
+                        imgClass: "b-picture__img--mirror",
+                        alt: "Двери"
+                    }
+                    ])
+                .b-technology__wrapper.b-technology__wrapper--techn
+                    a(class="b-technology__link-hover b-technology__link-hover--tech" href="javascript:void(0);")
+                    +b-picture([
+                    {
+                        pictureClass: "b-picture--techn",
+                        imgWebpMediaMax767X1: 'img/content/mobile/7-technology/3/1-1x.webp',
+                        imgWebpMediaMax767X2: 'img/content/mobile/7-technology/3/1-2x.webp',
+                        imgJpgMediaMax767X1: 'img/content/mobile/7-technology/3/1-1x.jpg',
+                        imgJpgMediaMax767X2: 'img/content/mobile/7-technology/3/1-2x.jpg',
+                        imgWebpMediaMax1023X1: 'img/content/desktop/7-technology/3/1-1x.webp',
+                        imgWebpMediaMax1023X2: 'img/content/desktop/7-technology/3/1-2x.webp',
+                        imgJpgMediaMax1023X1: 'img/content/desktop/7-technology/3/1-1x.jpg',
+                        imgJpgMediaMax1023X2: 'img/content/desktop/7-technology/3/1-2x.jpg',
+                        imgWebpMediaMaxDeskX1: 'img/content/desktop/7-technology/3/1-1x.webp',
+                        imgWebpMediaMaxDeskX2: 'img/content/desktop/7-technology/3/1-2x.webp',
+                        imgjpgMediaMaxDeskX1: 'img/content/desktop/7-technology/3/1-1x.jpg',
+                        imgjpgMediaMaxDeskX2: 'img/content/desktop/7-technology/3/1-2x.jpg',
+                        imgClass: "b-picture__img--techn",
+                        alt: "Компания"
+                    }
+                ])
+                    .b-technology__post.b-technology__post--company
+                        h2.b-title.b-title--technology.b-title--company Компания
+                        p.b-technology__sub.b-technology__sub--hover Мы&nbsp;работаем на&nbsp;рынке производства дверей с&nbsp;2002&nbsp;года. За&nbsp;это время мы&nbsp;зарекомендовали себя как надежный партнер и&nbsp;динамично развивающаяся компания.
+                .b-technology__wrapper.b-technology__wrapper--lamp
+                    a(class="b-technology__link-hover b-technology__link-hover--lamp" href="javascript:void(0);")
+                    +b-picture([
+                    {
+                        pictureClass: "b-picture--lamp",
+                        imgWebpMediaMax767X1: 'img/content/mobile/7-technology/4/1-1x.webp',
+                        imgWebpMediaMax767X2: 'img/content/mobile/7-technology/4/1-2x.webp',
+                        imgJpgMediaMax767X1: 'img/content/mobile/7-technology/4/1-1x.jpg',
+                        imgJpgMediaMax767X2: 'img/content/mobile/7-technology/4/1-2x.jpg',
+                        imgWebpMediaMax1023X1: 'img/content/tablet/7-technology/4/1-1x.jpg',
+                        imgWebpMediaMax1023X2: 'img/content/tablet/7-technology/4/1-2x.webp',
+                        imgJpgMediaMax1023X1: 'img/content/tablet/7-technology/4/1-1x.jpg',
+                        imgJpgMediaMax1023X2: 'img/content/tablet/7-technology/4/1-2x.jpg',
+                        imgWebpMediaMaxDeskX1: 'img/content/desktop/7-technology/4/1-1x.webp',
+                        imgWebpMediaMaxDeskX2: 'img/content/desktop/7-technology/4/1-2x.webp',
+                        imgjpgMediaMaxDeskX1: 'img/content/desktop/7-technology/4/1-1x.jpg',
+                        imgjpgMediaMaxDeskX2: 'img/content/desktop/7-technology/4/1-2x.jpg',
+                        imgClass: "b-picture__img--lamp",
+                        alt: "Высокое качество"
+                    }
+                ])
+                    .b-technology__post.b-technology__post--quality
+                        div.b-title.b-title--quality Высокое качество
+                        span.b-technology__sub-none.b-technology__sub Все наши двери проходят строжайший контроль качества на&nbsp;всех этапах производства. Следить за&nbsp;качеством, мы&nbsp;считаем, важнейшая задача производителя.
+                .b-technology__wrapper.b-technology__wrapper--vase
+                    +b-picture([
+                    {
+                        pictureClass: "b-picture--vase",
+                        imgWebpMediaMax767X1: 'img/content/mobile/7-technology/2/1-1x.webp',
+                        imgWebpMediaMax767X2: 'img/content/mobile/7-technology/2/1-2x.webp',
+                        imgJpgMediaMax767X1: 'img/content/mobile/7-technology/2/1-1x.jpg',
+                        imgJpgMediaMax767X2: 'img/content/mobile/7-technology/2/1-2x.jpg',
+                        imgWebpMediaMax1023X1: 'img/content/tablet/7-technology/2/1-1x.webp',
+                        imgWebpMediaMax1023X2: 'img/content/tablet/7-technology/2/1-2x.webp',
+                        imgJpgMediaMax1023X1: 'img/content/tablet/7-technology/2/1-1x.jpg',
+                        imgJpgMediaMax1023X2: 'img/content/tablet/7-technology/2/1-2x.jpg',
+                        imgWebpMediaMaxDeskX1: 'img/content/desktop/7-technology/5/5-1x.webp',
+                        imgWebpMediaMaxDeskX2: 'img/content/desktop/7-technology/5/5-2x.webp',
+                        imgjpgMediaMaxDeskX1: 'img/content/desktop/7-technology/5/5-1x.jpg',
+                        imgjpgMediaMaxDeskX2: 'img/content/desktop/7-technology/5/5-2x.jpg',
+                        imgClass: "b-picture__img--vase",
+                        alt: "Новые технологии"
+                    }
+                ])
+                    .b-technology__post.b-technology__post--vase
+                        strong.b-technology__quality-title Новые технологии
+                        span.b-technology__quality-post Каркас двери и&nbsp;дверная коробка изготавливаются из&nbsp;хвойного бруса высокого качества, срощенного по&nbsp;длине и&nbsp;оптимизированного, то&nbsp;есть из&nbsp;него вырезаны сучки, смоляные карманы и&nbsp;другие пороки, присущие натуральному дереву.
+                +b-logo({
+                    svg: '<svg class="b-logo__svg-technology" width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg"><path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M7.05636 49.6681H49.6681V7.05636H7.05636V49.6681ZM14.1268 36.1296H38.8382L42.5981 43.1867H14.1268V36.1296ZM36.8183 24.9278H14.1268V31.9842H36.8197L36.8183 24.9278ZM14.1268 13.5378H42.5981L38.7659 20.5952H14.1268V13.5378ZM0 56.7241H56.7245V0H0V56.7241Z"/></svg>',
+                    class: "b-logo--technology"
+                })

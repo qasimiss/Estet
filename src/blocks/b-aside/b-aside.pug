@@ -1,0 +1,24 @@
+include ../b-logo/b-logo.pug
+include ../b-aside__filter/b-aside__filter.pug
+mixin b-aside(date)
+    aside.b-aside
+        .b-aside__header
+            +b-logo({
+                class: "b-logo--aside",
+                urlImg: "img/icons/logo-white.svg",
+                link: true,
+                classImg: "b-logo__img--aside",
+            })
+            .b-aside__header-wrapper
+                a.b-aside__btn(href="javascript:void(0);" title="Звонок")
+                    img.b-aside__btn-img(src="img/icons/shape.svg", alt="")
+                +b-search({
+                    modification: "b-search--aside",
+                    imgUrl: "img/icons/glass-black.svg",
+                    modificationImg: "b-search__img--aside",
+                })
+                a.b-aside__number-link(href="tel:+78005513240" title="Свяжитесь с нами") 8 800 551 32 40
+        nav.b-aside__wrapper-btn
+            button.b-aside__collection(class=date.collection?date.collection:'') Коллекции
+            button.b-aside__collection(class=date.doors?date.doors:'') Все двери
+        +b-aside__filter(date.arr)

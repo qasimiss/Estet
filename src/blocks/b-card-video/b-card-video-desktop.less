@@ -1,0 +1,104 @@
+@media (min-width: 1463px) {
+    .b-card-video {
+        margin-left: 200px;
+        overflow: hidden;
+        &__grey {
+            width: 660px;
+            height: 662px;
+
+            margin-left: 320px;
+            margin-bottom: -563px;
+
+            background: linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 100%);;
+        }
+
+        &__container {
+            display: flex;
+            position: relative;
+        }
+
+        &__picture {
+            position: relative;
+            width: 1000px;
+            height: 562px;
+            max-height: initial;
+
+            z-index: 1;
+        }
+
+        &__box {
+            margin-top: -152px;
+            margin-bottom: 10px;
+            margin-left: -237px;
+
+            height: 826px;
+            width: calc(100% - 763px);
+        }
+
+        &__inner {
+            display: block;
+            width: auto;
+            padding-top: 153px;
+            margin-left: 207px;
+
+            & .slick-track {
+                flex-direction: column;
+                transform: translate3d(0px, -350px, 0px);
+            }
+        }
+
+        &__item {
+            height: 93px;
+            margin-bottom: 33px;
+            margin-left: 25px;
+        }
+
+        &__text {
+            line-height: 18px;
+        }
+
+        &__box-switcher-position {
+            display: block;
+            position: absolute;
+            top: 154px;
+            right: 0;
+
+            transform: rotate(0deg);
+        }
+
+        &-youtube {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+
+            width: 258px;
+            height: 112px;
+
+            margin-left: 743px;
+            padding-top: 30px;
+
+            background-color: @whiteFF;
+        }
+
+        & .b-button--square:first-child {
+            display: block;
+
+            transform: rotate(0deg);
+        }
+
+        & .b-button--square:nth-child(2) {
+            transform: rotate(0deg);
+        }
+
+        &__img {
+            width: 1000px;
+        }
+
+        &__slider {
+            width: 1000px;
+        }
+    }
+}
+.b-container--no-padd-desktop {
+    max-width: 1600px;
+}

@@ -1,0 +1,35 @@
+.b-card-select{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 63px;
+    &__title {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+        color:@grey3C;
+        margin-bottom: 27px;
+    }
+    &__descr{
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        color:@grey99;
+        overflow: hidden;
+        margin-bottom: 47px;
+    }
+    &-wrap {
+        display: none;
+    }
+    .b-container {
+        .b-button--rect {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .b-card-select {
+        &__descr{
+            max-width: 280px;
+        }
+    }
+}

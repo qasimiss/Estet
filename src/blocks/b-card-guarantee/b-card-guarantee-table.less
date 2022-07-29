@@ -1,0 +1,63 @@
+.b-card-guarantee {
+    width: 50%;
+
+    &-service {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        padding-top: 38px;
+        margin-right: 12px;
+
+        background-image: -webkit-gradient(@whiteF2, @whiteFF);
+        background-image: -webkit-linear-gradient(@whiteF2, @whiteFF);
+        background-image: -moz-linear-gradient(@whiteF2, @whiteFF);
+        background-image: -ms-linear-gradient(@whiteF2, @whiteFF);
+        background-image: -o-linear-gradient(@whiteF2, @whiteFF);
+        background: linear-gradient(@whiteF2, @whiteFF);
+    }
+
+    &__grad {
+        width: 167px;
+        height: 324px;
+
+        padding-top: 45px;
+        padding-left: 33px;
+
+        clip-path: polygon(
+                    0 0, 0 0, 100% 44px,
+                    100% calc(100% - 20px), 100% 100%,
+                    20px 100%, 0 100%, 0 0);
+    }
+
+    &__suptitle {
+        display: none;
+    }
+
+    &__content {
+        position: relative;
+        margin: -93px 0px 0 81px;
+
+        z-index: 1;
+    }
+
+    &__text {
+        margin-bottom: 41px;
+
+        font-size: 16px;
+        line-height: 38px;
+        text-align: left;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 38px;
+
+        text-align: left;
+
+        &:hover {
+            color: lighten(@green47, 20%);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.b-button {
+    &--help {
+        margin-bottom: 109px;
+        width: 100%;
+    }
+    &--tel {
+        height: 103px;
+    }
+    &--order-size {
+        width: 320;
+        height: 80px;
+        background-color: @green47;
+        position: absolute;
+        right: 50%;
+        &__square {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        & .b-button__descr--order-size {
+        width: 121px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        }
+        &__line {
+        width: 12px;
+        margin-right: 4px;
+        }
+        &__pensil {
+        width: 9px;
+        }
+        & .b-button__img--order-size {
+        width: 44px;
+        }
+    }
+}
+
+@media (max-width: 1281px) {
+    .b-button--help {
+        margin-bottom: 116px;
+    }
+}

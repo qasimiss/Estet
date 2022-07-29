@@ -1,0 +1,200 @@
+.b-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    &--collection {
+        background-color: @whiteF9;
+        border: none;
+        font-size: 14px;
+        line-height: 35px;
+        height: 40px;
+        width: 102px;
+        color: @grey3C;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: @green47;
+            color: @whiteFF;
+        }
+        &.active {
+            background-color: @green47;
+            color: @whiteFF;
+            &:hover {
+                background-color: @whiteFF;
+                color: @grey3C;
+            }
+        }
+    }
+    &--help {
+        border: 1px solid @whiteFF;
+        width: 100%;
+        height: 60px;
+        background-color: @green47;
+        color: @whiteFF;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        margin-bottom: 37px;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten(@green47,20%);
+        }
+    }
+    &--rect {
+        color: @green47;
+        width: 325px;
+        min-height: 60px;
+        border: none;
+        border: 1px solid @green47;
+        cursor:pointer;
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 21px;
+        transition: color 0.3s linear , background-color 0.3s linear;
+        &:hover {
+            color: @whiteFF;
+            background-color: lighten(@green47,20%);
+        }
+    }
+    &--show-map {
+        display: block;
+        position: relative;
+        padding: 18px 24px 20px 58px;
+
+        width: 230px;
+
+        font-family: 'Open Sans';
+        font-size: 16px;
+        text-decoration: none;
+        color: @whiteFF;
+
+        background-color: @green47;
+
+        transition: background-color .1s linear;
+
+        &:hover {
+            background-color: lighten(@green47, 20%);
+        }
+    }
+    &--square {
+        display: block;
+        position: relative;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        border: none;
+        background-color: @green47;
+        &-green {
+            background-color: @green47;
+            transition: background-color linear .3s;
+        }
+        &-white {
+            background-color: @whiteFF;
+            transition: background-color linear .3s;
+            &:hover .b-button--square__img-up,
+            &:hover .b-button--square__img-left {
+                fill: @whiteFF;
+            }
+        }
+
+        &:hover {
+            background-color: lighten(@green47, 20%);
+        }
+    }
+    &--tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 79px;
+        height: 80px;
+        background-color: @green4A;
+        padding: 27px 26px 28px 27px;
+        &:hover {
+            background: lighten(@green4A,20%);
+        }
+    }
+    &--order-size {
+        width: 100%;
+        height: 60px;
+        background: @green47;
+        position: absolute;
+        bottom:0;
+        right:0;
+        display:flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: @whiteFF;
+        box-sizing: border-box;
+        padding: 13px 24px 13px 26px;
+        z-index: 2;
+        &__square {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        & .b-button__descr--order-size {
+        width: 121px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 300;
+        }
+        & .b-button__img--order-size-beffore {
+        width: 23px;
+        margin-right: 4px;
+        }
+        & .b-button__img--order-size {
+        width: 44px;
+        }
+        &:hover {
+            background: lighten(@green4A,20%);
+        }
+    }
+
+    &__img {
+        &--show-map {
+            position: absolute;
+            top: 25%;
+            left: 8%;
+
+            width: 23px;
+            height: 30px;
+        }
+        &--square {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            &-down {
+                fill: @whiteFF;
+                transform: translate(-50%, -50%) rotate(-90deg);
+            }
+            &-right {
+                fill: @whiteFF;
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+            &-up {
+                fill: @green47;
+                transform: translate(-50%, -50%) rotate(90deg);
+                transition: fill linear .3s;
+            }
+            &-left {
+                fill: @green47;
+                transform: translate(-50%, -50%);
+                transition: fill linear .3s;
+            }
+        }
+        &--tel {
+            width: 26px;
+            height: 25px;
+            display:inline-block;
+        }
+    }
+    &__descr {
+        &--tel {
+            display: none;
+        }
+    }
+}

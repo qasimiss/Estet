@@ -1,0 +1,53 @@
+include ../b-hamburger/b-hamburger.pug
+include ../b-logo/b-logo.pug
+include ../b-language/b-language.pug
+include ../b-search/b-search.pug
+
+mixin b-header
+    header.b-header
+        .b-container.b-container--no-padd-desktop
+            .b-header__wrapper
+                +b-search({
+                    modification: "b-search--header"
+                })
+                +b-language({
+                    modification: ""
+                })
+                ul.b-header__nav-product
+                    li.b-header__nav-product-item
+                        select.b-header__nav-product-link(name="Каталог")
+                            option(value="Каталог") Каталог
+                            option(value="Каталог") Каталог
+                            option(value="Каталог") Каталог
+                    li.b-header__nav-product-item
+                        select.b-header__nav-product-link(name="Каталог")
+                            option(value="Покупателям") Покупателям
+                            option(value="Покупателям") Покупателям
+                            option(value="Покупателям") Покупателям
+                    li.b-header__nav-product-item
+                        a.b-header__nav-product-link(href="javascript:void(0);" title="Дизайнерам") Дизайнерам
+                +b-logo({
+                    class: "b-logo--header",
+                    urlImg: "img/icons/logo-white.svg"
+                })
+                .b-header__info
+                    ul.b-header__info-list
+                        li.b-header__info-item
+                            select.b-header__nav-product-link(name="Каталог")
+                                option(value="") Компания
+                                option(value="") Компания
+                                option(value="") Компания
+                        li.b-header__info-item
+                            a(href="javascript:void(0);" title="Где купить").b-header__info-link Где купить
+                    ul.b-header__choice
+                        li.b-header__choice-item
+                            a.b-header__choice-link(href="javascript:void(0);" title="Поиск")
+                                img.b-header__choice-img(src="img/icons/glass-white.svg", alt="")
+                        li.b-header__choice-item.b-header__choice-item--counter
+                            a.b-header__choice-link(href="javascript:void(0);" title="Избранное")
+                                img.b-header__choice-img(src="img/icons/heart-white.svg", alt="")
+                        li.b-header__choice-item.b-header__choice-item--counter
+                            a.b-header__choice-link(href="javascript:void(0);" title="Корзина")
+                                img.b-header__choice-img(src="img/icons/basket-white.svg", alt="")
+                button.b-header__hamburger
+            +b-hamburger

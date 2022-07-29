@@ -1,0 +1,127 @@
+.b-card-news{
+    overflow: hidden;
+    & .b-container{
+        margin: 0;
+        width: 100%;
+        padding-right: 0;
+    }
+    &__header{
+        display: flex;
+        width: 600px;
+    }
+    &__nav {
+        width: 170px;
+        margin-top: 10px;
+        margin-bottom: 79px;
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__elegant{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 96px;
+        text-decoration: none;
+        & img{
+            object-fit: cover;
+            width: 600px;
+            height: 473px;
+        }
+        &-description{
+            width: 394px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 34px;
+            color:@grey3C;
+            margin-bottom: 20px;
+        }
+        &-date{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            color: @grey99;
+        }
+    }
+    &__text{
+        margin-left: 52px;
+    }
+    &__news{
+        &.active {
+            display: flex;
+            overflow:hidden;
+            width: 100%;
+            height: 700px;
+            position: relative;
+        }
+        &::before{
+            width: 195px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+    &__tips{
+        display: none;
+    }
+    &__item{
+        height: 43%;
+        margin-right: 37px;
+        margin-bottom:23px;
+        & img{
+            object-fit:cover;
+            width: 100%;
+            height: 100%;
+        }
+        &-video{
+            text-decoration:none ;
+            img{
+                object-fit: cover;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    &__description{
+        &-six{
+        width: 258px;
+        margin-bottom: 47px;
+        }
+    }
+    &__picture{
+        width: 100%;
+        height: 140px;
+        margin-bottom: 17px;
+    }
+    &__elegant-picture {
+        margin-bottom: 40px;
+    }
+    &__button{
+        &-switcher{
+            width: 300px;
+            margin-left: 300px;
+            margin-bottom: 117px;
+        }
+    }
+    &__icon{
+        width: 100%;
+        height: 140px;
+    }
+    & .slick-list {
+        height: 100%;
+    }
+    & .slick-track {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    & .slick-slide {
+        width: 260px;
+    }
+}
